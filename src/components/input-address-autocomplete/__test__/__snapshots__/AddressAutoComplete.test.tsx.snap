@@ -2,17 +2,14 @@
 
 exports[`AddressAutoComplete should match snapshot 1`] = `
 <AddressAutoComplete
-  apiKey="1234567879"
   endpoint="http://test.com.au"
   prefix="address-prefix"
 >
   <AutoComplete
     dataProvider={
       AddressDataProvider {
-        "acceptedAddressType": "DOMESTIC_RCA",
         "endpoint": "http://test.com.au",
         "headers": Object {
-          "AUTH-KEY": "1234567879",
           "Accept": "application/json",
         },
         "limit": 10,

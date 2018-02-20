@@ -25,7 +25,7 @@ const PageDecorator = (storyFn) => (
   </PageDiv>
 );
 
-const story = storiesOf('AddressAutoComplete', module);
+const story = storiesOf('input-address-autocomplete', module);
 story.addDecorator(PageDecorator);
 story.addDecorator(withKnobs);
 story
@@ -39,8 +39,7 @@ story
         <State store={store1}>
 					<AddressAutoComplete
 						prefix={text('Prefix', 'address-ac')}
-						endpoint={text('Endpoint', 'https://localhost:7443')}
-						apiKey={text('API Key', 'bc7ec72782be4e06bf1ebfe90b194f92')}
+						endpoint={text('Endpoint', 'https://localhost:7443/addresses')}
 					/>
 				</State>
 			)
@@ -56,10 +55,9 @@ story
         <State store={store2}>
 					<AddressAutoComplete
 						prefix={text('Prefix', 'address-ac')}
-						endpoint={text('Endpoint', 'https://localhost:7443')}
-						apiKey={text('API Key', 'bc7ec72782be4e06bf1ebfe90b194f92')}
+						endpoint={text('Endpoint', 'https://localhost:7443/addresses')}
 						selectedItem={{
-							value: '111 My Street Melbourne',
+							value: '123 My Street Melbourne',
 							object: {name: 'reference object'}
 						}}
 					/>
@@ -78,9 +76,8 @@ story
 					<AddressAutoComplete
 						label={text('Label', 'Address')}
 						prefix={text('Prefix', 'address-ac')}
-						endpoint={text('Endpoint', 'https://localhost:7443')}
-						apiKey={text('API Key', 'bc7ec72782be4e06bf1ebfe90b194f92')}
-						hint={text('Hint', 'Domestic Address Only')}
+						endpoint={text('Endpoint', 'https://localhost:7443/addresses')}
+						hint={text('Hint', 'Enter an Address')}
 					/>
 				</State>
 			)

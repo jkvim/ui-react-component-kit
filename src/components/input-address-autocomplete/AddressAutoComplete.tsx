@@ -11,10 +11,8 @@ interface AddressAutoCompleteProps {
   error?: string;
   suggestionFooter?: FooterComponent;
   hint?: string;
-  addressTypes?: string;
   focusOnMount?: boolean;
   endpoint: string;
-  apiKey: string;
 }
 
 class AddressAutoComplete extends React.Component<AddressAutoCompleteProps, {}> {
@@ -25,8 +23,6 @@ class AddressAutoComplete extends React.Component<AddressAutoCompleteProps, {}> 
     super(props);
     this.dataProvider = new AddressDataProvider(
       props.endpoint,
-      props.apiKey,
-      props.addressTypes || 'DOMESTIC_RCA',
       props.limit
     );
   }

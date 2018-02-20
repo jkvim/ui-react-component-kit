@@ -9,14 +9,12 @@ describe('AddressAutoComplete', () => {
 
     const prefix = 'address-prefix';
     const endpoint = 'http://test.com.au';
-    const apiKey = '1234567879';
 
     beforeEach(() => {
         wrapper = mount(
             <AddressAutoComplete
                 prefix={prefix}
                 endpoint={endpoint}
-                apiKey={apiKey}
             />
         );
     });
@@ -31,9 +29,5 @@ describe('AddressAutoComplete', () => {
 
     it('should pass `endpoint` in props', () => {
         expect(wrapper.props().endpoint).toBe(endpoint);
-    });
-
-    it('should pass `apiKey` in props', () => {
-        expect(wrapper.props().apiKey).toBe(apiKey);
     });
 });

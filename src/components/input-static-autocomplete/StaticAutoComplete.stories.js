@@ -26,7 +26,7 @@ const PageDecorator = (storyFn) => (
   </PageDiv>
 );
 
-const story = storiesOf('StaticAutoComplete', module);
+const story = storiesOf('input-static-autocomplete', module);
 story.addDecorator(PageDecorator);
 story.addDecorator(withKnobs);
 story
