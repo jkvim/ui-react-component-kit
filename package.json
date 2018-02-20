@@ -31,10 +31,10 @@
   "jest": {
     "coverageThreshold": {
       "global": {
-        "branches": 39,
-        "functions": 47,
-        "lines": 55,
-        "statements": 57
+        "branches": 36,
+        "functions": 45,
+        "lines": 52,
+        "statements": 56
       }
     },
     "mapCoverage": true,
@@ -42,8 +42,9 @@
       "src/**/*.{js,jsx,ts,tsx}",
       "!src/themes/**/*",
       "!src/**/model/**/*.ts",
-      "!src/**/*.stories.{js,ts}",
+      "!src/**/common-styled-components/**/*.ts",
       "!src/**/index.{js,ts}",
+      "!src/**/*.stories.{js,ts}",
       "!src/setupTests.ts"
     ],
     "setupFiles": [
