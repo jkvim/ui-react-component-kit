@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
 import toJSON from 'enzyme-to-json';
-import StaticAutoComplete from '../StaticAutoComplete';
+import { StaticAutoComplete } from '../';
 
 describe('StaticAutoComplete', () => {
 

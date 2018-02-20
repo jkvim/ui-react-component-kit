@@ -31,10 +31,10 @@
   "jest": {
     "coverageThreshold": {
       "global": {
-        "branches": 0,
-        "functions": 0,
-        "lines": 0,
-        "statements": 0
+        "branches": 39,
+        "functions": 47,
+        "lines": 55,
+        "statements": 57
       }
     },
     "mapCoverage": true,

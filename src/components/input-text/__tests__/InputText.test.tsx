@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
 import toJSON from 'enzyme-to-json';
-import InputText from '../InputText';
+import { InputText } from '../';
 
 describe('InputText', () => {
 

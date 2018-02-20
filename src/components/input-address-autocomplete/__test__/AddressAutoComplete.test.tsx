@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
 import toJSON from 'enzyme-to-json';
-import AddressAutoComplete from '../AddressAutoComplete';
+import { AddressAutoComplete } from '../';
 
 describe('AddressAutoComplete', () => {
 
