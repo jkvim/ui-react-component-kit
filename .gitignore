@@ -1,0 +1,11 @@
+node_modules
+build
+lib
+storybook-static
+.tmp
+.idea
+*.iml
+npm-debug.log
+coverage
+test-report.xml
+yarn-error.log
