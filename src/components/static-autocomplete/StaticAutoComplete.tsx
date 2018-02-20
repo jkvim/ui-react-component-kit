@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { DataProvider, ParsedSelectedItem } from '../input-autocomplete';
-import { AutoComplete } from '../input-autocomplete';
+import { DataProvider, ParsedSelectedItem } from '../autocomplete';
+import { AutoComplete } from '../autocomplete';
 import StaticDataProvider from './StaticDataProvider';
 
 interface StaticAutoCompleteProps {

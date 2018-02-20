@@ -5,70 +5,74 @@ exports[`InputText should match snapshot 1`] = `
   id="1234567890"
   label="The label"
 >
-  <div>
-    <styled.label
-      hasError={false}
-      htmlFor="1234567890"
-      theme={
-        Object {
-          "color": Object {
-            "color": "#333",
-            "errorColor": "#9f173f",
-          },
-        }
-      }
+  <styled.div>
+    <div
+      className="sc-bxivhb fSnORn"
     >
-      <label
-        className="sc-bdVaJa bHemEh"
+      <styled.label
+        hasError={false}
         htmlFor="1234567890"
-      >
-        The label
-      </label>
-    </styled.label>
-    <br />
-    <styled.input
-      hasError={false}
-      id="1234567890"
-      innerRef={[Function]}
-      onBlur={[Function]}
-      onChange={[Function]}
-      onKeyDown={[Function]}
-      placeholder=""
-      theme={
-        Object {
-          "color": Object {
-            "borderColor": "#9e9e9e",
-            "errorColor": "#9f173f",
-          },
+        theme={
+          Object {
+            "color": Object {
+              "color": "#333",
+              "errorColor": "#9f173f",
+            },
+          }
         }
-      }
-      type="text"
-      value=""
-    >
-      <input
-        className="sc-bwzfXH rSjzs"
+      >
+        <label
+          className="sc-bdVaJa bHemEh"
+          htmlFor="1234567890"
+        >
+          The label
+        </label>
+      </styled.label>
+      <br />
+      <styled.input
+        hasError={false}
         id="1234567890"
+        innerRef={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
         onKeyDown={[Function]}
         placeholder=""
+        theme={
+          Object {
+            "color": Object {
+              "borderColor": "#9e9e9e",
+              "errorColor": "#9f173f",
+            },
+          }
+        }
         type="text"
         value=""
-      />
-    </styled.input>
-    <styled.div
-      theme={
-        Object {
-          "color": Object {
-            "errorColor": "red",
-          },
+      >
+        <input
+          className="sc-bwzfXH rSjzs"
+          id="1234567890"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </styled.input>
+      <styled.div
+        theme={
+          Object {
+            "color": Object {
+              "errorColor": "red",
+            },
+          }
         }
-      }
-    >
-      <div
-        className="sc-ifAKCX jZhHpk"
-      />
-    </styled.div>
-  </div>
+      >
+        <div
+          className="sc-EHOje RHuuV"
+        />
+      </styled.div>
+    </div>
+  </styled.div>
 </InputText>
 `;

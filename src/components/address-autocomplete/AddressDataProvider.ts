@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { DataProvider, ParsedSelectedItem, SelectableItem } from '../input-autocomplete';
+import { DataProvider, ParsedSelectedItem, SelectableItem } from '../autocomplete';
 
 class AddressDataProvider implements DataProvider {
 

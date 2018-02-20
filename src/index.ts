@@ -1,10 +1,12 @@
 import { InputText } from './components/input-text';
-import { AutoComplete } from './components/input-autocomplete';
-import { AddressAutoComplete, AddressDataProvider } from './components/input-address-autocomplete';
-import { StaticAutoComplete, StaticDataProvider } from './components/input-static-autocomplete';
+import { Select } from './components/select';
+import { AutoComplete } from './components/autocomplete';
+import { AddressAutoComplete, AddressDataProvider } from './components/address-autocomplete';
+import { StaticAutoComplete, StaticDataProvider } from './components/static-autocomplete';
 
 export {
   InputText,
+  Select,
   AutoComplete,
   AddressAutoComplete,
   AddressDataProvider,

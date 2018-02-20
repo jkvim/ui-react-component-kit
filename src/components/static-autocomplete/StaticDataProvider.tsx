@@ -1,5 +1,5 @@
 import { filter } from 'lodash';
-import { DataProvider, ParsedSelectedItem, SelectableItem } from '../input-autocomplete';
+import { DataProvider, ParsedSelectedItem, SelectableItem } from '../autocomplete';
 
 class StaticDataProvider implements DataProvider {
 

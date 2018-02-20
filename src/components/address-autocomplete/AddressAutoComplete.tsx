@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { AutoComplete, FooterComponent, ParsedSelectedItem } from '../input-autocomplete';
+import { AutoComplete, FooterComponent, ParsedSelectedItem } from '../autocomplete';
 import AddressDataProvider from './AddressDataProvider';
 
 interface AddressAutoCompleteProps {
