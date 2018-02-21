@@ -5,12 +5,13 @@ import { withKnobs, object, array, text } from "@storybook/addon-knobs/react";
 import { withInfo } from "@storybook/addon-info";
 import { action } from '@storybook/addon-actions';
 import { Store, State } from "@sambego/storybook-state";
+import { withReadme } from 'storybook-readme';
 import StaticAutoComplete from "./StaticAutoComplete";
 import styled, { ThemeProvider } from 'styled-components';
 import { defaultTheme } from "../theme/defaultTheme";
+import README from './README.md';
 
 const store1 = new Store({});
-const store2 = new Store({});
 
 const PageDiv = styled.div`
 		width: 95%;
@@ -26,9 +27,10 @@ const PageDecorator = (storyFn) => (
   </PageDiv>
 );
 
-const story = storiesOf('input-static-autocomplete', module);
+const story = storiesOf('static-autocomplete', module);
 story.addDecorator(PageDecorator);
 story.addDecorator(withKnobs);
+story.addDecorator(withReadme(README));
 story
 	.add('static list',
     withInfo({

@@ -153,6 +153,7 @@
     "shortid": "2.2.8",
     "smooth-scroll": "12.1.5",
     "source-map-loader": "0.2.3",
+    "storybook-readme": "3.2.1",
     "style-loader": "0.20.2",
     "sw-precache-webpack-plugin": "0.11.4",
     "ts-jest": "22.0.4",

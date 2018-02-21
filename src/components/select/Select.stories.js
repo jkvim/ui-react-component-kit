@@ -4,9 +4,11 @@ import { withKnobs, text, object } from '@storybook/addon-knobs/react';
 import { withInfo } from '@storybook/addon-info';
 import { action } from '@storybook/addon-actions';
 import { State, Store } from '@sambego/storybook-state';
+import { withReadme } from 'storybook-readme';
 import Select from "./Select";
 import styled, { ThemeProvider } from 'styled-components';
 import { defaultTheme } from "../theme/defaultTheme";
+import README from './README.md';
 
 const store1 = new Store({});
 
@@ -27,6 +29,7 @@ const PageDecorator = (storyFn) => (
 const story = storiesOf('select', module);
 story.addDecorator(PageDecorator);
 story.addDecorator(withKnobs);
+story.addDecorator(withReadme(README));
 story
 	.add(
 		'with options',
