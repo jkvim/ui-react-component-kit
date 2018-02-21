@@ -7,14 +7,16 @@ describe('AddressAutoComplete', () => {
 
     let wrapper;
 
+    const label = 'Label';
     const prefix = 'address-prefix';
     const endpoint = 'http://test.com.au';
 
     beforeEach(() => {
         wrapper = mount(
             <AddressAutoComplete
-                prefix={prefix}
-                endpoint={endpoint}
+              label={label}
+              prefix={prefix}
+              endpoint={endpoint}
             />
         );
     });

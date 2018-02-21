@@ -12,6 +12,7 @@ interface InputTextProps {
   onKeyDown?: (keyCode: number, event: React.KeyboardEvent<HTMLInputElement>) => void;
   disabled?: boolean;
   value?: string;
+  hint?: string;
   errorMessage?: string;
   setInputRef?: (ref: HTMLInputElement) => void;
 
@@ -21,7 +22,7 @@ interface InputTextProps {
 }
 
 const InputText: React.SFC<InputTextProps> =
-  ({ label, id, value = '', errorMessage = '', placeholder = '',
+  ({ label, id, hint, value = '', errorMessage = '', placeholder = '',
      onBlur = noop, onChange = noop, onKeyDown = noop, setInputRef = noop, disabled }) => {
 
     return (
@@ -29,7 +30,7 @@ const InputText: React.SFC<InputTextProps> =
         <StyledLabel htmlFor={id} hasError={!!errorMessage}>
           {label}
         </StyledLabel>
-        <br />
+        {hint && <div className={!!errorMessage ? 'error' : ''}>{hint}</div>}
         <StyledInputText
           {...this.props}
           innerRef={ref => setInputRef(ref)}

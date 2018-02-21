@@ -30,7 +30,7 @@ const story = storiesOf('input-static-autocomplete', module);
 story.addDecorator(PageDecorator);
 story.addDecorator(withKnobs);
 story
-	.add('static list (fruits)',
+	.add('static list',
     withInfo({
       inline: true,
       text: 'An Autocomplete with a static list of options (fruits)'
@@ -39,24 +39,10 @@ story
 			return (
 				<State store={store1}>
 					<StaticAutoComplete
-						prefix={text('Prefix', 'static-ac')}
-						suggestions={array('Suggestions', ['apple', 'banana', 'mango', 'pineapple', 'oranges'])} />
-				</State>
-			)
-		})
-	)
-	.add('static list (fruits) with on change',
-		withInfo({
-			inline: true,
-			text: 'An Autocomplete with a static list of options (fruits) with on change'
-  	})
-		(() => {
-			return (
-				<State store={store2}>
-					<StaticAutoComplete
+            label={text('Label', 'Demo Static')}
 						prefix={text('Prefix', 'static-ac')}
 						suggestions={array('Suggestions', ['apple', 'banana', 'mango', 'pineapple', 'oranges'])}
-						onChange={action('onChange')} />
+            onChange={action('onChange')}/>
 				</State>
 			)
 		})

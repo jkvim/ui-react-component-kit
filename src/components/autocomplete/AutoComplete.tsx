@@ -344,10 +344,10 @@ export class AutoComplete extends React.Component<AutoCompleteProps, AutoComplet
 
     return (
       <AutoCompleteContainer role="application" onBlur={this.handleBlur} className={className}>
-        {hint && <div className={error ? 'error' : ''}>{hint}</div>}
         <InputText
           id={`${prefix}-autocomplete`}
           label={label}
+          hint={hint}
           errorMessage={error}
           onChange={this.handleChange}
           onKeyDown={this.handleKeyDownInput}
@@ -361,7 +361,6 @@ export class AutoComplete extends React.Component<AutoCompleteProps, AutoComplet
           aria-invalid={!!error}
           aria-describedby={`${prefix}-autocomplete-error`}
         />
-
         {showSuggestions || <div id={`${prefix}-autocomplete-error`}>{error}</div>}
         {this.buildSuggestions()}
         <StyledAccessibleHiddenDiv aria-live="polite">

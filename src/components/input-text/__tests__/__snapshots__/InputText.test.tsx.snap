@@ -7,7 +7,7 @@ exports[`InputText should match snapshot 1`] = `
 >
   <styled.div>
     <div
-      className="sc-bxivhb fSnORn"
+      className="sc-bxivhb emxkEp"
     >
       <styled.label
         hasError={false}
@@ -28,7 +28,6 @@ exports[`InputText should match snapshot 1`] = `
           The label
         </label>
       </styled.label>
-      <br />
       <styled.input
         hasError={false}
         id="1234567890"

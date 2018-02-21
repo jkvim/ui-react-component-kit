@@ -29,7 +29,7 @@ story.addDecorator(PageDecorator);
 story.addDecorator(withKnobs);
 story
 	.add(
-		'select (with options)',
+		'with options',
 		withInfo({
 			inline: true,
 			text: 'A select field with options'

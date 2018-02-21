@@ -7,14 +7,16 @@ describe('StaticAutoComplete', () => {
 
     let wrapper;
 
-    const suggestions = [ 'one', 'two', 'three' ];
+    const label = 'Label';
     const prefix = 'static-prefix';
+    const suggestions = [ 'one', 'two', 'three' ];
 
     beforeEach(() => {
         wrapper = mount(
             <StaticAutoComplete
-                prefix={prefix}
-                suggestions={suggestions}
+              label={label}
+              prefix={prefix}
+              suggestions={suggestions}
             />
         );
     });

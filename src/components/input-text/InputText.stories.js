@@ -36,7 +36,7 @@ story.addDecorator(PageDecorator);
 story.addDecorator(withKnobs);
 story
 	.add(
-		'input (blank)',
+		'blank',
 		withInfo({
 			inline: true,
 	  		text: 'A blank input field'
@@ -55,10 +55,10 @@ story
 		})
 	)
 	.add(
-		'input (populated)',
+		'pre-populated',
 		withInfo({
 			inline: true,
-      		text: 'A populated input field'
+      		text: 'A pre-populated input field'
     	})
 		(() => {
 			return (
@@ -75,7 +75,7 @@ story
 		})
 	)
 	.add(
-		'input (disabled)',
+		'disabled',
     	withInfo({
 			inline: true,
       		text: 'A disabled input field'
@@ -95,7 +95,7 @@ story
 		})
 	)
 	.add(
-		'input (validated)',
+		'validated',
 		withInfo({
 			inline: true,
 			text: 'A validated input field (required)'

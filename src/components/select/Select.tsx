@@ -14,12 +14,13 @@ interface SelectProps {
   disabled?: boolean;
   options?: SelectItem[];
   value?: SelectItem;
+  hint?: string;
   errorMessage?: string;
   setSelectRef?: (ref: HTMLSelectElement) => void;
 }
 
 const Select: React.SFC<SelectProps> =
-  ({ label, id, value = '', errorMessage = '', placeholder = '', options,
+  ({ label, id, hint, value = '', errorMessage = '', placeholder = '', options,
      onBlur = noop, onChange = noop, onKeyDown = noop, setSelectRef = noop, disabled }) => {
 
   return (
@@ -27,7 +28,7 @@ const Select: React.SFC<SelectProps> =
       <StyledLabel htmlFor={id} hasError={!!errorMessage}>
         {label}
       </StyledLabel>
-      <br />
+      {hint && <div className={!!errorMessage ? 'error' : ''}>{hint}</div>}
       <StyledSelect
         {...this.props}
         innerRef={ref => setSelectRef(ref)}

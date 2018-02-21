@@ -29,7 +29,7 @@ const story = storiesOf('input-address-autocomplete', module);
 story.addDecorator(PageDecorator);
 story.addDecorator(withKnobs);
 story
-	.add('Address Auto Complete (blank)',
+	.add('blank',
     withInfo({
       inline: true,
       text: 'An Address Autocomplete'
@@ -38,6 +38,7 @@ story
 			return (
         <State store={store1}>
 					<AddressAutoComplete
+            label={text('Label', 'Demo Address')}
 						prefix={text('Prefix', 'address-ac')}
 						endpoint={text('Endpoint', 'https://localhost:7443/addresses')}
 					/>
@@ -45,7 +46,7 @@ story
 			)
 		})
 	)
-	.add('Address Auto Complete (Pre-populated)',
+	.add('pre-populated',
     withInfo({
       inline: true,
       text: 'An Address Autocomplete'
@@ -54,6 +55,7 @@ story
       return (
         <State store={store2}>
 					<AddressAutoComplete
+						label={text('Label', 'Demo Address')}
 						prefix={text('Prefix', 'address-ac')}
 						endpoint={text('Endpoint', 'https://localhost:7443/addresses')}
 						selectedItem={{
@@ -65,7 +67,7 @@ story
 			)
     })
 	)
-	.add('Address Auto Complete with HINT',
+	.add('with hint',
     withInfo({
       inline: true,
       text: 'An Address Autocomplete'
@@ -74,7 +76,7 @@ story
       return (
         <State store={store3}>
 					<AddressAutoComplete
-						label={text('Label', 'Address')}
+						label={text('Label', 'Demo Address')}
 						prefix={text('Prefix', 'address-ac')}
 						endpoint={text('Endpoint', 'https://localhost:7443/addresses')}
 						hint={text('Hint', 'Enter an Address')}

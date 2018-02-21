@@ -3,6 +3,7 @@
 exports[`AddressAutoComplete should match snapshot 1`] = `
 <AddressAutoComplete
   endpoint="http://test.com.au"
+  label="Label"
   prefix="address-prefix"
 >
   <AutoComplete
@@ -15,6 +16,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
         "limit": 10,
       }
     }
+    label="Label"
     minSearchLength={6}
     prefix="address-prefix"
   >
@@ -35,7 +37,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
           aria-invalid={false}
           aria-owns="suggestions_address-prefix"
           id="address-prefix-autocomplete"
-          label=""
+          label="Label"
           onChange={[Function]}
           onKeyDown={[Function]}
           role="combobox"
@@ -44,7 +46,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
         >
           <styled.div>
             <div
-              className="sc-bxivhb fSnORn"
+              className="sc-bxivhb emxkEp"
             >
               <styled.label
                 hasError={false}
@@ -61,9 +63,10 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
                 <label
                   className="sc-bdVaJa bHemEh"
                   htmlFor="address-prefix-autocomplete"
-                />
+                >
+                  Label
+                </label>
               </styled.label>
-              <br />
               <styled.input
                 hasError={false}
                 id="address-prefix-autocomplete"

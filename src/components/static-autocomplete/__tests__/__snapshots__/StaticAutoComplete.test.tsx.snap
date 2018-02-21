@@ -2,6 +2,7 @@
 
 exports[`StaticAutoComplete should match snapshot 1`] = `
 <StaticAutoComplete
+  label="Label"
   prefix="static-prefix"
   suggestions={
     Array [
@@ -22,6 +23,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
         "valuePath": undefined,
       }
     }
+    label="Label"
     prefix="static-prefix"
   >
     <styled.div
@@ -41,7 +43,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
           aria-invalid={false}
           aria-owns="suggestions_static-prefix"
           id="static-prefix-autocomplete"
-          label=""
+          label="Label"
           onChange={[Function]}
           onKeyDown={[Function]}
           role="combobox"
@@ -50,7 +52,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
         >
           <styled.div>
             <div
-              className="sc-bxivhb fSnORn"
+              className="sc-bxivhb emxkEp"
             >
               <styled.label
                 hasError={false}
@@ -67,9 +69,10 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 <label
                   className="sc-bdVaJa bHemEh"
                   htmlFor="static-prefix-autocomplete"
-                />
+                >
+                  Label
+                </label>
               </styled.label>
-              <br />
               <styled.input
                 hasError={false}
                 id="static-prefix-autocomplete"

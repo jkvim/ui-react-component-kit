@@ -4,6 +4,8 @@ import { AutoComplete } from '../autocomplete';
 import StaticDataProvider from './StaticDataProvider';
 
 interface StaticAutoCompleteProps {
+  label: string;
+  hint?: string;
   prefix: string;
   suggestions: Array<string|object>;
   valuePath?: string;
@@ -23,10 +25,12 @@ class StaticAutoComplete extends React.Component<StaticAutoCompleteProps, {}> {
   }
 
   render() {
-    const {selectedItem, onChange, error} = this.props;
+    const {selectedItem, onChange, label, hint, error} = this.props;
 
     return(
       <AutoComplete
+        label={label}
+        hint={hint}
         dataProvider={this.dataProvider}
         prefix={this.props.prefix}
         selectedItem={selectedItem}
