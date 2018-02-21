@@ -12,6 +12,7 @@ import {
   SelectableList,
   ListItem
 } from './styledAutoComplete';
+import AddressAutoComplete from '../address-autocomplete/AddressAutoComplete';
 
 export interface AutoCompleteProps {
   prefix: string;
@@ -42,7 +43,7 @@ interface NextIndex {
   isFooter: boolean;
 }
 
-export class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState> {
+class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState> {
 
   debouncedGetSuggestions;
   inputRef: HTMLInputElement;
@@ -370,3 +371,5 @@ export class AutoComplete extends React.Component<AutoCompleteProps, AutoComplet
     );
   }
 }
+
+export default AutoComplete;

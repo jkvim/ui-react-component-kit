@@ -11,6 +11,7 @@ import { defaultTheme } from "../theme/defaultTheme";
 import README from './README.md';
 
 const store1 = new Store({});
+const store2 = new Store({});
 
 const PageDiv = styled.div`
 	width: 95%;
@@ -45,9 +46,37 @@ story
 						label={text('Label', 'Demo Select')}
 						onBlur={action('onBlur')}
 						onChange={(value) => (store1.set({value}))}
-						options={[{ display: 'Display 1', value: 'Test 1'}, { display: 'Display 2', value: 'Test 2'}, { display: 'Display 3', value: 'Test 3'}]}
+						options={[
+						  object('Option 1', { display: 'Display 1', value: 'Test 1'}),
+              object('Option 2', { display: 'Display 2', value: 'Test 2'}),
+              object('Option 3', { display: 'Display 3', value: 'Test 3'})
+              ]}
 					/>
 				</State>
 			)
 		})
-	);
+	).add(
+    'pre-selected with options',
+    withInfo({
+      inline: true,
+      text: 'A select field with options'
+    })
+    (() => {
+      return (
+        <State store={store2}>
+          <Select
+            id={text('ID', 'select-preselected')}
+            label={text('Label', 'Demo Select')}
+            onBlur={action('onBlur')}
+            onChange={(value) => (store1.set({value}))}
+            options={[
+              object('Option 1', { display: 'Display 1', value: 'Test 1'}),
+              object('Option 2', { display: 'Display 2', value: 'Test 2'}),
+              object('Option 3', { display: 'Display 3', value: 'Test 3'})
+            ]}
+            value={'Test 3'}
+          />
+        </State>
+      )
+    })
+  );

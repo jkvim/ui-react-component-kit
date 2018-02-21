@@ -10,10 +10,9 @@ interface SelectProps {
   placeholder?: string;
   onBlur?: (value: string) => void;
   onChange?: (value: string, event?: React.ChangeEvent<HTMLSelectElement>) => void;
-  onKeyDown?: (keyCode: number, event: React.KeyboardEvent<HTMLSelectElement>) => void;
   disabled?: boolean;
   options?: SelectItem[];
-  value?: SelectItem;
+  value?: string;
   hint?: string;
   errorMessage?: string;
   setSelectRef?: (ref: HTMLSelectElement) => void;
@@ -21,7 +20,7 @@ interface SelectProps {
 
 const Select: React.SFC<SelectProps> =
   ({ label, id, hint, value = '', errorMessage = '', placeholder = '', options,
-     onBlur = noop, onChange = noop, onKeyDown = noop, setSelectRef = noop, disabled }) => {
+     onBlur = noop, onChange = noop, setSelectRef = noop, disabled }) => {
 
   return (
     <StyledFormGroup>

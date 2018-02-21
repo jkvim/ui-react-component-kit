@@ -1,4 +1,4 @@
-import { AutoComplete } from './AutoComplete';
+import AutoComplete from './AutoComplete';
 import { DataProvider, SelectableItem, ParsedSelectedItem, FooterComponent } from './types';
 
 export {
