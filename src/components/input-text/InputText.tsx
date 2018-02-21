@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { kebabCase } from 'lodash';
 import { noop } from 'lodash';
-import { StyledLabel, StyledInputText, StyledFormGroup, StyledErrorDiv } from '../common-styled-components';
+import { StyledLabel, StyledInputText, StyledFormGroup, StyledErrorDiv } from '../theme/common';
 
 interface InputTextProps {
   label: string;

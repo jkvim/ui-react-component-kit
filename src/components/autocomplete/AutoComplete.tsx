@@ -3,7 +3,7 @@ import { bindAll, debounce } from 'lodash';
 import { DataProvider, FooterComponent, ParsedSelectedItem, SelectableItem } from './types';
 import * as keys from '../../constants/keyboardKeys';
 import InputText from '../input-text/InputText';
-import { StyledAccessibleHiddenDiv } from '../common-styled-components';
+import { StyledAccessibleHiddenDiv } from '../theme/common';
 import {
   AutoCompleteContainer,
   AutoCompleteResults,
