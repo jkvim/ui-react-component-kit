@@ -42,7 +42,6 @@
       "src/**/*.{js,jsx,ts,tsx}",
       "!src/themes/**/*",
       "!src/**/model/**/*.ts",
-      "!src/**/common-styled-components/**/*.ts",
       "!src/**/index.{js,ts}",
       "!src/**/*.stories.{js,ts}",
       "!src/setupTests.ts"
