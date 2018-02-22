@@ -16,6 +16,10 @@ interface SelectProps {
   hint?: string;
   errorMessage?: string;
   setSelectRef?: (ref: HTMLSelectElement) => void;
+
+  // excess property bags mainly used for capturing ARIA tags to be passed down to the HTML Select.
+  // tslint:disable-next-line no-any
+  [propKeys: string]: any;
 }
 
 const Select: React.SFC<SelectProps> =
