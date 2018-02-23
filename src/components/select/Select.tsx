@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { kebabCase } from 'lodash';
 import { noop } from 'lodash';
-import { StyledErrorDiv, StyledLabel, StyledFormGroup, StyledSelect } from '../theme/common';
+import { StyledErrorDiv, StyledLabel, StyledFormGroup, StyledSelect } from '../../theme/common';
 import { SelectItem } from './types';
 
 interface SelectProps {

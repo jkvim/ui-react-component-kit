@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { omit } from 'lodash';
 import { noop } from 'lodash';
-import { StyledErrorDiv, StyledFormGroup, StyledInputCheckbox, StyledLabelCheckbox } from '../theme/common';
+import { StyledErrorDiv, StyledFormGroup, StyledInputCheckbox, StyledLabelCheckbox } from '../../theme/common';
 
 export interface CheckBoxFieldProps {
   id: string;

@@ -53,7 +53,8 @@ export const StyledInputCheckbox = inputCheckbox`
   opacity: 0;
   
   &:checked + label:before {
-    content: "\\E0AC";
+    font-family: "glyphicons";
+    content: "\\E013";
     color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
     border-color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
   }

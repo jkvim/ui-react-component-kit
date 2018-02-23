@@ -3,7 +3,7 @@ import { bindAll, debounce } from 'lodash';
 import { DataProvider, FooterComponent, ParsedSelectedItem, SelectableItem } from './types';
 import * as keys from '../../constants/keyboardKeys';
 import InputText from '../input-text/InputText';
-import { StyledAccessibleHiddenDiv } from '../theme/common';
+import { StyledAccessibleHiddenDiv } from '../../theme/common';
 import {
   AutoCompleteContainer,
   AutoCompleteResults,
@@ -12,7 +12,6 @@ import {
   SelectableList,
   ListItem
 } from './styledAutoComplete';
-import AddressAutoComplete from '../address-autocomplete/AddressAutoComplete';
 
 export interface AutoCompleteProps {
   prefix: string;

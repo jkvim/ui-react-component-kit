@@ -6,7 +6,7 @@ import { Store, State } from "@sambego/storybook-state";
 import { withReadme } from 'storybook-readme';
 import AddressAutoComplete from "./AddressAutoComplete";
 import styled, { ThemeProvider } from 'styled-components';
-import { defaultTheme } from "../theme/defaultTheme";
+import { defaultTheme } from "../../theme/defaultTheme";
 import README from './README.md';
 
 const store1 = new Store({});

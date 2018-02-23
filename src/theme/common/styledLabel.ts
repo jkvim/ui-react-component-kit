@@ -31,15 +31,18 @@ export const StyledLabelCheckbox = labelCheckbox`
   
   &:before {
     content: "";
-    font-size: 32px;
-    font-size: 3.2rem;
+    font-size: 1.5rem;
     height: 30px;
     width: 30px;
     background: #fff;
-    padding-top: 0.1em;
+    padding-top: 0rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
     border: 1px solid ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
     box-sizing: border-box;
     margin-top: -5px;
+    margin-right: 4px;
   }
 `;
 

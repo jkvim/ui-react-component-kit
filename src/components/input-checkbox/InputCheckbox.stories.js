@@ -2,12 +2,11 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text, object } from '@storybook/addon-knobs/react';
 import { withInfo } from '@storybook/addon-info';
-import { action } from '@storybook/addon-actions';
 import { State, Store } from '@sambego/storybook-state';
 import { withReadme } from 'storybook-readme';
 import InputCheckbox from "./InputCheckbox";
 import styled, { ThemeProvider } from 'styled-components';
-import { defaultTheme } from "../theme/defaultTheme";
+import { defaultTheme } from "../../theme/defaultTheme";
 import README from './README.md';
 
 const store1 = new Store({});
