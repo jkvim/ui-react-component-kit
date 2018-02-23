@@ -8,34 +8,35 @@ export const defaultTheme = {
   }
 };
 
+// TODO: https://github.com/styled-components/styled-components/issues/233
 // tslint:disable-next-line no-unused-expression
 injectGlobal`
   @font-face {
       font-family: "swiss721bt";
-      src: url("../fonts/233CC5_0_0.eot");
-      src: url("../fonts/233CC5_0_0.eot?#iefix") format("embedded-opentype"),
-           url("../fonts/233CC5_0_0.woff") format("woff"),
-           url("../fonts/233CC5_0_0.ttf") format("truetype");
+      src: url("./fonts/233CC5_0_0.eot");
+      src: url("./fonts/233CC5_0_0.eot?#iefix") format("embedded-opentype"),
+           url("./fonts/233CC5_0_0.woff") format("woff"),
+           url("./fonts/233CC5_0_0.ttf") format("truetype");
       font-weight: 100;
       font-style: normal;
   }
 
   @font-face {
       font-family: "swiss721bt";
-      src: url("../fonts/233CC5_1_0.eot");
-      src: url("../fonts/233CC5_1_0.eot?#iefix") format("embedded-opentype"),
-           url("../fonts/233CC5_1_0.woff") format("woff"),
-           url("../fonts/233CC5_1_0.ttf") format("truetype");
+      src: url("./fonts/233CC5_1_0.eot");
+      src: url("./fonts/233CC5_1_0.eot?#iefix") format("embedded-opentype"),
+           url("./fonts/233CC5_1_0.woff") format("woff"),
+           url("./fonts/233CC5_1_0.ttf") format("truetype");
       font-weight: 100;
       font-style: italic;
   }
 
   @font-face {
       font-family: "swiss721bt";
-      src: url("../fonts/233CC5_2_0.eot");
-      src: url("../fonts/233CC5_2_0.eot?#iefix") format("embedded-opentype"),
-           url("../fonts/233CC5_2_0.woff") format("woff"),
-           url("../fonts/233CC5_2_0.ttf") format("truetype");
+      src: url("./fonts/233CC5_2_0.eot");
+      src: url("./fonts/233CC5_2_0.eot?#iefix") format("embedded-opentype"),
+           url("./fonts/233CC5_2_0.woff") format("woff"),
+           url("./fonts/233CC5_2_0.ttf") format("truetype");
       font-weight: normal;
       font-style: normal;
   }
