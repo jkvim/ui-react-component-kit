@@ -61,51 +61,6 @@ StyledLabelCheckbox.defaultProps = {
   }
 };
 
-/* Checkbox styling */
-
-/*.checkbox label {
-  margin-bottom: 10px;
-}
-
-.checkbox label:before {
-  content: "";
-  font-size: 32px;
-  font-size: 3.2rem;
-  height: 30px;
-  width: 30px;
-  background: #fff;
-  padding-top: 0.1em;
-  border: 1px solid black;
-  box-sizing: border-box;
-  margin-top: -5px;
-}
-
-.checkbox input[type=checkbox]:checked + label:before {
-  content: "\E0AC";
-  color: #0E8387;
-  border-color: #0E8387;
-}
-
-input[type="checkbox"]:focus + label:before {
-  color: #0E8387;
-  border-color: #0E8387;
-  -webkit-box-shadow: 0 0 0px 2px #0E8387;
-  -moz-box-shadow: 0 0 0px 2px #0E8387;
-  box-shadow: 0 0 0px 2px #0E8387;
-}
-
-input[type=checkbox]:disabled + label:before {
-  border-color:  #ACACAC;
-}
-
-input[type=checkbox]:checked:disabled + label:before {
-  border-color: transparent;
-}
-
-input[type=checkbox]:disabled + label, input[type=radio]:disabled + label {
-  cursor: not-allowed;
-}*/
-
 const labelRadio: StyledFunction<HasErrorProps &
   React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>> = styled.label;
 

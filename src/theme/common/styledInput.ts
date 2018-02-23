@@ -1,3 +1,4 @@
+// tslint:disable
 import styled, { StyledFunction } from 'styled-components';
 
 interface HasErrorProps {
@@ -29,7 +30,7 @@ StyledInputText.defaultProps = {
   theme: {
     color: {
       errorColor: '#9f173f',
-      borderColor: '#9e9e9e'
+      borderColor: '#333'
     }
   }
 };
@@ -57,19 +58,20 @@ export const StyledInputCheckbox = inputCheckbox`
     content: "\\E013";
     padding-left: 2px;
     color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
-    border-color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
+    border-color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
   }
   
   &:focus + label:before {
     color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
-    border-color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
-    -webkit-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
-    -moz-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
-    box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
+    border-color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
+    -webkit-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
+    -moz-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
+    box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
   }
   
   &:disabled + label:before {
-    border-color:  #ACACAC;
+    color:  ${props => props.theme.color.disableColor};
+    border-color:  ${props => props.theme.color.disableColor};
   }
 `;
 
@@ -77,7 +79,8 @@ StyledInputCheckbox.defaultProps = {
   theme: {
     color: {
       errorColor: '#9f173f',
-      borderColor: '#9e9e9e'
+      borderColor: '#333',
+      disableColor: '#acacac'
     }
   }
 };
@@ -96,7 +99,8 @@ StyledInputRadio.defaultProps = {
   theme: {
     color: {
       errorColor: '#9f173f',
-      borderColor: '#9e9e9e'
+      borderColor: '#333'
     }
   }
 };
+// tslint:enable
