@@ -25,7 +25,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
       role="application"
     >
       <div
-        className="sc-htoDjs HLAHV"
+        className="sc-iwsKbI jbdQuT"
         onBlur={[Function]}
         role="application"
       >
@@ -46,7 +46,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
         >
           <styled.div>
             <div
-              className="sc-EHOje juYzKP"
+              className="sc-gzVnrw jUPjdU"
             >
               <styled.label
                 hasError={false}
@@ -87,7 +87,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
                 value=""
               >
                 <input
-                  className="sc-bwzfXH rSjzs"
+                  className="sc-bxivhb kcMZbC"
                   id="address-prefix-autocomplete"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -107,7 +107,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
                 }
               >
                 <div
-                  className="sc-gzVnrw gtwcWb"
+                  className="sc-dnqmqq gpxgKf"
                 />
               </styled.div>
             </div>
@@ -121,7 +121,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
         >
           <div
             aria-live="polite"
-            className="sc-bZQynM jbtBHc"
+            className="sc-htoDjs bZwCBY"
           />
         </styled.div>
       </div>

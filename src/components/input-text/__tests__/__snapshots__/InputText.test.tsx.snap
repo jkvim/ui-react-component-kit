@@ -7,7 +7,7 @@ exports[`InputText should match snapshot 1`] = `
 >
   <styled.div>
     <div
-      className="sc-EHOje juYzKP"
+      className="sc-gzVnrw jUPjdU"
     >
       <styled.label
         hasError={false}
@@ -48,7 +48,7 @@ exports[`InputText should match snapshot 1`] = `
         value=""
       >
         <input
-          className="sc-bwzfXH rSjzs"
+          className="sc-bxivhb kcMZbC"
           id="1234567890"
           onBlur={[Function]}
           onChange={[Function]}
@@ -68,7 +68,7 @@ exports[`InputText should match snapshot 1`] = `
         }
       >
         <div
-          className="sc-gzVnrw gtwcWb"
+          className="sc-dnqmqq gpxgKf"
         />
       </styled.div>
     </div>

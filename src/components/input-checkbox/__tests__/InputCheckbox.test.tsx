@@ -2,7 +2,7 @@ import * as React from 'react';
 import { mount } from 'enzyme';
 import { InputCheckbox } from '../';
 
-describe('CheckBoxField', () => {
+describe('InputCheckbox', () => {
   let wrapper;
 
   const callback = jest.fn();
@@ -23,7 +23,7 @@ describe('CheckBoxField', () => {
   });
 
   it('should render checkbox unticked', () => {
-    const checkbox = wrapper.find({type: 'checkbox'});
+    const checkbox = wrapper.find('input');
     expect(checkbox.props().checked).toBeFalsy();
   });
 

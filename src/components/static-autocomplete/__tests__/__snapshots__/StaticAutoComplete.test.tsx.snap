@@ -31,7 +31,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
       role="application"
     >
       <div
-        className="sc-htoDjs HLAHV"
+        className="sc-iwsKbI jbdQuT"
         onBlur={[Function]}
         role="application"
       >
@@ -52,7 +52,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
         >
           <styled.div>
             <div
-              className="sc-EHOje juYzKP"
+              className="sc-gzVnrw jUPjdU"
             >
               <styled.label
                 hasError={false}
@@ -93,7 +93,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 value=""
               >
                 <input
-                  className="sc-bwzfXH rSjzs"
+                  className="sc-bxivhb kcMZbC"
                   id="static-prefix-autocomplete"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -113,7 +113,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 }
               >
                 <div
-                  className="sc-gzVnrw gtwcWb"
+                  className="sc-dnqmqq gpxgKf"
                 />
               </styled.div>
             </div>
@@ -127,7 +127,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
         >
           <div
             aria-live="polite"
-            className="sc-bZQynM jbtBHc"
+            className="sc-htoDjs bZwCBY"
           />
         </styled.div>
       </div>
