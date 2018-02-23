@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
 import { InputCheckbox } from '../';
+import toJSON from 'enzyme-to-json';
 
 describe('InputCheckbox', () => {
   let wrapper;
@@ -16,6 +17,10 @@ describe('InputCheckbox', () => {
         onChange={callback}
       />
     );
+  });
+
+  it('should match snapshot', () => {
+    expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('renders input tag', () => {

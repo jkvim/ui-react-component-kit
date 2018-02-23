@@ -84,7 +84,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "borderColor": "#9e9e9e",
+                      "borderColor": "#333",
                       "errorColor": "#9f173f",
                     },
                   }
@@ -93,7 +93,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 value=""
               >
                 <input
-                  className="sc-bxivhb kcMZbC"
+                  className="sc-bxivhb ckuHQi"
                   id="static-prefix-autocomplete"
                   onBlur={[Function]}
                   onChange={[Function]}

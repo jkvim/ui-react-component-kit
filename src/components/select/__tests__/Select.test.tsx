@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
 import { Select } from '../';
+import toJSON from 'enzyme-to-json';
 
 describe('SelectField', () => {
   describe('props', () => {
@@ -20,6 +21,10 @@ describe('SelectField', () => {
           placeholder="Please select"
         />
       );
+    });
+
+    it('should match snapshot', () => {
+      expect(toJSON(wrapper)).toMatchSnapshot();
     });
 
     it('should pass `id` in props', () => {

@@ -1,9 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InputText should match snapshot 1`] = `
-<InputText
-  id="1234567890"
-  label="The label"
+exports[`SelectField props should match snapshot 1`] = `
+<Select
+  id="some-id"
+  label="Some error message."
+  options={
+    Array [
+      Object {
+        "display": "Test Display",
+        "value": "Test Value",
+      },
+    ]
+  }
+  placeholder="Please select"
 >
   <styled.div>
     <div
@@ -11,7 +20,7 @@ exports[`InputText should match snapshot 1`] = `
     >
       <styled.label
         hasError={false}
-        htmlFor="1234567890"
+        htmlFor="some-id"
         theme={
           Object {
             "color": Object {
@@ -23,41 +32,47 @@ exports[`InputText should match snapshot 1`] = `
       >
         <label
           className="sc-bdVaJa dWyWPR"
-          htmlFor="1234567890"
+          htmlFor="some-id"
         >
-          The label
+          Some error message.
         </label>
       </styled.label>
-      <styled.input
+      <styled.select
         hasError={false}
-        id="1234567890"
+        id="some-id"
         innerRef={[Function]}
         onBlur={[Function]}
         onChange={[Function]}
-        onKeyDown={[Function]}
-        placeholder=""
         theme={
           Object {
             "color": Object {
-              "borderColor": "#333",
+              "borderColor": "#9e9e9e",
               "errorColor": "#9f173f",
             },
           }
         }
-        type="text"
         value=""
       >
-        <input
-          className="sc-bxivhb ckuHQi"
-          id="1234567890"
+        <select
+          className="sc-bZQynM gHiYcJ"
+          id="some-id"
           onBlur={[Function]}
           onChange={[Function]}
-          onKeyDown={[Function]}
-          placeholder=""
-          type="text"
           value=""
-        />
-      </styled.input>
+        >
+          <option
+            value=""
+          >
+            Please select
+          </option>
+          <option
+            key="0"
+            value="Test Value"
+          >
+            Test Display
+          </option>
+        </select>
+      </styled.select>
       <styled.div
         theme={
           Object {
@@ -73,5 +88,5 @@ exports[`InputText should match snapshot 1`] = `
       </styled.div>
     </div>
   </styled.div>
-</InputText>
+</Select>
 `;
