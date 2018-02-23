@@ -52,7 +52,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
         >
           <styled.div>
             <div
-              className="sc-gzVnrw jUPjdU"
+              className="sc-gzVnrw kDUAmj"
             >
               <styled.label
                 hasError={false}
@@ -67,7 +67,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 }
               >
                 <label
-                  className="sc-bdVaJa bHemEh"
+                  className="sc-bdVaJa dWyWPR"
                   htmlFor="static-prefix-autocomplete"
                 >
                   Label

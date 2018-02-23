@@ -12,6 +12,7 @@ export const StyledLabel = label`
   color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
   display: inline-block;
   font-size: 1.5rem;
+  position: relative;
 `;
 
 StyledLabel.defaultProps = {
@@ -27,22 +28,27 @@ const labelCheckbox: StyledFunction<HasErrorProps &
   React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>> = styled.label;
 
 export const StyledLabelCheckbox = labelCheckbox`
+  padding: 0 5px 0 45px;
   color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
+  cursor: pointer;
   
   &:before {
     content: "";
-    font-size: 1.5rem;
-    height: 30px;
-    width: 30px;
+    line-height: 1;
+    font-size: 1.8rem;
+    height: 25px;
+    width: 25px;
     background: #fff;
-    padding-top: 0rem;
-    padding-bottom: 0.2rem;
-    padding-left: 0.2rem;
-    padding-right: 0.2rem;
+    padding-top: 0.1rem;
     border: 1px solid ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
     box-sizing: border-box;
     margin-top: -5px;
-    margin-right: 4px;
+    display: inline-block;
+    margin-left: 0.1em;
+    position: absolute;
+    left: 0;
+    background-color: transparent;
+    top: 0;
   }
 `;
 

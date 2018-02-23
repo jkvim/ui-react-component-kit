@@ -55,6 +55,7 @@ export const StyledInputCheckbox = inputCheckbox`
   &:checked + label:before {
     font-family: "glyphicons";
     content: "\\E013";
+    padding-left: 2px;
     color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
     border-color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
   }
