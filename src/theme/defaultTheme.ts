@@ -12,43 +12,73 @@ export const defaultTheme = {
 // tslint:disable-next-line no-unused-expression
 injectGlobal`
   @font-face {
-      font-family: "swiss721bt";
-      src: url(${require('./fonts/233CC5_0_0.eot')});
-      src: url(${require('./fonts/233CC5_0_0.eot?#iefix')}) format("embedded-opentype"),
-           url(${require('./fonts/233CC5_0_0.woff')}) format("woff"),
-           url(${require('./fonts/233CC5_0_0.ttf')}) format("truetype");
-      font-weight: 100;
-      font-style: normal;
+    font-family: "swiss721bt";
+    src: url(${require('./fonts/233CC5_0_0.eot')});
+    src: url(${require('./fonts/233CC5_0_0.eot?#iefix')}) format("embedded-opentype"),
+         url(${require('./fonts/233CC5_0_0.woff')}) format("woff"),
+         url(${require('./fonts/233CC5_0_0.ttf')}) format("truetype");
+    font-weight: 100;
+    font-style: normal;
   }
 
   @font-face {
-      font-family: "swiss721bt";
-      src: url(${require('./fonts/233CC5_1_0.eot')});
-      src: url(${require('./fonts/233CC5_1_0.eot?#iefix')}) format("embedded-opentype"),
-           url(${require('./fonts/233CC5_1_0.woff')}) format("woff"),
-           url(${require('./fonts/233CC5_1_0.ttf')}) format("truetype");
-      font-weight: 100;
-      font-style: italic;
+    font-family: "swiss721bt";
+    src: url(${require('./fonts/233CC5_1_0.eot')});
+    src: url(${require('./fonts/233CC5_1_0.eot?#iefix')}) format("embedded-opentype"),
+         url(${require('./fonts/233CC5_1_0.woff')}) format("woff"),
+         url(${require('./fonts/233CC5_1_0.ttf')}) format("truetype");
+    font-weight: 100;
+    font-style: italic;
   }
 
   @font-face {
-      font-family: "swiss721bt";
-      src: url(${require('./fonts/233CC5_2_0.eot')});
-      src: url(${require('./fonts/233CC5_2_0.eot?#iefix')}) format("embedded-opentype"),
-           url(${require('./fonts/233CC5_2_0.woff')}) format("woff"),
-           url(${require('./fonts/233CC5_2_0.ttf')}) format("truetype");
-      font-weight: normal;
-      font-style: normal;
+    font-family: "swiss721bt";
+    src: url(${require('./fonts/233CC5_2_0.eot')});
+    src: url(${require('./fonts/233CC5_2_0.eot?#iefix')}) format("embedded-opentype"),
+         url(${require('./fonts/233CC5_2_0.woff')}) format("woff"),
+         url(${require('./fonts/233CC5_2_0.ttf')}) format("truetype");
+    font-weight: normal;
+    font-style: normal;
   }
   
   @font-face {
-      font-family: "glyphicons";
-      src: url(${require('./fonts/glyphicons-halflings-regular.eot')});
-      src: url(${require('./fonts/glyphicons-halflings-regular.eot?#iefix')}) format("embedded-opentype"),
-           url(${require('./fonts/glyphicons-halflings-regular.woff')}) format("woff"),
-           url(${require('./fonts/glyphicons-halflings-regular.ttf')}) format("truetype");
-      font-weight: normal;
-      font-style: normal;
+    font-family: "glyphicons";
+    src: url(${require('./fonts/glyphicons-halflings-regular.eot')});
+    src: url(${require('./fonts/glyphicons-halflings-regular.eot?#iefix')}) format("embedded-opentype"),
+         url(${require('./fonts/glyphicons-halflings-regular.woff')}) format("woff"),
+         url(${require('./fonts/glyphicons-halflings-regular.ttf')}) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "fontawesome";
+    src: url(${require('./fonts/fa-solid-900.eot')});
+    src: url(${require('./fonts/fa-solid-900.eot?#iefix')}) format("embedded-opentype"), 
+         url(${require('./fonts/fa-solid-900.woff')}) format("woff"), 
+         url(${require('./fonts/fa-solid-900.ttf')}) format("truetype"); 
+    font-style: normal;
+    font-weight: 900;
+  }
+
+  @font-face {
+    font-family: "fontawesome";
+    src: url(${require('./fonts/fa-regular-400.eot')});
+    src: url(${require('./fonts/fa-regular-400.eot?#iefix')}) format("embedded-opentype"), 
+         url(${require('./fonts/fa-regular-400.woff')}) format("woff"), 
+         url(${require('./fonts/fa-regular-400.ttf')}) format("truetype"); 
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: "fontawesome";
+    src: url(${require('./fonts/fa-brands-400.eot')});
+    src: url(${require('./fonts/fa-brands-400.eot?#iefix')}) format("embedded-opentype"), 
+         url(${require('./fonts/fa-brands-400.woff')}) format("woff"), 
+         url(${require('./fonts/fa-brands-400.ttf')}) format("truetype"); 
+    font-style: normal;
+    font-weight: normal;
   }
   
   html {

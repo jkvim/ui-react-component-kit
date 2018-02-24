@@ -107,6 +107,13 @@ module.exports = {
         include: [paths.appSrc],
         loader: require.resolve('ts-loader')
       },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2|otf)$/,
+        loader: require.resolve('file-loader'),
+        options: {
+          name: 'fonts/[name].[ext]'
+        }
+      }
       // ** STOP ** Are you adding a new loader?
       // Remember to add the new extension(s) to the "file" loader exclusion list.
     ],

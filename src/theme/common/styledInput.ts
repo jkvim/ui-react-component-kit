@@ -93,6 +93,37 @@ const inputRadio: StyledFunction<HasErrorProps &
 });
 
 export const StyledInputRadio = inputRadio`
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  opacity: 0;
+  
+  &:checked + label:before {
+    font-family: "fontawesome";
+    font-weight: 900;
+    content: "\\F111";
+    padding-left: 4px;
+    color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
+    border-color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
+  }
+  
+  &:focus + label:before {
+    color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
+    border-color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
+    -webkit-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
+    -moz-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
+    box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
+  }
+  
+  &:disabled + label:before {
+    color:  ${props => props.theme.color.disableColor};
+    border-color:  ${props => props.theme.color.disableColor};
+  }
 `;
 
 StyledInputRadio.defaultProps = {

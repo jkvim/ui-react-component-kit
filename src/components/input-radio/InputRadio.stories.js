@@ -4,7 +4,7 @@ import { withKnobs, text, object } from '@storybook/addon-knobs/react';
 import { withInfo } from '@storybook/addon-info';
 import { State, Store } from '@sambego/storybook-state';
 import { withReadme } from 'storybook-readme';
-import InputCheckbox from "./InputCheckbox";
+import InputRadio from "./InputRadio";
 import styled, { ThemeProvider } from 'styled-components';
 import { defaultTheme } from "../../theme/defaultTheme";
 import README from './README.md';
@@ -32,7 +32,7 @@ const PageDecorator = (storyFn) => (
   </PageDiv>
 );
 
-const story = storiesOf('input-checkbox', module);
+const story = storiesOf('input-radio', module);
 story.addDecorator(PageDecorator);
 story.addDecorator(withKnobs);
 story.addDecorator(withReadme(README));
@@ -41,14 +41,14 @@ story
 		'blank',
 		withInfo({
 			inline: true,
-	  		text: 'A blank input checkbox'
+	  		text: 'A blank input radio'
 		})
 		(() => {
 			return (
 				<State store={store1}>
-					<InputCheckbox
-						id={text('ID', 'blank-checkbox')}
-						label={text('Label', 'Demo Checkbox')}
+					<InputRadio
+						id={text('ID', 'blank-radio')}
+						label={text('Label', 'Demo Radio')}
 						onChange={(value) => (store1.set({value}))}/>
 				</State>
 			)
@@ -58,14 +58,14 @@ story
 		'pre-selected',
 		withInfo({
 			inline: true,
-      		text: 'A pre-selected input checkbox'
+      		text: 'A pre-selected input radio'
     	})
 		(() => {
 			return (
 				<State store={store2}>
-					<InputCheckbox
-						id={text('ID', 'prepopulated-checkbox')}
-						label={text('Label', 'Demo Checkbox')}
+					<InputRadio
+						id={text('ID', 'prepopulated-radio')}
+						label={text('Label', 'Demo Radio')}
 						onChange={(value) => (store2.set({value}))}/>
 				</State>
 			)
@@ -75,14 +75,14 @@ story
 		'disabled',
     	withInfo({
 			inline: true,
-      		text: 'A pre-selected and disabled input checkbox'
+      		text: 'A pre-selected and disabled input radio'
     	})
 		(() => {
 			return (
 				<State store={store3}>
-					<InputCheckbox
-						id={text('ID', 'disabled-checkbox')}
-						label={text('Label', 'Demo Checkbox')}
+					<InputRadio
+						id={text('ID', 'disabled-radio')}
+						label={text('Label', 'Demo Radio')}
 						onChange={(value) => (store3.set({value}))}
 						disabled={true}/>
 				</State>
@@ -93,16 +93,16 @@ story
 		'validated',
 		withInfo({
 			inline: true,
-			text: 'A validated input checkbox (required)'
+			text: 'A validated input radio (required)'
 		})
 		(() => {
 		  return (
 			<State store={store4}>
-				<InputCheckbox
-					id={text('ID', 'validated-change-checkbox')}
-					label={text('Label', 'Demo Checkbox')}
+				<InputRadio
+					id={text('ID', 'validated-radio')}
+					label={text('Label', 'Demo Radio')}
           errorMessage={text('Error', 'Field Required')}
-					onChange={(value) => (store4.set({value, errorMessage: value ? '' : 'Field Required'}))}/>
+					onChange={(value) => (store4.set({value}))}/>
 			</State>
 		  )
 		})

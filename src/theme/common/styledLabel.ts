@@ -65,19 +65,28 @@ const labelRadio: StyledFunction<HasErrorProps &
   React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>> = styled.label;
 
 export const StyledLabelRadio = labelRadio`
+  padding: 0 5px 0 45px;
   color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
+  cursor: pointer;
   
   &:before {
     content: "";
-    font-size: 32px;
-    font-size: 3.2rem;
-    height: 30px;
-    width: 30px;
+    line-height: 1;
+    font-size: 1.5rem;
+    height: 25px;
+    width: 25px;
     background: #fff;
-    padding-top: 0.1em;
+    padding-top: 0.4rem;
+    border-radius: 50%;
     border: 1px solid ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
     box-sizing: border-box;
     margin-top: -5px;
+    display: inline-block;
+    margin-left: 0.1em;
+    position: absolute;
+    left: 0;
+    background-color: transparent;
+    top: 0;
   }
 `;
 
