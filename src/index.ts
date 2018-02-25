@@ -2,7 +2,7 @@ import { InputText } from './components/input-text';
 import { InputCheckbox } from './components/input-checkbox';
 import { Fieldset } from './components/fieldset';
 import { Select } from './components/select';
-import { Link } from './components/Link';
+import { Link } from './components/link';
 import { AutoComplete } from './components/autocomplete';
 import { AddressAutoComplete, AddressDataProvider } from './components/address-autocomplete';
 import { StaticAutoComplete, StaticDataProvider } from './components/static-autocomplete';
