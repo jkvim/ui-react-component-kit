@@ -13,8 +13,9 @@ interface InputTextProps {
   disabled?: boolean;
   value?: string;
   hint?: string;
-  errorMessage?: string;
   setInputRef?: (ref: HTMLInputElement) => void;
+  errorMessage?: string;
+  className?: string;
 
   // excess property bags mainly used for capturing ARIA tags to be passed down to the HTML Input.
   // tslint:disable-next-line no-any
@@ -22,11 +23,11 @@ interface InputTextProps {
 }
 
 const InputText: React.SFC<InputTextProps> =
-  ({ label, id, hint, value = '', errorMessage = '', placeholder = '',
+  ({ label, id, hint, className, value = '', errorMessage = '', placeholder = '',
      onBlur = noop, onChange = noop, onKeyDown = noop, setInputRef = noop, disabled }) => {
 
     return (
-      <StyledFormGroup>
+      <StyledFormGroup className={className}>
         <StyledLabel htmlFor={id} hasError={!!errorMessage}>
           {label}
         </StyledLabel>

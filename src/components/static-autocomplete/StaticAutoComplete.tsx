@@ -11,7 +11,8 @@ interface StaticAutoCompleteProps {
   valuePath?: string;
   selectedItem?: ParsedSelectedItem;
   onChange?: (obj?: ParsedSelectedItem) => void;
-  error?: string;
+  errorMessage?: string;
+  className?: string;
 }
 
 class StaticAutoComplete extends React.Component<StaticAutoCompleteProps, {}> {
@@ -25,7 +26,7 @@ class StaticAutoComplete extends React.Component<StaticAutoCompleteProps, {}> {
   }
 
   render() {
-    const {selectedItem, onChange, label, hint, error} = this.props;
+    const {selectedItem, onChange, label, hint, errorMessage, className} = this.props;
 
     return(
       <AutoComplete
@@ -35,7 +36,8 @@ class StaticAutoComplete extends React.Component<StaticAutoCompleteProps, {}> {
         prefix={this.props.prefix}
         selectedItem={selectedItem}
         onChange={onChange}
-        error={error}
+        errorMessage={errorMessage}
+        className={className}
       />
     );
   }

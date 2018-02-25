@@ -11,6 +11,7 @@ export interface CheckBoxFieldProps {
   disabled?: boolean;
   setInputRef?: (ref: HTMLInputElement) => void;
   errorMessage?: string;
+  className?: string;
 
   // excess property bags mainly used for capturing ARIA tags to be passed down to the HTML Input.
   // tslint:disable-next-line no-any
@@ -18,10 +19,10 @@ export interface CheckBoxFieldProps {
 }
 
 const InputCheckbox: React.SFC<CheckBoxFieldProps> =
-  ({ label, id, hint, value = '', errorMessage = '', onChange = noop, setInputRef = noop, disabled }) => {
+  ({ label, id, hint, className, value = '', errorMessage = '', onChange = noop, setInputRef = noop, disabled }) => {
 
     return (
-      <StyledFormGroup>
+      <StyledFormGroup className={className}>
         {hint && <div className={!!errorMessage ? 'error' : ''}>{hint}</div>}
         <StyledInputCheckbox
           {...this.props}

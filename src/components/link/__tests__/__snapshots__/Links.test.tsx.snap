@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link snapshot 1`] = `
+<a
+  href="http://somewhere"
+  id="title-link"
+  onClick={[MockFunction]}
+  target="_blank"
+>
+  title
+  <span
+    className="icon icon-external-link"
+  >
+    <span
+      className="sr-only"
+    >
+      Link opens in new window
+    </span>
+  </span>
+</a>
+`;

@@ -1,16 +1,16 @@
 import styled from 'styled-components';
 
-export const AutoCompleteContainer = styled.div`
+export const StyledAutoCompleteContainer = styled.div`
   position: relative;
  `;
 
-export const AutoCompleteResults = styled.div`
+export const StyledAutoCompleteResults = styled.div`
    position: absolute;
    z-index: 999;
    width: 100%;
    `;
 
-export const SelectableList = styled.ul`
+export const StyledSelectableList = styled.ul`
   border: 1px solid #ddd;
   background-color: white;
   list-style-type: none;
@@ -23,13 +23,13 @@ export const SelectableList = styled.ul`
   }
 `;
 
-export const ListItem = styled.li`
+export const StyledListItem = styled.li`
   border: none;
   padding: 5px 15px 5px 15px;
   color: black;
 `;
 
-export const SelectableListItem = ListItem.extend`
+export const StyledSelectableListItem = StyledListItem.extend`
   &:hover, &[aria-selected="true"] {
     background-color: #F6F6F6;
     cursor: pointer;
@@ -40,7 +40,7 @@ export const SelectableListItem = ListItem.extend`
   }
 `;
 
-export const ItemAnchor = styled.a`
+export const StyledItemAnchor = styled.a`
     text-decoration: none;
     color: black;
   `;

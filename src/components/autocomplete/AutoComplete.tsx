@@ -1,16 +1,16 @@
 import * as React from 'react';
-import { bindAll, debounce } from 'lodash';
+import { bindAll, debounce, escapeRegExp } from 'lodash';
 import { DataProvider, FooterComponent, ParsedSelectedItem, SelectableItem } from './types';
 import * as keys from '../../constants/keyboardKeys';
 import InputText from '../input-text/InputText';
 import { StyledAccessibleHiddenDiv } from '../../theme/common';
 import {
-  AutoCompleteContainer,
-  AutoCompleteResults,
-  SelectableListItem,
-  ItemAnchor,
-  SelectableList,
-  ListItem
+  StyledAutoCompleteContainer,
+  StyledAutoCompleteResults,
+  StyledSelectableListItem,
+  StyledItemAnchor,
+  StyledSelectableList,
+  StyledListItem
 } from './styledAutoComplete';
 
 export interface AutoCompleteProps {
@@ -20,7 +20,7 @@ export interface AutoCompleteProps {
   required?: boolean;
   selectedItem?: ParsedSelectedItem;
   onChange?: (obj?: ParsedSelectedItem) => void;
-  error?: string;
+  errorMessage?: string;
   onBlur?: () => void;
   suggestionFooter?: FooterComponent;
   focusOnMount?: boolean;
@@ -235,7 +235,7 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
 
     if (suggestionFooter) {
       return (
-        <SelectableListItem
+        <StyledSelectableListItem
           role="option"
           id={`${prefix}-item${length}`}
           aria-disabled={false}
@@ -244,22 +244,27 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
           onMouseDown={suggestionFooter.onClick}
         >
           {suggestionFooter.component}
-        </SelectableListItem>
+        </StyledSelectableListItem>
       );
     }
   }
 
   highlightSuggestion (suggestion: string) {
-    let processedHtml = suggestion;
+    const { searchTerm } = this.state;
 
-    // Escaping the input string for regex characters.
-    let highlight = this.state.searchTerm.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, '\\$&');
-
-    if (highlight && suggestion) {
-      processedHtml = suggestion.replace(
-        new RegExp(highlight, 'ig'), (matchValue: string) => (`<mark>${matchValue}</mark>`));
+    if (!searchTerm.trim()) {
+      return <span>{suggestion}</span>;
     }
-    return <div dangerouslySetInnerHTML={{ __html: processedHtml }} />;
+
+    const regex = new RegExp(`(${escapeRegExp(searchTerm)})`, 'gi');
+    const parts = suggestion.split(regex);
+    return (
+      <div>
+        {parts.map((part, i) => (
+          regex.test(part) ? <mark key={i}>{part}</mark> : <span key={i}>{part}</span>
+        ))}
+      </div>
+    );
   }
 
   buildSuggestions () {
@@ -276,20 +281,20 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
       let listItems;
       if (suggestionsNum === 0) {
         listItems = (
-          <ListItem
+          <StyledListItem
             className="no-match"
             id={`${prefix}-item0`}
             role="option"
             aria-selected={false}
           >
             No results matched
-          </ListItem>
+          </StyledListItem>
         );
       } else {
         listItems = suggestions.map((suggestion, index) => {
           let itemId = `${prefix}-item${index}`;
           return (
-            <SelectableListItem
+            <StyledSelectableListItem
               id={itemId}
               key={index}
               role="option"
@@ -300,8 +305,8 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
               }}
             >
 
-              <ItemAnchor>{this.highlightSuggestion(suggestion.value)}</ItemAnchor>
-            </SelectableListItem>
+              <StyledItemAnchor>{this.highlightSuggestion(suggestion.value)}</StyledItemAnchor>
+            </StyledSelectableListItem>
           );
         });
       }
@@ -313,8 +318,8 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
         ' found in listbox';
 
       returnValue = (
-        <AutoCompleteResults>
-          <SelectableList
+        <StyledAutoCompleteResults>
+          <StyledSelectableList
             id={`suggestions_${prefix}`}
             role="listbox"
             aria-expanded={showSuggestions}
@@ -323,11 +328,11 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
           >
             {listItems}
             {this.buildSuggestionFooter()}
-          </SelectableList>
+          </StyledSelectableList>
           <StyledAccessibleHiddenDiv>
             {suggestionsFoundText}
           </StyledAccessibleHiddenDiv>
-        </AutoCompleteResults>
+        </StyledAutoCompleteResults>
       );
     }
     return returnValue;
@@ -336,19 +341,19 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
   // ------------ Render: ---------------
 
   render () {
-    let { prefix, error, hint, label = '', className } = this.props;
+    let { prefix, errorMessage, hint, label = '', className } = this.props;
     let { searchTerm, showSuggestions, selectedIndex } = this.state;
 
     let listBoxNavigationText =
       'To navigate the listbox, press the down and up arrows. To select, press enter. To close, press ESC.\n ';
 
     return (
-      <AutoCompleteContainer role="application" onBlur={this.handleBlur} className={className}>
+      <StyledAutoCompleteContainer role="application" onBlur={this.handleBlur} className={className}>
         <InputText
           id={`${prefix}-autocomplete`}
           label={label}
           hint={hint}
-          errorMessage={error}
+          errorMessage={errorMessage}
           onChange={this.handleChange}
           onKeyDown={this.handleKeyDownInput}
           setInputRef={this.setInputRef}
@@ -358,15 +363,15 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
           aria-expanded={showSuggestions}
           aria-autocomplete="list"
           aria-activedescendant={selectedIndex >= 0 ? `${prefix}-item${selectedIndex}` : ''}
-          aria-invalid={!!error}
+          aria-invalid={!!errorMessage}
           aria-describedby={`${prefix}-autocomplete-error`}
         />
-        {showSuggestions || <div id={`${prefix}-autocomplete-error`}>{error}</div>}
+        {showSuggestions || <div id={`${prefix}-autocomplete-error`}>{errorMessage}</div>}
         {this.buildSuggestions()}
         <StyledAccessibleHiddenDiv aria-live="polite">
           {showSuggestions && listBoxNavigationText}
         </StyledAccessibleHiddenDiv>
-      </AutoCompleteContainer>
+      </StyledAutoCompleteContainer>
     );
   }
 }

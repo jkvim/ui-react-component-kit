@@ -9,10 +9,11 @@ interface AddressAutoCompleteProps {
   limit?: number;
   onChange?: (obj?: ParsedSelectedItem) => void;
   onBlur?: () => void;
-  error?: string;
+  errorMessage?: string;
   suggestionFooter?: FooterComponent;
   hint?: string;
   focusOnMount?: boolean;
+  className?: string;
   endpoint: string;
 }
 
@@ -29,7 +30,8 @@ class AddressAutoComplete extends React.Component<AddressAutoCompleteProps, {}> 
   }
 
   render() {
-    const {label, prefix, selectedItem, onChange, error, suggestionFooter, hint, onBlur, focusOnMount} = this.props;
+    const {label, prefix, className, selectedItem, onChange,
+      errorMessage, suggestionFooter, hint, onBlur, focusOnMount} = this.props;
 
     return(
       <AutoComplete
@@ -38,12 +40,13 @@ class AddressAutoComplete extends React.Component<AddressAutoCompleteProps, {}> 
         prefix={prefix}
         selectedItem={selectedItem}
         onChange={onChange}
-        error={error}
+        errorMessage={errorMessage}
         minSearchLength={6}
         suggestionFooter={suggestionFooter}
         hint={hint}
         onBlur={onBlur}
         focusOnMount={focusOnMount}
+        className={className}
       />
     );
   }

@@ -14,8 +14,9 @@ interface SelectProps {
   options?: SelectItem[];
   value?: string;
   hint?: string;
-  errorMessage?: string;
   setSelectRef?: (ref: HTMLSelectElement) => void;
+  errorMessage?: string;
+  className?: string;
 
   // excess property bags mainly used for capturing ARIA tags to be passed down to the HTML Select.
   // tslint:disable-next-line no-any
@@ -23,11 +24,11 @@ interface SelectProps {
 }
 
 const Select: React.SFC<SelectProps> =
-  ({ label, id, hint, value = '', errorMessage = '', placeholder = '', options,
+  ({ label, id, hint, className, value = '', errorMessage = '', placeholder = '', options,
      onBlur = noop, onChange = noop, setSelectRef = noop, disabled }) => {
 
   return (
-    <StyledFormGroup>
+    <StyledFormGroup className={className}>
       <StyledLabel htmlFor={id} hasError={!!errorMessage}>
         {label}
       </StyledLabel>
