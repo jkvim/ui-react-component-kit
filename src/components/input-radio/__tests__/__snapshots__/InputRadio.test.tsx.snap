@@ -47,7 +47,7 @@ exports[`InputRadio should match snapshot 1`] = `
         }
       >
         <label
-          className="sc-htpNat cLsiqo"
+          className="sc-htpNat nmRTs"
           htmlFor="testId"
         >
           Select this radio to confirm that you agree with the following statements
