@@ -28,7 +28,8 @@ const labelCheckbox: StyledFunction<HasErrorProps &
   React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>> = styled.label;
 
 export const StyledLabelCheckbox = labelCheckbox`
-  padding: 0 5px 0 45px;
+  padding: 0 5px 0 35px;
+  display: inline-block;
   color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
   cursor: pointer;
   
@@ -65,7 +66,8 @@ const labelRadio: StyledFunction<HasErrorProps &
   React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>> = styled.label;
 
 export const StyledLabelRadio = labelRadio`
-  padding: 0 5px 0 45px;
+  padding: 0 5px 0 35px;
+  display: inline-block;
   color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
   cursor: pointer;
   
@@ -98,104 +100,3 @@ StyledLabelRadio.defaultProps = {
     }
   }
 };
-
-/*Radio styling*/
-
-/*
-.radio {
-  padding-left: 0;
-}
-
-.radio label {
-  padding: 0 20px 0 56px;
-  box-sizing: border-box;
-  margin: 20px 10px 18px 0;
-}
-
-.radio label:before {
-  content: '';
-  display: inline-block;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  border: 8px solid #fff;
-  box-shadow: 0 0 0 1px #9e9e9e;
-  transition: 0.3s ease all;
-  background-color: #ffffff;
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  margin-top: -17px;
-  z-index:2;
-}
-
-.radio label:after {
-  content: '';
-  position:absolute;
-  left: 0;
-  top: -19px;
-  border: 1px solid #A0A0A0;
-  padding: 15px 0 18px 0;
-  box-sizing: border-box;
-  border-radius: 2px;
-  width: 100%;
-  bottom: -16px;
-  background-color: transparent;
-  z-index:1;
-}
-
-.radio label:hover:after {
-  background-color: rgba(0,0,0,0.025);
-}
-
-.radio input[type=radio]:checked + label {
-  color: #04545D;
-}
-
-.radio input[type=radio]:checked + label:before {
-  background: #0E8387;
-}
-
-.radio input[type=radio]:checked + label:after {
-  border-color: #0E8387;
-  border-width: 3px;
-}
-
-.radio input[type=radio]:disabled + label {
-  color: #666666;
-}
-
-.radio input[type=radio]:disabled + label:before {
-  background: none;
-  border-color: #EAEDEE;
-}
-
-.radio input[type=radio]:checked:disabled + label:before {
-  background: #666666;
-  border-color: #FFFFFF;
-}
-
-.radio input[type=radio]:checked:disabled + label:after {
-  border-color: #A0A0A0;
-}
-
-.radio input[type=radio]:disabled + label:after {
-  background-color: rgba(0,30,4,0.08)
-}
-
-.radio input[type=radio]:disabled {
-  cursor: not-allowed;
-}
-
-.radio label[disabled] {
-  cursor: not-allowed;
-}
-
-.radio input[type="radio"]:focus + label:before {
-  color: #0E8387;
-}
-
-.radio input[type="radio"]:focus + label:after {
-  border-color: #0E8387;
-  box-shadow: 0 0 0 1px #0E8387;
-}*/
