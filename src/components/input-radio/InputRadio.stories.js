@@ -90,17 +90,18 @@ story
 		})
 	)
 	.add(
-		'validated',
+		'error',
 		withInfo({
 			inline: true,
-			text: 'A validated input radio (required)'
+			text: 'A input radio (required)'
 		})
 		(() => {
 		  return (
 			<State store={store4}>
 				<InputRadio
-					id={text('ID', 'validated-radio')}
+					id={text('ID', 'error-radio')}
 					label={text('Label', 'Demo Radio')}
+          hint={text('Hint', 'Select the radio')}
           errorMessage={text('Error', 'Field Required')}
 					onChange={(value) => (store4.set({value}))}/>
 			</State>

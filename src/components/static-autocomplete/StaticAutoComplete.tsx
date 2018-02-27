@@ -10,6 +10,7 @@ interface StaticAutoCompleteProps {
   suggestions: Array<string|object>;
   valuePath?: string;
   selectedItem?: ParsedSelectedItem;
+  onBlur?: (obj?: ParsedSelectedItem) => void;
   onChange?: (obj?: ParsedSelectedItem) => void;
   errorMessage?: string;
   className?: string;
@@ -26,7 +27,7 @@ class StaticAutoComplete extends React.Component<StaticAutoCompleteProps, {}> {
   }
 
   render() {
-    const {selectedItem, onChange, label, hint, errorMessage, className} = this.props;
+    const {selectedItem, onChange, onBlur, label, hint, errorMessage, className} = this.props;
 
     return(
       <AutoComplete
@@ -35,6 +36,7 @@ class StaticAutoComplete extends React.Component<StaticAutoCompleteProps, {}> {
         dataProvider={this.dataProvider}
         prefix={this.props.prefix}
         selectedItem={selectedItem}
+        onBlur={onBlur}
         onChange={onChange}
         errorMessage={errorMessage}
         className={className}

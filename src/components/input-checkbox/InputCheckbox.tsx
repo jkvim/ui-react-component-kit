@@ -1,6 +1,12 @@
 import * as React from 'react';
 import { omit, noop } from 'lodash';
-import { StyledErrorDiv, StyledFormGroup, StyledInputCheckbox, StyledLabelCheckbox } from '../../theme/common';
+import {
+  StyledHintDiv,
+  StyledErrorDiv,
+  StyledFormGroup,
+  StyledInputCheckbox,
+  StyledLabelCheckbox
+} from '../../theme/common';
 
 export interface CheckBoxFieldProps {
   id: string;
@@ -23,7 +29,7 @@ const InputCheckbox: React.SFC<CheckBoxFieldProps> =
 
     return (
       <StyledFormGroup className={className}>
-        {hint && <div className={!!errorMessage ? 'error' : ''}>{hint}</div>}
+        {hint && <StyledHintDiv>{hint}</StyledHintDiv>}
         <StyledInputCheckbox
           {...this.props}
           innerRef={ref => setInputRef(ref)}

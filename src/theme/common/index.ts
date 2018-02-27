@@ -3,6 +3,7 @@ import { StyledInputText, StyledInputCheckbox, StyledInputRadio } from './styled
 import { StyledSelect } from './styledSelect';
 import { StyledFormGroup } from './styledFormGroup';
 import { StyledAccessibleHiddenDiv } from './styledAccessibleHiddenDiv';
+import { StyledHintDiv } from './styledHintDiv';
 import { StyledErrorDiv } from './styledErrorDiv';
 
 export {
@@ -15,5 +16,6 @@ export {
   StyledSelect,
   StyledFormGroup,
   StyledAccessibleHiddenDiv,
+  StyledHintDiv,
   StyledErrorDiv
 };

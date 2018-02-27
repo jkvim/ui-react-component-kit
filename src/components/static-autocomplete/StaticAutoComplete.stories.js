@@ -11,6 +11,7 @@ import { defaultTheme } from "../../theme/defaultTheme";
 import README from './README.md';
 
 const store1 = new Store({});
+const store2 = new Store({});
 
 const PageDiv = styled.div`
 		width: 95%;
@@ -43,9 +44,32 @@ story
             label={text('Label', 'Demo Static')}
 						prefix={text('Prefix', 'static-ac')}
 						suggestions={array('Suggestions', ['apple', 'banana', 'mango', 'pineapple', 'oranges'])}
-            onChange={action('onChange')}/>
+            onChange={action('onChange')}
+            onBlur={action('onBlur')}
+          />
 				</State>
 			)
 		})
-	);
+	)
+  .add('error',
+    withInfo({
+      inline: true,
+      text: 'An Autocomplete (required)'
+    })
+    (() => {
+      return (
+        <State store={store2}>
+          <StaticAutoComplete
+            label={text('Label', 'Demo Static')}
+            prefix={text('Prefix', 'static-ac')}
+            errorMessage={text('Error', 'Field Required')}
+            suggestions={array('Suggestions', ['apple', 'banana', 'mango', 'pineapple', 'oranges'])}
+            hint={text('Hint', 'Enter an fruit')}
+            onBlur={(value) => store2.set({errorMessage: value ? '' : 'Field Required'})}
+            onChange={(value) => (store2.set({value, errorMessage: ''}))}
+					/>
+        </State>
+      )
+    })
+  );
 

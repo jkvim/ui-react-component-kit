@@ -49,7 +49,6 @@ export const StyledLabelCheckbox = labelCheckbox`
     position: absolute;
     left: 0;
     background-color: transparent;
-    top: 0;
   }
 `;
 
@@ -74,11 +73,11 @@ export const StyledLabelRadio = labelRadio`
   &:before {
     content: "";
     line-height: 1;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     height: 25px;
     width: 25px;
     background: #fff;
-    padding-top: 0.4rem;
+    padding-top: 0.5rem;
     border-radius: 50%;
     border: 1px solid ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
     box-sizing: border-box;
@@ -88,7 +87,6 @@ export const StyledLabelRadio = labelRadio`
     position: absolute;
     left: 0;
     background-color: transparent;
-    top: 0;
   }
 `;
 

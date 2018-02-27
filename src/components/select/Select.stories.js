@@ -12,6 +12,7 @@ import README from './README.md';
 
 const store1 = new Store({});
 const store2 = new Store({});
+const store3 = new Store({});
 
 const PageDiv = styled.div`
 	width: 95%;
@@ -55,7 +56,8 @@ story
 				</State>
 			)
 		})
-	).add(
+	)
+  .add(
     'pre-selected with options',
     withInfo({
       inline: true,
@@ -68,13 +70,39 @@ story
             id={text('ID', 'select-preselected')}
             label={text('Label', 'Demo Select')}
             onBlur={action('onBlur')}
-            onChange={(value) => (store1.set({value}))}
+            onChange={(value) => (store2.set({value}))}
             options={[
               object('Option 1', { display: 'Display 1', value: 'Test 1'}),
               object('Option 2', { display: 'Display 2', value: 'Test 2'}),
               object('Option 3', { display: 'Display 3', value: 'Test 3'})
             ]}
             value={'Test 3'}
+          />
+        </State>
+      )
+    })
+  )
+  .add(
+    'error',
+    withInfo({
+      inline: true,
+      text: 'A select field (required)'
+    })
+    (() => {
+      return (
+        <State store={store3}>
+          <Select
+            id={text('ID', 'error-select')}
+            label={text('Label', 'Demo Select')}
+            hint={text('Hint', 'Select a display')}
+            errorMessage={text('Error', 'Field Required')}
+            onBlur={(value) => store3.set({errorMessage: value ? '' : 'Field Required'})}
+            onChange={(value) => (store3.set({value, errorMessage: ''}))}
+            options={[
+              object('Option 1', { display: 'Display 1', value: 'Test 1'}),
+              object('Option 2', { display: 'Display 2', value: 'Test 2'}),
+              object('Option 3', { display: 'Display 3', value: 'Test 3'})
+            ]}
           />
         </State>
       )

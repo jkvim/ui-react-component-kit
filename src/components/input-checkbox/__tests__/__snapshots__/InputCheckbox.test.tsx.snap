@@ -48,7 +48,7 @@ exports[`InputCheckbox should match snapshot 1`] = `
         }
       >
         <label
-          className="sc-bwzfXH hurezU"
+          className="sc-bwzfXH lcbjGL"
           htmlFor="testId"
         >
           Tick this checkbox to confirm that you agree with the following statements
@@ -64,7 +64,7 @@ exports[`InputCheckbox should match snapshot 1`] = `
         }
       >
         <div
-          className="sc-dnqmqq gpxgKf"
+          className="sc-iwsKbI ZBWjd"
         />
       </styled.div>
     </div>

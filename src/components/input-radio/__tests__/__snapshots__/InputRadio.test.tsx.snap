@@ -47,7 +47,7 @@ exports[`InputRadio should match snapshot 1`] = `
         }
       >
         <label
-          className="sc-htpNat nmRTs"
+          className="sc-htpNat cIJdub"
           htmlFor="testId"
         >
           Select this radio to confirm that you agree with the following statements
@@ -63,7 +63,7 @@ exports[`InputRadio should match snapshot 1`] = `
         }
       >
         <div
-          className="sc-dnqmqq gpxgKf"
+          className="sc-iwsKbI ZBWjd"
         />
       </styled.div>
     </div>

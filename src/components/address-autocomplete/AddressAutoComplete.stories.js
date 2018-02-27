@@ -12,6 +12,7 @@ import README from './README.md';
 const store1 = new Store({});
 const store2 = new Store({});
 const store3 = new Store({});
+const store4 = new Store({});
 
 const PageDiv = styled.div`
 	width: 95%;
@@ -87,6 +88,27 @@ story
 				</State>
 			)
     })
-	);
+	)
+  .add('error',
+    withInfo({
+      inline: true,
+      text: 'An Address Autocomplete'
+    })
+    (() => {
+      return (
+        <State store={store4}>
+          <AddressAutoComplete
+            label={text('Label', 'Demo Address')}
+            prefix={text('Prefix', 'address-ac')}
+            endpoint={text('Endpoint', 'https://localhost:7443/addresses')}
+            errorMessage={text('Error', 'Field Required')}
+            hint={text('Hint', 'Enter an Address')}
+            onBlur={(value) => store4.set({errorMessage: value ? '' : 'Field Required'})}
+            onChange={(value) => (store4.set({value, errorMessage: ''}))}
+          />
+        </State>
+      )
+    })
+  );
 
 

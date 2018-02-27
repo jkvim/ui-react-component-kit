@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { omit, noop } from 'lodash';
-import { StyledErrorDiv, StyledFormGroup, StyledInputRadio, StyledLabelRadio } from '../../theme/common';
+import { StyledHintDiv, StyledErrorDiv, StyledFormGroup, StyledInputRadio, StyledLabelRadio } from '../../theme/common';
 
 export enum alignment {
   horizontal,
@@ -34,7 +34,7 @@ const InputRadio: React.SFC<InputRadioProps> =
 
   return (
     <StyledFormGroup className={className}>
-      {hint && <div className={!!errorMessage ? 'error' : ''}>{hint}</div>}
+      {hint && <StyledHintDiv>{hint}</StyledHintDiv>}
       <StyledInputRadio
         {...this.props}
         innerRef={ref => setInputRef(ref)}

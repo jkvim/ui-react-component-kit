@@ -98,18 +98,20 @@ story
 		})
 	)
 	.add(
-		'validated',
+		'error',
 		withInfo({
 			inline: true,
-			text: 'A validated input field (required)'
+			text: 'A input field (required)'
 		})
 		(() => {
 		  return (
 			<State store={store4}>
 				<InputText
-					id={text('ID', 'validated-input')}
+					id={text('ID', 'error-input')}
 					label={text('Label', 'Demo Input')}
 					placeholder={text('Placeholder', 'Enter Text')}
+          hint={text('Hint', 'Enter a value')}
+          errorMessage={text('Error', 'Field Required')}
 					onBlur={(value) => store4.set({errorMessage: value ? '' : 'Field Required'})}
 					onChange={(value) => (store4.set({value, errorMessage: ''}))}
 					onKeyDown={action('onKeyDown')}/>

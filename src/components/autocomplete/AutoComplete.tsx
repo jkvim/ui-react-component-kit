@@ -19,9 +19,9 @@ export interface AutoCompleteProps {
   dataProvider: DataProvider;
   required?: boolean;
   selectedItem?: ParsedSelectedItem;
+  onBlur?: (obj?: ParsedSelectedItem) => void;
   onChange?: (obj?: ParsedSelectedItem) => void;
   errorMessage?: string;
-  onBlur?: () => void;
   suggestionFooter?: FooterComponent;
   focusOnMount?: boolean;
   minSearchLength?: number;
@@ -366,7 +366,7 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
           aria-invalid={!!errorMessage}
           aria-describedby={`${prefix}-autocomplete-error`}
         />
-        {showSuggestions || <div id={`${prefix}-autocomplete-error`}>{errorMessage}</div>}
+        {showSuggestions}
         {this.buildSuggestions()}
         <StyledAccessibleHiddenDiv aria-live="polite">
           {showSuggestions && listBoxNavigationText}

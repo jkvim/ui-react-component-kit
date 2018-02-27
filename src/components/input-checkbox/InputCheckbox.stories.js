@@ -90,17 +90,18 @@ story
 		})
 	)
 	.add(
-		'validated',
+		'error',
 		withInfo({
 			inline: true,
-			text: 'A validated input checkbox (required)'
+			text: 'A input checkbox (required)'
 		})
 		(() => {
 		  return (
 			<State store={store4}>
 				<InputCheckbox
-					id={text('ID', 'validated-change-checkbox')}
+					id={text('ID', 'error-checkbox')}
 					label={text('Label', 'Demo Checkbox')}
+          hint={text('Hint', 'Select the checkbox')}
           errorMessage={text('Error', 'Field Required')}
 					onChange={(value) => (store4.set({value, errorMessage: value ? '' : 'Field Required'}))}/>
 			</State>

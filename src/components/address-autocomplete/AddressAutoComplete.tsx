@@ -8,7 +8,7 @@ interface AddressAutoCompleteProps {
   selectedItem?: ParsedSelectedItem;
   limit?: number;
   onChange?: (obj?: ParsedSelectedItem) => void;
-  onBlur?: () => void;
+  onBlur?: (obj?: ParsedSelectedItem) => void;
   errorMessage?: string;
   suggestionFooter?: FooterComponent;
   hint?: string;
