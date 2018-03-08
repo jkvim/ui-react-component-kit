@@ -81,9 +81,9 @@ story
         <State store={store3}>
 					<AddressAutoComplete
 						label={text('Label', 'Demo Address')}
+            hint={text('Hint', 'Enter an Address')}
 						prefix={text('Prefix', 'address-ac')}
 						endpoint={text('Endpoint', 'https://localhost:7443/addresses')}
-						hint={text('Hint', 'Enter an Address')}
 					/>
 				</State>
 			)

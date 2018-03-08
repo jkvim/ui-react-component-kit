@@ -13,10 +13,6 @@ const store1 = new Store({});
 const store2 = new Store({});
 const store3 = new Store({});
 const store4 = new Store({});
-const store5 = new Store({});
-const store6 = new Store({});
-const store7 = new Store({});
-const store8 = new Store({});
 
 const PageDiv = styled.div`
 	width: 95%;
@@ -32,143 +28,20 @@ const PageDecorator = (storyFn) => (
   </PageDiv>
 );
 
-const story = storiesOf('input-checkbox-group', module);
+const story = storiesOf('input-checkbox-group - multiple', module);
 story.addDecorator(PageDecorator);
 story.addDecorator(withKnobs);
 story.addDecorator(withReadme(README));
 story
-	.add(
-		'blank - single',
-		withInfo({
-			inline: true,
-	  		text: 'A blank input checkbox'
-		})
-		(() => {
-			return (
-				<State store={store1}>
-					<InputCheckboxGroup
-						id={text('ID', 'blank-checkbox')}
-						name={text('Name', 'blank-single')}
-						options={[{label: 'One', value: '1'}]}
-						onChange={
-              (values, value) => {
-                if(values.includes(value)) {
-                  values = values.filter(item => item !== value);
-                } else {
-                  values.push(value)
-                }
-
-                store1.set({values: values})
-              }
-            }
-					/>
-				</State>
-			)
-		})
-	)
-	.add(
-		'pre-selected - single',
-		withInfo({
-			inline: true,
-      		text: 'A pre-selected input checkbox'
-    	})
-		(() => {
-			return (
-				<State store={store2}>
-					<InputCheckboxGroup
-						id={text('ID', 'pre-populated-checkbox')}
-            name={text('Name', 'pre-populated-single')}
-            options={[{label: 'One', value: '1'}]}
-            onChange={
-              (values, value) => {
-                if(values.includes(value)) {
-                  values = values.filter(item => item !== value);
-                } else {
-                  values.push(value)
-                }
-
-                store2.set({values: values})
-              }
-            }
-						values={['1']}
-					/>
-				</State>
-			)
-		})
-	)
-	.add(
-		'disabled - single',
-    	withInfo({
-			inline: true,
-      		text: 'A pre-selected and disabled input checkbox'
-    	})
-		(() => {
-			return (
-				<State store={store3}>
-					<InputCheckboxGroup
-						id={text('ID', 'disabled-checkbox')}
-            name={text('Name', 'disabled-single')}
-            options={[{label: 'One', value: '1'}]}
-            onChange={
-              (values, value) => {
-                if(values.includes(value)) {
-                  values = values.filter(item => item !== value);
-                } else {
-                  values.push(value)
-                }
-
-                store3.set({values: values})
-              }
-            }
-            values={['1']}
-						disabled={true}
-					/>
-				</State>
-			)
-		})
-	)
-	.add(
-		'error - single',
-		withInfo({
-			inline: true,
-			text: 'A input checkbox (required)'
-		})
-		(() => {
-		  return (
-			<State store={store4}>
-				<InputCheckboxGroup
-					id={text('ID', 'error-checkbox')}
-          name={text('Name', 'error-single')}
-          options={[{label: 'One', value: '1'}]}
-          hint={text('Hint', 'Select the checkbox')}
-          errorMessage={text('Error', 'Field Required')}
-          onChange={
-            (values, value) => {
-              const containsValue = values.includes(value);
-
-              if(containsValue) {
-                values = values.filter(item => item !== value);
-              } else {
-                values.push(value)
-              }
-
-              store4.set({values: values, errorMessage: containsValue ? '' : 'Field Required'})
-            }
-          }
-				/>
-			</State>
-		  )
-		})
-	)
   .add(
-    'blank - multiple',
+    'blank',
     withInfo({
       inline: true,
       text: 'A blank input checkbox'
     })
     (() => {
       return (
-        <State store={store5}>
+        <State store={store1}>
           <InputCheckboxGroup
             id={text('ID', 'blank-checkbox')}
             name={text('Name', 'blank-multiple')}
@@ -181,7 +54,7 @@ story
                   values.push(value)
                 }
 
-                store5.set({values: values})
+                store1.set({values: values})
               }
             }
           />
@@ -190,14 +63,14 @@ story
     })
   )
   .add(
-    'pre-selected - multiple',
+    'pre-selected',
     withInfo({
       inline: true,
       text: 'A pre-selected input checkbox'
     })
     (() => {
       return (
-        <State store={store6}>
+        <State store={store2}>
           <InputCheckboxGroup
             id={text('ID', 'pre-populated-checkbox')}
             name={text('Name', 'pre-populated-multiple')}
@@ -210,7 +83,7 @@ story
                   values.push(value)
                 }
 
-                store6.set({values: values})
+                store2.set({values: values})
               }
             }
             values={['2', '3']}
@@ -220,14 +93,14 @@ story
     })
   )
   .add(
-    'disabled - multiple',
+    'disabled',
     withInfo({
       inline: true,
       text: 'A pre-selected and disabled input checkbox'
     })
     (() => {
       return (
-        <State store={store7}>
+        <State store={store3}>
           <InputCheckboxGroup
             id={text('ID', 'disabled-checkbox')}
             name={text('Name', 'disabled-multiple')}
@@ -240,7 +113,7 @@ story
                   values.push(value)
                 }
 
-                store7.set({values: values})
+                store3.set({values: values})
               }
             }
             disabled={true}
@@ -251,14 +124,14 @@ story
     })
   )
   .add(
-    'error - multiple',
+    'error',
     withInfo({
       inline: true,
       text: 'A input checkbox (required)'
     })
     (() => {
       return (
-        <State store={store8}>
+        <State store={store4}>
           <InputCheckboxGroup
             id={text('ID', 'error-checkbox')}
             name={text('Name', 'error-multiple')}
@@ -275,7 +148,7 @@ story
                   values.push(value)
                 }
 
-                store8.set({values: values, errorMessage: containsValue ? '' : 'Field Required'})
+                store4.set({values: values, errorMessage: values.length === 0 ? 'Field Required' : ''})
               }
             }
           />
