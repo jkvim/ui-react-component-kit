@@ -32,7 +32,7 @@ const PageDecorator = (storyFn) => (
   </PageDiv>
 );
 
-const story = storiesOf('input-radio', module);
+const story = storiesOf('input-radio-group', module);
 story.addDecorator(PageDecorator);
 story.addDecorator(withKnobs);
 story.addDecorator(withReadme(README));

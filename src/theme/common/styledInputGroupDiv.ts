@@ -18,3 +18,9 @@ const inputRadioDiv: StyledFunction<AlignmentProps> = styled.div;
 export const StyledInputRadioDiv = inputRadioDiv`
   position: relative;
 `;
+
+const inputCheckboxDiv: StyledFunction<AlignmentProps> = styled.div;
+
+export const StyledInputCheckboxDiv = inputCheckboxDiv`
+  position: relative;
+`;

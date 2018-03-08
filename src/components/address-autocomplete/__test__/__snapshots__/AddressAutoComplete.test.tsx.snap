@@ -25,7 +25,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
       role="application"
     >
       <div
-        className="sc-VigVT erRZNI"
+        className="sc-jTzLTM ggaDFM"
         onBlur={[Function]}
         role="application"
       >
@@ -107,7 +107,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
                 }
               >
                 <div
-                  className="sc-gqjmRU gsDxgu"
+                  className="sc-VigVT eCwofq"
                 />
               </styled.div>
             </div>
@@ -118,7 +118,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
         >
           <div
             aria-live="polite"
-            className="sc-iwsKbI kmSHab"
+            className="sc-gZMcBi flENsj"
           />
         </styled.div>
       </div>

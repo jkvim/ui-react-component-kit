@@ -4,9 +4,9 @@ interface HasErrorProps {
   hasError: boolean;
 }
 
-const hint: StyledFunction<HasErrorProps> = styled.div;
+const hintDiv: StyledFunction<HasErrorProps> = styled.div;
 
-export const StyledHintDiv = hint`
+export const StyledHintDiv = hintDiv`
     color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
     padding-bottom: 4px;
     padding-top: 4px;

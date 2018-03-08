@@ -1,19 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InputRadioGroup should match snapshot 1`] = `
-<InputRadioGroup
+exports[`InputCheckboxGroup should match snapshot 1`] = `
+<InputCheckbox
   id="testId"
   name="testName"
   onChange={[MockFunction]}
   options={
     Array [
       Object {
-        "label": "one",
+        "label": "One",
         "value": "1",
       },
       Object {
-        "label": "two",
+        "label": "Two",
         "value": "2",
+      },
+      Object {
+        "label": "Three",
+        "value": "3",
       },
     ]
   }
@@ -33,7 +37,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
             key="0"
           >
             <div
-              className="sc-dnqmqq hHLyWY"
+              className="sc-iwsKbI fzPyAB"
             >
               <styled.input
                 checked={false}
@@ -47,20 +51,21 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                     "color": Object {
                       "borderColor": "#333",
                       "color": "#333",
+                      "disableColor": "#acacac",
                       "errorColor": "#9f173f",
                     },
                   }
                 }
-                type="radio"
+                type="checkbox"
                 value="1"
               >
                 <input
                   checked={false}
-                  className="sc-EHOje cJbSKv"
+                  className="sc-ifAKCX hgWYGF"
                   id="testId-0"
                   name="testName"
                   onChange={[Function]}
-                  type="radio"
+                  type="checkbox"
                   value="1"
                 />
               </styled.input>
@@ -77,10 +82,10 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                 }
               >
                 <label
-                  className="sc-htpNat cIJdub"
+                  className="sc-bwzfXH lcbjGL"
                   htmlFor="testId-0"
                 >
-                  one
+                  One
                 </label>
               </styled.label>
             </div>
@@ -90,7 +95,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
             key="1"
           >
             <div
-              className="sc-dnqmqq hHLyWY"
+              className="sc-iwsKbI fzPyAB"
             >
               <styled.input
                 checked={false}
@@ -104,20 +109,21 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                     "color": Object {
                       "borderColor": "#333",
                       "color": "#333",
+                      "disableColor": "#acacac",
                       "errorColor": "#9f173f",
                     },
                   }
                 }
-                type="radio"
+                type="checkbox"
                 value="2"
               >
                 <input
                   checked={false}
-                  className="sc-EHOje cJbSKv"
+                  className="sc-ifAKCX hgWYGF"
                   id="testId-1"
                   name="testName"
                   onChange={[Function]}
-                  type="radio"
+                  type="checkbox"
                   value="2"
                 />
               </styled.input>
@@ -134,10 +140,68 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                 }
               >
                 <label
-                  className="sc-htpNat cIJdub"
+                  className="sc-bwzfXH lcbjGL"
                   htmlFor="testId-1"
                 >
-                  two
+                  Two
+                </label>
+              </styled.label>
+            </div>
+          </styled.div>
+          <styled.div
+            alignment={0}
+            key="2"
+          >
+            <div
+              className="sc-iwsKbI fzPyAB"
+            >
+              <styled.input
+                checked={false}
+                hasError={false}
+                id="testId-2"
+                innerRef={[Function]}
+                name="testName"
+                onChange={[Function]}
+                theme={
+                  Object {
+                    "color": Object {
+                      "borderColor": "#333",
+                      "color": "#333",
+                      "disableColor": "#acacac",
+                      "errorColor": "#9f173f",
+                    },
+                  }
+                }
+                type="checkbox"
+                value="3"
+              >
+                <input
+                  checked={false}
+                  className="sc-ifAKCX hgWYGF"
+                  id="testId-2"
+                  name="testName"
+                  onChange={[Function]}
+                  type="checkbox"
+                  value="3"
+                />
+              </styled.input>
+              <styled.label
+                hasError={false}
+                htmlFor="testId-2"
+                theme={
+                  Object {
+                    "color": Object {
+                      "color": "#333",
+                      "errorColor": "#9f173f",
+                    },
+                  }
+                }
+              >
+                <label
+                  className="sc-bwzfXH lcbjGL"
+                  htmlFor="testId-2"
+                >
+                  Three
                 </label>
               </styled.label>
             </div>
@@ -159,5 +223,5 @@ exports[`InputRadioGroup should match snapshot 1`] = `
       </styled.div>
     </div>
   </styled.div>
-</InputRadioGroup>
+</InputCheckbox>
 `;

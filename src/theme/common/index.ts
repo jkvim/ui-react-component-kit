@@ -2,7 +2,7 @@ import { StyledLabel, StyledLabelCheckbox, StyledLabelRadio } from './styledLabe
 import { StyledInputText, StyledInputCheckbox, StyledInputRadio } from './styledInput';
 import { StyledSelect } from './styledSelect';
 import { StyledFormGroupDiv } from './styledFormGroupDiv';
-import { StyledInputGroupDiv, StyledInputRadioDiv } from './styledInputGroupDiv';
+import { StyledInputGroupDiv, StyledInputRadioDiv, StyledInputCheckboxDiv } from './styledInputGroupDiv';
 import { StyledAccessibleHiddenDiv } from './styledAccessibleHiddenDiv';
 import { StyledHintDiv } from './styledHintDiv';
 import { StyledErrorDiv } from './styledErrorDiv';
@@ -18,6 +18,7 @@ export {
   StyledFormGroupDiv,
   StyledInputGroupDiv,
   StyledInputRadioDiv,
+  StyledInputCheckboxDiv,
   StyledAccessibleHiddenDiv,
   StyledHintDiv,
   StyledErrorDiv
