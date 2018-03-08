@@ -11,7 +11,7 @@ const Fieldset: React.SFC<FieldsetProps> = ({ legend, children, className }) => 
   const id = kebabCase(legend) || shortid.generate();
 
   return (
-    <fieldset id={`${id}-fieldset-legend`} className={className}>
+    <fieldset id={id} className={className}>
       {legend !== '' && <legend>{legend}</legend>}
       {children}
     </fieldset>

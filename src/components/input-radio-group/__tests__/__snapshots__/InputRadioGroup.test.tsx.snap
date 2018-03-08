@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputRadioGroup should match snapshot 1`] = `
+<InputRadioGroup
+  id="testId"
+  name="testName"
+  onChange={[MockFunction]}
+  options={
+    Array [
+      Object {
+        "label": "one",
+        "value": "1",
+      },
+      Object {
+        "label": "two",
+        "value": "2",
+      },
+    ]
+  }
+>
+  <styled.div>
+    <div
+      className="sc-gzVnrw kDUAmj"
+    >
+      <styled.div
+        alignment={0}
+      >
+        <div
+          className="sc-htoDjs lkdQiJ"
+        >
+          <styled.div
+            alignment={0}
+            key="0"
+          >
+            <div
+              className="sc-dnqmqq hHLyWY"
+            >
+              <styled.input
+                checked={false}
+                hasError={false}
+                id="testId-0"
+                innerRef={[Function]}
+                name="testName"
+                onChange={[Function]}
+                theme={
+                  Object {
+                    "color": Object {
+                      "borderColor": "#333",
+                      "color": "#333",
+                      "errorColor": "#9f173f",
+                    },
+                  }
+                }
+                type="radio"
+                value="1"
+              >
+                <input
+                  checked={false}
+                  className="sc-EHOje cJbSKv"
+                  id="testId-0"
+                  name="testName"
+                  onChange={[Function]}
+                  type="radio"
+                  value="1"
+                />
+              </styled.input>
+              <styled.label
+                hasError={false}
+                htmlFor="testId-0"
+                theme={
+                  Object {
+                    "color": Object {
+                      "color": "#333",
+                      "errorColor": "#9f173f",
+                    },
+                  }
+                }
+              >
+                <label
+                  className="sc-htpNat cIJdub"
+                  htmlFor="testId-0"
+                >
+                  one
+                </label>
+              </styled.label>
+            </div>
+          </styled.div>
+          <styled.div
+            alignment={0}
+            key="1"
+          >
+            <div
+              className="sc-dnqmqq hHLyWY"
+            >
+              <styled.input
+                checked={false}
+                hasError={false}
+                id="testId-1"
+                innerRef={[Function]}
+                name="testName"
+                onChange={[Function]}
+                theme={
+                  Object {
+                    "color": Object {
+                      "borderColor": "#333",
+                      "color": "#333",
+                      "errorColor": "#9f173f",
+                    },
+                  }
+                }
+                type="radio"
+                value="2"
+              >
+                <input
+                  checked={false}
+                  className="sc-EHOje cJbSKv"
+                  id="testId-1"
+                  name="testName"
+                  onChange={[Function]}
+                  type="radio"
+                  value="2"
+                />
+              </styled.input>
+              <styled.label
+                hasError={false}
+                htmlFor="testId-1"
+                theme={
+                  Object {
+                    "color": Object {
+                      "color": "#333",
+                      "errorColor": "#9f173f",
+                    },
+                  }
+                }
+              >
+                <label
+                  className="sc-htpNat cIJdub"
+                  htmlFor="testId-1"
+                >
+                  two
+                </label>
+              </styled.label>
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+      <styled.div
+        theme={
+          Object {
+            "color": Object {
+              "errorColor": "red",
+            },
+          }
+        }
+      >
+        <div
+          className="sc-gqjmRU gsDxgu"
+        />
+      </styled.div>
+    </div>
+  </styled.div>
+</InputRadioGroup>
+`;

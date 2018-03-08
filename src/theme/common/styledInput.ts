@@ -78,6 +78,7 @@ export const StyledInputCheckbox = inputCheckbox`
 StyledInputCheckbox.defaultProps = {
   theme: {
     color: {
+      color: '#333',
       errorColor: '#9f173f',
       borderColor: '#333',
       disableColor: '#acacac'
@@ -129,6 +130,7 @@ export const StyledInputRadio = inputRadio`
 StyledInputRadio.defaultProps = {
   theme: {
     color: {
+      color: '#333',
       errorColor: '#9f173f',
       borderColor: '#333'
     }

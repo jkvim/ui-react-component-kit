@@ -20,6 +20,7 @@ exports[`InputCheckbox should match snapshot 1`] = `
           Object {
             "color": Object {
               "borderColor": "#333",
+              "color": "#333",
               "disableColor": "#acacac",
               "errorColor": "#9f173f",
             },
@@ -29,7 +30,7 @@ exports[`InputCheckbox should match snapshot 1`] = `
       >
         <input
           checked=""
-          className="sc-ifAKCX bdoYJf"
+          className="sc-ifAKCX hgWYGF"
           id="testId"
           onChange={[Function]}
           type="checkbox"
@@ -64,7 +65,7 @@ exports[`InputCheckbox should match snapshot 1`] = `
         }
       >
         <div
-          className="sc-iwsKbI ZBWjd"
+          className="sc-gqjmRU gsDxgu"
         />
       </styled.div>
     </div>

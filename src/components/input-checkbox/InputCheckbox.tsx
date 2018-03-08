@@ -3,7 +3,7 @@ import { omit, noop } from 'lodash';
 import {
   StyledHintDiv,
   StyledErrorDiv,
-  StyledFormGroup,
+  StyledFormGroupDiv,
   StyledInputCheckbox,
   StyledLabelCheckbox
 } from '../../theme/common';
@@ -28,8 +28,8 @@ const InputCheckbox: React.SFC<CheckBoxFieldProps> =
   ({ label, id, hint, className, value = '', errorMessage = '', onChange = noop, setInputRef = noop, disabled }) => {
 
     return (
-      <StyledFormGroup className={className}>
-        {hint && <StyledHintDiv>{hint}</StyledHintDiv>}
+      <StyledFormGroupDiv className={className}>
+        {hint && <StyledHintDiv hasError={!!errorMessage}>{hint}</StyledHintDiv>}
         <StyledInputCheckbox
           {...this.props}
           innerRef={ref => setInputRef(ref)}
@@ -49,7 +49,7 @@ const InputCheckbox: React.SFC<CheckBoxFieldProps> =
         <StyledErrorDiv>
           {errorMessage}
         </StyledErrorDiv>
-      </StyledFormGroup>
+      </StyledFormGroupDiv>
     );
 };
 

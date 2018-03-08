@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { kebabCase } from 'lodash';
 import { noop } from 'lodash';
-import { StyledErrorDiv, StyledLabel, StyledHintDiv, StyledFormGroup, StyledSelect } from '../../theme/common';
+import { StyledErrorDiv, StyledLabel, StyledHintDiv, StyledFormGroupDiv, StyledSelect } from '../../theme/common';
 import { SelectItem } from './types';
 
 interface SelectProps {
@@ -28,11 +28,11 @@ const Select: React.SFC<SelectProps> =
      onBlur = noop, onChange = noop, setSelectRef = noop, disabled }) => {
 
   return (
-    <StyledFormGroup className={className}>
+    <StyledFormGroupDiv className={className}>
       <StyledLabel htmlFor={id} hasError={!!errorMessage}>
         {label}
       </StyledLabel>
-      {hint && <StyledHintDiv>{hint}</StyledHintDiv>}
+      {hint && <StyledHintDiv hasError={!!errorMessage}>{hint}</StyledHintDiv>}
       <StyledSelect
         {...this.props}
         innerRef={ref => setSelectRef(ref)}
@@ -51,7 +51,7 @@ const Select: React.SFC<SelectProps> =
       <StyledErrorDiv>
         {errorMessage}
       </StyledErrorDiv>
-    </StyledFormGroup>
+    </StyledFormGroupDiv>
   );
 };
 

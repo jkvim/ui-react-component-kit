@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { kebabCase } from 'lodash';
 import { noop } from 'lodash';
-import { StyledLabel, StyledInputText, StyledFormGroup, StyledHintDiv, StyledErrorDiv } from '../../theme/common';
+import { StyledLabel, StyledInputText, StyledFormGroupDiv, StyledHintDiv, StyledErrorDiv } from '../../theme/common';
 
 interface InputTextProps {
   label: string;
@@ -27,11 +27,11 @@ const InputText: React.SFC<InputTextProps> =
      onBlur = noop, onChange = noop, onKeyDown = noop, setInputRef = noop, disabled }) => {
 
     return (
-      <StyledFormGroup className={className}>
+      <StyledFormGroupDiv className={className}>
         <StyledLabel htmlFor={id} hasError={!!errorMessage}>
           {label}
         </StyledLabel>
-        {hint && <StyledHintDiv>{hint}</StyledHintDiv>}
+        {hint && <StyledHintDiv hasError={!!errorMessage}>{hint}</StyledHintDiv>}
         <StyledInputText
           {...this.props}
           innerRef={ref => setInputRef(ref)}
@@ -52,7 +52,7 @@ const InputText: React.SFC<InputTextProps> =
         <StyledErrorDiv>
           {errorMessage}
         </StyledErrorDiv>
-      </StyledFormGroup>
+      </StyledFormGroupDiv>
     );
   };
 

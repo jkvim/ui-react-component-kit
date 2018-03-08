@@ -31,7 +31,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
       role="application"
     >
       <div
-        className="sc-gZMcBi cmAScw"
+        className="sc-VigVT erRZNI"
         onBlur={[Function]}
         role="application"
       >
@@ -113,7 +113,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 }
               >
                 <div
-                  className="sc-iwsKbI ZBWjd"
+                  className="sc-gqjmRU gsDxgu"
                 />
               </styled.div>
             </div>
@@ -124,7 +124,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
         >
           <div
             aria-live="polite"
-            className="sc-htoDjs bZwCBY"
+            className="sc-iwsKbI kmSHab"
           />
         </styled.div>
       </div>
