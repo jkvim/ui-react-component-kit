@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+/** @component */
 export const StyledAccessibleHiddenDiv = styled.div`
   position: absolute;
   left: -10000px;

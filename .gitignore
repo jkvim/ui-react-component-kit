@@ -1,11 +1,21 @@
-node_modules
-build
-lib
-storybook-static
+# IDE
 .tmp
 .idea
 *.iml
-npm-debug.log
+
+# Build
+node_modules
+build
+lib
+
+# Test
 coverage
 test-report.xml
+
+# Demo
+storybook-static
+styleguide
+
+# Logs
+npm-debug.log
 yarn-error.log

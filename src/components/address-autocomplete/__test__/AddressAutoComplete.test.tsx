@@ -7,15 +7,15 @@ describe('AddressAutoComplete', () => {
 
     let wrapper;
 
+    const id = 'address-id';
     const label = 'Label';
-    const prefix = 'address-prefix';
     const endpoint = 'http://test.com.au';
 
     beforeEach(() => {
         wrapper = mount(
             <AddressAutoComplete
+              id={id}
               label={label}
-              prefix={prefix}
               endpoint={endpoint}
             />
         );
@@ -25,8 +25,8 @@ describe('AddressAutoComplete', () => {
         expect(toJSON(wrapper)).toMatchSnapshot();
     });
 
-    it('should pass `prefix` in props', () => {
-        expect(wrapper.props().prefix).toBe(prefix);
+    it('should pass `id` in props', () => {
+        expect(wrapper.props().id).toBe(id);
     });
 
     it('should pass `endpoint` in props', () => {

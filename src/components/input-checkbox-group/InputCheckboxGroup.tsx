@@ -19,15 +19,15 @@ export interface CheckBox {
 export interface CheckBoxFieldProps {
   id: string;
   name: string;
-  hint?: string;
   options: CheckBox[];
+  hint?: string;
   values?: string[];
-  onChange?: (value: boolean, event?: React.ChangeEvent<HTMLInputElement>) => void;
   align?: alignment;
-  disabled?: boolean;
-  setInputRef?: (ref: HTMLInputElement) => void;
   errorMessage?: string;
   className?: string;
+  disabled?: boolean;
+  setInputRef?: (ref: HTMLInputElement) => void;
+  onChange?: (value: boolean, event?: React.ChangeEvent<HTMLInputElement>) => void;
 
   // excess property bags mainly used for capturing ARIA tags to be passed down to the HTML Input.
   // tslint:disable-next-line no-any
@@ -57,8 +57,18 @@ const InputCheckbox: React.SFC<CheckBoxFieldProps> =
                 type="checkbox"
                 value={item.value}
                 checked={values.includes(item.value)}
-                onChange={
-                  event => onChange(values, event.target.value, event)
+                onChange={ event => {
+                    let value = event.target.value;
+
+                    if (values.includes(value)) {
+                      // tslint:disable-next-line:no-shadowed-variable
+                      values = values.filter(item => item !== value);
+                    } else {
+                      values.push(value);
+                    }
+
+                    onChange(values);
+                  }
                 }
                 disabled={disabled}
                 hasError={!!errorMessage}
@@ -73,7 +83,7 @@ const InputCheckbox: React.SFC<CheckBoxFieldProps> =
 
         </StyledInputGroupDiv>
 
-        <StyledErrorDiv>
+        <StyledErrorDiv hasError={!!errorMessage}>
           {errorMessage}
         </StyledErrorDiv>
 

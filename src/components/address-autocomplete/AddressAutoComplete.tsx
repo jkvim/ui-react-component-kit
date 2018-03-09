@@ -3,18 +3,20 @@ import { AutoComplete, FooterComponent, ParsedSelectedItem } from '../autocomple
 import AddressDataProvider from './AddressDataProvider';
 
 interface AddressAutoCompleteProps {
+  id: string;
   label: string;
-  prefix: string;
-  selectedItem?: ParsedSelectedItem;
+  endpoint: string;
   limit?: number;
+  hint?: string;
+  placeholder?: string;
+  className?: string;
+  focusOnMount?: boolean;
+  errorMessage?: string;
+  disabled?: boolean;
+  selectedItem?: ParsedSelectedItem;
   onChange?: (obj?: ParsedSelectedItem) => void;
   onBlur?: (obj?: ParsedSelectedItem) => void;
-  errorMessage?: string;
   suggestionFooter?: FooterComponent;
-  hint?: string;
-  focusOnMount?: boolean;
-  className?: string;
-  endpoint: string;
 }
 
 class AddressAutoComplete extends React.Component<AddressAutoCompleteProps, {}> {
@@ -30,23 +32,24 @@ class AddressAutoComplete extends React.Component<AddressAutoCompleteProps, {}> 
   }
 
   render() {
-    const {label, prefix, className, selectedItem, onChange,
-      errorMessage, suggestionFooter, hint, onBlur, focusOnMount} = this.props;
+    const {id, label, className, selectedItem, onChange,
+      errorMessage, suggestionFooter, hint, placeholder, onBlur, focusOnMount} = this.props;
 
     return(
       <AutoComplete
+        id={id}
         label={label}
         dataProvider={this.dataProvider}
-        prefix={prefix}
+        hint={hint}
+        placeholder={placeholder}
+        errorMessage={errorMessage}
+        className={className}
+        minSearchLength={6}
+        focusOnMount={focusOnMount}
+        onBlur={onBlur}
         selectedItem={selectedItem}
         onChange={onChange}
-        errorMessage={errorMessage}
-        minSearchLength={6}
         suggestionFooter={suggestionFooter}
-        hint={hint}
-        onBlur={onBlur}
-        focusOnMount={focusOnMount}
-        className={className}
       />
     );
   }

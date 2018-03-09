@@ -16,6 +16,7 @@ describe('InputRadioGroup', () => {
         name="testName"
         options={options}
         onChange={callback}
+        value={'2'}
       />
     );
   });
@@ -23,4 +24,17 @@ describe('InputRadioGroup', () => {
   it('should match snapshot', () => {
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
+
+  it('should render radios', () => {
+    const inputs = wrapper.find('input');
+
+    expect(inputs.get(0).props.checked).toBe(false);
+    expect(inputs.get(1).props.checked).toBe(true);
+  });
+
+  it('should change radio', () => {
+    const input = wrapper.find('input').at(0).simulate('change');
+    expect(input.props().value).toBe('1');
+  });
+
 });

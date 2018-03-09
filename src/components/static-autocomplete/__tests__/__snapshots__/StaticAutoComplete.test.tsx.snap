@@ -2,8 +2,8 @@
 
 exports[`StaticAutoComplete should match snapshot 1`] = `
 <StaticAutoComplete
+  id="static-id"
   label="Label"
-  prefix="static-prefix"
   suggestions={
     Array [
       "one",
@@ -23,8 +23,8 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
         "valuePath": undefined,
       }
     }
+    id="static-id"
     label="Label"
-    prefix="static-prefix"
   >
     <styled.div
       onBlur={[Function]}
@@ -38,11 +38,11 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
         <InputText
           aria-activedescendant=""
           aria-autocomplete="list"
-          aria-describedby="static-prefix-autocomplete-error"
+          aria-describedby="static-id-autocomplete-error"
           aria-expanded={false}
           aria-invalid={false}
-          aria-owns="suggestions_static-prefix"
-          id="static-prefix-autocomplete"
+          aria-owns="static-id-suggestions"
+          id="static-id-autocomplete"
           label="Label"
           onChange={[Function]}
           onKeyDown={[Function]}
@@ -56,7 +56,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
             >
               <styled.label
                 hasError={false}
-                htmlFor="static-prefix-autocomplete"
+                htmlFor="static-id-autocomplete"
                 theme={
                   Object {
                     "color": Object {
@@ -67,15 +67,15 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 }
               >
                 <label
-                  className="sc-bdVaJa dWyWPR"
-                  htmlFor="static-prefix-autocomplete"
+                  className="sc-bdVaJa glxmnH"
+                  htmlFor="static-id-autocomplete"
                 >
                   Label
                 </label>
               </styled.label>
               <styled.input
                 hasError={false}
-                id="static-prefix-autocomplete"
+                id="static-id-autocomplete"
                 innerRef={[Function]}
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -85,6 +85,8 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                   Object {
                     "color": Object {
                       "borderColor": "#333",
+                      "color": "#333",
+                      "disableColor": "#acacac",
                       "errorColor": "#9f173f",
                     },
                   }
@@ -93,8 +95,8 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 value=""
               >
                 <input
-                  className="sc-bxivhb ckuHQi"
-                  id="static-prefix-autocomplete"
+                  className="sc-bxivhb jlLwIE"
+                  id="static-id-autocomplete"
                   onBlur={[Function]}
                   onChange={[Function]}
                   onKeyDown={[Function]}
@@ -104,16 +106,17 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 />
               </styled.input>
               <styled.div
+                hasError={false}
                 theme={
                   Object {
                     "color": Object {
-                      "errorColor": "red",
+                      "errorColor": "#9f173f",
                     },
                   }
                 }
               >
                 <div
-                  className="sc-VigVT eCwofq"
+                  className="sc-VigVT gZSADz"
                 />
               </styled.div>
             </div>

@@ -13,6 +13,7 @@ export const StyledLabel = label`
   display: inline-block;
   font-size: 1.5rem;
   position: relative;
+  padding-bottom: 10px;
 `;
 
 StyledLabel.defaultProps = {
@@ -27,6 +28,7 @@ StyledLabel.defaultProps = {
 const labelCheckbox: StyledFunction<HasErrorProps &
   React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>> = styled.label;
 
+/** @component */
 export const StyledLabelCheckbox = labelCheckbox`
   padding: 0 5px 0 35px;
   display: inline-block;
@@ -64,6 +66,7 @@ StyledLabelCheckbox.defaultProps = {
 const labelRadio: StyledFunction<HasErrorProps &
   React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>> = styled.label;
 
+/** @component */
 export const StyledLabelRadio = labelRadio`
   padding: 0 5px 0 35px;
   display: inline-block;
@@ -73,17 +76,18 @@ export const StyledLabelRadio = labelRadio`
   &:before {
     content: "";
     line-height: 1;
-    font-size: 1.4rem;
-    height: 25px;
-    width: 25px;
+    font-size: 1.9rem;
+    height: 28px;
+    width: 28px;
     background: #fff;
-    padding-top: 0.5rem;
+    padding-left: 0.4rem;
+    padding-top: 0.3rem;
     border-radius: 50%;
     border: 1px solid ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
     box-sizing: border-box;
     margin-top: -5px;
     display: inline-block;
-    margin-left: 0.1em;
+    margin-left: 1px;
     position: absolute;
     left: 0;
     background-color: transparent;

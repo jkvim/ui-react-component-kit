@@ -21,6 +21,12 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
       },
     ]
   }
+  values={
+    Array [
+      "2",
+      "3",
+    ]
+  }
 >
   <styled.div>
     <div
@@ -37,7 +43,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
             key="0"
           >
             <div
-              className="sc-iwsKbI fzPyAB"
+              className="sc-iwsKbI iFdLkt"
             >
               <styled.input
                 checked={false}
@@ -95,10 +101,10 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
             key="1"
           >
             <div
-              className="sc-iwsKbI fzPyAB"
+              className="sc-iwsKbI iFdLkt"
             >
               <styled.input
-                checked={false}
+                checked={true}
                 hasError={false}
                 id="testId-1"
                 innerRef={[Function]}
@@ -118,7 +124,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                 value="2"
               >
                 <input
-                  checked={false}
+                  checked={true}
                   className="sc-ifAKCX hgWYGF"
                   id="testId-1"
                   name="testName"
@@ -153,10 +159,10 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
             key="2"
           >
             <div
-              className="sc-iwsKbI fzPyAB"
+              className="sc-iwsKbI iFdLkt"
             >
               <styled.input
-                checked={false}
+                checked={true}
                 hasError={false}
                 id="testId-2"
                 innerRef={[Function]}
@@ -176,7 +182,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                 value="3"
               >
                 <input
-                  checked={false}
+                  checked={true}
                   className="sc-ifAKCX hgWYGF"
                   id="testId-2"
                   name="testName"
@@ -209,16 +215,17 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
         </div>
       </styled.div>
       <styled.div
+        hasError={false}
         theme={
           Object {
             "color": Object {
-              "errorColor": "red",
+              "errorColor": "#9f173f",
             },
           }
         }
       >
         <div
-          className="sc-VigVT eCwofq"
+          className="sc-VigVT gZSADz"
         />
       </styled.div>
     </div>

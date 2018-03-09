@@ -1,15 +1,18 @@
 import styled from 'styled-components';
 
+/** @component */
 export const StyledAutoCompleteContainer = styled.div`
   position: relative;
  `;
 
+/** @component */
 export const StyledAutoCompleteResults = styled.div`
    position: absolute;
    z-index: 999;
    width: 100%;
    `;
 
+/** @component */
 export const StyledSelectableList = styled.ul`
   border: 1px solid #ddd;
   background-color: white;
@@ -23,12 +26,14 @@ export const StyledSelectableList = styled.ul`
   }
 `;
 
+/** @component */
 export const StyledListItem = styled.li`
   border: none;
   padding: 5px 15px 5px 15px;
   color: black;
 `;
 
+/** @component */
 export const StyledSelectableListItem = StyledListItem.extend`
   &:hover, &[aria-selected="true"] {
     background-color: #F6F6F6;
@@ -40,6 +45,7 @@ export const StyledSelectableListItem = StyledListItem.extend`
   }
 `;
 
+/** @component */
 export const StyledItemAnchor = styled.a`
     text-decoration: none;
     color: black;

@@ -14,19 +14,20 @@ import {
 } from './styledAutoComplete';
 
 export interface AutoCompleteProps {
-  prefix: string;
+  id: string;
   label?: string;
+  hint?: string;
+  placeholder?: string;
   dataProvider: DataProvider;
-  required?: boolean;
+  minSearchLength?: number;
+  errorMessage?: string;
+  className?: string;
+  disabled?: boolean;
   selectedItem?: ParsedSelectedItem;
   onBlur?: (obj?: ParsedSelectedItem) => void;
   onChange?: (obj?: ParsedSelectedItem) => void;
-  errorMessage?: string;
   suggestionFooter?: FooterComponent;
   focusOnMount?: boolean;
-  minSearchLength?: number;
-  hint?: string;
-  className?: string;
 }
 
 export interface AutoCompleteState {
@@ -230,14 +231,14 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
 
   // ------------ Rendering methods: ---------------
   buildSuggestionFooter () {
-    let { suggestionFooter, prefix } = this.props;
+    let { suggestionFooter, id } = this.props;
     let { selectedIndex, suggestions: { length } } = this.state;
 
     if (suggestionFooter) {
       return (
         <StyledSelectableListItem
+          id={`${id}-${length}`}
           role="option"
-          id={`${prefix}-item${length}`}
           aria-disabled={false}
           tabIndex={-1}
           aria-selected={selectedIndex === length}
@@ -269,7 +270,7 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
 
   buildSuggestions () {
     let returnValue;
-    let { prefix } = this.props;
+    let { id } = this.props;
     let { showSuggestions, searchTerm, suggestions, selectedIndex } = this.state;
 
     if (
@@ -282,8 +283,8 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
       if (suggestionsNum === 0) {
         listItems = (
           <StyledListItem
+            id={`${id}-items`}
             className="no-match"
-            id={`${prefix}-item0`}
             role="option"
             aria-selected={false}
           >
@@ -292,7 +293,7 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
         );
       } else {
         listItems = suggestions.map((suggestion, index) => {
-          let itemId = `${prefix}-item${index}`;
+          let itemId = `${id}-item-${index}`;
           return (
             <StyledSelectableListItem
               id={itemId}
@@ -320,7 +321,7 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
       returnValue = (
         <StyledAutoCompleteResults>
           <StyledSelectableList
-            id={`suggestions_${prefix}`}
+            id={`${id}-suggestions`}
             role="listbox"
             aria-expanded={showSuggestions}
             aria-label="Suggestions"
@@ -341,7 +342,7 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
   // ------------ Render: ---------------
 
   render () {
-    let { prefix, errorMessage, hint, label = '', className } = this.props;
+    let { id, errorMessage, hint, placeholder, label = '', className, disabled } = this.props;
     let { searchTerm, showSuggestions, selectedIndex } = this.state;
 
     let listBoxNavigationText =
@@ -350,21 +351,23 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
     return (
       <StyledAutoCompleteContainer role="application" onBlur={this.handleBlur} className={className}>
         <InputText
-          id={`${prefix}-autocomplete`}
+          id={`${id}-autocomplete`}
           label={label}
           hint={hint}
+          placeholder={placeholder}
           errorMessage={errorMessage}
           onChange={this.handleChange}
           onKeyDown={this.handleKeyDownInput}
           setInputRef={this.setInputRef}
           value={searchTerm}
           role="combobox"
-          aria-owns={`suggestions_${prefix}`}
+          aria-owns={`${id}-suggestions`}
           aria-expanded={showSuggestions}
           aria-autocomplete="list"
-          aria-activedescendant={selectedIndex >= 0 ? `${prefix}-item${selectedIndex}` : ''}
+          aria-activedescendant={selectedIndex >= 0 ? `${id}-item-${selectedIndex}` : ''}
           aria-invalid={!!errorMessage}
-          aria-describedby={`${prefix}-autocomplete-error`}
+          aria-describedby={`${id}-autocomplete-error`}
+          disabled={disabled}
         />
         {showSuggestions}
         {this.buildSuggestions()}

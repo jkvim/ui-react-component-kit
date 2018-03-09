@@ -17,6 +17,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
       },
     ]
   }
+  value="2"
 >
   <styled.div>
     <div
@@ -33,7 +34,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
             key="0"
           >
             <div
-              className="sc-dnqmqq hHLyWY"
+              className="sc-dnqmqq kjFWmi"
             >
               <styled.input
                 checked={false}
@@ -47,6 +48,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                     "color": Object {
                       "borderColor": "#333",
                       "color": "#333",
+                      "disableColor": "#acacac",
                       "errorColor": "#9f173f",
                     },
                   }
@@ -56,7 +58,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
               >
                 <input
                   checked={false}
-                  className="sc-EHOje cJbSKv"
+                  className="sc-EHOje iTKGZn"
                   id="testId-0"
                   name="testName"
                   onChange={[Function]}
@@ -77,7 +79,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                 }
               >
                 <label
-                  className="sc-htpNat cIJdub"
+                  className="sc-htpNat eHNGsm"
                   htmlFor="testId-0"
                 >
                   one
@@ -90,10 +92,10 @@ exports[`InputRadioGroup should match snapshot 1`] = `
             key="1"
           >
             <div
-              className="sc-dnqmqq hHLyWY"
+              className="sc-dnqmqq kjFWmi"
             >
               <styled.input
-                checked={false}
+                checked={true}
                 hasError={false}
                 id="testId-1"
                 innerRef={[Function]}
@@ -104,6 +106,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                     "color": Object {
                       "borderColor": "#333",
                       "color": "#333",
+                      "disableColor": "#acacac",
                       "errorColor": "#9f173f",
                     },
                   }
@@ -112,8 +115,8 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                 value="2"
               >
                 <input
-                  checked={false}
-                  className="sc-EHOje cJbSKv"
+                  checked={true}
+                  className="sc-EHOje iTKGZn"
                   id="testId-1"
                   name="testName"
                   onChange={[Function]}
@@ -134,7 +137,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                 }
               >
                 <label
-                  className="sc-htpNat cIJdub"
+                  className="sc-htpNat eHNGsm"
                   htmlFor="testId-1"
                 >
                   two
@@ -145,16 +148,17 @@ exports[`InputRadioGroup should match snapshot 1`] = `
         </div>
       </styled.div>
       <styled.div
+        hasError={false}
         theme={
           Object {
             "color": Object {
-              "errorColor": "red",
+              "errorColor": "#9f173f",
             },
           }
         }
       >
         <div
-          className="sc-VigVT eCwofq"
+          className="sc-VigVT gZSADz"
         />
       </styled.div>
     </div>

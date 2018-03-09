@@ -29,10 +29,13 @@ const Select: React.SFC<SelectProps> =
 
   return (
     <StyledFormGroupDiv className={className}>
+
       <StyledLabel htmlFor={id} hasError={!!errorMessage}>
         {label}
       </StyledLabel>
+
       {hint && <StyledHintDiv hasError={!!errorMessage}>{hint}</StyledHintDiv>}
+
       <StyledSelect
         {...this.props}
         innerRef={ref => setSelectRef(ref)}
@@ -48,9 +51,11 @@ const Select: React.SFC<SelectProps> =
         <option value="">{placeholder}</option>
         {options.map((item, index) => <option key={index} value={item.value}>{item.display}</option>)}
       </StyledSelect>
-      <StyledErrorDiv>
+
+      <StyledErrorDiv hasError={!!errorMessage}>
         {errorMessage}
       </StyledErrorDiv>
+
     </StyledFormGroupDiv>
   );
 };

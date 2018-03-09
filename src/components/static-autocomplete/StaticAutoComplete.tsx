@@ -4,16 +4,18 @@ import { AutoComplete } from '../autocomplete';
 import StaticDataProvider from './StaticDataProvider';
 
 interface StaticAutoCompleteProps {
+  id: string;
   label: string;
-  hint?: string;
-  prefix: string;
   suggestions: Array<string|object>;
+  hint?: string;
+  placeholder?: string;
   valuePath?: string;
+  errorMessage?: string;
+  className?: string;
+  disabled?: boolean;
   selectedItem?: ParsedSelectedItem;
   onBlur?: (obj?: ParsedSelectedItem) => void;
   onChange?: (obj?: ParsedSelectedItem) => void;
-  errorMessage?: string;
-  className?: string;
 }
 
 class StaticAutoComplete extends React.Component<StaticAutoCompleteProps, {}> {
@@ -27,19 +29,22 @@ class StaticAutoComplete extends React.Component<StaticAutoCompleteProps, {}> {
   }
 
   render() {
-    const {selectedItem, onChange, onBlur, label, hint, errorMessage, className} = this.props;
+    const {selectedItem, onChange, onBlur, label, hint, placeholder,
+      errorMessage, className, disabled} = this.props;
 
     return(
       <AutoComplete
+        id={this.props.id}
         label={label}
         hint={hint}
+        placeholder={placeholder}
         dataProvider={this.dataProvider}
-        prefix={this.props.prefix}
+        errorMessage={errorMessage}
+        className={className}
+        disabled={disabled}
         selectedItem={selectedItem}
         onBlur={onBlur}
         onChange={onChange}
-        errorMessage={errorMessage}
-        className={className}
       />
     );
   }

@@ -4,18 +4,18 @@ import { noop } from 'lodash';
 import { StyledLabel, StyledInputText, StyledFormGroupDiv, StyledHintDiv, StyledErrorDiv } from '../../theme/common';
 
 interface InputTextProps {
-  label: string;
   id: string;
+  label: string;
   placeholder?: string;
+  value?: string;
+  hint?: string;
+  errorMessage?: string;
+  className?: string;
+  disabled?: boolean;
+  setInputRef?: (ref: HTMLInputElement) => void;
   onBlur?: (value: string) => void;
   onChange?: (value: string, event?: React.ChangeEvent<HTMLInputElement>) => void;
   onKeyDown?: (keyCode: number, event: React.KeyboardEvent<HTMLInputElement>) => void;
-  disabled?: boolean;
-  value?: string;
-  hint?: string;
-  setInputRef?: (ref: HTMLInputElement) => void;
-  errorMessage?: string;
-  className?: string;
 
   // excess property bags mainly used for capturing ARIA tags to be passed down to the HTML Input.
   // tslint:disable-next-line no-any
@@ -28,10 +28,13 @@ const InputText: React.SFC<InputTextProps> =
 
     return (
       <StyledFormGroupDiv className={className}>
+
         <StyledLabel htmlFor={id} hasError={!!errorMessage}>
           {label}
         </StyledLabel>
+
         {hint && <StyledHintDiv hasError={!!errorMessage}>{hint}</StyledHintDiv>}
+
         <StyledInputText
           {...this.props}
           innerRef={ref => setInputRef(ref)}
@@ -49,9 +52,11 @@ const InputText: React.SFC<InputTextProps> =
           disabled={disabled}
           hasError={!!errorMessage}
         />
-        <StyledErrorDiv>
+
+        <StyledErrorDiv hasError={!!errorMessage}>
           {errorMessage}
         </StyledErrorDiv>
+
       </StyledFormGroupDiv>
     );
   };

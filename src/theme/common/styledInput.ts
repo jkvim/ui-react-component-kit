@@ -12,6 +12,7 @@ const inputText: StyledFunction<HasErrorProps &
     type: 'text'
   });
 
+/** @component */
 export const StyledInputText = inputText`
   width: 100%;
   background-color: white;
@@ -24,13 +25,20 @@ export const StyledInputText = inputText`
   padding: 8px 12px 5px;
   font-size: 1.5rem;
   font-weight: 100;
+  
+  &:disabled {
+    color:  ${props => props.theme.color.disableColor};
+    border-color:  ${props => props.theme.color.disableColor};
+  }
 `;
 
 StyledInputText.defaultProps = {
   theme: {
     color: {
+      color: '#333',
       errorColor: '#9f173f',
-      borderColor: '#333'
+      borderColor: '#333',
+      disableColor: '#acacac'
     }
   }
 };
@@ -42,6 +50,7 @@ const inputCheckbox: StyledFunction<HasErrorProps &
   type: 'checkbox'
 });
 
+/** @component */
 export const StyledInputCheckbox = inputCheckbox`
   position: absolute;
   width: 22px;
@@ -93,6 +102,7 @@ const inputRadio: StyledFunction<HasErrorProps &
   type: 'radio'
 });
 
+/** @component */
 export const StyledInputRadio = inputRadio`
   position: absolute;
   width: 22px;
@@ -108,7 +118,6 @@ export const StyledInputRadio = inputRadio`
     font-family: "fontawesome";
     font-weight: 900;
     content: "\\F111";
-    padding-left: 4px;
     color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
     border-color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
   }
@@ -132,7 +141,8 @@ StyledInputRadio.defaultProps = {
     color: {
       color: '#333',
       errorColor: '#9f173f',
-      borderColor: '#333'
+      borderColor: '#333',
+      disableColor: '#acacac'
     }
   }
 };

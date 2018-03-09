@@ -7,6 +7,7 @@ interface HasErrorProps {
 const select: StyledFunction<HasErrorProps &
   React.DetailedHTMLProps<React.SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement>> = styled.select;
 
+/** @component */
 export const StyledSelect = select`
   width: 100%;
   background-color: white;
@@ -19,13 +20,20 @@ export const StyledSelect = select`
   padding: 8px 12px 5px;
   font-size: 1.5rem;
   font-weight: 100;
+  
+  &:disabled {
+    color:  ${props => props.theme.color.disableColor};
+    border-color:  ${props => props.theme.color.disableColor};
+  }
 `;
 
 StyledSelect.defaultProps = {
   theme: {
     color: {
+      color: '#333',
       errorColor: '#9f173f',
-      borderColor: '#9e9e9e'
+      borderColor: '#333',
+      disableColor: '#acacac'
     }
   }
 };

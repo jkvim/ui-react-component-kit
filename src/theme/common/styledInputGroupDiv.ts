@@ -7,6 +7,7 @@ interface AlignmentProps {
 
 const inputGroupDiv: StyledFunction<AlignmentProps> = styled.div;
 
+/** @component */
 export const StyledInputGroupDiv = inputGroupDiv`
   display: flex;
   flex-direction: ${props => 
@@ -15,12 +16,28 @@ export const StyledInputGroupDiv = inputGroupDiv`
 
 const inputRadioDiv: StyledFunction<AlignmentProps> = styled.div;
 
+/** @component */
 export const StyledInputRadioDiv = inputRadioDiv`
   position: relative;
+  padding-bottom: ${props =>
+    props.alignment === alignment.horizontal ? '0px' : '15px'};
+  
+  &:last-child {
+    padding-bottom: ${props =>
+      props.alignment === alignment.horizontal ? '0px' : '0px'};
+  }
 `;
 
 const inputCheckboxDiv: StyledFunction<AlignmentProps> = styled.div;
 
+/** @component */
 export const StyledInputCheckboxDiv = inputCheckboxDiv`
   position: relative;
+  padding-bottom: ${props =>
+  props.alignment === alignment.horizontal ? '0px' : '15px'};
+  
+  &:last-child {
+    padding-bottom: ${props =>
+  props.alignment === alignment.horizontal ? '0px' : '0px'};
+  }
 `;

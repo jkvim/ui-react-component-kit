@@ -7,26 +7,25 @@ describe('StaticAutoComplete', () => {
 
     let wrapper;
 
+    const id = 'static-id';
     const label = 'Label';
-    const prefix = 'static-prefix';
     const suggestions = [ 'one', 'two', 'three' ];
 
     beforeEach(() => {
         wrapper = mount(
             <StaticAutoComplete
+              id={id}
               label={label}
-              prefix={prefix}
               suggestions={suggestions}
             />
         );
     });
-
     it('should match snapshot', () => {
         expect(toJSON(wrapper)).toMatchSnapshot();
     });
 
-    it('should pass `prefix` in props', () => {
-        expect(wrapper.props().prefix).toBe(prefix);
+    it('should pass `id` in props', () => {
+        expect(wrapper.props().id).toBe(id);
     });
 
     it('should pass `suggestions` in props', () => {

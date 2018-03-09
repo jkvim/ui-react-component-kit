@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { mount, shallow } from 'enzyme';
-import { Beforeunload } from '../';
+import { BeforeUnload } from '../';
 
 describe('Beforeunload', () => {
   it('should not throw an error when no children are passed', () => {
-    const result = shallow(<Beforeunload />);
+    const result = shallow(<BeforeUnload />);
     expect(result.html()).toEqual(null);
   });
 
@@ -12,9 +12,9 @@ describe('Beforeunload', () => {
     const child = (<p>Child!</p>);
 
     const renderedComp = shallow(
-      <Beforeunload>
+      <BeforeUnload>
         {child}
-      </Beforeunload>
+      </BeforeUnload>
     );
 
     expect(renderedComp.contains(child)).toEqual(true);
@@ -25,9 +25,9 @@ describe('Beforeunload', () => {
     const mockFn = jest.fn();
 
     const renderedComp = mount(
-      <Beforeunload onBeforeunload={mockFn}>
+      <BeforeUnload onBeforeunload={mockFn}>
         {child}
-      </Beforeunload>
+      </BeforeUnload>
     );
 
     // Simulate beforeunload event

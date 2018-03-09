@@ -3,8 +3,8 @@
 exports[`AddressAutoComplete should match snapshot 1`] = `
 <AddressAutoComplete
   endpoint="http://test.com.au"
+  id="address-id"
   label="Label"
-  prefix="address-prefix"
 >
   <AutoComplete
     dataProvider={
@@ -16,9 +16,9 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
         "limit": 10,
       }
     }
+    id="address-id"
     label="Label"
     minSearchLength={6}
-    prefix="address-prefix"
   >
     <styled.div
       onBlur={[Function]}
@@ -32,11 +32,11 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
         <InputText
           aria-activedescendant=""
           aria-autocomplete="list"
-          aria-describedby="address-prefix-autocomplete-error"
+          aria-describedby="address-id-autocomplete-error"
           aria-expanded={false}
           aria-invalid={false}
-          aria-owns="suggestions_address-prefix"
-          id="address-prefix-autocomplete"
+          aria-owns="address-id-suggestions"
+          id="address-id-autocomplete"
           label="Label"
           onChange={[Function]}
           onKeyDown={[Function]}
@@ -50,7 +50,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
             >
               <styled.label
                 hasError={false}
-                htmlFor="address-prefix-autocomplete"
+                htmlFor="address-id-autocomplete"
                 theme={
                   Object {
                     "color": Object {
@@ -61,15 +61,15 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
                 }
               >
                 <label
-                  className="sc-bdVaJa dWyWPR"
-                  htmlFor="address-prefix-autocomplete"
+                  className="sc-bdVaJa glxmnH"
+                  htmlFor="address-id-autocomplete"
                 >
                   Label
                 </label>
               </styled.label>
               <styled.input
                 hasError={false}
-                id="address-prefix-autocomplete"
+                id="address-id-autocomplete"
                 innerRef={[Function]}
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -79,6 +79,8 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
                   Object {
                     "color": Object {
                       "borderColor": "#333",
+                      "color": "#333",
+                      "disableColor": "#acacac",
                       "errorColor": "#9f173f",
                     },
                   }
@@ -87,8 +89,8 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
                 value=""
               >
                 <input
-                  className="sc-bxivhb ckuHQi"
-                  id="address-prefix-autocomplete"
+                  className="sc-bxivhb jlLwIE"
+                  id="address-id-autocomplete"
                   onBlur={[Function]}
                   onChange={[Function]}
                   onKeyDown={[Function]}
@@ -98,16 +100,17 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
                 />
               </styled.input>
               <styled.div
+                hasError={false}
                 theme={
                   Object {
                     "color": Object {
-                      "errorColor": "red",
+                      "errorColor": "#9f173f",
                     },
                   }
                 }
               >
                 <div
-                  className="sc-VigVT eCwofq"
+                  className="sc-VigVT gZSADz"
                 />
               </styled.div>
             </div>

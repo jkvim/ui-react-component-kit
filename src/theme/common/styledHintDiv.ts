@@ -6,10 +6,11 @@ interface HasErrorProps {
 
 const hintDiv: StyledFunction<HasErrorProps> = styled.div;
 
+/** @component */
 export const StyledHintDiv = hintDiv`
     color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
-    padding-bottom: 4px;
-    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-top: 5px;
   `;
 
 StyledHintDiv.defaultProps = {

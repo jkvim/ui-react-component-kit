@@ -22,12 +22,12 @@ export interface InputRadioGroupProps {
   options: InputRadio[];
   hint?: string;
   value?: string|number|boolean;
-  onChange?: (value: boolean, event?: React.ChangeEvent<HTMLInputElement>) => void;
   align?: alignment;
-  disabled?: boolean;
-  setInputRef?: (ref: HTMLInputElement) => void;
   errorMessage?: string;
   className?: string;
+  disabled?: boolean;
+  setInputRef?: (ref: HTMLInputElement) => void;
+  onChange?: (value: boolean, event?: React.ChangeEvent<HTMLInputElement>) => void;
 
   // excess property bags mainly used for capturing ARIA tags to be passed down to the HTML Input.
   // tslint:disable-next-line no-any
@@ -73,7 +73,7 @@ const InputRadioGroup: React.SFC<InputRadioGroupProps> =
 
       </StyledInputGroupDiv>
 
-      <StyledErrorDiv>
+      <StyledErrorDiv hasError={!!errorMessage}>
         {errorMessage}
       </StyledErrorDiv>
 
