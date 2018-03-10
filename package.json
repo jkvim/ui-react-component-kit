@@ -1,6 +1,6 @@
 {
   "name": "ui-react-component-kit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "ISC",
   "main": "lib/index.js",
   "scripts": {
