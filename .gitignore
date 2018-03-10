@@ -7,13 +7,14 @@
 node_modules
 build
 lib
+package-lock.json
+yarn.lock
 
 # Test
 coverage
 test-report.xml
 
 # Demo
-storybook-static
 styleguide
 
 # Logs
