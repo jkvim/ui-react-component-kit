@@ -46,8 +46,8 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "borderColor": "#333",
-                      "color": "#333",
+                      "borderColor": "#333333",
+                      "color": "#333333",
                       "disableColor": "#acacac",
                       "errorColor": "#9f173f",
                     },
@@ -58,7 +58,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
               >
                 <input
                   checked={false}
-                  className="sc-EHOje iTKGZn"
+                  className="sc-EHOje hEVuPL"
                   id="testId-0"
                   name="testName"
                   onChange={[Function]}
@@ -72,14 +72,14 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "color": "#333",
+                      "color": "#333333",
                       "errorColor": "#9f173f",
                     },
                   }
                 }
               >
                 <label
-                  className="sc-htpNat eHNGsm"
+                  className="sc-htpNat ixcoFJ"
                   htmlFor="testId-0"
                 >
                   one
@@ -104,8 +104,8 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "borderColor": "#333",
-                      "color": "#333",
+                      "borderColor": "#333333",
+                      "color": "#333333",
                       "disableColor": "#acacac",
                       "errorColor": "#9f173f",
                     },
@@ -116,7 +116,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
               >
                 <input
                   checked={true}
-                  className="sc-EHOje iTKGZn"
+                  className="sc-EHOje hEVuPL"
                   id="testId-1"
                   name="testName"
                   onChange={[Function]}
@@ -130,14 +130,14 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "color": "#333",
+                      "color": "#333333",
                       "errorColor": "#9f173f",
                     },
                   }
                 }
               >
                 <label
-                  className="sc-htpNat eHNGsm"
+                  className="sc-htpNat ixcoFJ"
                   htmlFor="testId-1"
                 >
                   two

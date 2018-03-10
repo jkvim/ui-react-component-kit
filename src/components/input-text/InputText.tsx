@@ -10,6 +10,7 @@ interface InputTextProps {
   value?: string;
   hint?: string;
   errorMessage?: string;
+  showError?: boolean;
   className?: string;
   disabled?: boolean;
   setInputRef?: (ref: HTMLInputElement) => void;
@@ -23,7 +24,7 @@ interface InputTextProps {
 }
 
 const InputText: React.SFC<InputTextProps> =
-  ({ label, id, hint, className, value = '', errorMessage = '', placeholder = '',
+  ({ label, id, hint, className, value = '', errorMessage = '', showError = true, placeholder = '',
      onBlur = noop, onChange = noop, onKeyDown = noop, setInputRef = noop, disabled }) => {
 
     return (
@@ -53,9 +54,7 @@ const InputText: React.SFC<InputTextProps> =
           hasError={!!errorMessage}
         />
 
-        <StyledErrorDiv hasError={!!errorMessage}>
-          {errorMessage}
-        </StyledErrorDiv>
+        {showError && <StyledErrorDiv hasError={!!errorMessage}>{errorMessage}</StyledErrorDiv>}
 
       </StyledFormGroupDiv>
     );

@@ -20,7 +20,7 @@ const inputRadioDiv: StyledFunction<AlignmentProps> = styled.div;
 export const StyledInputRadioDiv = inputRadioDiv`
   position: relative;
   padding-bottom: ${props =>
-    props.alignment === alignment.horizontal ? '0px' : '15px'};
+    props.alignment === alignment.horizontal ? '0px' : '20px'};
   
   &:last-child {
     padding-bottom: ${props =>

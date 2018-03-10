@@ -3,7 +3,7 @@ import { bindAll, debounce, escapeRegExp } from 'lodash';
 import { DataProvider, FooterComponent, ParsedSelectedItem, SelectableItem } from './types';
 import * as keys from '../../constants/keyboardKeys';
 import InputText from '../input-text/InputText';
-import { StyledAccessibleHiddenDiv } from '../../theme/common';
+import { StyledAccessibleHiddenDiv, StyledErrorDiv } from '../../theme/common';
 import {
   StyledAutoCompleteContainer,
   StyledAutoCompleteResults,
@@ -350,12 +350,14 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
 
     return (
       <StyledAutoCompleteContainer role="application" onBlur={this.handleBlur} className={className}>
+
         <InputText
           id={`${id}-autocomplete`}
           label={label}
           hint={hint}
           placeholder={placeholder}
           errorMessage={errorMessage}
+          showError={false}
           onChange={this.handleChange}
           onKeyDown={this.handleKeyDownInput}
           setInputRef={this.setInputRef}
@@ -369,11 +371,18 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
           aria-describedby={`${id}-autocomplete-error`}
           disabled={disabled}
         />
+
         {showSuggestions}
         {this.buildSuggestions()}
+
         <StyledAccessibleHiddenDiv aria-live="polite">
           {showSuggestions && listBoxNavigationText}
         </StyledAccessibleHiddenDiv>
+
+        <StyledErrorDiv hasError={!!errorMessage}>
+          {errorMessage}
+        </StyledErrorDiv>
+
       </StyledAutoCompleteContainer>
     );
   }

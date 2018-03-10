@@ -105,33 +105,31 @@ const inputRadio: StyledFunction<HasErrorProps &
 /** @component */
 export const StyledInputRadio = inputRadio`
   position: absolute;
-  width: 22px;
-  height: 22px;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  opacity: 0;
+    left: 0;
+    top: 0;
+    min-width: 1em;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
   
   &:checked + label:before {
-    font-family: "fontawesome";
-    font-weight: 900;
-    content: "\\F111";
-    color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
-    border-color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
+    background-color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
+    border-color: #ffffff;
   }
   
   &:focus + label:before {
     color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
-    border-color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
+    border-color: #ffffff;
     -webkit-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
     -moz-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
     box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
   }
   
   &:disabled + label:before {
-    color:  ${props => props.theme.color.disableColor};
     border-color:  ${props => props.theme.color.disableColor};
   }
 `;
@@ -139,9 +137,9 @@ export const StyledInputRadio = inputRadio`
 StyledInputRadio.defaultProps = {
   theme: {
     color: {
-      color: '#333',
+      color: '#333333',
       errorColor: '#9f173f',
-      borderColor: '#333',
+      borderColor: '#333333',
       disableColor: '#acacac'
     }
   }

@@ -49,6 +49,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
           onKeyDown={[Function]}
           role="combobox"
           setInputRef={[Function]}
+          showError={false}
           value=""
         >
           <styled.div>
@@ -106,20 +107,6 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                   value=""
                 />
               </styled.input>
-              <styled.div
-                hasError={false}
-                theme={
-                  Object {
-                    "color": Object {
-                      "errorColor": "#9f173f",
-                    },
-                  }
-                }
-              >
-                <div
-                  className="sc-VigVT gZSADz"
-                />
-              </styled.div>
             </div>
           </styled.div>
         </InputText>
@@ -129,6 +116,20 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
           <div
             aria-live="polite"
             className="sc-gZMcBi flENsj"
+          />
+        </styled.div>
+        <styled.div
+          hasError={false}
+          theme={
+            Object {
+              "color": Object {
+                "errorColor": "#9f173f",
+              },
+            }
+          }
+        >
+          <div
+            className="sc-VigVT gZSADz"
           />
         </styled.div>
       </div>

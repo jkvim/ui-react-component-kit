@@ -68,29 +68,30 @@ const labelRadio: StyledFunction<HasErrorProps &
 
 /** @component */
 export const StyledLabelRadio = labelRadio`
-  padding: 0 5px 0 35px;
+  position: relative;
+  line-height: 1;
+  padding-left: 40px;
+  padding-right: 10px;
   display: inline-block;
   color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
   cursor: pointer;
   
   &:before {
     content: "";
-    line-height: 1;
-    font-size: 1.9rem;
-    height: 28px;
-    width: 28px;
-    background: #fff;
-    padding-left: 0.4rem;
-    padding-top: 0.3rem;
-    border-radius: 50%;
-    border: 1px solid ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
+    font-size: 2.6rem;
+    height: calc(2.6rem + 2px);
+    width: calc(2.6rem + 2px);
+    background: ${props => props.theme.color.color};
+    border-radius: 100%;
+    border: 8px solid #ffffff;
+    box-shadow: 0 0 0 1px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
     box-sizing: border-box;
-    margin-top: -5px;
     display: inline-block;
-    margin-left: 1px;
     position: absolute;
     left: 0;
+    top: calc((0% - (100% - 1rem)) - 8%);
     background-color: transparent;
+
   }
 `;
 
@@ -98,7 +99,7 @@ StyledLabelRadio.defaultProps = {
   theme: {
     color: {
       errorColor: '#9f173f',
-      color: '#333'
+      color: '#333333'
     }
   }
 };
