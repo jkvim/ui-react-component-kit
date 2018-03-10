@@ -29,12 +29,12 @@ class StaticAutoComplete extends React.Component<StaticAutoCompleteProps, {}> {
   }
 
   render() {
-    const {selectedItem, onChange, onBlur, label, hint, placeholder,
+    const {id, selectedItem, onChange, onBlur, label, hint, placeholder,
       errorMessage, className, disabled} = this.props;
 
     return(
       <AutoComplete
-        id={this.props.id}
+        id={id}
         label={label}
         hint={hint}
         placeholder={placeholder}
@@ -43,7 +43,7 @@ class StaticAutoComplete extends React.Component<StaticAutoCompleteProps, {}> {
         className={className}
         disabled={disabled}
         selectedItem={selectedItem}
-        onBlur={onBlur}
+        onBlur={event => onBlur(selectedItem)}
         onChange={onChange}
       />
     );

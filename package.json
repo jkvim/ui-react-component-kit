@@ -16,8 +16,10 @@
     "test": "node scripts/test.js --env=jsdom --coverage",
     "test:update-snapshot": "node scripts/test.js --env=jsdom -u",
     "verify": "npm-run-all lint test && echo verify success",
+    "mock-server-start": "stubby -w --data stubby/data.yaml",
     "styleguide": "NODE_ENV=production styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide:build": "styleguidist build",
+    "styleguide:with-mock-server": "npm run check-node && concurrently \"npm run mock-server-start\" \"wait-on http-get://localhost:8882/alive && npm run styleguide\""
   },
   "config": {
     "commitizen": {
@@ -144,6 +146,7 @@
     "shortid": "2.2.8",
     "smooth-scroll": "12.1.5",
     "source-map-loader": "0.2.3",
+    "stubby": "4.0.0",
     "style-loader": "0.20.3",
     "sw-precache-webpack-plugin": "0.11.5",
     "ts-jest": "22.4.1",

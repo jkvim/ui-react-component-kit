@@ -24,16 +24,14 @@ class AddressDataProvider implements DataProvider {
   async filter (searchTerm: string, callback: (filteredResult: Array<SelectableItem>) => void) {
     let parsedResult;
     try {
-      const url = `${this.endpoint}`;
+      const term = searchTerm.replace(/\s/g, '+');
+
+      const url = `${this.endpoint}?query=${term}&limit=${this.limit}`;
 
       const response = await axios.get(url, { headers: this.headers });
-      // TODO: filter map by limit
-      parsedResult = response.data.data.map((matchedResult) => (
-        {
-          value: matchedResult.address,
-          object: matchedResult
-        }
-      ));
+      parsedResult = response.data.data
+          .map((matchedResult) => ({ value: matchedResult.address, object: matchedResult }))
+          .filter((result, index) => index < this.limit);
     } catch (e) {
       parsedResult = [];
     }

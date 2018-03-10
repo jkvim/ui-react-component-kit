@@ -32,7 +32,7 @@ class AddressAutoComplete extends React.Component<AddressAutoCompleteProps, {}> 
   }
 
   render() {
-    const {id, label, className, selectedItem, onChange,
+    const {id, label, className, disabled, selectedItem, onChange,
       errorMessage, suggestionFooter, hint, placeholder, onBlur, focusOnMount} = this.props;
 
     return(
@@ -44,9 +44,10 @@ class AddressAutoComplete extends React.Component<AddressAutoCompleteProps, {}> 
         placeholder={placeholder}
         errorMessage={errorMessage}
         className={className}
+        disabled={disabled}
         minSearchLength={6}
         focusOnMount={focusOnMount}
-        onBlur={onBlur}
+        onBlur={event => onBlur(selectedItem)}
         selectedItem={selectedItem}
         onChange={onChange}
         suggestionFooter={suggestionFooter}

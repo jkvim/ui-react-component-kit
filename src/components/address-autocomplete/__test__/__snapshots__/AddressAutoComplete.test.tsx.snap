@@ -19,6 +19,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
     id="address-id"
     label="Label"
     minSearchLength={6}
+    onBlur={[Function]}
   >
     <styled.div
       onBlur={[Function]}

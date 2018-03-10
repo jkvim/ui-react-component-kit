@@ -1,0 +1,48 @@
+{
+  "data": [
+    {
+      "id": "12345",
+      "address": "123 Champion Road Clayton South VIC 3169"
+    },
+    {
+      "id": "23456",
+      "address": "123 Champion Road Umina Beach NSW 2257"
+    },
+    {
+      "id": "34567",
+      "address": "123 Champion Street Carrington NSW 2294"
+    },
+    {
+      "id": "45678",
+      "address": "123 Champion Street Dubbo NSW 2830"
+    },
+    {
+      "id": "56789",
+      "address": "123 Champion Street Maitland NSW 2320"
+    },
+    {
+      "id": "67890",
+      "address": "123 Champion Street Melbourne VIC 3000"
+    },
+    {
+      "id": "14578",
+      "address": "123 Champion Street Mount Austin NSW 2650"
+    },
+    {
+      "id": "12890",
+      "address": "123 Champion Street Piccadilly WA 6430"
+    },
+    {
+      "id": "12834",
+      "address": "123 Champion Street Vale WA 6490"
+    },
+    {
+      "id": "12867",
+      "address": "123 Champion Street Sail NSW 2300"
+    },
+    {
+      "id": "12882",
+      "address": "123 Champion Street Mount Moe VIC 3131"
+    }
+  ]
+}

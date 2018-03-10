@@ -25,6 +25,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
     }
     id="static-id"
     label="Label"
+    onBlur={[Function]}
   >
     <styled.div
       onBlur={[Function]}

@@ -1,0 +1,10 @@
+{
+  "data": {
+    "house_number": "123",
+    "street": "Champion Street",
+    "locality": "Dubbo",
+    "state": "NSW",
+    "postcode": "2830",
+    "address": "123 Champion Street Dubbo NSW 2830"
+  }
+}

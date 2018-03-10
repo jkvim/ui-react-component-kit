@@ -1,0 +1,45 @@
+-  request:
+      url: ^/alive # purely for checking if mock server is up and running
+      method: GET
+      get:
+   response:
+     headers:
+        Content-Type: application/json
+     status: 200
+
+-  request:
+      url: ^/addresses$
+      query:
+        limit: 10
+        query: "nomatch"
+      method: GET
+   response:
+      status: 200
+      file: response/addresses/query/noMatch.json
+
+-  request:
+      url: ^/addresses$
+      query:
+        limit: 10
+        query: "500error"
+      method: GET
+   response:
+      status: 500
+      file: response/addresses/query/error.json
+
+-  request:
+      url: ^/addresses$
+      query:
+        limit: 10
+        query: "[A-z|0-9]+"
+      method: GET
+   response:
+      status: 200
+      file: response/addresses/query/success.json
+
+-  request:
+      url: ^/addresses/\d+$
+      method: GET
+   response:
+      status: 200
+      file: response/addresses/detail/success.json
