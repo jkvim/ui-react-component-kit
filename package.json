@@ -1,6 +1,6 @@
 {
-  "name": "react-component-library",
-  "version": "1.0.0",
+  "name": "ui-react-component-kit",
+  "version": "0.0.1",
   "private": true,
   "license": "ISC",
   "main": "lib/index.js",
@@ -42,7 +42,6 @@
       "!src/**/theme/**/*",
       "!src/**/model/**/*.ts",
       "!src/**/index.{js,ts}",
-      "!src/**/*.stories.{js,ts}",
       "!src/setupTests.ts"
     ],
     "setupFiles": [
