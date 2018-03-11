@@ -4,6 +4,7 @@ src
 build
 config
 scripts
+stubby
 coverage
 reports
 styleguide

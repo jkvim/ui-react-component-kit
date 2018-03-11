@@ -4,7 +4,7 @@ import { noop } from 'lodash';
 import { StyledErrorDiv, StyledLabel, StyledHintDiv, StyledFormGroupDiv, StyledSelect } from '../../theme/common';
 import { SelectItem } from './types';
 
-interface SelectProps {
+export interface SelectProps {
   label: string;
   id: string;
   placeholder?: string;

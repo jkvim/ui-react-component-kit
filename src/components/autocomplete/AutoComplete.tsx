@@ -38,7 +38,7 @@ export interface AutoCompleteState {
   selectedIndex: number;
 }
 
-interface NextIndex {
+export interface NextIndex {
   index: number;
   isFooter: boolean;
 }

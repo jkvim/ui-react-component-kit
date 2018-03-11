@@ -2,7 +2,7 @@ import * as React from 'react';
 import { kebabCase } from 'lodash';
 import * as shortid from 'shortid';
 
-interface FieldsetProps {
+export interface FieldsetProps {
   legend?: string;
   className?: string;
 }

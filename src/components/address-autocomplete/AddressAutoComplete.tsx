@@ -2,7 +2,7 @@ import * as React from 'react';
 import { AutoComplete, FooterComponent, ParsedSelectedItem } from '../autocomplete';
 import AddressDataProvider from './AddressDataProvider';
 
-interface AddressAutoCompleteProps {
+export interface AddressAutoCompleteProps {
   id: string;
   label: string;
   endpoint: string;

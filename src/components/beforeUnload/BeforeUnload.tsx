@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-interface BeforeunloadProps {
+export interface BeforeunloadProps {
   onBeforeunload?: (event: object) => void | string;
 }
 

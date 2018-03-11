@@ -1,7 +1,8 @@
 // tslint:disable
-import styled, { StyledFunction } from 'styled-components';
+import * as React from 'react';
+import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
 
-interface HasErrorProps {
+export interface HasErrorProps {
   hasError: boolean;
 }
 

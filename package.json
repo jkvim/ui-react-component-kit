@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "license": "ISC",
   "main": "lib/index.js",
+  "types": "lib/src/index.d.ts",
   "scripts": {
     "check-node": "check-node-version --node \">=9\"",
     "commit": "git-cz",

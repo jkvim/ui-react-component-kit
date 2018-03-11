@@ -1,7 +1,8 @@
-import styled, { StyledFunction } from 'styled-components';
+import * as React from 'react';
+import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
 import { alignment } from '../../constants/constants';
 
-interface AlignmentProps {
+export interface AlignmentProps {
   alignment: alignment;
 }
 

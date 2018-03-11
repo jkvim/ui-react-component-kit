@@ -3,7 +3,7 @@ import { DataProvider, ParsedSelectedItem } from '../autocomplete';
 import { AutoComplete } from '../autocomplete';
 import StaticDataProvider from './StaticDataProvider';
 
-interface StaticAutoCompleteProps {
+export interface StaticAutoCompleteProps {
   id: string;
   label: string;
   suggestions: Array<string|object>;

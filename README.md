@@ -28,8 +28,11 @@ $ git clone https://github.com/Rob-Leggett/ui-react-component-kit.git
 ```
 
 ### Install Dependencies <a name="install-dependencies"/>
+
 ``` bash
-$ yarn | npm install
+$ yarn install
+      or 
+$ npm install
 ```
 
 ## Usage <a name="usage"/>
@@ -37,7 +40,17 @@ The following section outlines commonly used commands. For a detailed list of al
 
 > This project has opted to use Yarn as the preferred package manager. However, the commands `yarn` and `npm` can be used interchangeably if not available. For more information on the benefits and usage of Yarn please visit this [website](https://yarnpkg.com/en/).
 
-### How To <a name="how-to"/>
+### How To Use <a name="how-to"/>
+
+### Install
+
+```bash
+$ yarn add ui-react-component-kit --dev 
+                or 
+$ npm install ui-react-component-kit --save-dev
+```
+
+### Import
 
 TDB
 

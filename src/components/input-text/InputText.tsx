@@ -3,7 +3,7 @@ import { kebabCase } from 'lodash';
 import { noop } from 'lodash';
 import { StyledLabel, StyledInputText, StyledFormGroupDiv, StyledHintDiv, StyledErrorDiv } from '../../theme/common';
 
-interface InputTextProps {
+export interface InputTextProps {
   id: string;
   label: string;
   placeholder?: string;

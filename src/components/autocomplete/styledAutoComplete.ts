@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import * as React from 'react';
+import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
 
 /** @component */
 export const StyledAutoCompleteContainer = styled.div`
