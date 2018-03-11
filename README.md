@@ -29,7 +29,7 @@ $ git clone https://github.com/Rob-Leggett/ui-react-component-kit.git
 
 ### Install Dependencies <a name="install-dependencies"/>
 
-``` bash
+```bash
 $ yarn install
       or 
 $ npm install
@@ -52,20 +52,110 @@ $ npm install ui-react-component-kit --save-dev
 
 ### Import
 
-TDB
+An example:
+
+```javascript
+import { InputText } from 'ui-react-component-kit';
+```
 
 ## Dev Process <a name="dev-process"/>
 
-TBD
+To ensure you are using the correct version of Node:
+```bash
+$ yarn check-node
+        or
+$ npm run check-node
+```
+
+To commit using commitizen:
+```bash
+$ yarn commit
+        or
+$ npm run commit
+```
+
+To build the library:
+```bash
+$ yarn build
+        or
+$ npm run build
+```
+
+To perform linting:
+```bash
+$ yarn lint
+        or
+$ npm run lint
+```
+
+To automatically fix linting where possible and perform linting:
+```bash
+$ yarn lint:fix
+        or
+$ npm run lint:fix
+```
+
+To perform testing (unit & snapshot):
+```bash
+$ yarn test
+        or
+$ npm run test
+```
+
+To update snapshots and perform testing (unit & snapshot):
+```bash
+$ yarn test:update-snapshot
+        or
+$ npm run test:update-snapshot
+```
+
+To start a mock server for sample api support:
+```bash
+$ yarn mock-server-start
+        or
+$ npm run mock-server-start
+```
+
+To run styleguide - without api support:
+* styleguide - [http://localhost:6060]("http://localhost:6060)
+```bash
+$ yarn styleguide
+        or
+$ npm run styleguide
+```
+
+To run styleguide - with api support:
+* styleguide - [http://localhost:6060]("http://localhost:6060)
+* mock server (http) - [http://localhost:8882]("http://localhost:8882)
+* mock server (https) - [http://localhost:8443]("http://localhost:7443)
+* mock server (admin) - [http://localhost:8889]("http://localhost:8889)
+```bash
+$ yarn styleguide:with-mock-server
+        or
+$ npm run styleguide:with-mock-server
+```
+
+To build a static version of styleguide - without api support:
+```bash
+$ yarn styleguide:build
+        or
+$ npm run styleguide:build
+```
 
 ## Metrics <a name="metrics"/>
 
-TDB
+When running the tests you will get the following metrics:
+* Code Coverage Report - /coverage
+* Test Report (junit parsable) - test-report.xml
 
 ## Third-Party Dependencies <a name="third-party-dependencies"/>
 
 
 ### Microservice <a name="microservice"/>
+
+### Interface Spec
+
+For use with address-autocomplete component:
 
 TBD
 
