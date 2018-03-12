@@ -1,21 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Link snapshot 1`] = `
-<a
+<styled.a
   href="http://somewhere"
-  id="title-link"
   onClick={[MockFunction]}
   target="_blank"
+  theme={
+    Object {
+      "color": Object {
+        "color": "#333333",
+      },
+    }
+  }
 >
   title
-  <span
-    className="icon icon-external-link"
-  >
-    <span
-      className="sr-only"
-    >
+  <styled.span>
+    <styled.span>
       Link opens in new window
-    </span>
-  </span>
-</a>
+    </styled.span>
+  </styled.span>
+</styled.a>
 `;

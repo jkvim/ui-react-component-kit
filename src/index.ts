@@ -4,6 +4,7 @@ import { InputCheckboxGroup } from './components/input-checkbox-group';
 import { Fieldset } from './components/fieldset';
 import { Select } from './components/select';
 import { Link } from './components/link';
+import { BeforeUnload } from './components/beforeUnload';
 import { AutoComplete } from './components/autocomplete';
 import { AddressAutoComplete, AddressDataProvider } from './components/address-autocomplete';
 import { StaticAutoComplete, StaticDataProvider } from './components/static-autocomplete';
@@ -16,6 +17,7 @@ export {
   Fieldset,
   Select,
   Link,
+  BeforeUnload,
   AutoComplete,
   AddressAutoComplete,
   AddressDataProvider,

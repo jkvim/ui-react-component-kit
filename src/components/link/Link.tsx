@@ -1,19 +1,18 @@
 import * as React from 'react';
 import { MouseEvent } from 'react';
-import { kebabCase } from 'lodash';
+import { StyledLinkExternalSpan, StyledLink, StyledScreenReaderSpan } from '../../theme/common';
 
 export interface LinkProps {
+  id: string;
   title: string;
   url: string;
   isExternal?: boolean;
   onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;
-  hideExternalIcon?: boolean;
   className?: string;
 }
 
 const Link: React.SFC<LinkProps> =
-  ({ title, url, className, onClick, isExternal = false, hideExternalIcon = false }) => {
-  const id = kebabCase(title);
+  ({ id, title, url, className, onClick, isExternal = false }) => {
 
   const externalLinkProps = {
     target: '_blank',
@@ -22,8 +21,8 @@ const Link: React.SFC<LinkProps> =
   const additionalProps = isExternal ? externalLinkProps : {};
 
   return (
-    <a
-      id={`${id}-link`}
+    <StyledLink
+      id={id}
       href={url}
       onClick={onClick}
       className={className}
@@ -31,11 +30,11 @@ const Link: React.SFC<LinkProps> =
     >
       {title}
       {isExternal ?
-      <span className={`${hideExternalIcon ? '' : 'icon icon-external-link'}`}>
-        <span className="sr-only">Link opens in new window</span>
-      </span>
+      <StyledLinkExternalSpan>
+        <StyledScreenReaderSpan>Link opens in new window</StyledScreenReaderSpan>
+      </StyledLinkExternalSpan>
       : null}
-    </a>
+    </StyledLink>
   );
 };
 

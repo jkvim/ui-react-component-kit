@@ -2,7 +2,7 @@ import * as React from 'react';
 import { mount, shallow } from 'enzyme';
 import { BeforeUnload } from '../';
 
-describe('Beforeunload', () => {
+describe('BeforeUnload', () => {
   it('should not throw an error when no children are passed', () => {
     const result = shallow(<BeforeUnload />);
     expect(result.html()).toEqual(null);
@@ -25,7 +25,7 @@ describe('Beforeunload', () => {
     const mockFn = jest.fn();
 
     const renderedComp = mount(
-      <BeforeUnload onBeforeunload={mockFn}>
+      <BeforeUnload onBeforeUnload={mockFn}>
         {child}
       </BeforeUnload>
     );

@@ -1,21 +1,21 @@
 import * as React from 'react';
 
-export interface BeforeunloadProps {
-  onBeforeunload?: (event: object) => void | string;
+export interface BeforeUnloadProps {
+  onBeforeUnload?: (event: object) => void | string;
 }
 
-export default class Beforeunload extends React.Component<BeforeunloadProps, {}> {
+export default class BeforeUnload extends React.Component<BeforeUnloadProps, {}> {
   componentDidMount() {
-    window.addEventListener('beforeunload', this.handleBeforeunload);
+    window.addEventListener('beforeunload', this.handleBeforeUnload);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('beforeunload', this.handleBeforeunload);
+    window.removeEventListener('beforeunload', this.handleBeforeUnload);
   }
 
-  handleBeforeunload = (event) => {
-    const { onBeforeunload } = this.props;
-    const returnValue = onBeforeunload ? onBeforeunload(event) : '';
+  handleBeforeUnload = (event) => {
+    const { onBeforeUnload } = this.props;
+    const returnValue = onBeforeUnload ? onBeforeUnload(event) : '';
 
     // Do not intercept browser refresh during development
     if (process.env.NODE_ENV !== 'development') {

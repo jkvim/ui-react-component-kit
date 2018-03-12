@@ -1,6 +1,8 @@
 import { StyledLabel, StyledLabelCheckbox, StyledLabelRadio } from './styledLabel';
 import { StyledInputText, StyledInputCheckbox, StyledInputRadio } from './styledInput';
+import { StyledLink, StyledLinkExternalSpan } from './styledLink';
 import { StyledSelect } from './styledSelect';
+import { StyledScreenReaderSpan } from './styledScreenReaderSpan';
 import { StyledFormGroupDiv } from './styledFormGroupDiv';
 import { StyledInputGroupDiv, StyledInputRadioDiv, StyledInputCheckboxDiv } from './styledInputGroupDiv';
 import { StyledAccessibleHiddenDiv } from './styledAccessibleHiddenDiv';
@@ -14,7 +16,10 @@ export {
   StyledInputText,
   StyledInputCheckbox,
   StyledInputRadio,
+  StyledLink,
+  StyledLinkExternalSpan,
   StyledSelect,
+  StyledScreenReaderSpan,
   StyledFormGroupDiv,
   StyledInputGroupDiv,
   StyledInputRadioDiv,

@@ -30,20 +30,20 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
 >
   <styled.div>
     <div
-      className="sc-gzVnrw kDUAmj"
+      className="sc-iwsKbI hqgBrh"
     >
       <styled.div
         alignment={0}
       >
         <div
-          className="sc-htoDjs lkdQiJ"
+          className="sc-gZMcBi ireZdZ"
         >
           <styled.div
             alignment={0}
             key="0"
           >
             <div
-              className="sc-iwsKbI iTYmmp"
+              className="sc-VigVT bezPYI"
             >
               <styled.input
                 checked={false}
@@ -101,7 +101,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
             key="1"
           >
             <div
-              className="sc-iwsKbI iTYmmp"
+              className="sc-VigVT bezPYI"
             >
               <styled.input
                 checked={true}
@@ -159,7 +159,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
             key="2"
           >
             <div
-              className="sc-iwsKbI iTYmmp"
+              className="sc-VigVT bezPYI"
             >
               <styled.input
                 checked={true}
@@ -225,7 +225,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
         }
       >
         <div
-          className="sc-VigVT gZSADz"
+          className="sc-jzJRlG jhccRS"
         />
       </styled.div>
     </div>

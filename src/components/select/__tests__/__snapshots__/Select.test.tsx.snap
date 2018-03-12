@@ -16,7 +16,7 @@ exports[`SelectField props should match snapshot 1`] = `
 >
   <styled.div>
     <div
-      className="sc-gzVnrw kDUAmj"
+      className="sc-iwsKbI hqgBrh"
     >
       <styled.label
         hasError={false}
@@ -56,7 +56,7 @@ exports[`SelectField props should match snapshot 1`] = `
         value=""
       >
         <select
-          className="sc-bZQynM jMxcdL"
+          className="sc-htoDjs iRLBGW"
           id="some-id"
           onBlur={[Function]}
           onChange={[Function]}
@@ -86,7 +86,7 @@ exports[`SelectField props should match snapshot 1`] = `
         }
       >
         <div
-          className="sc-VigVT gZSADz"
+          className="sc-jzJRlG jhccRS"
         />
       </styled.div>
     </div>

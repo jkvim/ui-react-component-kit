@@ -30,9 +30,7 @@ $ git clone https://github.com/Rob-Leggett/ui-react-component-kit.git
 ### Install Dependencies <a name="install-dependencies"/>
 
 ```bash
-$ yarn install
-      or 
-$ npm install
+$ yarn install | npm install
 ```
 
 ## Usage <a name="usage"/>
@@ -45,9 +43,7 @@ The following section outlines commonly used commands. For a detailed list of al
 ### Install
 
 ```bash
-$ yarn add ui-react-component-kit --dev 
-                or 
-$ npm install ui-react-component-kit --save-dev
+$ yarn add ui-react-component-kit --dev | npm install ui-react-component-kit --save-dev
 ```
 
 ### Import
@@ -62,66 +58,48 @@ import { InputText } from 'ui-react-component-kit';
 
 To ensure you are using the correct version of Node:
 ```bash
-$ yarn check-node
-        or
-$ npm run check-node
+$ yarn check-node | npm run check-node
 ```
 
 To commit using commitizen:
 ```bash
-$ yarn commit
-        or
-$ npm run commit
+$ yarn commit | npm run commit
 ```
 
 To build the library:
 ```bash
-$ yarn build
-        or
-$ npm run build
+$ yarn build | npm run build
 ```
 
 To perform linting:
 ```bash
-$ yarn lint
-        or
-$ npm run lint
+$ yarn lint | npm run lint
 ```
 
 To automatically fix linting where possible and perform linting:
 ```bash
-$ yarn lint:fix
-        or
-$ npm run lint:fix
+$ yarn lint:fix | npm run lint:fix
 ```
 
 To perform testing (unit & snapshot):
 ```bash
-$ yarn test
-        or
-$ npm run test
+$ yarn test | npm run test
 ```
 
 To update snapshots and perform testing (unit & snapshot):
 ```bash
-$ yarn test:update-snapshot
-        or
-$ npm run test:update-snapshot
+$ yarn test:update-snapshot | npm run test:update-snapshot
 ```
 
 To start a mock server for sample api support:
 ```bash
-$ yarn mock-server-start
-        or
-$ npm run mock-server-start
+$ yarn mock-server-start | npm run mock-server-start
 ```
 
 To run styleguide - without api support:
 * styleguide - [http://localhost:6060]("http://localhost:6060)
 ```bash
-$ yarn styleguide
-        or
-$ npm run styleguide
+$ yarn styleguide | npm run styleguide
 ```
 
 To run styleguide - with api support:
@@ -130,16 +108,12 @@ To run styleguide - with api support:
 * mock server (https) - [http://localhost:8443]("http://localhost:7443)
 * mock server (admin) - [http://localhost:8889]("http://localhost:8889)
 ```bash
-$ yarn styleguide:with-mock-server
-        or
-$ npm run styleguide:with-mock-server
+$ yarn styleguide:with-mock-server | npm run styleguide:with-mock-server
 ```
 
 To build a static version of styleguide - without api support:
 ```bash
-$ yarn styleguide:build
-        or
-$ npm run styleguide:build
+$ yarn styleguide:build | npm run styleguide:build
 ```
 
 ## Metrics <a name="metrics"/>

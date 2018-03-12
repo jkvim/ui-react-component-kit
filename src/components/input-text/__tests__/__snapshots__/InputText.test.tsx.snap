@@ -7,7 +7,7 @@ exports[`InputText should match snapshot 1`] = `
 >
   <styled.div>
     <div
-      className="sc-gzVnrw kDUAmj"
+      className="sc-iwsKbI hqgBrh"
     >
       <styled.label
         hasError={false}
@@ -71,7 +71,7 @@ exports[`InputText should match snapshot 1`] = `
         }
       >
         <div
-          className="sc-VigVT gZSADz"
+          className="sc-jzJRlG jhccRS"
         />
       </styled.div>
     </div>
