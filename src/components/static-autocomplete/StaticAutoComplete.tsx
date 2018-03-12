@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { noop } from 'lodash';
 import { DataProvider, ParsedSelectedItem } from '../autocomplete';
 import { AutoComplete } from '../autocomplete';
 import StaticDataProvider from './StaticDataProvider';
@@ -29,8 +30,8 @@ class StaticAutoComplete extends React.Component<StaticAutoCompleteProps, {}> {
   }
 
   render() {
-    const {id, selectedItem, onChange, onBlur, label, hint, placeholder,
-      errorMessage, className, disabled} = this.props;
+    const {id, selectedItem, className, label, hint, placeholder,
+      errorMessage, onChange = noop, onBlur = noop, disabled} = this.props;
 
     return(
       <AutoComplete
@@ -43,7 +44,7 @@ class StaticAutoComplete extends React.Component<StaticAutoCompleteProps, {}> {
         className={className}
         disabled={disabled}
         selectedItem={selectedItem}
-        onBlur={event => onBlur(selectedItem)}
+        onBlur={() => onBlur(selectedItem)}
         onChange={onChange}
       />
     );

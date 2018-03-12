@@ -24,14 +24,14 @@ exports[`SelectField props should match snapshot 1`] = `
         theme={
           Object {
             "color": Object {
-              "color": "#333",
-              "errorColor": "#9f173f",
+              "color": "#333333",
+              "error": "#9f173f",
             },
           }
         }
       >
         <label
-          className="sc-bdVaJa kveugo"
+          className="sc-bdVaJa CyGsO"
           htmlFor="some-id"
         >
           Some error message.
@@ -46,17 +46,17 @@ exports[`SelectField props should match snapshot 1`] = `
         theme={
           Object {
             "color": Object {
-              "borderColor": "#333",
-              "color": "#333",
-              "disabledColor": "#acacac",
-              "errorColor": "#9f173f",
+              "border": "#333333",
+              "color": "#333333",
+              "disabled": "#acacac",
+              "error": "#9f173f",
             },
           }
         }
         value=""
       >
         <select
-          className="sc-htoDjs iRLBGW"
+          className="sc-htoDjs buPxWT"
           id="some-id"
           onBlur={[Function]}
           onChange={[Function]}
@@ -80,7 +80,7 @@ exports[`SelectField props should match snapshot 1`] = `
         theme={
           Object {
             "color": Object {
-              "errorColor": "#9f173f",
+              "error": "#9f173f",
             },
           }
         }

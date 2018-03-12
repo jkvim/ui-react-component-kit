@@ -9,7 +9,7 @@ const label: StyledFunction<HasErrorProps &
   React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>> = styled.label;
 
 export const StyledLabel = label`
-  color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
+  color: ${props => props.hasError ? props.theme.color.error : props.theme.color.color};
   display: inline-block;
   font-size: 1.5rem;
   position: relative;
@@ -19,8 +19,8 @@ export const StyledLabel = label`
 StyledLabel.defaultProps = {
   theme: {
     color: {
-      color: '#333',
-      errorColor: '#9f173f'
+      color: '#333333',
+      error: '#9f173f'
     }
   }
 };
@@ -32,7 +32,7 @@ const labelCheckbox: StyledFunction<HasErrorProps &
 export const StyledLabelCheckbox = labelCheckbox`
   padding: 0 5px 0 35px;
   display: inline-block;
-  color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
+  color: ${props => props.hasError ? props.theme.color.error : props.theme.color.color};
   cursor: pointer;
   
   &:before {
@@ -43,7 +43,7 @@ export const StyledLabelCheckbox = labelCheckbox`
     width: 25px;
     background: #fff;
     padding-top: 0.1rem;
-    border: 1px solid ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
+    border: 1px solid ${props => props.hasError ? props.theme.color.error : props.theme.color.color};
     box-sizing: border-box;
     margin-top: -5px;
     display: inline-block;
@@ -58,7 +58,7 @@ StyledLabelCheckbox.defaultProps = {
   theme: {
     color: {
       color: '#333',
-      errorColor: '#9f173f'
+      error: '#9f173f'
 
     }
   }
@@ -74,7 +74,7 @@ export const StyledLabelRadio = labelRadio`
   padding-left: 40px;
   padding-right: 10px;
   display: inline-block;
-  color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
+  color: ${props => props.hasError ? props.theme.color.error : props.theme.color.color};
   cursor: pointer;
   
   &:before {
@@ -85,7 +85,7 @@ export const StyledLabelRadio = labelRadio`
     background: ${props => props.theme.color.color};
     border-radius: 100%;
     border: 8px solid #ffffff;
-    box-shadow: 0 0 0 1px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
+    box-shadow: 0 0 0 1px ${props => props.hasError ? props.theme.color.error : props.theme.color.color};
     box-sizing: border-box;
     display: inline-block;
     position: absolute;
@@ -99,7 +99,7 @@ StyledLabelRadio.defaultProps = {
   theme: {
     color: {
       color: '#333333',
-      errorColor: '#9f173f'
+      error: '#9f173f'
 
     }
   }

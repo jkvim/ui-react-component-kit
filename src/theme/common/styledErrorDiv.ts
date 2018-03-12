@@ -9,14 +9,14 @@ const errorDiv: StyledFunction<HasErrorProps> = styled.div;
 
 /** @component */
 export const StyledErrorDiv = errorDiv`
-    color: ${props => props.theme.color.errorColor};
+    color: ${props => props.theme.color.error};
     padding-top: ${props => props.hasError ? '10px' : '0px'};
   `;
 
 StyledErrorDiv.defaultProps = {
   theme: {
     color: {
-      errorColor: '#9f173f'
+      error: '#9f173f'
     }
   }
 };

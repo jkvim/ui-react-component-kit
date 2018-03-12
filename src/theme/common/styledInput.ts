@@ -17,29 +17,37 @@ const inputText: StyledFunction<HasErrorProps &
 export const StyledInputText = inputText`
   width: 100%;
   background-color: white;
-  color: #333;
-  border: ${(props) => props.hasError ? 
-  `1px solid ${props.theme.color.errorColor}` : 
-  `1px solid  ${props.theme.color.borderColor}`};
+  color: ${props => props.theme.color.color};
+  border: 1px solid ${(props) => props.hasError ? props.theme.color.error : props.theme.color.border};
   border-radius: 2px;
   height: auto;
   padding: 8px 12px 5px;
   font-size: 1.5rem;
   font-weight: 100;
   
+  &:focus {
+    color: ${props => props.hasError ? props.theme.color.error : props.theme.color.color};
+    border-color: ${props => props.hasError ? props.theme.color.error : props.theme.color.focus};
+    -webkit-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.focus};
+    -moz-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.focus};
+    box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.focus};
+  }
+  
   &:disabled {
-    color:  ${props => props.theme.color.disabledColor};
-    border-color:  ${props => props.theme.color.disabledColor};
+    color:  ${props => props.theme.color.disabled};
+    border-color:  ${props => props.theme.color.disabled};
   }
 `;
 
 StyledInputText.defaultProps = {
   theme: {
     color: {
-      color: '#333',
-      errorColor: '#9f173f',
-      borderColor: '#333',
-      disabledColor: '#acacac'
+      color: '#333333',
+      border: '#333333',
+      focus: '#333333',
+      active: '#333333',
+      error: '#9f173f',
+      disabled: '#acacac'
     }
   }
 };
@@ -67,31 +75,39 @@ export const StyledInputCheckbox = inputCheckbox`
     font-family: "glyphicons";
     content: "\\E013";
     padding-left: 2px;
-    color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
-    border-color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
+    color: ${props => props.hasError ? props.theme.color.error : props.theme.color.color};
+    border-color: ${props => props.theme.color.border};
+    -webkit-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.active};
+    -moz-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.active};
+    box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.active};
   }
   
   &:focus + label:before {
-    color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
-    border-color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
-    -webkit-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
-    -moz-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
-    box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
+    color: ${props => props.hasError ? props.theme.color.error : props.theme.color.color};
+    border-color: ${props => props.theme.color.border};
+    -webkit-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.focus};
+    -moz-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.focus};
+    box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.focus};
   }
   
   &:disabled + label:before {
-    color:  ${props => props.theme.color.disabledColor};
-    border-color:  ${props => props.theme.color.disabledColor};
+    color: ${props => props.hasError ? props.theme.color.error : props.theme.color.disabled};
+    border-color: ${props => props.theme.color.border};
+    -webkit-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.disabled};
+    -moz-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.disabled};
+    box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.disabled};
   }
 `;
 
 StyledInputCheckbox.defaultProps = {
   theme: {
     color: {
-      color: '#333',
-      errorColor: '#9f173f',
-      borderColor: '#333',
-      disabledColor: '#acacac'
+      color: '#333333',
+      border: '#333333',
+      focus: '#333333',
+      active: '#333333',
+      error: '#9f173f',
+      disabled: '#acacac'
     }
   }
 };
@@ -118,30 +134,42 @@ export const StyledInputRadio = inputRadio`
     cursor: pointer;
   
   &:checked + label:before {
-    background-color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
-    border-color: #ffffff;
+    color: ${props => props.hasError ? props.theme.color.error : props.theme.color.color};
+    background-color: ${props => props.hasError ? props.theme.color.error : props.theme.color.color};
+    border-color: ${props => props.theme.color.border};
+    -webkit-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.active};
+    -moz-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.active};
+    box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.active};
   }
   
   &:focus + label:before {
-    color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
-    border-color: #ffffff;
-    -webkit-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
-    -moz-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
-    box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.borderColor};
+    color: ${props => props.hasError ? props.theme.color.error : props.theme.color.color};
+    background-color: ${props => props.hasError ? props.theme.color.error : props.theme.color.color};
+    border-color: ${props => props.theme.color.border};
+    -webkit-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.focus};
+    -moz-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.focus};
+    box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.focus};
   }
   
   &:disabled + label:before {
-    border-color:  ${props => props.theme.color.disabledColor};
+    color: ${props => props.hasError ? props.theme.color.error : props.theme.color.disabled};
+    background-color: ${props => props.hasError ? props.theme.color.error : props.theme.color.disabled};
+    border-color: ${props => props.theme.color.border};
+    -webkit-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.disabled};
+    -moz-box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.disabled};
+    box-shadow: 0 0 0px 2px ${props => props.hasError ? props.theme.color.error : props.theme.color.disabled};
   }
 `;
 
 StyledInputRadio.defaultProps = {
   theme: {
     color: {
-      color: '#333',
-      borderColor: '#333',
-      errorColor: '#9f173f',
-      disabledColor: '#acacac'
+      color: '#333333',
+      border: '#ffffff',
+      focus: '#333333',
+      active: '#333333',
+      error: '#9f173f',
+      disabled: '#acacac'
     }
   }
 };

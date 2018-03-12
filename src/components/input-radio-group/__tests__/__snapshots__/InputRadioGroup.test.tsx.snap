@@ -46,10 +46,12 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "borderColor": "#333",
-                      "color": "#333",
-                      "disabledColor": "#acacac",
-                      "errorColor": "#9f173f",
+                      "active": "#333333",
+                      "border": "#ffffff",
+                      "color": "#333333",
+                      "disabled": "#acacac",
+                      "error": "#9f173f",
+                      "focus": "#333333",
                     },
                   }
                 }
@@ -58,7 +60,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
               >
                 <input
                   checked={false}
-                  className="sc-EHOje fnOzZI"
+                  className="sc-EHOje kndAbg"
                   id="testId-0"
                   name="testName"
                   onChange={[Function]}
@@ -73,7 +75,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                   Object {
                     "color": Object {
                       "color": "#333333",
-                      "errorColor": "#9f173f",
+                      "error": "#9f173f",
                     },
                   }
                 }
@@ -104,10 +106,12 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "borderColor": "#333",
-                      "color": "#333",
-                      "disabledColor": "#acacac",
-                      "errorColor": "#9f173f",
+                      "active": "#333333",
+                      "border": "#ffffff",
+                      "color": "#333333",
+                      "disabled": "#acacac",
+                      "error": "#9f173f",
+                      "focus": "#333333",
                     },
                   }
                 }
@@ -116,7 +120,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
               >
                 <input
                   checked={true}
-                  className="sc-EHOje fnOzZI"
+                  className="sc-EHOje kndAbg"
                   id="testId-1"
                   name="testName"
                   onChange={[Function]}
@@ -131,7 +135,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                   Object {
                     "color": Object {
                       "color": "#333333",
-                      "errorColor": "#9f173f",
+                      "error": "#9f173f",
                     },
                   }
                 }
@@ -152,7 +156,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
         theme={
           Object {
             "color": Object {
-              "errorColor": "#9f173f",
+              "error": "#9f173f",
             },
           }
         }

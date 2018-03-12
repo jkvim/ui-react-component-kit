@@ -20,6 +20,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
     label="Label"
     minSearchLength={6}
     onBlur={[Function]}
+    onChange={[Function]}
   >
     <styled.div
       onBlur={[Function]}
@@ -56,14 +57,14 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "color": "#333",
-                      "errorColor": "#9f173f",
+                      "color": "#333333",
+                      "error": "#9f173f",
                     },
                   }
                 }
               >
                 <label
-                  className="sc-bdVaJa kveugo"
+                  className="sc-bdVaJa CyGsO"
                   htmlFor="address-id-autocomplete"
                 >
                   Label
@@ -80,10 +81,12 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "borderColor": "#333",
-                      "color": "#333",
-                      "disabledColor": "#acacac",
-                      "errorColor": "#9f173f",
+                      "active": "#333333",
+                      "border": "#333333",
+                      "color": "#333333",
+                      "disabled": "#acacac",
+                      "error": "#9f173f",
+                      "focus": "#333333",
                     },
                   }
                 }
@@ -91,7 +94,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
                 value=""
               >
                 <input
-                  className="sc-bxivhb jlLwIE"
+                  className="sc-bxivhb kxesp"
                   id="address-id-autocomplete"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -117,7 +120,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
           theme={
             Object {
               "color": Object {
-                "errorColor": "#9f173f",
+                "error": "#9f173f",
               },
             }
           }

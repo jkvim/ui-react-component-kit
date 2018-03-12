@@ -12,10 +12,8 @@ const select: StyledFunction<HasErrorProps &
 export const StyledSelect = select`
   width: 100%;
   background-color: white;
-  color: #333;
-  border: ${(props) => props.hasError ? 
-  `1px solid ${props.theme.color.errorColor}` : 
-  `1px solid  ${props.theme.color.borderColor}`};
+  color: ${props => props.theme.color.color};
+  border: 1px solid ${(props) => props.hasError ? props.theme.color.error : props.theme.color.border};
   border-radius: 2px;
   height: auto;
   padding: 8px 12px 5px;
@@ -23,18 +21,18 @@ export const StyledSelect = select`
   font-weight: 100;
   
   &:disabled {
-    color:  ${props => props.theme.color.disabledColor};
-    border-color:  ${props => props.theme.color.disabledColor};
+    color:  ${props => props.theme.color.disabled};
+    border-color:  ${props => props.theme.color.disabled};
   }
 `;
 
 StyledSelect.defaultProps = {
   theme: {
     color: {
-      color: '#333',
-      borderColor: '#333',
-      errorColor: '#9f173f',
-      disabledColor: '#acacac'
+      color: '#333333',
+      border: '#333333',
+      error: '#9f173f',
+      disabled: '#acacac'
     }
   }
 };

@@ -55,10 +55,12 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "borderColor": "#333",
-                      "color": "#333",
-                      "disabledColor": "#acacac",
-                      "errorColor": "#9f173f",
+                      "active": "#333333",
+                      "border": "#333333",
+                      "color": "#333333",
+                      "disabled": "#acacac",
+                      "error": "#9f173f",
+                      "focus": "#333333",
                     },
                   }
                 }
@@ -67,7 +69,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
               >
                 <input
                   checked={false}
-                  className="sc-ifAKCX hgWYGF"
+                  className="sc-ifAKCX gfdktU"
                   id="testId-0"
                   name="testName"
                   onChange={[Function]}
@@ -82,7 +84,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                   Object {
                     "color": Object {
                       "color": "#333",
-                      "errorColor": "#9f173f",
+                      "error": "#9f173f",
                     },
                   }
                 }
@@ -113,10 +115,12 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "borderColor": "#333",
-                      "color": "#333",
-                      "disabledColor": "#acacac",
-                      "errorColor": "#9f173f",
+                      "active": "#333333",
+                      "border": "#333333",
+                      "color": "#333333",
+                      "disabled": "#acacac",
+                      "error": "#9f173f",
+                      "focus": "#333333",
                     },
                   }
                 }
@@ -125,7 +129,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
               >
                 <input
                   checked={true}
-                  className="sc-ifAKCX hgWYGF"
+                  className="sc-ifAKCX gfdktU"
                   id="testId-1"
                   name="testName"
                   onChange={[Function]}
@@ -140,7 +144,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                   Object {
                     "color": Object {
                       "color": "#333",
-                      "errorColor": "#9f173f",
+                      "error": "#9f173f",
                     },
                   }
                 }
@@ -171,10 +175,12 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "borderColor": "#333",
-                      "color": "#333",
-                      "disabledColor": "#acacac",
-                      "errorColor": "#9f173f",
+                      "active": "#333333",
+                      "border": "#333333",
+                      "color": "#333333",
+                      "disabled": "#acacac",
+                      "error": "#9f173f",
+                      "focus": "#333333",
                     },
                   }
                 }
@@ -183,7 +189,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
               >
                 <input
                   checked={true}
-                  className="sc-ifAKCX hgWYGF"
+                  className="sc-ifAKCX gfdktU"
                   id="testId-2"
                   name="testName"
                   onChange={[Function]}
@@ -198,7 +204,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                   Object {
                     "color": Object {
                       "color": "#333",
-                      "errorColor": "#9f173f",
+                      "error": "#9f173f",
                     },
                   }
                 }
@@ -219,7 +225,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
         theme={
           Object {
             "color": Object {
-              "errorColor": "#9f173f",
+              "error": "#9f173f",
             },
           }
         }

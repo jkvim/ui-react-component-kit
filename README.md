@@ -10,6 +10,8 @@ A react component library that is not prescribing a state management and has the
     2. [Install Dependencies](#install-dependencies)
 2. [Usage](#usage)
     1. [How To](#how-to)
+    2. [Theming](#theming)
+    3. [Components](#components)
 3. [Dev Process](#dev-process)
 4. [Metrics](#metrics)
 5. [Third-Party Dependencies](#third-party-dependencies)
@@ -46,12 +48,78 @@ The following section outlines commonly used commands. For a detailed list of al
 $ yarn add ui-react-component-kit --dev | npm install ui-react-component-kit --save-dev
 ```
 
-### Import
-
-An example:
+### Theming <a name="theming"/>
 
 ```javascript
+import { ThemeProvider } from 'styled-components';
+// default theme provided with library
+import { defaultTheme } from 'ui-react-component-kit'; 
+```
+
+Wrap your application in the ThemeProvider and pass in the defaultTheme or your own theme.
+
+NOTE: If you don't wrap you application in the ThemeProvider the components will still be theme to the defaults, but you won't be able to override them unless you wrap your application in the ThemeProvider to pass your own theme.
+
+```javascript
+function App() {
+  return (
+    <ThemeProvider theme={defaultTheme}>
+      {/* rest of your app */}
+    </ThemeProvider>
+  );
+}
+```
+
+### Components <a name="components"/>
+
+#### InputText
+```javascript
 import { InputText } from 'ui-react-component-kit';
+```
+
+#### InputRadioGroup
+```javascript
+import { InputRadioGroup } from 'ui-react-component-kit';
+```
+
+#### InputCheckboxGroup
+```javascript
+import { InputCheckboxGroup } from 'ui-react-component-kit';
+```
+
+#### Fieldset
+```javascript
+import { Fieldset } from 'ui-react-component-kit';
+```
+
+#### Select
+```javascript
+import { Select } from 'ui-react-component-kit';
+```
+
+#### Link
+```javascript
+import { Link } from 'ui-react-component-kit';
+```
+
+#### AutoComplete
+```javascript
+import { AutoComplete } from 'ui-react-component-kit';
+```
+
+#### StaticAutoComplete
+```javascript
+import { StaticAutoComplete } from 'ui-react-component-kit';
+```
+
+#### AddressAutoComplete
+```javascript
+import { AddressAutoComplete } from 'ui-react-component-kit';
+```
+
+#### BeforeUnload
+```javascript
+import { BeforeUnload } from 'ui-react-component-kit';
 ```
 
 ## Dev Process <a name="dev-process"/>

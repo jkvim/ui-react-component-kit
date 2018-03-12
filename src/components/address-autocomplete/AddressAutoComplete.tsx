@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { noop } from 'lodash';
 import { AutoComplete, FooterComponent, ParsedSelectedItem } from '../autocomplete';
 import AddressDataProvider from './AddressDataProvider';
 
@@ -32,8 +33,8 @@ class AddressAutoComplete extends React.Component<AddressAutoCompleteProps, {}> 
   }
 
   render() {
-    const {id, label, className, disabled, selectedItem, onChange,
-      errorMessage, suggestionFooter, hint, placeholder, onBlur, focusOnMount} = this.props;
+    const {id, label, hint, placeholder, className, disabled, selectedItem,
+      errorMessage, suggestionFooter, onChange = noop, onBlur = noop, focusOnMount} = this.props;
 
     return(
       <AutoComplete
@@ -47,7 +48,7 @@ class AddressAutoComplete extends React.Component<AddressAutoCompleteProps, {}> 
         disabled={disabled}
         minSearchLength={6}
         focusOnMount={focusOnMount}
-        onBlur={event => onBlur(selectedItem)}
+        onBlur={() => onBlur(selectedItem)}
         selectedItem={selectedItem}
         onChange={onChange}
         suggestionFooter={suggestionFooter}
