@@ -1,2 +1,14 @@
 language: node_js
-script: npm install && npm test
+install:
+  - npm install
+script:
+  - npm test
+  - npm run styleguide:build
+deploy:
+  provider: pages
+  local-dir: styleguide
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  keep-history: true
+  on:
+    branch: master
