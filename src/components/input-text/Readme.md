@@ -41,7 +41,8 @@ Disabled
   
     <InputText
         id={'disabled-input-text'}
-        label={'Disabled Input Text'}
+        label={'Disabled Input Text'}   
+        hint={'Sample hint'}
         value={state.value}
         onChange={(value) => {
             setState({value});

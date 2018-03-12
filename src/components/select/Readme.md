@@ -52,6 +52,7 @@ Disabled
     <Select
         id={'disabled-select'}
         label={'Disabled Select'}
+        hint={'Sample hint'}
         placeholder={'Select an Option'}
         value={state.value}
         onChange={(value) => {

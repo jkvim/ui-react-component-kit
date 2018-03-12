@@ -11,12 +11,12 @@ const hintDiv: StyledFunction<HasErrorProps> = styled.div;
 export const StyledHintDiv = hintDiv`
     color: ${props => props.hasError ? props.theme.color.errorColor : props.theme.color.color};
     padding-bottom: 5px;
-    padding-top: 5px;
   `;
 
 StyledHintDiv.defaultProps = {
   theme: {
     color: {
+      color: '#333',
       errorColor: '#9f173f'
     }
   }

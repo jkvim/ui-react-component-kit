@@ -2,10 +2,10 @@ import { injectGlobal } from 'styled-components';
 
 export const defaultTheme = {
   color: {
-    errorColor: '#9f173f',
+    color: '#333',
     borderColor: '#333',
-    disableColor: '#acacac',
-    color: '#333'
+    errorColor: '#9f173f',
+    disabledColor: '#acacac'
   }
 };
 

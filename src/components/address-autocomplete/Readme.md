@@ -48,6 +48,7 @@ Disabled
     <AddressAutoComplete
         id={'disabled-address-autocomplete'}
         label={'Disabled Address Autocomplete'}
+        hint={'Sample hint'}
         endpoint={'http://localhost:8882/addresses'}
         selectedItem={state.selectedItem}
         onChange={(selectedItem) => {

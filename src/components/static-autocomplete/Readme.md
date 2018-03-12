@@ -48,6 +48,7 @@ Disabled
     <StaticAutoComplete
         id={'disabled-static-autocomplete'}
         label={'Disabled Static Autocomplete'}
+        hint={'Sample hint'}
         suggestions={['apple', 'banana', 'mango', 'pineapple', 'oranges']}
         selectedItem={state.selectedItem}
         onChange={(selectedItem) => {

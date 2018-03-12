@@ -23,8 +23,8 @@ export const StyledSelect = select`
   font-weight: 100;
   
   &:disabled {
-    color:  ${props => props.theme.color.disableColor};
-    border-color:  ${props => props.theme.color.disableColor};
+    color:  ${props => props.theme.color.disabledColor};
+    border-color:  ${props => props.theme.color.disabledColor};
   }
 `;
 
@@ -32,9 +32,9 @@ StyledSelect.defaultProps = {
   theme: {
     color: {
       color: '#333',
-      errorColor: '#9f173f',
       borderColor: '#333',
-      disableColor: '#acacac'
+      errorColor: '#9f173f',
+      disabledColor: '#acacac'
     }
   }
 };

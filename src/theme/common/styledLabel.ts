@@ -13,14 +13,14 @@ export const StyledLabel = label`
   display: inline-block;
   font-size: 1.5rem;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 `;
 
 StyledLabel.defaultProps = {
   theme: {
     color: {
-      errorColor: '#9f173f',
-      color: '#333'
+      color: '#333',
+      errorColor: '#9f173f'
     }
   }
 };
@@ -57,8 +57,9 @@ export const StyledLabelCheckbox = labelCheckbox`
 StyledLabelCheckbox.defaultProps = {
   theme: {
     color: {
-      errorColor: '#9f173f',
-      color: '#333'
+      color: '#333',
+      errorColor: '#9f173f'
+
     }
   }
 };
@@ -91,15 +92,15 @@ export const StyledLabelRadio = labelRadio`
     left: 0;
     top: calc((0% - (100% - 1rem)) - 8%);
     background-color: transparent;
-
   }
 `;
 
 StyledLabelRadio.defaultProps = {
   theme: {
     color: {
-      errorColor: '#9f173f',
-      color: '#333333'
+      color: '#333333',
+      errorColor: '#9f173f'
+
     }
   }
 };

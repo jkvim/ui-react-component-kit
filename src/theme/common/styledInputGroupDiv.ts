@@ -20,13 +20,11 @@ const inputRadioDiv: StyledFunction<AlignmentProps> = styled.div;
 /** @component */
 export const StyledInputRadioDiv = inputRadioDiv`
   position: relative;
-  padding-bottom: ${props =>
-    props.alignment === alignment.horizontal ? '0px' : '20px'};
+  padding-top: ${props =>
+    props.alignment === alignment.horizontal ? '10px' : '10px'};
   
-  &:last-child {
-    padding-bottom: ${props =>
-      props.alignment === alignment.horizontal ? '0px' : '0px'};
-  }
+  padding-bottom: ${props =>
+    props.alignment === alignment.horizontal ? '10px' : '10px'};
 `;
 
 const inputCheckboxDiv: StyledFunction<AlignmentProps> = styled.div;
@@ -34,11 +32,9 @@ const inputCheckboxDiv: StyledFunction<AlignmentProps> = styled.div;
 /** @component */
 export const StyledInputCheckboxDiv = inputCheckboxDiv`
   position: relative;
-  padding-bottom: ${props =>
-  props.alignment === alignment.horizontal ? '0px' : '15px'};
+  padding-top: ${props =>
+    props.alignment === alignment.horizontal ? '10px' : '10px'};
   
-  &:last-child {
-    padding-bottom: ${props =>
-  props.alignment === alignment.horizontal ? '0px' : '0px'};
-  }
+  padding-bottom: ${props =>
+    props.alignment === alignment.horizontal ? '10px' : '10px'};
 `;

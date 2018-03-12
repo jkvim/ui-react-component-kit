@@ -28,8 +28,8 @@ export const StyledInputText = inputText`
   font-weight: 100;
   
   &:disabled {
-    color:  ${props => props.theme.color.disableColor};
-    border-color:  ${props => props.theme.color.disableColor};
+    color:  ${props => props.theme.color.disabledColor};
+    border-color:  ${props => props.theme.color.disabledColor};
   }
 `;
 
@@ -39,7 +39,7 @@ StyledInputText.defaultProps = {
       color: '#333',
       errorColor: '#9f173f',
       borderColor: '#333',
-      disableColor: '#acacac'
+      disabledColor: '#acacac'
     }
   }
 };
@@ -80,8 +80,8 @@ export const StyledInputCheckbox = inputCheckbox`
   }
   
   &:disabled + label:before {
-    color:  ${props => props.theme.color.disableColor};
-    border-color:  ${props => props.theme.color.disableColor};
+    color:  ${props => props.theme.color.disabledColor};
+    border-color:  ${props => props.theme.color.disabledColor};
   }
 `;
 
@@ -91,7 +91,7 @@ StyledInputCheckbox.defaultProps = {
       color: '#333',
       errorColor: '#9f173f',
       borderColor: '#333',
-      disableColor: '#acacac'
+      disabledColor: '#acacac'
     }
   }
 };
@@ -131,17 +131,17 @@ export const StyledInputRadio = inputRadio`
   }
   
   &:disabled + label:before {
-    border-color:  ${props => props.theme.color.disableColor};
+    border-color:  ${props => props.theme.color.disabledColor};
   }
 `;
 
 StyledInputRadio.defaultProps = {
   theme: {
     color: {
-      color: '#333333',
+      color: '#333',
+      borderColor: '#333',
       errorColor: '#9f173f',
-      borderColor: '#333333',
-      disableColor: '#acacac'
+      disabledColor: '#acacac'
     }
   }
 };
