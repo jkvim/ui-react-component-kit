@@ -63,7 +63,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
                 }
               >
                 <label
-                  className="sc-bdVaJa glxmnH"
+                  className="sc-bdVaJa kveugo"
                   htmlFor="address-id-autocomplete"
                 >
                   Label
@@ -82,7 +82,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
                     "color": Object {
                       "borderColor": "#333",
                       "color": "#333",
-                      "disableColor": "#acacac",
+                      "disabledColor": "#acacac",
                       "errorColor": "#9f173f",
                     },
                   }

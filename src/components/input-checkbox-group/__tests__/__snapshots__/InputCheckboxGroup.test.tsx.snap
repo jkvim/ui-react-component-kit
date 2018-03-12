@@ -43,7 +43,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
             key="0"
           >
             <div
-              className="sc-iwsKbI iFdLkt"
+              className="sc-iwsKbI iTYmmp"
             >
               <styled.input
                 checked={false}
@@ -57,7 +57,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                     "color": Object {
                       "borderColor": "#333",
                       "color": "#333",
-                      "disableColor": "#acacac",
+                      "disabledColor": "#acacac",
                       "errorColor": "#9f173f",
                     },
                   }
@@ -101,7 +101,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
             key="1"
           >
             <div
-              className="sc-iwsKbI iFdLkt"
+              className="sc-iwsKbI iTYmmp"
             >
               <styled.input
                 checked={true}
@@ -115,7 +115,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                     "color": Object {
                       "borderColor": "#333",
                       "color": "#333",
-                      "disableColor": "#acacac",
+                      "disabledColor": "#acacac",
                       "errorColor": "#9f173f",
                     },
                   }
@@ -159,7 +159,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
             key="2"
           >
             <div
-              className="sc-iwsKbI iFdLkt"
+              className="sc-iwsKbI iTYmmp"
             >
               <styled.input
                 checked={true}
@@ -173,7 +173,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                     "color": Object {
                       "borderColor": "#333",
                       "color": "#333",
-                      "disableColor": "#acacac",
+                      "disabledColor": "#acacac",
                       "errorColor": "#9f173f",
                     },
                   }
