@@ -9,9 +9,9 @@ const label: StyledFunction<HasErrorProps &
   React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>> = styled.label;
 
 export const StyledLabel = label`
-  color: ${props => props.hasError ? props.theme.color.error : props.theme.color.color};
+  color: ${props => props.hasError ? props.theme.color.error : props.theme.color.font};
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   position: relative;
   padding-bottom: 5px;
 `;
@@ -19,8 +19,8 @@ export const StyledLabel = label`
 StyledLabel.defaultProps = {
   theme: {
     color: {
-      color: '#333333',
-      error: '#9f173f'
+      font: '#868e96',
+      error: '#c71c22'
     }
   }
 };
@@ -32,8 +32,9 @@ const labelCheckbox: StyledFunction<HasErrorProps &
 export const StyledLabelCheckbox = labelCheckbox`
   padding: 0 5px 0 35px;
   display: inline-block;
-  color: ${props => props.hasError ? props.theme.color.error : props.theme.color.color};
+  color: ${props => props.hasError ? props.theme.color.error : props.theme.color.font};
   cursor: pointer;
+  font-size: 1.6rem;
   
   &:before {
     content: "";
@@ -43,7 +44,7 @@ export const StyledLabelCheckbox = labelCheckbox`
     width: 25px;
     background: #fff;
     padding-top: 0.1rem;
-    border: 1px solid ${props => props.hasError ? props.theme.color.error : props.theme.color.color};
+    border: 1px solid ${props => props.hasError ? props.theme.color.error : props.theme.color.border};
     box-sizing: border-box;
     margin-top: -5px;
     display: inline-block;
@@ -57,8 +58,9 @@ export const StyledLabelCheckbox = labelCheckbox`
 StyledLabelCheckbox.defaultProps = {
   theme: {
     color: {
-      color: '#333',
-      error: '#9f173f'
+      border: '#2fa4e7',
+      font: '#868e96',
+      error: '#c71c22'
 
     }
   }
@@ -74,18 +76,18 @@ export const StyledLabelRadio = labelRadio`
   padding-left: 40px;
   padding-right: 10px;
   display: inline-block;
-  color: ${props => props.hasError ? props.theme.color.error : props.theme.color.color};
+  color: ${props => props.hasError ? props.theme.color.error : props.theme.color.font};
   cursor: pointer;
+  font-size: 1.6rem;
   
   &:before {
     content: "";
     font-size: 2.6rem;
     height: calc(2.6rem + 2px);
     width: calc(2.6rem + 2px);
-    background: ${props => props.theme.color.color};
     border-radius: 100%;
     border: 8px solid #ffffff;
-    box-shadow: 0 0 0 1px ${props => props.hasError ? props.theme.color.error : props.theme.color.color};
+    box-shadow: 0 0 0 1px ${props => props.hasError ? props.theme.color.error : props.theme.color.border};
     box-sizing: border-box;
     display: inline-block;
     position: absolute;
@@ -98,8 +100,9 @@ export const StyledLabelRadio = labelRadio`
 StyledLabelRadio.defaultProps = {
   theme: {
     color: {
-      color: '#333333',
-      error: '#9f173f'
+      border: '#2fa4e7',
+      font: '#868e96',
+      error: '#c71c22',
 
     }
   }

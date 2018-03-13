@@ -6,13 +6,27 @@ const link: StyledFunction<
 
 /** @component */
 export const StyledLink = link`
-  color: ${props => props.theme.color.color};
+  color: ${props => props.theme.color.default};
+  text-decoration: none;
+  font-size: 1.8rem;
+  
+  &:hover {
+    color: ${props => props.theme.color.hover};
+  }
+  
+  &:focus {
+    color: ${props => props.theme.color.focus};
+  }
 `;
 
 StyledLink.defaultProps = {
   theme: {
     color: {
-      color: '#333333'
+      default: '#2fa4e7',
+      hover: '#178acc',
+      focus: '#54b4eb',
+      error: '#c71c22',
+      disabled: '#acacac'
     }
   }
 };

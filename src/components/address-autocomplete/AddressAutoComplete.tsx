@@ -48,8 +48,8 @@ class AddressAutoComplete extends React.Component<AddressAutoCompleteProps, {}> 
         disabled={disabled}
         minSearchLength={6}
         focusOnMount={focusOnMount}
-        onBlur={() => onBlur(selectedItem)}
         selectedItem={selectedItem}
+        onBlur={onBlur}
         onChange={onChange}
         suggestionFooter={suggestionFooter}
       />

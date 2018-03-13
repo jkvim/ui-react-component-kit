@@ -7,7 +7,7 @@ exports[`InputText should match snapshot 1`] = `
 >
   <styled.div>
     <div
-      className="sc-iwsKbI hqgBrh"
+      className="sc-gZMcBi gxaaKf"
     >
       <styled.label
         hasError={false}
@@ -15,14 +15,14 @@ exports[`InputText should match snapshot 1`] = `
         theme={
           Object {
             "color": Object {
-              "color": "#333333",
-              "error": "#9f173f",
+              "error": "#c71c22",
+              "font": "#868e96",
             },
           }
         }
       >
         <label
-          className="sc-bdVaJa CyGsO"
+          className="sc-bdVaJa MbNax"
           htmlFor="1234567890"
         >
           The label
@@ -39,12 +39,14 @@ exports[`InputText should match snapshot 1`] = `
         theme={
           Object {
             "color": Object {
-              "active": "#333333",
-              "border": "#333333",
-              "color": "#333333",
+              "background": "#ffffff",
+              "border": "#178acc",
+              "default": "#2fa4e7",
               "disabled": "#acacac",
-              "error": "#9f173f",
-              "focus": "#333333",
+              "error": "#c71c22",
+              "focus": "#54b4eb",
+              "font": "#868e96",
+              "hover": "#178acc",
             },
           }
         }
@@ -52,7 +54,7 @@ exports[`InputText should match snapshot 1`] = `
         value=""
       >
         <input
-          className="sc-bxivhb kxesp"
+          className="sc-bxivhb cZTkCI"
           id="1234567890"
           onBlur={[Function]}
           onChange={[Function]}
@@ -67,13 +69,13 @@ exports[`InputText should match snapshot 1`] = `
         theme={
           Object {
             "color": Object {
-              "error": "#9f173f",
+              "error": "#c71c22",
             },
           }
         }
       >
         <div
-          className="sc-jzJRlG jhccRS"
+          className="sc-cSHVUG dYbvrH"
         />
       </styled.div>
     </div>

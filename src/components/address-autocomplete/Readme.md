@@ -73,8 +73,8 @@ Error
         errorMessage={state.errorMessage}
         endpoint={'http://localhost:8882/addresses'}
         selectedItem={state.selectedItem}
-        onBlur={(selectedItem) => {
-            setState({errorMessage: selectedItem ? '' : 'Field Required'});
+        onBlur={(isItemSelected) => {
+            setState({errorMessage: isItemSelected ? '' : 'Field Required'});
         }}
         onChange={(selectedItem) => {
             setState({selectedItem, errorMessage: ''});

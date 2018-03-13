@@ -33,7 +33,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
       role="application"
     >
       <div
-        className="sc-cSHVUG kBuAje"
+        className="sc-kAzzGY kBBDaw"
         onBlur={[Function]}
         role="application"
       >
@@ -55,7 +55,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
         >
           <styled.div>
             <div
-              className="sc-iwsKbI hqgBrh"
+              className="sc-gZMcBi gxaaKf"
             >
               <styled.label
                 hasError={false}
@@ -63,14 +63,14 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "color": "#333333",
-                      "error": "#9f173f",
+                      "error": "#c71c22",
+                      "font": "#868e96",
                     },
                   }
                 }
               >
                 <label
-                  className="sc-bdVaJa CyGsO"
+                  className="sc-bdVaJa MbNax"
                   htmlFor="static-id-autocomplete"
                 >
                   Label
@@ -87,12 +87,14 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "active": "#333333",
-                      "border": "#333333",
-                      "color": "#333333",
+                      "background": "#ffffff",
+                      "border": "#178acc",
+                      "default": "#2fa4e7",
                       "disabled": "#acacac",
-                      "error": "#9f173f",
-                      "focus": "#333333",
+                      "error": "#c71c22",
+                      "focus": "#54b4eb",
+                      "font": "#868e96",
+                      "hover": "#178acc",
                     },
                   }
                 }
@@ -100,7 +102,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 value=""
               >
                 <input
-                  className="sc-bxivhb kxesp"
+                  className="sc-bxivhb cZTkCI"
                   id="static-id-autocomplete"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -118,7 +120,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
         >
           <div
             aria-live="polite"
-            className="sc-jTzLTM bWZYaM"
+            className="sc-fjdhpX gVkdZp"
           />
         </styled.div>
         <styled.div
@@ -126,13 +128,13 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
           theme={
             Object {
               "color": Object {
-                "error": "#9f173f",
+                "error": "#c71c22",
               },
             }
           }
         >
           <div
-            className="sc-jzJRlG jhccRS"
+            className="sc-cSHVUG dYbvrH"
           />
         </styled.div>
       </div>

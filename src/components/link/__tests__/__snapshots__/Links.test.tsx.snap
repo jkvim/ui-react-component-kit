@@ -8,7 +8,11 @@ exports[`Link snapshot 1`] = `
   theme={
     Object {
       "color": Object {
-        "color": "#333333",
+        "default": "#2fa4e7",
+        "disabled": "#acacac",
+        "error": "#c71c22",
+        "focus": "#54b4eb",
+        "hover": "#178acc",
       },
     }
   }

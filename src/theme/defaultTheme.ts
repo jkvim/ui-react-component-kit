@@ -1,12 +1,25 @@
 import { injectGlobal } from 'styled-components';
 
 export const defaultTheme = {
+  breakpoint: {
+    xs: '0',
+    sm: '576px',
+    md: '768px',
+    lg: '992px',
+    xl: '1200px'
+  },
   color: {
-    color: '#333333',
-    border: '#ffffff',
-    focus: '#333333',
-    active: '#333333',
-    error: '#9f173f',
+    default: '#2fa4e7',
+    font: '#868e96',
+    border: '#2fa4e7',
+    background: '#ffffff',
+    primary: '#2fa4e7',
+    secondary: '#e9ecef',
+    tertiary: '#343a40',
+    hover: '#178acc',
+    focus: '#54b4eb',
+    checked: '#2fa4e7',
+    error: '#c71c22',
     disabled: '#acacac'
   }
 };

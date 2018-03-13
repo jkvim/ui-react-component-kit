@@ -24,7 +24,7 @@ export interface AutoCompleteProps {
   className?: string;
   disabled?: boolean;
   selectedItem?: ParsedSelectedItem;
-  onBlur?: (obj?: ParsedSelectedItem) => void;
+  onBlur?: (isItemSelected?: boolean) => void;
   onChange?: (obj?: ParsedSelectedItem) => void;
   suggestionFooter?: FooterComponent;
   focusOnMount?: boolean;
@@ -121,7 +121,7 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
     });
 
     if (this.props.onBlur) {
-      this.props.onBlur();
+      this.props.onBlur(isItemSelected);
     }
   }
 

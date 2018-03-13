@@ -44,7 +44,7 @@ class StaticAutoComplete extends React.Component<StaticAutoCompleteProps, {}> {
         className={className}
         disabled={disabled}
         selectedItem={selectedItem}
-        onBlur={() => onBlur(selectedItem)}
+        onBlur={onBlur}
         onChange={onChange}
       />
     );

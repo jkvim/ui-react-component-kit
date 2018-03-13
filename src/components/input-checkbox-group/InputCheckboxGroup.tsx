@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { omit, noop } from 'lodash';
-import { alignment } from '../../constants/constants';
 import {
   StyledHintDiv,
   StyledErrorDiv,
@@ -22,7 +21,7 @@ export interface CheckBoxFieldProps {
   options: CheckBox[];
   hint?: string;
   values?: string[];
-  align?: alignment;
+  align?: string; /* 'horizontal' | 'vertical' */
   errorMessage?: string;
   className?: string;
   disabled?: boolean;
@@ -36,7 +35,7 @@ export interface CheckBoxFieldProps {
 
 const InputCheckbox: React.SFC<CheckBoxFieldProps> =
   ({ id, name, hint, options, values = [], className, errorMessage = '',
-     align = alignment.horizontal, onChange = noop, setInputRef = noop, disabled }) => {
+     align = 'horizontal', onChange = noop, setInputRef = noop, disabled }) => {
 
     return (
       <StyledFormGroupDiv className={className}>

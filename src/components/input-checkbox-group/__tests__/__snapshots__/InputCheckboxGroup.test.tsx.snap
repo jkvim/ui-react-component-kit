@@ -30,20 +30,20 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
 >
   <styled.div>
     <div
-      className="sc-iwsKbI hqgBrh"
+      className="sc-gZMcBi gxaaKf"
     >
       <styled.div
-        alignment={0}
+        alignment="horizontal"
       >
         <div
-          className="sc-gZMcBi ireZdZ"
+          className="sc-gqjmRU etyENR"
         >
           <styled.div
-            alignment={0}
+            alignment="horizontal"
             key="0"
           >
             <div
-              className="sc-VigVT bezPYI"
+              className="sc-jTzLTM RIEuF"
             >
               <styled.input
                 checked={false}
@@ -55,12 +55,14 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "active": "#333333",
-                      "border": "#333333",
-                      "color": "#333333",
+                      "background": "#ffffff",
+                      "border": "#178acc",
+                      "checked": "#2fa4e7",
+                      "default": "#2fa4e7",
                       "disabled": "#acacac",
-                      "error": "#9f173f",
-                      "focus": "#333333",
+                      "error": "#c71c22",
+                      "focus": "#54b4eb",
+                      "hover": "#178acc",
                     },
                   }
                 }
@@ -69,7 +71,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
               >
                 <input
                   checked={false}
-                  className="sc-ifAKCX gfdktU"
+                  className="sc-ifAKCX ksVSHG"
                   id="testId-0"
                   name="testName"
                   onChange={[Function]}
@@ -83,14 +85,15 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "color": "#333",
-                      "error": "#9f173f",
+                      "border": "#2fa4e7",
+                      "error": "#c71c22",
+                      "font": "#868e96",
                     },
                   }
                 }
               >
                 <label
-                  className="sc-bwzfXH lcbjGL"
+                  className="sc-bwzfXH qZhlj"
                   htmlFor="testId-0"
                 >
                   One
@@ -99,11 +102,11 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
             </div>
           </styled.div>
           <styled.div
-            alignment={0}
+            alignment="horizontal"
             key="1"
           >
             <div
-              className="sc-VigVT bezPYI"
+              className="sc-jTzLTM RIEuF"
             >
               <styled.input
                 checked={true}
@@ -115,12 +118,14 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "active": "#333333",
-                      "border": "#333333",
-                      "color": "#333333",
+                      "background": "#ffffff",
+                      "border": "#178acc",
+                      "checked": "#2fa4e7",
+                      "default": "#2fa4e7",
                       "disabled": "#acacac",
-                      "error": "#9f173f",
-                      "focus": "#333333",
+                      "error": "#c71c22",
+                      "focus": "#54b4eb",
+                      "hover": "#178acc",
                     },
                   }
                 }
@@ -129,7 +134,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
               >
                 <input
                   checked={true}
-                  className="sc-ifAKCX gfdktU"
+                  className="sc-ifAKCX ksVSHG"
                   id="testId-1"
                   name="testName"
                   onChange={[Function]}
@@ -143,14 +148,15 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "color": "#333",
-                      "error": "#9f173f",
+                      "border": "#2fa4e7",
+                      "error": "#c71c22",
+                      "font": "#868e96",
                     },
                   }
                 }
               >
                 <label
-                  className="sc-bwzfXH lcbjGL"
+                  className="sc-bwzfXH qZhlj"
                   htmlFor="testId-1"
                 >
                   Two
@@ -159,11 +165,11 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
             </div>
           </styled.div>
           <styled.div
-            alignment={0}
+            alignment="horizontal"
             key="2"
           >
             <div
-              className="sc-VigVT bezPYI"
+              className="sc-jTzLTM RIEuF"
             >
               <styled.input
                 checked={true}
@@ -175,12 +181,14 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "active": "#333333",
-                      "border": "#333333",
-                      "color": "#333333",
+                      "background": "#ffffff",
+                      "border": "#178acc",
+                      "checked": "#2fa4e7",
+                      "default": "#2fa4e7",
                       "disabled": "#acacac",
-                      "error": "#9f173f",
-                      "focus": "#333333",
+                      "error": "#c71c22",
+                      "focus": "#54b4eb",
+                      "hover": "#178acc",
                     },
                   }
                 }
@@ -189,7 +197,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
               >
                 <input
                   checked={true}
-                  className="sc-ifAKCX gfdktU"
+                  className="sc-ifAKCX ksVSHG"
                   id="testId-2"
                   name="testName"
                   onChange={[Function]}
@@ -203,14 +211,15 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "color": "#333",
-                      "error": "#9f173f",
+                      "border": "#2fa4e7",
+                      "error": "#c71c22",
+                      "font": "#868e96",
                     },
                   }
                 }
               >
                 <label
-                  className="sc-bwzfXH lcbjGL"
+                  className="sc-bwzfXH qZhlj"
                   htmlFor="testId-2"
                 >
                   Three
@@ -225,13 +234,13 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
         theme={
           Object {
             "color": Object {
-              "error": "#9f173f",
+              "error": "#c71c22",
             },
           }
         }
       >
         <div
-          className="sc-jzJRlG jhccRS"
+          className="sc-cSHVUG dYbvrH"
         />
       </styled.div>
     </div>

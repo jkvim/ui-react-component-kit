@@ -97,6 +97,11 @@ import { Fieldset } from 'ui-react-component-kit';
 import { Select } from 'ui-react-component-kit';
 ```
 
+#### Button
+```javascript
+import { Button } from 'ui-react-component-kit';
+```
+
 #### Link
 ```javascript
 import { Link } from 'ui-react-component-kit';
@@ -120,6 +125,11 @@ import { AddressAutoComplete } from 'ui-react-component-kit';
 #### BeforeUnload
 ```javascript
 import { BeforeUnload } from 'ui-react-component-kit';
+```
+
+#### IdleTime
+```javascript
+import { IdleTime } from 'ui-react-component-kit';
 ```
 
 ## Dev Process <a name="dev-process"/>

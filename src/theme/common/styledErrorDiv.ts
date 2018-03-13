@@ -11,12 +11,13 @@ const errorDiv: StyledFunction<HasErrorProps> = styled.div;
 export const StyledErrorDiv = errorDiv`
     color: ${props => props.theme.color.error};
     padding-top: ${props => props.hasError ? '10px' : '0px'};
+    font-size: 1.6rem;
   `;
 
 StyledErrorDiv.defaultProps = {
   theme: {
     color: {
-      error: '#9f173f'
+      error: '#c71c22'
     }
   }
 };

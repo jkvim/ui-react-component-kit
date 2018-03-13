@@ -1,6 +1,4 @@
 ```jsx
-    initialState = {};
-  
     <Link
         id={'internal-link'}
         title={'Internal Link'}   
@@ -9,8 +7,6 @@
 ```
 
 ```jsx
-    initialState = {};
-  
     <Link
         id={'external-link'}
         title={'External Link'}   

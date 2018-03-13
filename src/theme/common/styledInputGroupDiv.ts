@@ -3,7 +3,7 @@ import styled, { StyledFunction, StyledComponentClass } from 'styled-components'
 import { alignment } from '../../constants/constants';
 
 export interface AlignmentProps {
-  alignment: alignment;
+  alignment: string;
 }
 
 const inputGroupDiv: StyledFunction<AlignmentProps> = styled.div;

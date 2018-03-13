@@ -4,7 +4,7 @@ export interface BeforeUnloadProps {
   onBeforeUnload?: (event: object) => void | string;
 }
 
-export default class BeforeUnload extends React.Component<BeforeUnloadProps, {}> {
+class BeforeUnload extends React.Component<BeforeUnloadProps, {}> {
   componentDidMount() {
     window.addEventListener('beforeunload', this.handleBeforeUnload);
   }
@@ -32,3 +32,5 @@ export default class BeforeUnload extends React.Component<BeforeUnloadProps, {}>
     return React.Children.only(this.props.children);
   }
 }
+
+export default BeforeUnload;

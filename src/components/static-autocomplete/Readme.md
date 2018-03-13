@@ -73,8 +73,8 @@ Error
         errorMessage={state.errorMessage}
         suggestions={['apple', 'banana', 'mango', 'pineapple', 'oranges']}
         selectedItem={state.selectedItem}
-        onBlur={(selectedItem) => {
-            setState({errorMessage: selectedItem ? '' : 'Field Required'});
+        onBlur={(isItemSelected) => {
+            setState({errorMessage: isItemSelected ? '' : 'Field Required'});
         }}
         onChange={(selectedItem) => {
             setState({selectedItem, errorMessage: ''});

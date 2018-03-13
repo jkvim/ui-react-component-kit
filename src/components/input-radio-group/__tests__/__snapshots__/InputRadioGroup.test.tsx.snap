@@ -21,20 +21,20 @@ exports[`InputRadioGroup should match snapshot 1`] = `
 >
   <styled.div>
     <div
-      className="sc-iwsKbI hqgBrh"
+      className="sc-gZMcBi gxaaKf"
     >
       <styled.div
-        alignment={0}
+        alignment="horizontal"
       >
         <div
-          className="sc-gZMcBi ireZdZ"
+          className="sc-gqjmRU etyENR"
         >
           <styled.div
-            alignment={0}
+            alignment="horizontal"
             key="0"
           >
             <div
-              className="sc-gqjmRU ySqxg"
+              className="sc-VigVT bezPYI"
             >
               <styled.input
                 checked={false}
@@ -46,12 +46,14 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "active": "#333333",
-                      "border": "#ffffff",
-                      "color": "#333333",
+                      "background": "#ffffff",
+                      "border": "#178acc",
+                      "checked": "#2fa4e7",
+                      "default": "#2fa4e7",
                       "disabled": "#acacac",
-                      "error": "#9f173f",
-                      "focus": "#333333",
+                      "error": "#c71c22",
+                      "focus": "#54b4eb",
+                      "hover": "#178acc",
                     },
                   }
                 }
@@ -60,7 +62,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
               >
                 <input
                   checked={false}
-                  className="sc-EHOje kndAbg"
+                  className="sc-EHOje iLPXhd"
                   id="testId-0"
                   name="testName"
                   onChange={[Function]}
@@ -74,14 +76,15 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "color": "#333333",
-                      "error": "#9f173f",
+                      "border": "#2fa4e7",
+                      "error": "#c71c22",
+                      "font": "#868e96",
                     },
                   }
                 }
               >
                 <label
-                  className="sc-htpNat gdmZlt"
+                  className="sc-htpNat ftmpvS"
                   htmlFor="testId-0"
                 >
                   one
@@ -90,11 +93,11 @@ exports[`InputRadioGroup should match snapshot 1`] = `
             </div>
           </styled.div>
           <styled.div
-            alignment={0}
+            alignment="horizontal"
             key="1"
           >
             <div
-              className="sc-gqjmRU ySqxg"
+              className="sc-VigVT bezPYI"
             >
               <styled.input
                 checked={true}
@@ -106,12 +109,14 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "active": "#333333",
-                      "border": "#ffffff",
-                      "color": "#333333",
+                      "background": "#ffffff",
+                      "border": "#178acc",
+                      "checked": "#2fa4e7",
+                      "default": "#2fa4e7",
                       "disabled": "#acacac",
-                      "error": "#9f173f",
-                      "focus": "#333333",
+                      "error": "#c71c22",
+                      "focus": "#54b4eb",
+                      "hover": "#178acc",
                     },
                   }
                 }
@@ -120,7 +125,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
               >
                 <input
                   checked={true}
-                  className="sc-EHOje kndAbg"
+                  className="sc-EHOje iLPXhd"
                   id="testId-1"
                   name="testName"
                   onChange={[Function]}
@@ -134,14 +139,15 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                 theme={
                   Object {
                     "color": Object {
-                      "color": "#333333",
-                      "error": "#9f173f",
+                      "border": "#2fa4e7",
+                      "error": "#c71c22",
+                      "font": "#868e96",
                     },
                   }
                 }
               >
                 <label
-                  className="sc-htpNat gdmZlt"
+                  className="sc-htpNat ftmpvS"
                   htmlFor="testId-1"
                 >
                   two
@@ -156,13 +162,13 @@ exports[`InputRadioGroup should match snapshot 1`] = `
         theme={
           Object {
             "color": Object {
-              "error": "#9f173f",
+              "error": "#c71c22",
             },
           }
         }
       >
         <div
-          className="sc-jzJRlG jhccRS"
+          className="sc-cSHVUG dYbvrH"
         />
       </styled.div>
     </div>

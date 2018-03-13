@@ -22,7 +22,7 @@ export interface InputRadioGroupProps {
   options: InputRadio[];
   hint?: string;
   value?: string|number|boolean;
-  align?: alignment;
+  align?: string;
   errorMessage?: string;
   className?: string;
   disabled?: boolean;
