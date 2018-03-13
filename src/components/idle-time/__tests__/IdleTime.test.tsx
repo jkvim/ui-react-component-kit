@@ -38,7 +38,7 @@ describe('IdleTime', () => {
 
   test('onIdleAction', () => {
 
-    let instance = component.instance() as IdleTime
+    let instance = component.instance() as IdleTime;
     expect(mockFn).not.toBeCalled();
 
     instance.onIdleAction();
