@@ -8,3 +8,10 @@ export const buttonType = {
   secondary: 'secondary',
   tertiary: 'tertiary'
 };
+
+export const alertType = {
+  success: 'success',
+  info: 'info',
+  warning: 'warning',
+  danger: 'danger'
+};

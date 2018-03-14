@@ -7,6 +7,7 @@ import { StyledScreenReaderSpan } from './styledScreenReaderSpan';
 import { StyledFormGroupDiv } from './styledFormGroupDiv';
 import { StyledInputGroupDiv, StyledInputRadioDiv, StyledInputCheckboxDiv } from './styledInputGroupDiv';
 import { StyledAccessibleHiddenDiv } from './styledAccessibleHiddenDiv';
+import { StyledAlertDiv } from './styledAlertDiv';
 import { StyledHintDiv } from './styledHintDiv';
 import { StyledErrorDiv } from './styledErrorDiv';
 
@@ -27,6 +28,7 @@ export {
   StyledInputRadioDiv,
   StyledInputCheckboxDiv,
   StyledAccessibleHiddenDiv,
+  StyledAlertDiv,
   StyledHintDiv,
   StyledErrorDiv
 };

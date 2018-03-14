@@ -20,7 +20,11 @@ export const defaultTheme = {
     focus: '#54b4eb',
     checked: '#2fa4e7',
     error: '#c71c22',
-    disabled: '#acacac'
+    disabled: '#acacac',
+    success: '#73A839',
+    info: '#04519b',
+    warn: '#DD5600',
+    danger: '#C71C22'
   }
 };
 

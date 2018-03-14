@@ -21,6 +21,7 @@ export const StyledButton = button`
   border: 1px solid ${props => props.theme.color.border};
   border-radius: 2px;
   padding: 15px;
+  cursor: pointer;
   
   &:hover {
     -webkit-box-shadow: 0 0 0px 2px ${props => props.theme.color.hover};
@@ -40,6 +41,7 @@ export const StyledButton = button`
     -webkit-box-shadow: 0 0 0px 2px ${props => props.theme.color.disabled};
     -moz-box-shadow: 0 0 0px 2px ${props => props.theme.color.disabled};
     box-shadow: 0 0 0px 2px ${props => props.theme.color.disabled};
+    cursor: auto;
   }
 `;
 

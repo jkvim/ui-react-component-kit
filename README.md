@@ -107,6 +107,11 @@ import { Button } from 'ui-react-component-kit';
 import { Link } from 'ui-react-component-kit';
 ```
 
+#### Alert
+```javascript
+import { Alert } from 'ui-react-component-kit';
+```
+
 #### AutoComplete
 ```javascript
 import { AutoComplete } from 'ui-react-component-kit';

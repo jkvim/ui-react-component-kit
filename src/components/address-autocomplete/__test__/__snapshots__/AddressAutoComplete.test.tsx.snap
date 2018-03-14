@@ -27,7 +27,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
       role="application"
     >
       <div
-        className="sc-kAzzGY kBBDaw"
+        className="sc-chPdSV joCMgf"
         onBlur={[Function]}
         role="application"
       >
@@ -128,7 +128,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
           }
         >
           <div
-            className="sc-cSHVUG dYbvrH"
+            className="sc-kAzzGY ksDlxh"
           />
         </styled.div>
       </div>
