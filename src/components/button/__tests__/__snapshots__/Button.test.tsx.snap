@@ -101,7 +101,7 @@ ReactWrapper {
                   "stateNode": Object {
                     "containerInfo": <div>
                       <button
-                        class="sc-htoDjs bIRhQw"
+                        class="sc-htoDjs bmbKpO"
                       >
                         Hello
                       </button>
@@ -196,7 +196,7 @@ ReactWrapper {
                 "stateNode": Object {
                   "containerInfo": <div>
                     <button
-                      class="sc-htoDjs bIRhQw"
+                      class="sc-htoDjs bmbKpO"
                     >
                       Hello
                     </button>
@@ -328,7 +328,7 @@ ReactWrapper {
                   "stateNode": Object {
                     "containerInfo": <div>
                       <button
-                        class="sc-htoDjs bIRhQw"
+                        class="sc-htoDjs bmbKpO"
                       >
                         Hello
                       </button>
@@ -423,7 +423,7 @@ ReactWrapper {
                 "stateNode": Object {
                   "containerInfo": <div>
                     <button
-                      class="sc-htoDjs bIRhQw"
+                      class="sc-htoDjs bmbKpO"
                     >
                       Hello
                     </button>
@@ -499,7 +499,7 @@ ReactWrapper {
             "lastEffect": null,
             "memoizedProps": Object {
               "children": "Hello",
-              "className": "sc-htoDjs bIRhQw",
+              "className": "sc-htoDjs bmbKpO",
               "disabled": undefined,
               "onClick": [MockFunction],
             },
@@ -510,7 +510,7 @@ ReactWrapper {
             "return": [Circular],
             "sibling": null,
             "stateNode": <button
-              class="sc-htoDjs bIRhQw"
+              class="sc-htoDjs bmbKpO"
             >
               Hello
             </button>,
@@ -542,10 +542,13 @@ ReactWrapper {
                 "secondary": "#e9ecef",
                 "tertiary": "#343a40",
               },
+              "font": Object {
+                "size": "1.8rem",
+              },
             },
           },
           "memoizedState": Object {
-            "generatedClassName": "bIRhQw",
+            "generatedClassName": "bmbKpO",
             "theme": Object {
               "color": Object {
                 "background": "#ffffff",
@@ -557,6 +560,9 @@ ReactWrapper {
                 "primary": "#2fa4e7",
                 "secondary": "#e9ecef",
                 "tertiary": "#343a40",
+              },
+              "font": Object {
+                "size": "1.8rem",
               },
             },
           },
@@ -628,7 +634,7 @@ ReactWrapper {
                   "stateNode": Object {
                     "containerInfo": <div>
                       <button
-                        class="sc-htoDjs bIRhQw"
+                        class="sc-htoDjs bmbKpO"
                       >
                         Hello
                       </button>
@@ -723,7 +729,7 @@ ReactWrapper {
                 "stateNode": Object {
                   "containerInfo": <div>
                     <button
-                      class="sc-htoDjs bIRhQw"
+                      class="sc-htoDjs bmbKpO"
                     >
                       Hello
                     </button>
@@ -855,7 +861,7 @@ ReactWrapper {
                   "stateNode": Object {
                     "containerInfo": <div>
                       <button
-                        class="sc-htoDjs bIRhQw"
+                        class="sc-htoDjs bmbKpO"
                       >
                         Hello
                       </button>
@@ -950,7 +956,7 @@ ReactWrapper {
                 "stateNode": Object {
                   "containerInfo": <div>
                     <button
-                      class="sc-htoDjs bIRhQw"
+                      class="sc-htoDjs bmbKpO"
                     >
                       Hello
                     </button>
@@ -1038,11 +1044,14 @@ ReactWrapper {
               "secondary": "#e9ecef",
               "tertiary": "#343a40",
             },
+            "font": Object {
+              "size": "1.8rem",
+            },
           },
         },
         "refs": Object {},
         "state": Object {
-          "generatedClassName": "bIRhQw",
+          "generatedClassName": "bmbKpO",
           "theme": Object {
             "color": Object {
               "background": "#ffffff",
@@ -1054,6 +1063,9 @@ ReactWrapper {
               "primary": "#2fa4e7",
               "secondary": "#e9ecef",
               "tertiary": "#343a40",
+            },
+            "font": Object {
+              "size": "1.8rem",
             },
           },
         },
@@ -1084,12 +1096,15 @@ ReactWrapper {
             "secondary": "#e9ecef",
             "tertiary": "#343a40",
           },
+          "font": Object {
+            "size": "1.8rem",
+          },
         },
       },
       "ref": null,
       "rendered": Object {
         "instance": <button
-          class="sc-htoDjs bIRhQw"
+          class="sc-htoDjs bmbKpO"
         >
           Hello
         </button>,
@@ -1097,7 +1112,7 @@ ReactWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Hello",
-          "className": "sc-htoDjs bIRhQw",
+          "className": "sc-htoDjs bmbKpO",
           "disabled": undefined,
           "onClick": [MockFunction],
         },
@@ -1197,7 +1212,7 @@ ReactWrapper {
                     "stateNode": Object {
                       "containerInfo": <div>
                         <button
-                          class="sc-htoDjs bIRhQw"
+                          class="sc-htoDjs bmbKpO"
                         >
                           Hello
                         </button>
@@ -1292,7 +1307,7 @@ ReactWrapper {
                   "stateNode": Object {
                     "containerInfo": <div>
                       <button
-                        class="sc-htoDjs bIRhQw"
+                        class="sc-htoDjs bmbKpO"
                       >
                         Hello
                       </button>
@@ -1424,7 +1439,7 @@ ReactWrapper {
                     "stateNode": Object {
                       "containerInfo": <div>
                         <button
-                          class="sc-htoDjs bIRhQw"
+                          class="sc-htoDjs bmbKpO"
                         >
                           Hello
                         </button>
@@ -1519,7 +1534,7 @@ ReactWrapper {
                   "stateNode": Object {
                     "containerInfo": <div>
                       <button
-                        class="sc-htoDjs bIRhQw"
+                        class="sc-htoDjs bmbKpO"
                       >
                         Hello
                       </button>
@@ -1595,7 +1610,7 @@ ReactWrapper {
               "lastEffect": null,
               "memoizedProps": Object {
                 "children": "Hello",
-                "className": "sc-htoDjs bIRhQw",
+                "className": "sc-htoDjs bmbKpO",
                 "disabled": undefined,
                 "onClick": [MockFunction],
               },
@@ -1606,7 +1621,7 @@ ReactWrapper {
               "return": [Circular],
               "sibling": null,
               "stateNode": <button
-                class="sc-htoDjs bIRhQw"
+                class="sc-htoDjs bmbKpO"
               >
                 Hello
               </button>,
@@ -1638,10 +1653,13 @@ ReactWrapper {
                   "secondary": "#e9ecef",
                   "tertiary": "#343a40",
                 },
+                "font": Object {
+                  "size": "1.8rem",
+                },
               },
             },
             "memoizedState": Object {
-              "generatedClassName": "bIRhQw",
+              "generatedClassName": "bmbKpO",
               "theme": Object {
                 "color": Object {
                   "background": "#ffffff",
@@ -1653,6 +1671,9 @@ ReactWrapper {
                   "primary": "#2fa4e7",
                   "secondary": "#e9ecef",
                   "tertiary": "#343a40",
+                },
+                "font": Object {
+                  "size": "1.8rem",
                 },
               },
             },
@@ -1724,7 +1745,7 @@ ReactWrapper {
                     "stateNode": Object {
                       "containerInfo": <div>
                         <button
-                          class="sc-htoDjs bIRhQw"
+                          class="sc-htoDjs bmbKpO"
                         >
                           Hello
                         </button>
@@ -1819,7 +1840,7 @@ ReactWrapper {
                   "stateNode": Object {
                     "containerInfo": <div>
                       <button
-                        class="sc-htoDjs bIRhQw"
+                        class="sc-htoDjs bmbKpO"
                       >
                         Hello
                       </button>
@@ -1951,7 +1972,7 @@ ReactWrapper {
                     "stateNode": Object {
                       "containerInfo": <div>
                         <button
-                          class="sc-htoDjs bIRhQw"
+                          class="sc-htoDjs bmbKpO"
                         >
                           Hello
                         </button>
@@ -2046,7 +2067,7 @@ ReactWrapper {
                   "stateNode": Object {
                     "containerInfo": <div>
                       <button
-                        class="sc-htoDjs bIRhQw"
+                        class="sc-htoDjs bmbKpO"
                       >
                         Hello
                       </button>
@@ -2134,11 +2155,14 @@ ReactWrapper {
                 "secondary": "#e9ecef",
                 "tertiary": "#343a40",
               },
+              "font": Object {
+                "size": "1.8rem",
+              },
             },
           },
           "refs": Object {},
           "state": Object {
-            "generatedClassName": "bIRhQw",
+            "generatedClassName": "bmbKpO",
             "theme": Object {
               "color": Object {
                 "background": "#ffffff",
@@ -2150,6 +2174,9 @@ ReactWrapper {
                 "primary": "#2fa4e7",
                 "secondary": "#e9ecef",
                 "tertiary": "#343a40",
+              },
+              "font": Object {
+                "size": "1.8rem",
               },
             },
           },
@@ -2180,12 +2207,15 @@ ReactWrapper {
               "secondary": "#e9ecef",
               "tertiary": "#343a40",
             },
+            "font": Object {
+              "size": "1.8rem",
+            },
           },
         },
         "ref": null,
         "rendered": Object {
           "instance": <button
-            class="sc-htoDjs bIRhQw"
+            class="sc-htoDjs bmbKpO"
           >
             Hello
           </button>,
@@ -2193,7 +2223,7 @@ ReactWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Hello",
-            "className": "sc-htoDjs bIRhQw",
+            "className": "sc-htoDjs bmbKpO",
             "disabled": undefined,
             "onClick": [MockFunction],
           },

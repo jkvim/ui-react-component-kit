@@ -2,6 +2,7 @@ import * as React from 'react';
 import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
 import { darken } from 'polished';
 import { alertType } from '../../constants/constants';
+import { defaultTheme } from '../defaultTheme';
 
 export interface AlertTypeProps {
   alertType: string;
@@ -15,30 +16,34 @@ const alertDiv: StyledFunction<AlertTypeProps> = styled.div;
 
 /** @component */
 export const StyledAlertDiv = alertDiv`
+  font-size: ${props => props.theme.font.size};
+  background-color: ${props =>
+    props.alertType === alertType.success ? props.theme.color.success :
+      props.alertType === alertType.info ? props.theme.color.info :
+        props.alertType === alertType.warning ? props.theme.color.warning :
+          props.alertType === alertType.danger ? props.theme.color.danger :
+            props.theme.color.default };
+  border-left: 4px solid ${props =>
+    props.alertType === alertType.success ? darken(0.1, props.theme.color.success) :
+      props.alertType === alertType.info ? darken(0.1, props.theme.color.info) :
+        props.alertType === alertType.warning ? darken(0.1, props.theme.color.warning) :
+          props.alertType === alertType.danger ? darken(0.1, props.theme.color.danger) :
+            darken(0.1, props.theme.color.default) };
     color: #ffffff;
-    background-color: ${props => 
-      props.alertType === alertType.success ? props.theme.color.success :
-        props.alertType === alertType.info ? props.theme.color.info :
-          props.alertType === alertType.warning ? props.theme.color.warn :
-            props.alertType === alertType.danger ? props.theme.color.danger : 
-              props.theme.color.default };
     padding: 10px;
-    border-left: 4px solid ${props => 
-      props.alertType === alertType.success ? darken(0.1, props.theme.color.success) :
-        props.alertType === alertType.info ? darken(0.1, props.theme.color.info) :
-          props.alertType === alertType.warning ? darken(0.1, props.theme.color.warn) :
-            props.alertType === alertType.danger ? darken(0.1, props.theme.color.danger) :
-              darken(0.1, props.theme.color.default) };
   `;
 
 StyledAlertDiv.defaultProps = {
   theme: {
+    font: {
+      size: defaultTheme.font.size
+    },
     color: {
-      default: '#2fa4e7',
-      success: '#73A839',
-      info: '#04519b',
-      warn: '#DD5600',
-      danger: '#C71C22'
+      default: defaultTheme.color.default,
+      success: defaultTheme.color.success,
+      info: defaultTheme.color.info,
+      warning: defaultTheme.color.warning,
+      danger: defaultTheme.color.danger
     }
   }
 };

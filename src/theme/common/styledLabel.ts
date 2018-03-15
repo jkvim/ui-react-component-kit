@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
+import { defaultTheme } from '../defaultTheme';
 
 export interface HasErrorProps {
   hasError: boolean;
@@ -10,17 +11,20 @@ const label: StyledFunction<HasErrorProps &
 
 export const StyledLabel = label`
   color: ${props => props.hasError ? props.theme.color.error : props.theme.color.font};
+  font-size: ${props => props.theme.font.size};
   display: inline-block;
-  font-size: 1.8rem;
   position: relative;
   padding-bottom: 5px;
 `;
 
 StyledLabel.defaultProps = {
   theme: {
+    font: {
+      size: defaultTheme.font.size
+    },
     color: {
-      font: '#868e96',
-      error: '#c71c22'
+      font: defaultTheme.color.font,
+      error: defaultTheme.color.error
     }
   }
 };
@@ -30,19 +34,22 @@ const labelCheckbox: StyledFunction<HasErrorProps &
 
 /** @component */
 export const StyledLabelCheckbox = labelCheckbox`
-  padding: 0 5px 0 35px;
-  display: inline-block;
   color: ${props => props.hasError ? props.theme.color.error : props.theme.color.font};
+  font-size: ${props => props.theme.font.size};
+  position: relative;
+  padding-left: 35px;
+  padding-right: 15px;
+  display: inline-block;
   cursor: pointer;
-  font-size: 1.6rem;
+  line-height: 1;
   
   &:before {
     content: "";
     line-height: 1;
-    font-size: 1.8rem;
+    font-size: ${props => props.theme.font.size};
     height: 25px;
     width: 25px;
-    background: #fff;
+    background: #ffffff;
     padding-top: 0.1rem;
     border: 1px solid ${props => props.hasError ? props.theme.color.error : props.theme.color.border};
     box-sizing: border-box;
@@ -57,11 +64,13 @@ export const StyledLabelCheckbox = labelCheckbox`
 
 StyledLabelCheckbox.defaultProps = {
   theme: {
+    font: {
+      size: defaultTheme.font.size
+    },
     color: {
-      border: '#2fa4e7',
-      font: '#868e96',
-      error: '#c71c22'
-
+      border: defaultTheme.color.border,
+      font: defaultTheme.color.font,
+      error: defaultTheme.color.error
     }
   }
 };
@@ -71,39 +80,41 @@ const labelRadio: StyledFunction<HasErrorProps &
 
 /** @component */
 export const StyledLabelRadio = labelRadio`
+  color: ${props => props.hasError ? props.theme.color.error : props.theme.color.font};
   position: relative;
   line-height: 1;
-  padding-left: 40px;
-  padding-right: 10px;
+  padding-left: 30px;
+  padding-right: 15px;
   display: inline-block;
-  color: ${props => props.hasError ? props.theme.color.error : props.theme.color.font};
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: ${props => props.theme.font.size};
   
   &:before {
     content: "";
-    font-size: 2.6rem;
-    height: calc(2.6rem + 2px);
-    width: calc(2.6rem + 2px);
+    font-size: ${props => props.theme.font.size};
+    height: calc(${props => props.theme.font.size} + 2px);
+    width: calc(${props => props.theme.font.size} + 2px);
     border-radius: 100%;
-    border: 8px solid #ffffff;
+    border: 4px solid #ffffff;
     box-shadow: 0 0 0 1px ${props => props.hasError ? props.theme.color.error : props.theme.color.border};
     box-sizing: border-box;
     display: inline-block;
     position: absolute;
     left: 0;
-    top: calc((0% - (100% - 1rem)) - 8%);
+    top: calc((0% - (100% - ${props => props.theme.font.size})) - 10%);
     background-color: transparent;
   }
 `;
 
 StyledLabelRadio.defaultProps = {
   theme: {
+    font: {
+      size: defaultTheme.font.size
+    },
     color: {
-      border: '#2fa4e7',
-      font: '#868e96',
-      error: '#c71c22',
-
+      border: defaultTheme.color.border,
+      font: defaultTheme.color.font,
+      error: defaultTheme.color.error
     }
   }
 };

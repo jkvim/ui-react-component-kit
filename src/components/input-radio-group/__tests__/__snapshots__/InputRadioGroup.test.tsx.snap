@@ -47,13 +47,16 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                   Object {
                     "color": Object {
                       "background": "#ffffff",
-                      "border": "#178acc",
+                      "border": "#2fa4e7",
                       "checked": "#2fa4e7",
                       "default": "#2fa4e7",
                       "disabled": "#acacac",
                       "error": "#c71c22",
                       "focus": "#54b4eb",
                       "hover": "#178acc",
+                    },
+                    "font": Object {
+                      "size": "1.8rem",
                     },
                   }
                 }
@@ -62,7 +65,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
               >
                 <input
                   checked={false}
-                  className="sc-EHOje iLPXhd"
+                  className="sc-EHOje dTeGpr"
                   id="testId-0"
                   name="testName"
                   onChange={[Function]}
@@ -78,13 +81,16 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                     "color": Object {
                       "border": "#2fa4e7",
                       "error": "#c71c22",
-                      "font": "#868e96",
+                      "font": "#333333",
+                    },
+                    "font": Object {
+                      "size": "1.8rem",
                     },
                   }
                 }
               >
                 <label
-                  className="sc-htpNat ftmpvS"
+                  className="sc-htpNat bMfooT"
                   htmlFor="testId-0"
                 >
                   one
@@ -110,13 +116,16 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                   Object {
                     "color": Object {
                       "background": "#ffffff",
-                      "border": "#178acc",
+                      "border": "#2fa4e7",
                       "checked": "#2fa4e7",
                       "default": "#2fa4e7",
                       "disabled": "#acacac",
                       "error": "#c71c22",
                       "focus": "#54b4eb",
                       "hover": "#178acc",
+                    },
+                    "font": Object {
+                      "size": "1.8rem",
                     },
                   }
                 }
@@ -125,7 +134,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
               >
                 <input
                   checked={true}
-                  className="sc-EHOje iLPXhd"
+                  className="sc-EHOje dTeGpr"
                   id="testId-1"
                   name="testName"
                   onChange={[Function]}
@@ -141,13 +150,16 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                     "color": Object {
                       "border": "#2fa4e7",
                       "error": "#c71c22",
-                      "font": "#868e96",
+                      "font": "#333333",
+                    },
+                    "font": Object {
+                      "size": "1.8rem",
                     },
                   }
                 }
               >
                 <label
-                  className="sc-htpNat ftmpvS"
+                  className="sc-htpNat bMfooT"
                   htmlFor="testId-1"
                 >
                   two
@@ -164,11 +176,14 @@ exports[`InputRadioGroup should match snapshot 1`] = `
             "color": Object {
               "error": "#c71c22",
             },
+            "font": Object {
+              "size": "1.8rem",
+            },
           }
         }
       >
         <div
-          className="sc-kAzzGY ksDlxh"
+          className="sc-kAzzGY fwfjNu"
         />
       </styled.div>
     </div>

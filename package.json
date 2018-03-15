@@ -77,6 +77,7 @@
       "node_modules/(?!(shortid|react-bootstrap/es)/)"
     ],
     "moduleNameMapper": {
+      "^.+\\.eot": "<rootDir>/config/jest/fileTransform.js",
       "^react-native$": "react-native-web"
     },
     "globals": {

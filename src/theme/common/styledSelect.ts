@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
+import { defaultTheme } from '../defaultTheme';
 
 export interface HasErrorProps {
   hasError: boolean;
@@ -17,7 +18,7 @@ export const StyledSelect = select`
   border-radius: 2px;
   height: auto;
   padding: 8px 12px 5px;
-  font-size: 1.8rem;
+  font-size: ${props => props.theme.font.size};
   font-weight: 100;
   
    &:focus {
@@ -47,15 +48,18 @@ export const StyledSelect = select`
 
 StyledSelect.defaultProps = {
   theme: {
+    font: {
+      size: defaultTheme.font.size
+    },
     color: {
-      default: '#2fa4e7',
-      font: '#868e96',
-      border: '#2fa4e7',
-      background: '#ffffff',
-      hover: '#178acc',
-      focus: '#54b4eb',
-      error: '#c71c22',
-      disabled: '#acacac'
+      default: defaultTheme.color.default,
+      font: defaultTheme.color.font,
+      border: defaultTheme.color.border,
+      background: defaultTheme.color.background,
+      hover: defaultTheme.color.hover,
+      focus: defaultTheme.color.focus,
+      error: defaultTheme.color.error,
+      disabled: defaultTheme.color.disabled
     }
   }
 };

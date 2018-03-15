@@ -14,6 +14,9 @@ exports[`Link snapshot 1`] = `
         "focus": "#54b4eb",
         "hover": "#178acc",
       },
+      "font": Object {
+        "size": "1.8rem",
+      },
     }
   }
 >

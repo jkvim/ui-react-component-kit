@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
+import { defaultTheme } from '../defaultTheme';
 
 // tslint:disable
 export interface HasErrorProps {
@@ -15,15 +16,15 @@ const inputText: StyledFunction<HasErrorProps &
 
 /** @component */
 export const StyledInputText = inputText`
-  width: 100%;
+  font-size: ${props => props.theme.font.size};
   background-color: ${props => props.theme.color.background};
   color: ${props => props.theme.color.font};
   border: 1px solid ${(props) => props.hasError ? props.theme.color.error : props.theme.color.border};
   border-radius: 2px;
   height: auto;
   padding: 8px 12px 5px;
-  font-size: 1.8rem;
   font-weight: 100;
+  width: 100%;
   
   &:hover {
     border-color:  ${props => props.theme.color.hover};
@@ -50,15 +51,18 @@ export const StyledInputText = inputText`
 
 StyledInputText.defaultProps = {
   theme: {
+    font: {
+      size: defaultTheme.font.size
+    },
     color: {
-      default: '#2fa4e7',
-      font: '#868e96',
-      border: '#178acc',
-      background: '#ffffff',
-      hover: '#178acc',
-      focus: '#54b4eb',
-      error: '#c71c22',
-      disabled: '#acacac'
+      default: defaultTheme.color.default,
+      font: defaultTheme.color.font,
+      border: defaultTheme.color.border,
+      background: defaultTheme.color.background,
+      hover: defaultTheme.color.hover,
+      focus: defaultTheme.color.focus,
+      error: defaultTheme.color.error,
+      disabled: defaultTheme.color.disabled
     }
   }
 };
@@ -116,15 +120,18 @@ export const StyledInputCheckbox = inputCheckbox`
 
 StyledInputCheckbox.defaultProps = {
   theme: {
+    font: {
+      size: defaultTheme.font.size
+    },
     color: {
-      default: '#2fa4e7',
-      border: '#178acc',
-      background: '#ffffff',
-      hover: '#178acc',
-      focus: '#54b4eb',
-      checked: '#2fa4e7',
-      error: '#c71c22',
-      disabled: '#acacac'
+      default: defaultTheme.color.default,
+      border: defaultTheme.color.border,
+      background: defaultTheme.color.background,
+      hover: defaultTheme.color.hover,
+      focus: defaultTheme.color.focus,
+      checked: defaultTheme.color.checked,
+      error: defaultTheme.color.error,
+      disabled: defaultTheme.color.disabled
     }
   }
 };
@@ -175,10 +182,6 @@ export const StyledInputRadio = inputRadio`
     -webkit-box-shadow: 0 0 0px 2px ${props => props.theme.color.disabled};
     -moz-box-shadow: 0 0 0px 2px ${props => props.theme.color.disabled};
     box-shadow: 0 0 0px 2px ${props => props.theme.color.disabled};
-    
-    &:checked {
-      background-color: red;
-    }
   }
   
   &:disabled {
@@ -190,15 +193,18 @@ export const StyledInputRadio = inputRadio`
 
 StyledInputRadio.defaultProps = {
   theme: {
+    font: {
+      size: defaultTheme.font.size
+    },
     color: {
-      default: '#2fa4e7',
-      border: '#178acc',
-      background: '#ffffff',
-      hover: '#178acc',
-      focus: '#54b4eb',
-      checked: '#2fa4e7',
-      error: '#c71c22',
-      disabled: '#acacac'
+      default: defaultTheme.color.default,
+      border: defaultTheme.color.border,
+      background: defaultTheme.color.background,
+      hover: defaultTheme.color.hover,
+      focus: defaultTheme.color.focus,
+      checked: defaultTheme.color.checked,
+      error: defaultTheme.color.error,
+      disabled: defaultTheme.color.disabled
     }
   }
 };

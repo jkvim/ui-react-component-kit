@@ -25,13 +25,16 @@ exports[`SelectField props should match snapshot 1`] = `
           Object {
             "color": Object {
               "error": "#c71c22",
-              "font": "#868e96",
+              "font": "#333333",
+            },
+            "font": Object {
+              "size": "1.8rem",
             },
           }
         }
       >
         <label
-          className="sc-bdVaJa MbNax"
+          className="sc-bdVaJa fuJIyO"
           htmlFor="some-id"
         >
           Some error message.
@@ -52,15 +55,18 @@ exports[`SelectField props should match snapshot 1`] = `
               "disabled": "#acacac",
               "error": "#c71c22",
               "focus": "#54b4eb",
-              "font": "#868e96",
+              "font": "#333333",
               "hover": "#178acc",
+            },
+            "font": Object {
+              "size": "1.8rem",
             },
           }
         }
         value=""
       >
         <select
-          className="sc-dnqmqq eENxyh"
+          className="sc-dnqmqq IylCN"
           id="some-id"
           onBlur={[Function]}
           onChange={[Function]}
@@ -86,11 +92,14 @@ exports[`SelectField props should match snapshot 1`] = `
             "color": Object {
               "error": "#c71c22",
             },
+            "font": Object {
+              "size": "1.8rem",
+            },
           }
         }
       >
         <div
-          className="sc-kAzzGY ksDlxh"
+          className="sc-kAzzGY fwfjNu"
         />
       </styled.div>
     </div>

@@ -16,13 +16,16 @@ exports[`InputText should match snapshot 1`] = `
           Object {
             "color": Object {
               "error": "#c71c22",
-              "font": "#868e96",
+              "font": "#333333",
+            },
+            "font": Object {
+              "size": "1.8rem",
             },
           }
         }
       >
         <label
-          className="sc-bdVaJa MbNax"
+          className="sc-bdVaJa fuJIyO"
           htmlFor="1234567890"
         >
           The label
@@ -40,13 +43,16 @@ exports[`InputText should match snapshot 1`] = `
           Object {
             "color": Object {
               "background": "#ffffff",
-              "border": "#178acc",
+              "border": "#2fa4e7",
               "default": "#2fa4e7",
               "disabled": "#acacac",
               "error": "#c71c22",
               "focus": "#54b4eb",
-              "font": "#868e96",
+              "font": "#333333",
               "hover": "#178acc",
+            },
+            "font": Object {
+              "size": "1.8rem",
             },
           }
         }
@@ -54,7 +60,7 @@ exports[`InputText should match snapshot 1`] = `
         value=""
       >
         <input
-          className="sc-bxivhb cZTkCI"
+          className="sc-bxivhb brEIXk"
           id="1234567890"
           onBlur={[Function]}
           onChange={[Function]}
@@ -71,11 +77,14 @@ exports[`InputText should match snapshot 1`] = `
             "color": Object {
               "error": "#c71c22",
             },
+            "font": Object {
+              "size": "1.8rem",
+            },
           }
         }
       >
         <div
-          className="sc-kAzzGY ksDlxh"
+          className="sc-kAzzGY fwfjNu"
         />
       </styled.div>
     </div>

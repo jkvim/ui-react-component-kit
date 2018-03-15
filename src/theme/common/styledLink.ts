@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
+import { defaultTheme } from '../defaultTheme';
 
 const link: StyledFunction<
   React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>> = styled.a;
@@ -7,8 +8,8 @@ const link: StyledFunction<
 /** @component */
 export const StyledLink = link`
   color: ${props => props.theme.color.default};
+  font-size: ${props => props.theme.font.size};
   text-decoration: none;
-  font-size: 1.8rem;
   
   &:hover {
     color: ${props => props.theme.color.hover};
@@ -21,12 +22,15 @@ export const StyledLink = link`
 
 StyledLink.defaultProps = {
   theme: {
+    font: {
+      size: defaultTheme.font.size
+    },
     color: {
-      default: '#2fa4e7',
-      hover: '#178acc',
-      focus: '#54b4eb',
-      error: '#c71c22',
-      disabled: '#acacac'
+      default: defaultTheme.color.default,
+      hover: defaultTheme.color.hover,
+      focus: defaultTheme.color.focus,
+      error: defaultTheme.color.error,
+      disabled: defaultTheme.color.disabled
     }
   }
 };

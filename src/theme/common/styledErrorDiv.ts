@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
+import { defaultTheme } from '../defaultTheme';
 
 export interface HasErrorProps {
   hasError: boolean;
@@ -11,13 +12,16 @@ const errorDiv: StyledFunction<HasErrorProps> = styled.div;
 export const StyledErrorDiv = errorDiv`
     color: ${props => props.theme.color.error};
     padding-top: ${props => props.hasError ? '10px' : '0px'};
-    font-size: 1.6rem;
+    font-size: ${props => props.theme.font.size};
   `;
 
 StyledErrorDiv.defaultProps = {
   theme: {
+    font: {
+      size: defaultTheme.font.size
+    },
     color: {
-      error: '#c71c22'
+      error: defaultTheme.color.error
     }
   }
 };

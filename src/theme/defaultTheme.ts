@@ -2,15 +2,18 @@ import { injectGlobal } from 'styled-components';
 
 export const defaultTheme = {
   breakpoint: {
-    xs: '0',
+    xs: '0px',
     sm: '576px',
     md: '768px',
     lg: '992px',
     xl: '1200px'
   },
+  font: {
+    size: '1.8rem'
+  },
   color: {
     default: '#2fa4e7',
-    font: '#868e96',
+    font: '#333333',
     border: '#2fa4e7',
     background: '#ffffff',
     primary: '#2fa4e7',
@@ -21,10 +24,10 @@ export const defaultTheme = {
     checked: '#2fa4e7',
     error: '#c71c22',
     disabled: '#acacac',
-    success: '#73A839',
+    success: '#73a839',
     info: '#04519b',
-    warn: '#DD5600',
-    danger: '#C71C22'
+    warning: '#dd5600',
+    danger: '#c71c22'
   }
 };
 
