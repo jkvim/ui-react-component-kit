@@ -5,7 +5,7 @@ import {
   StyledHintDiv,
   StyledErrorDiv,
   StyledFormGroupDiv,
-  StyledInputGroupDiv,
+  StyledFieldset,
   StyledInputRadioDiv,
   StyledInputRadio,
   StyledLabelRadio
@@ -43,7 +43,7 @@ const InputRadioGroup: React.SFC<InputRadioGroupProps> =
 
       {hint && <StyledHintDiv hasError={!!errorMessage}>{hint}</StyledHintDiv>}
 
-      <StyledInputGroupDiv alignment={align}>
+      <StyledFieldset alignment={align} aria-describedby={`${id}-error`}>
 
         {options.map((item, index) =>
 
@@ -62,6 +62,7 @@ const InputRadioGroup: React.SFC<InputRadioGroupProps> =
               }
               disabled={disabled}
               hasError={!!errorMessage}
+              aria-invalid={!!errorMessage}
             />
 
             <StyledLabelRadio htmlFor={`${id}-${index}`} hasError={!!errorMessage}>
@@ -71,9 +72,9 @@ const InputRadioGroup: React.SFC<InputRadioGroupProps> =
           </StyledInputRadioDiv>
         )}
 
-      </StyledInputGroupDiv>
+      </StyledFieldset>
 
-      <StyledErrorDiv hasError={!!errorMessage}>
+      <StyledErrorDiv id={`${id}-error`} hasError={!!errorMessage}>
         {errorMessage}
       </StyledErrorDiv>
 

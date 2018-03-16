@@ -1,10 +1,7 @@
 import * as React from 'react';
 import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
 import { defaultTheme } from '../defaultTheme';
-
-export interface HasErrorProps {
-  hasError: boolean;
-}
+import { HasErrorProps } from './props';
 
 const select: StyledFunction<HasErrorProps &
   React.DetailedHTMLProps<React.SelectHTMLAttributes<HTMLSelectElement>, HTMLSelectElement>> = styled.select;

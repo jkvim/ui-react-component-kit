@@ -55,7 +55,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
         >
           <styled.div>
             <div
-              className="sc-gZMcBi gxaaKf"
+              className="sc-htoDjs gQgvQJ"
             >
               <styled.label
                 hasError={false}
@@ -80,6 +80,8 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 </label>
               </styled.label>
               <styled.input
+                aria-describedby="static-id-autocomplete-error"
+                aria-invalid={false}
                 hasError={false}
                 id="static-id-autocomplete"
                 innerRef={[Function]}
@@ -108,7 +110,9 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 value=""
               >
                 <input
-                  className="sc-bxivhb brEIXk"
+                  aria-describedby="static-id-autocomplete-error"
+                  aria-invalid={false}
+                  className="sc-jTzLTM ibORGD"
                   id="static-id-autocomplete"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -126,11 +130,12 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
         >
           <div
             aria-live="polite"
-            className="sc-fjdhpX gVkdZp"
+            className="sc-iwsKbI kmSHab"
           />
         </styled.div>
         <styled.div
           hasError={false}
+          id="static-id-autocomplete-error"
           theme={
             Object {
               "color": Object {
@@ -143,7 +148,8 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
           }
         >
           <div
-            className="sc-kAzzGY fwfjNu"
+            className="sc-VigVT gUinmJ"
+            id="static-id-autocomplete-error"
           />
         </styled.div>
       </div>

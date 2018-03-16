@@ -1,11 +1,10 @@
 import * as React from 'react';
 import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
 import { defaultTheme } from '../defaultTheme';
+import { alignment } from '../../constants/constants';
+import { HasErrorProps, AlignmentProps } from './props';
 
 // tslint:disable
-export interface HasErrorProps {
-  hasError: boolean;
-}
 
 // ### Input Text ###
 
@@ -136,6 +135,18 @@ StyledInputCheckbox.defaultProps = {
   }
 };
 
+const inputCheckboxDiv: StyledFunction<AlignmentProps> = styled.div;
+
+/** @component */
+export const StyledInputCheckboxDiv = inputCheckboxDiv`
+  position: relative;
+  padding-top: ${props =>
+  props.alignment === alignment.horizontal ? '10px' : '10px'};
+  
+  padding-bottom: ${props =>
+  props.alignment === alignment.horizontal ? '10px' : '10px'};
+`;
+
 // ### Input Radio ###
 
 const inputRadio: StyledFunction<HasErrorProps &
@@ -208,4 +219,16 @@ StyledInputRadio.defaultProps = {
     }
   }
 };
+
+const inputRadioDiv: StyledFunction<AlignmentProps> = styled.div;
+
+/** @component */
+export const StyledInputRadioDiv = inputRadioDiv`
+  position: relative;
+  padding-top: ${props =>
+  props.alignment === alignment.horizontal ? '10px' : '10px'};
+  
+  padding-bottom: ${props =>
+  props.alignment === alignment.horizontal ? '10px' : '10px'};
+`;
 // tslint:enable

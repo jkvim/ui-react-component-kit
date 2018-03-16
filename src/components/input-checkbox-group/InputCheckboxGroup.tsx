@@ -7,7 +7,7 @@ import {
   StyledInputCheckbox,
   StyledLabelCheckbox,
   StyledInputCheckboxDiv,
-  StyledInputGroupDiv
+  StyledFieldset
 } from '../../theme/common';
 
 export interface CheckBox {
@@ -42,7 +42,7 @@ const InputCheckbox: React.SFC<CheckBoxFieldProps> =
 
         {hint && <StyledHintDiv hasError={!!errorMessage}>{hint}</StyledHintDiv>}
 
-        <StyledInputGroupDiv alignment={align}>
+        <StyledFieldset alignment={align} aria-describedby={`${id}-error`}>
 
           {options.map((item, index) =>
 
@@ -71,6 +71,7 @@ const InputCheckbox: React.SFC<CheckBoxFieldProps> =
                 }
                 disabled={disabled}
                 hasError={!!errorMessage}
+                aria-invalid={!!errorMessage}
               />
 
               <StyledLabelCheckbox htmlFor={`${id}-${index}`} hasError={!!errorMessage}>
@@ -80,9 +81,9 @@ const InputCheckbox: React.SFC<CheckBoxFieldProps> =
             </StyledInputCheckboxDiv>
           )}
 
-        </StyledInputGroupDiv>
+        </StyledFieldset>
 
-        <StyledErrorDiv hasError={!!errorMessage}>
+        <StyledErrorDiv id={`${id}-error`} hasError={!!errorMessage}>
           {errorMessage}
         </StyledErrorDiv>
 

@@ -1,15 +1,21 @@
 import { StyledLabel, StyledLabelCheckbox, StyledLabelRadio } from './styledLabel';
-import { StyledInputText, StyledInputCheckbox, StyledInputRadio } from './styledInput';
 import { StyledLink, StyledLinkExternalSpan } from './styledLink';
 import { StyledButton } from './styledButton';
 import { StyledSelect } from './styledSelect';
 import { StyledScreenReaderSpan } from './styledScreenReaderSpan';
 import { StyledFormGroupDiv } from './styledFormGroupDiv';
-import { StyledInputGroupDiv, StyledInputRadioDiv, StyledInputCheckboxDiv } from './styledInputGroupDiv';
+import { StyledFieldset } from './styledFieldset';
 import { StyledAccessibleHiddenDiv } from './styledAccessibleHiddenDiv';
 import { StyledAlertDiv } from './styledAlertDiv';
 import { StyledHintDiv } from './styledHintDiv';
 import { StyledErrorDiv } from './styledErrorDiv';
+import {
+  StyledInputText,
+  StyledInputCheckbox,
+  StyledInputRadio,
+  StyledInputRadioDiv,
+  StyledInputCheckboxDiv
+} from './styledInput';
 
 export {
   StyledLabel,
@@ -18,15 +24,15 @@ export {
   StyledInputText,
   StyledInputCheckbox,
   StyledInputRadio,
+  StyledInputRadioDiv,
+  StyledInputCheckboxDiv,
   StyledLink,
   StyledLinkExternalSpan,
   StyledSelect,
   StyledButton,
   StyledScreenReaderSpan,
   StyledFormGroupDiv,
-  StyledInputGroupDiv,
-  StyledInputRadioDiv,
-  StyledInputCheckboxDiv,
+  StyledFieldset,
   StyledAccessibleHiddenDiv,
   StyledAlertDiv,
   StyledHintDiv,

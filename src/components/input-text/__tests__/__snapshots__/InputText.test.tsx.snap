@@ -7,7 +7,7 @@ exports[`InputText should match snapshot 1`] = `
 >
   <styled.div>
     <div
-      className="sc-gZMcBi gxaaKf"
+      className="sc-htoDjs gQgvQJ"
     >
       <styled.label
         hasError={false}
@@ -32,6 +32,8 @@ exports[`InputText should match snapshot 1`] = `
         </label>
       </styled.label>
       <styled.input
+        aria-describedby="1234567890-error"
+        aria-invalid={false}
         hasError={false}
         id="1234567890"
         innerRef={[Function]}
@@ -60,7 +62,9 @@ exports[`InputText should match snapshot 1`] = `
         value=""
       >
         <input
-          className="sc-bxivhb brEIXk"
+          aria-describedby="1234567890-error"
+          aria-invalid={false}
+          className="sc-jTzLTM ibORGD"
           id="1234567890"
           onBlur={[Function]}
           onChange={[Function]}
@@ -72,6 +76,7 @@ exports[`InputText should match snapshot 1`] = `
       </styled.input>
       <styled.div
         hasError={false}
+        id="1234567890-error"
         theme={
           Object {
             "color": Object {
@@ -84,7 +89,8 @@ exports[`InputText should match snapshot 1`] = `
         }
       >
         <div
-          className="sc-kAzzGY fwfjNu"
+          className="sc-VigVT gUinmJ"
+          id="1234567890-error"
         />
       </styled.div>
     </div>

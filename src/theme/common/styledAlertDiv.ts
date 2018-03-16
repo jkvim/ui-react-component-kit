@@ -3,14 +3,7 @@ import styled, { StyledFunction, StyledComponentClass } from 'styled-components'
 import { darken } from 'polished';
 import { alertType } from '../../constants/constants';
 import { defaultTheme } from '../defaultTheme';
-
-export interface AlertTypeProps {
-  alertType: string;
-
-  // excess property bags mainly used for capturing ARIA tags to be passed down to the alert.
-  // tslint:disable-next-line no-any
-  [propKeys: string]: any;
-}
+import { AlertTypeProps } from './props';
 
 const alertDiv: StyledFunction<AlertTypeProps> = styled.div;
 

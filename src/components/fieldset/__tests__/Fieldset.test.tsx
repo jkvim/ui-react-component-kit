@@ -9,18 +9,18 @@ describe('Fieldset', () => {
     beforeEach(() => {
       wrapper = mount(
         <Fieldset
+          id="Test ID"
           legend="my-fieldset-legend"
-          className="my-fieldset-class"
         />
       );
     });
 
-    it('should pass `legend` in props', () => {
-      expect(wrapper.props().legend).toBeDefined();
+    it('should pass `id` in props', () => {
+      expect(wrapper.props().id).toBeDefined();
     });
 
-    it('should pass `className` in props', () => {
-      expect(wrapper.props().className).toBeDefined();
+    it('should pass `legend` in props', () => {
+      expect(wrapper.props().legend).toBeDefined();
     });
   });
 });

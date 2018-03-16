@@ -379,7 +379,7 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
           {showSuggestions && listBoxNavigationText}
         </StyledAccessibleHiddenDiv>
 
-        <StyledErrorDiv hasError={!!errorMessage}>
+        <StyledErrorDiv id={`${id}-autocomplete-error`} hasError={!!errorMessage}>
           {errorMessage}
         </StyledErrorDiv>
 

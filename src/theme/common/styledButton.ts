@@ -2,10 +2,8 @@ import * as React from 'react';
 import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
 import { buttonType } from '../../constants/constants';
 import { defaultTheme } from '../defaultTheme';
+import { ButtonTypeProps } from './props';
 
-export interface ButtonTypeProps {
-  buttonType: string;
-}
 const button: StyledFunction<ButtonTypeProps &
   React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>> = styled.button;
 

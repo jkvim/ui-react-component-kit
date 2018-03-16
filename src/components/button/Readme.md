@@ -1,7 +1,9 @@
 Blank
 
 ```jsx
-    <Button>
+    <Button onClick={() => {
+        alert('hello');
+    }}>
         Sample Button
     </Button>
 ```
@@ -9,7 +11,11 @@ Blank
 Primary
 
 ```jsx
-    <Button buttonType={'primary'}>
+    <Button 
+        buttonType={'primary'}
+        onClick={() => {
+          alert('hello');
+    }}>
         Primary Button
     </Button>
 ```
@@ -17,7 +23,11 @@ Primary
 Secondary
 
 ```jsx
-    <Button buttonType={'secondary'}>
+    <Button 
+        buttonType={'secondary'}
+        onClick={() => {
+          alert('hello');
+    }}>
         Secondary Button
     </Button>
 ```
@@ -25,7 +35,11 @@ Secondary
 Tertiary
 
 ```jsx
-    <Button buttonType={'tertiary'}>
+    <Button 
+        buttonType={'tertiary'}
+        onClick={() => {
+          alert('hello');
+    }}>
         Tertiary Button
     </Button>
 ```

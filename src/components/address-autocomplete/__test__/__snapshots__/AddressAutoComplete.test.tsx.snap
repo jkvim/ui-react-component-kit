@@ -49,7 +49,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
         >
           <styled.div>
             <div
-              className="sc-gZMcBi gxaaKf"
+              className="sc-htoDjs gQgvQJ"
             >
               <styled.label
                 hasError={false}
@@ -74,6 +74,8 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
                 </label>
               </styled.label>
               <styled.input
+                aria-describedby="address-id-autocomplete-error"
+                aria-invalid={false}
                 hasError={false}
                 id="address-id-autocomplete"
                 innerRef={[Function]}
@@ -102,7 +104,9 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
                 value=""
               >
                 <input
-                  className="sc-bxivhb brEIXk"
+                  aria-describedby="address-id-autocomplete-error"
+                  aria-invalid={false}
+                  className="sc-jTzLTM ibORGD"
                   id="address-id-autocomplete"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -120,11 +124,12 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
         >
           <div
             aria-live="polite"
-            className="sc-fjdhpX gVkdZp"
+            className="sc-iwsKbI kmSHab"
           />
         </styled.div>
         <styled.div
           hasError={false}
+          id="address-id-autocomplete-error"
           theme={
             Object {
               "color": Object {
@@ -137,7 +142,8 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
           }
         >
           <div
-            className="sc-kAzzGY fwfjNu"
+            className="sc-VigVT gUinmJ"
+            id="address-id-autocomplete-error"
           />
         </styled.div>
       </div>

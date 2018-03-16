@@ -30,22 +30,25 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
 >
   <styled.div>
     <div
-      className="sc-gZMcBi gxaaKf"
+      className="sc-htoDjs gQgvQJ"
     >
-      <styled.div
+      <styled.fieldset
         alignment="horizontal"
+        aria-describedby="testId-error"
       >
-        <div
-          className="sc-gqjmRU etyENR"
+        <fieldset
+          aria-describedby="testId-error"
+          className="sc-dnqmqq dcDEKm"
         >
           <styled.div
             alignment="horizontal"
             key="0"
           >
             <div
-              className="sc-jTzLTM RIEuF"
+              className="sc-jzJRlG jNxNtV"
             >
               <styled.input
+                aria-invalid={false}
                 checked={false}
                 hasError={false}
                 id="testId-0"
@@ -73,8 +76,9 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                 value="1"
               >
                 <input
+                  aria-invalid={false}
                   checked={false}
-                  className="sc-ifAKCX fMFCxD"
+                  className="sc-fjdhpX dKHXyf"
                   id="testId-0"
                   name="testName"
                   onChange={[Function]}
@@ -112,9 +116,10 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
             key="1"
           >
             <div
-              className="sc-jTzLTM RIEuF"
+              className="sc-jzJRlG jNxNtV"
             >
               <styled.input
+                aria-invalid={false}
                 checked={true}
                 hasError={false}
                 id="testId-1"
@@ -142,8 +147,9 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                 value="2"
               >
                 <input
+                  aria-invalid={false}
                   checked={true}
-                  className="sc-ifAKCX fMFCxD"
+                  className="sc-fjdhpX dKHXyf"
                   id="testId-1"
                   name="testName"
                   onChange={[Function]}
@@ -181,9 +187,10 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
             key="2"
           >
             <div
-              className="sc-jTzLTM RIEuF"
+              className="sc-jzJRlG jNxNtV"
             >
               <styled.input
+                aria-invalid={false}
                 checked={true}
                 hasError={false}
                 id="testId-2"
@@ -211,8 +218,9 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                 value="3"
               >
                 <input
+                  aria-invalid={false}
                   checked={true}
-                  className="sc-ifAKCX fMFCxD"
+                  className="sc-fjdhpX dKHXyf"
                   id="testId-2"
                   name="testName"
                   onChange={[Function]}
@@ -245,10 +253,11 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
               </styled.label>
             </div>
           </styled.div>
-        </div>
-      </styled.div>
+        </fieldset>
+      </styled.fieldset>
       <styled.div
         hasError={false}
+        id="testId-error"
         theme={
           Object {
             "color": Object {
@@ -261,7 +270,8 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
         }
       >
         <div
-          className="sc-kAzzGY fwfjNu"
+          className="sc-VigVT gUinmJ"
+          id="testId-error"
         />
       </styled.div>
     </div>

@@ -52,9 +52,11 @@ const InputText: React.SFC<InputTextProps> =
           value={value}
           disabled={disabled}
           hasError={!!errorMessage}
+          aria-invalid={!!errorMessage}
+          aria-describedby={`${id}-error`}
         />
 
-        {showError && <StyledErrorDiv hasError={!!errorMessage}>{errorMessage}</StyledErrorDiv>}
+        {showError && <StyledErrorDiv id={`${id}-error`} hasError={!!errorMessage}>{errorMessage}</StyledErrorDiv>}
 
       </StyledFormGroupDiv>
     );
