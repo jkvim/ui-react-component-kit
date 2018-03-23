@@ -1,13 +1,14 @@
 import * as React from 'react';
 import { omit, noop } from 'lodash';
 import { alignment } from '../../constants/constants';
+import { Fieldset } from '../fieldset';
+import { StyledInputRadioDiv, StyledInputRadio } from './styledInputRadio';
+import { AllProps } from '../../theme/common/props';
 import {
   StyledHintDiv,
   StyledErrorDiv,
   StyledFormGroupDiv,
-  StyledFieldset,
-  StyledInputRadioDiv,
-  StyledInputRadio,
+  StyledInputGroupDiv,
   StyledLabelRadio
 } from '../../theme/common';
 
@@ -16,7 +17,7 @@ export interface InputRadio {
   value: string|number|boolean;
 }
 
-export interface InputRadioGroupProps {
+export interface InputRadioGroupProps extends AllProps {
   id: string;
   name: string;
   options: InputRadio[];
@@ -28,10 +29,6 @@ export interface InputRadioGroupProps {
   disabled?: boolean;
   setInputRef?: (ref: HTMLInputElement) => void;
   onChange?: (value: boolean, event?: React.ChangeEvent<HTMLInputElement>) => void;
-
-  // excess property bags mainly used for capturing ARIA tags to be passed down to the HTML Input.
-  // tslint:disable-next-line no-any
-  [propKeys: string]: any;
 }
 
 const InputRadioGroup: React.SFC<InputRadioGroupProps> =
@@ -43,11 +40,13 @@ const InputRadioGroup: React.SFC<InputRadioGroupProps> =
 
       {hint && <StyledHintDiv hasError={!!errorMessage}>{hint}</StyledHintDiv>}
 
-      <StyledFieldset alignment={align} aria-describedby={`${id}-error`}>
+      <Fieldset id={`${id}-fieldset`} aria-describedby={`${id}-error`}>
+
+        <StyledInputGroupDiv alignment={align}>
 
         {options.map((item, index) =>
 
-          <StyledInputRadioDiv key={index} alignment={align}>
+          <StyledInputRadioDiv key={index}>
 
             <StyledInputRadio
               {...this.props}
@@ -72,7 +71,9 @@ const InputRadioGroup: React.SFC<InputRadioGroupProps> =
           </StyledInputRadioDiv>
         )}
 
-      </StyledFieldset>
+        </StyledInputGroupDiv>
+
+      </Fieldset>
 
       <StyledErrorDiv id={`${id}-error`} hasError={!!errorMessage}>
         {errorMessage}

@@ -1,3 +1,5 @@
+import './theme/global';
+
 import { InputText } from './components/input-text';
 import { InputRadioGroup } from './components/input-radio-group';
 import { InputCheckboxGroup } from './components/input-checkbox-group';
@@ -10,7 +12,6 @@ import { IdleTime } from './components/idle-time';
 import { AutoComplete, DataProvider } from './components/autocomplete';
 import { AddressAutoComplete, AddressDataProvider } from './components/address-autocomplete';
 import { StaticAutoComplete, StaticDataProvider } from './components/static-autocomplete';
-import { defaultTheme } from './theme/defaultTheme';
 
 export {
   InputText,
@@ -27,6 +28,5 @@ export {
   AddressAutoComplete,
   AddressDataProvider,
   StaticAutoComplete,
-  StaticDataProvider,
-  defaultTheme
+  StaticDataProvider
 };

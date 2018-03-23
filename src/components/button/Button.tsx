@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ReactNode } from 'react';
-import { StyledButton } from '../../theme/common';
+import { StyledButton } from './styledButton';
 
 /**
  * Button properties.

@@ -1,6 +1,8 @@
 import * as React from 'react';
+import { StyledFieldset } from './styledFieldset';
+import { AllProps } from '../../theme/common/props';
 
-export interface FieldsetProps {
+export interface FieldsetProps extends AllProps {
   id: string;
   legend?: string;
   className?: string;
@@ -9,10 +11,10 @@ export interface FieldsetProps {
 const Fieldset: React.SFC<FieldsetProps> = ({ id, legend, children, className }) => {
 
   return (
-    <fieldset id={id} className={className}>
+    <StyledFieldset id={id} className={className}>
       {legend && <legend>{legend}</legend>}
       {children}
-    </fieldset>
+    </StyledFieldset>
   );
 };
 

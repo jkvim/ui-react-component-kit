@@ -16,7 +16,7 @@ module.exports = {
     '**/*.d.ts'
   ],
   require: [
-    path.join(__dirname, './src/theme/defaultTheme.ts')
+    path.join(__dirname, './src/theme/global.ts')
   ],
   sections: [
     {

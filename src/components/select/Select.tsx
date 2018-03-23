@@ -1,10 +1,12 @@
 import * as React from 'react';
 import { kebabCase } from 'lodash';
 import { noop } from 'lodash';
-import { StyledErrorDiv, StyledLabel, StyledHintDiv, StyledFormGroupDiv, StyledSelect } from '../../theme/common';
+import { StyledErrorDiv, StyledLabel, StyledHintDiv, StyledFormGroupDiv } from '../../theme/common';
 import { SelectItem } from './types';
+import { AllProps } from '../../theme/common/props';
+import { StyledSelect } from './styledSelect';
 
-export interface SelectProps {
+export interface SelectProps extends AllProps {
   label: string;
   id: string;
   placeholder?: string;
@@ -17,10 +19,6 @@ export interface SelectProps {
   setSelectRef?: (ref: HTMLSelectElement) => void;
   errorMessage?: string;
   className?: string;
-
-  // excess property bags mainly used for capturing ARIA tags to be passed down to the HTML Select.
-  // tslint:disable-next-line no-any
-  [propKeys: string]: any;
 }
 
 const Select: React.SFC<SelectProps> =

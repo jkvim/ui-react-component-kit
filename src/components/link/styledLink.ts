@@ -1,15 +1,15 @@
 import * as React from 'react';
 import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
-import { defaultTheme } from '../defaultTheme';
+import { theme } from '../../theme/defaultTheme';
 
 const link: StyledFunction<
   React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>> = styled.a;
 
 /** @component */
 export const StyledLink = link`
-  color: ${props => props.theme.color.default};
-  font-size: ${props => props.theme.font.size};
   text-decoration: none;
+  color: ${props => props.theme.color.default};
+  font-size: ${props => props.theme.font.size.default};
   
   &:hover {
     color: ${props => props.theme.color.hover};
@@ -21,18 +21,7 @@ export const StyledLink = link`
 `;
 
 StyledLink.defaultProps = {
-  theme: {
-    font: {
-      size: defaultTheme.font.size
-    },
-    color: {
-      default: defaultTheme.color.default,
-      hover: defaultTheme.color.hover,
-      focus: defaultTheme.color.focus,
-      error: defaultTheme.color.error,
-      disabled: defaultTheme.color.disabled
-    }
-  }
+  theme
 };
 
 const linkExternalSpan = styled.span;

@@ -1,13 +1,14 @@
 import * as React from 'react';
 import { omit, noop } from 'lodash';
+import { Fieldset } from '../fieldset';
+import { StyledInputCheckboxDiv, StyledInputCheckbox } from './styledInputCheckbox';
+import { AllProps } from '../../theme/common/props';
 import {
   StyledHintDiv,
   StyledErrorDiv,
   StyledFormGroupDiv,
-  StyledInputCheckbox,
+  StyledInputGroupDiv,
   StyledLabelCheckbox,
-  StyledInputCheckboxDiv,
-  StyledFieldset
 } from '../../theme/common';
 
 export interface CheckBox {
@@ -15,7 +16,7 @@ export interface CheckBox {
   value: string;
 }
 
-export interface CheckBoxFieldProps {
+export interface CheckBoxFieldProps extends AllProps {
   id: string;
   name: string;
   options: CheckBox[];
@@ -27,10 +28,6 @@ export interface CheckBoxFieldProps {
   disabled?: boolean;
   setInputRef?: (ref: HTMLInputElement) => void;
   onChange?: (value: boolean, event?: React.ChangeEvent<HTMLInputElement>) => void;
-
-  // excess property bags mainly used for capturing ARIA tags to be passed down to the HTML Input.
-  // tslint:disable-next-line no-any
-  [propKeys: string]: any;
 }
 
 const InputCheckbox: React.SFC<CheckBoxFieldProps> =
@@ -42,11 +39,13 @@ const InputCheckbox: React.SFC<CheckBoxFieldProps> =
 
         {hint && <StyledHintDiv hasError={!!errorMessage}>{hint}</StyledHintDiv>}
 
-        <StyledFieldset alignment={align} aria-describedby={`${id}-error`}>
+        <Fieldset id={`${id}-fieldset`} aria-describedby={`${id}-error`}>
+
+          <StyledInputGroupDiv alignment={align}>
 
           {options.map((item, index) =>
 
-            <StyledInputCheckboxDiv key={index} alignment={align}>
+            <StyledInputCheckboxDiv key={index}>
 
               <StyledInputCheckbox
                 {...this.props}
@@ -81,7 +80,9 @@ const InputCheckbox: React.SFC<CheckBoxFieldProps> =
             </StyledInputCheckboxDiv>
           )}
 
-        </StyledFieldset>
+          </StyledInputGroupDiv>
+
+        </Fieldset>
 
         <StyledErrorDiv id={`${id}-error`} hasError={!!errorMessage}>
           {errorMessage}

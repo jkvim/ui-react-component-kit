@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ReactNode } from 'react';
-import { StyledAlertDiv } from '../../theme/common';
+import { StyledAlertDiv } from './styledAlertDiv';
 
 export interface AlertProps {
   children?: ReactNode;

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
 import { lighten } from 'polished';
-import { defaultTheme } from '../../';
+import { theme } from '../../theme/defaultTheme';
 
 /** @component */
 export const StyledAutoCompleteContainer = styled.div`
@@ -30,12 +30,7 @@ export const StyledSelectableList = styled.ul`
 `;
 
 StyledSelectableList.defaultProps = {
-  theme: {
-    color: {
-      border: defaultTheme.color.border,
-      background: defaultTheme.color.background
-    }
-  }
+  theme
 };
 
 /** @component */
@@ -47,14 +42,7 @@ export const StyledListItem = styled.li`
 `;
 
 StyledListItem.defaultProps = {
-  theme: {
-    font: {
-      size: defaultTheme.font.size
-    },
-    color: {
-      font: defaultTheme.color.font
-    }
-  }
+  theme
 };
 
 /** @component */
@@ -70,14 +58,7 @@ export const StyledSelectableListItem = StyledListItem.extend`
 `;
 
 StyledSelectableListItem.defaultProps = {
-  theme: {
-    font: {
-      size: defaultTheme.font.size
-    },
-    color: {
-      hover: defaultTheme.color.hover
-    }
-  }
+  theme
 };
 
 /** @component */
@@ -88,12 +69,5 @@ export const StyledItemAnchor = styled.a`
   `;
 
 StyledItemAnchor.defaultProps = {
-  theme: {
-    font: {
-      size: defaultTheme.font.size
-    },
-    color: {
-      font: defaultTheme.color.font
-    }
-  }
+  theme
 };

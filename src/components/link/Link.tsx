@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { MouseEvent } from 'react';
-import { StyledLinkExternalSpan, StyledLink, StyledScreenReaderSpan } from '../../theme/common';
+import { StyledScreenReaderSpan } from '../../theme/common';
+import { StyledLink, StyledLinkExternalSpan } from './styledLink';
 
 export interface LinkProps {
   id: string;

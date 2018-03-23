@@ -7,25 +7,58 @@ exports[`InputText should match snapshot 1`] = `
 >
   <styled.div>
     <div
-      className="sc-htoDjs gQgvQJ"
+      className="sc-ifAKCX cnyXj"
     >
       <styled.label
         hasError={false}
         htmlFor="1234567890"
         theme={
           Object {
+            "border": Object {
+              "radius": Object {
+                "edge": "2px",
+                "round": "100px",
+              },
+              "size": "2px",
+            },
+            "breakpoint": Object {
+              "lg": "992px",
+              "md": "768px",
+              "sm": "576px",
+              "xl": "1200px",
+              "xs": "0px",
+            },
             "color": Object {
+              "background": "#ffffff",
+              "border": "#2fa4e7",
+              "checked": "#2fa4e7",
+              "danger": "#c71c22",
+              "default": "#2fa4e7",
+              "disabled": "#acacac",
               "error": "#c71c22",
+              "focus": "#54b4eb",
               "font": "#333333",
+              "hover": "#178acc",
+              "info": "#04519b",
+              "primary": "#2fa4e7",
+              "secondary": "#e9ecef",
+              "success": "#73a839",
+              "tertiary": "#343a40",
+              "warning": "#dd5600",
             },
             "font": Object {
-              "size": "1.8rem",
+              "size": Object {
+                "default": "1.8rem",
+              },
+              "weight": Object {
+                "default": 100,
+              },
             },
           }
         }
       >
         <label
-          className="sc-bdVaJa fuJIyO"
+          className="sc-bdVaJa mlfRZ"
           htmlFor="1234567890"
         >
           The label
@@ -43,18 +76,45 @@ exports[`InputText should match snapshot 1`] = `
         placeholder=""
         theme={
           Object {
+            "border": Object {
+              "radius": Object {
+                "edge": "2px",
+                "round": "100px",
+              },
+              "size": "2px",
+            },
+            "breakpoint": Object {
+              "lg": "992px",
+              "md": "768px",
+              "sm": "576px",
+              "xl": "1200px",
+              "xs": "0px",
+            },
             "color": Object {
               "background": "#ffffff",
               "border": "#2fa4e7",
+              "checked": "#2fa4e7",
+              "danger": "#c71c22",
               "default": "#2fa4e7",
               "disabled": "#acacac",
               "error": "#c71c22",
               "focus": "#54b4eb",
               "font": "#333333",
               "hover": "#178acc",
+              "info": "#04519b",
+              "primary": "#2fa4e7",
+              "secondary": "#e9ecef",
+              "success": "#73a839",
+              "tertiary": "#343a40",
+              "warning": "#dd5600",
             },
             "font": Object {
-              "size": "1.8rem",
+              "size": Object {
+                "default": "1.8rem",
+              },
+              "weight": Object {
+                "default": 100,
+              },
             },
           }
         }
@@ -64,7 +124,7 @@ exports[`InputText should match snapshot 1`] = `
         <input
           aria-describedby="1234567890-error"
           aria-invalid={false}
-          className="sc-jTzLTM ibORGD"
+          className="sc-dnqmqq fdxnFJ"
           id="1234567890"
           onBlur={[Function]}
           onChange={[Function]}
@@ -79,17 +139,51 @@ exports[`InputText should match snapshot 1`] = `
         id="1234567890-error"
         theme={
           Object {
+            "border": Object {
+              "radius": Object {
+                "edge": "2px",
+                "round": "100px",
+              },
+              "size": "2px",
+            },
+            "breakpoint": Object {
+              "lg": "992px",
+              "md": "768px",
+              "sm": "576px",
+              "xl": "1200px",
+              "xs": "0px",
+            },
             "color": Object {
+              "background": "#ffffff",
+              "border": "#2fa4e7",
+              "checked": "#2fa4e7",
+              "danger": "#c71c22",
+              "default": "#2fa4e7",
+              "disabled": "#acacac",
               "error": "#c71c22",
+              "focus": "#54b4eb",
+              "font": "#333333",
+              "hover": "#178acc",
+              "info": "#04519b",
+              "primary": "#2fa4e7",
+              "secondary": "#e9ecef",
+              "success": "#73a839",
+              "tertiary": "#343a40",
+              "warning": "#dd5600",
             },
             "font": Object {
-              "size": "1.8rem",
+              "size": Object {
+                "default": "1.8rem",
+              },
+              "weight": Object {
+                "default": 100,
+              },
             },
           }
         }
       >
         <div
-          className="sc-VigVT gUinmJ"
+          className="sc-htoDjs keLCLG"
           id="1234567890-error"
         />
       </styled.div>

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
-import { defaultTheme } from '../defaultTheme';
 import { HasErrorProps } from './props';
+import { theme } from '../defaultTheme';
 
 const hintDiv: StyledFunction<HasErrorProps> = styled.div;
 
@@ -12,10 +12,5 @@ export const StyledHintDiv = hintDiv`
   `;
 
 StyledHintDiv.defaultProps = {
-  theme: {
-    color: {
-      font: defaultTheme.color.font,
-      error: defaultTheme.color.error
-    }
-  }
+  theme
 };

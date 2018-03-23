@@ -1,9 +1,11 @@
 import * as React from 'react';
 import { kebabCase } from 'lodash';
 import { noop } from 'lodash';
-import { StyledLabel, StyledInputText, StyledFormGroupDiv, StyledHintDiv, StyledErrorDiv } from '../../theme/common';
+import { StyledLabel, StyledFormGroupDiv, StyledHintDiv, StyledErrorDiv } from '../../theme/common';
+import { AllProps } from '../../theme/common/props';
+import { StyledInputText } from './styledInputText';
 
-export interface InputTextProps {
+export interface InputTextProps extends AllProps {
   id: string;
   label: string;
   placeholder?: string;
@@ -17,10 +19,6 @@ export interface InputTextProps {
   onBlur?: (value: string) => void;
   onChange?: (value: string, event?: React.ChangeEvent<HTMLInputElement>) => void;
   onKeyDown?: (keyCode: number, event: React.KeyboardEvent<HTMLInputElement>) => void;
-
-  // excess property bags mainly used for capturing ARIA tags to be passed down to the HTML Input.
-  // tslint:disable-next-line no-any
-  [propKeys: string]: any;
 }
 
 const InputText: React.SFC<InputTextProps> =

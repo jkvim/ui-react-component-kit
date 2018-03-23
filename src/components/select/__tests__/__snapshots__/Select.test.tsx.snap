@@ -16,25 +16,58 @@ exports[`SelectField props should match snapshot 1`] = `
 >
   <styled.div>
     <div
-      className="sc-htoDjs gQgvQJ"
+      className="sc-ifAKCX cnyXj"
     >
       <styled.label
         hasError={false}
         htmlFor="some-id"
         theme={
           Object {
+            "border": Object {
+              "radius": Object {
+                "edge": "2px",
+                "round": "100px",
+              },
+              "size": "2px",
+            },
+            "breakpoint": Object {
+              "lg": "992px",
+              "md": "768px",
+              "sm": "576px",
+              "xl": "1200px",
+              "xs": "0px",
+            },
             "color": Object {
+              "background": "#ffffff",
+              "border": "#2fa4e7",
+              "checked": "#2fa4e7",
+              "danger": "#c71c22",
+              "default": "#2fa4e7",
+              "disabled": "#acacac",
               "error": "#c71c22",
+              "focus": "#54b4eb",
               "font": "#333333",
+              "hover": "#178acc",
+              "info": "#04519b",
+              "primary": "#2fa4e7",
+              "secondary": "#e9ecef",
+              "success": "#73a839",
+              "tertiary": "#343a40",
+              "warning": "#dd5600",
             },
             "font": Object {
-              "size": "1.8rem",
+              "size": Object {
+                "default": "1.8rem",
+              },
+              "weight": Object {
+                "default": 100,
+              },
             },
           }
         }
       >
         <label
-          className="sc-bdVaJa fuJIyO"
+          className="sc-bdVaJa mlfRZ"
           htmlFor="some-id"
         >
           Some error message.
@@ -48,25 +81,52 @@ exports[`SelectField props should match snapshot 1`] = `
         onChange={[Function]}
         theme={
           Object {
+            "border": Object {
+              "radius": Object {
+                "edge": "2px",
+                "round": "100px",
+              },
+              "size": "2px",
+            },
+            "breakpoint": Object {
+              "lg": "992px",
+              "md": "768px",
+              "sm": "576px",
+              "xl": "1200px",
+              "xs": "0px",
+            },
             "color": Object {
               "background": "#ffffff",
               "border": "#2fa4e7",
+              "checked": "#2fa4e7",
+              "danger": "#c71c22",
               "default": "#2fa4e7",
               "disabled": "#acacac",
               "error": "#c71c22",
               "focus": "#54b4eb",
               "font": "#333333",
               "hover": "#178acc",
+              "info": "#04519b",
+              "primary": "#2fa4e7",
+              "secondary": "#e9ecef",
+              "success": "#73a839",
+              "tertiary": "#343a40",
+              "warning": "#dd5600",
             },
             "font": Object {
-              "size": "1.8rem",
+              "size": Object {
+                "default": "1.8rem",
+              },
+              "weight": Object {
+                "default": 100,
+              },
             },
           }
         }
         value=""
       >
         <select
-          className="sc-bZQynM ejaqGf"
+          className="sc-dnqmqq jrLlYC"
           id="some-id"
           onBlur={[Function]}
           onChange={[Function]}
@@ -89,17 +149,51 @@ exports[`SelectField props should match snapshot 1`] = `
         hasError={false}
         theme={
           Object {
+            "border": Object {
+              "radius": Object {
+                "edge": "2px",
+                "round": "100px",
+              },
+              "size": "2px",
+            },
+            "breakpoint": Object {
+              "lg": "992px",
+              "md": "768px",
+              "sm": "576px",
+              "xl": "1200px",
+              "xs": "0px",
+            },
             "color": Object {
+              "background": "#ffffff",
+              "border": "#2fa4e7",
+              "checked": "#2fa4e7",
+              "danger": "#c71c22",
+              "default": "#2fa4e7",
+              "disabled": "#acacac",
               "error": "#c71c22",
+              "focus": "#54b4eb",
+              "font": "#333333",
+              "hover": "#178acc",
+              "info": "#04519b",
+              "primary": "#2fa4e7",
+              "secondary": "#e9ecef",
+              "success": "#73a839",
+              "tertiary": "#343a40",
+              "warning": "#dd5600",
             },
             "font": Object {
-              "size": "1.8rem",
+              "size": Object {
+                "default": "1.8rem",
+              },
+              "weight": Object {
+                "default": 100,
+              },
             },
           }
         }
       >
         <div
-          className="sc-VigVT gUinmJ"
+          className="sc-htoDjs keLCLG"
         />
       </styled.div>
     </div>

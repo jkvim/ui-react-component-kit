@@ -53,19 +53,19 @@ $ yarn add ui-react-component-kit --dev | npm install ui-react-component-kit --s
 ```javascript
 import { ThemeProvider } from 'styled-components';
 // default theme provided with library
-import { defaultTheme } from 'ui-react-component-kit'; 
+import { customTheme } from './your/custom/theme/path'; 
 ```
 
 The defaultTheme has been written with mobile first, therefore breakpoints are triggered on min-width rather then max-width. 
 
-Wrap your application in the ThemeProvider and pass in the defaultTheme or your own theme.
+Wrap your application in the ThemeProvider and pass in your own theme.
 
 NOTE: If you don't wrap you application in the ThemeProvider the components will still be theme to the defaults, but you won't be able to override them unless you wrap your application in the ThemeProvider to pass your own theme.
 
 ```javascript
 function App() {
   return (
-    <ThemeProvider theme={defaultTheme}>
+    <ThemeProvider theme={customTheme}>
       {/* rest of your app */}
     </ThemeProvider>
   );

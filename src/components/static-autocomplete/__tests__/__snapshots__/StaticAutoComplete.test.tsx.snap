@@ -33,7 +33,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
       role="application"
     >
       <div
-        className="sc-chPdSV joCMgf"
+        className="sc-iwsKbI jbdQuT"
         onBlur={[Function]}
         role="application"
       >
@@ -55,25 +55,58 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
         >
           <styled.div>
             <div
-              className="sc-htoDjs gQgvQJ"
+              className="sc-ifAKCX cnyXj"
             >
               <styled.label
                 hasError={false}
                 htmlFor="static-id-autocomplete"
                 theme={
                   Object {
+                    "border": Object {
+                      "radius": Object {
+                        "edge": "2px",
+                        "round": "100px",
+                      },
+                      "size": "2px",
+                    },
+                    "breakpoint": Object {
+                      "lg": "992px",
+                      "md": "768px",
+                      "sm": "576px",
+                      "xl": "1200px",
+                      "xs": "0px",
+                    },
                     "color": Object {
+                      "background": "#ffffff",
+                      "border": "#2fa4e7",
+                      "checked": "#2fa4e7",
+                      "danger": "#c71c22",
+                      "default": "#2fa4e7",
+                      "disabled": "#acacac",
                       "error": "#c71c22",
+                      "focus": "#54b4eb",
                       "font": "#333333",
+                      "hover": "#178acc",
+                      "info": "#04519b",
+                      "primary": "#2fa4e7",
+                      "secondary": "#e9ecef",
+                      "success": "#73a839",
+                      "tertiary": "#343a40",
+                      "warning": "#dd5600",
                     },
                     "font": Object {
-                      "size": "1.8rem",
+                      "size": Object {
+                        "default": "1.8rem",
+                      },
+                      "weight": Object {
+                        "default": 100,
+                      },
                     },
                   }
                 }
               >
                 <label
-                  className="sc-bdVaJa fuJIyO"
+                  className="sc-bdVaJa mlfRZ"
                   htmlFor="static-id-autocomplete"
                 >
                   Label
@@ -91,18 +124,45 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 placeholder=""
                 theme={
                   Object {
+                    "border": Object {
+                      "radius": Object {
+                        "edge": "2px",
+                        "round": "100px",
+                      },
+                      "size": "2px",
+                    },
+                    "breakpoint": Object {
+                      "lg": "992px",
+                      "md": "768px",
+                      "sm": "576px",
+                      "xl": "1200px",
+                      "xs": "0px",
+                    },
                     "color": Object {
                       "background": "#ffffff",
                       "border": "#2fa4e7",
+                      "checked": "#2fa4e7",
+                      "danger": "#c71c22",
                       "default": "#2fa4e7",
                       "disabled": "#acacac",
                       "error": "#c71c22",
                       "focus": "#54b4eb",
                       "font": "#333333",
                       "hover": "#178acc",
+                      "info": "#04519b",
+                      "primary": "#2fa4e7",
+                      "secondary": "#e9ecef",
+                      "success": "#73a839",
+                      "tertiary": "#343a40",
+                      "warning": "#dd5600",
                     },
                     "font": Object {
-                      "size": "1.8rem",
+                      "size": Object {
+                        "default": "1.8rem",
+                      },
+                      "weight": Object {
+                        "default": 100,
+                      },
                     },
                   }
                 }
@@ -112,7 +172,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 <input
                   aria-describedby="static-id-autocomplete-error"
                   aria-invalid={false}
-                  className="sc-jTzLTM ibORGD"
+                  className="sc-dnqmqq fdxnFJ"
                   id="static-id-autocomplete"
                   onBlur={[Function]}
                   onChange={[Function]}
@@ -130,7 +190,7 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
         >
           <div
             aria-live="polite"
-            className="sc-iwsKbI kmSHab"
+            className="sc-bZQynM jbtBHc"
           />
         </styled.div>
         <styled.div
@@ -138,17 +198,51 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
           id="static-id-autocomplete-error"
           theme={
             Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
               "color": Object {
+                "background": "#ffffff",
+                "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
+                "default": "#2fa4e7",
+                "disabled": "#acacac",
                 "error": "#c71c22",
+                "focus": "#54b4eb",
+                "font": "#333333",
+                "hover": "#178acc",
+                "info": "#04519b",
+                "primary": "#2fa4e7",
+                "secondary": "#e9ecef",
+                "success": "#73a839",
+                "tertiary": "#343a40",
+                "warning": "#dd5600",
               },
               "font": Object {
-                "size": "1.8rem",
+                "size": Object {
+                  "default": "1.8rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
               },
             }
           }
         >
           <div
-            className="sc-VigVT gUinmJ"
+            className="sc-htoDjs keLCLG"
             id="static-id-autocomplete-error"
           />
         </styled.div>

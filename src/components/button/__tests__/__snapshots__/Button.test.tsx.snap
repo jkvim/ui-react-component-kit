@@ -101,7 +101,7 @@ ReactWrapper {
                   "stateNode": Object {
                     "containerInfo": <div>
                       <button
-                        class="sc-EHOje bYXEnq"
+                        class="sc-bdVaJa amAoi"
                       >
                         Hello
                       </button>
@@ -196,7 +196,7 @@ ReactWrapper {
                 "stateNode": Object {
                   "containerInfo": <div>
                     <button
-                      class="sc-EHOje bYXEnq"
+                      class="sc-bdVaJa amAoi"
                     >
                       Hello
                     </button>
@@ -328,7 +328,7 @@ ReactWrapper {
                   "stateNode": Object {
                     "containerInfo": <div>
                       <button
-                        class="sc-EHOje bYXEnq"
+                        class="sc-bdVaJa amAoi"
                       >
                         Hello
                       </button>
@@ -423,7 +423,7 @@ ReactWrapper {
                 "stateNode": Object {
                   "containerInfo": <div>
                     <button
-                      class="sc-EHOje bYXEnq"
+                      class="sc-bdVaJa amAoi"
                     >
                       Hello
                     </button>
@@ -499,7 +499,7 @@ ReactWrapper {
             "lastEffect": null,
             "memoizedProps": Object {
               "children": "Hello",
-              "className": "sc-EHOje bYXEnq",
+              "className": "sc-bdVaJa amAoi",
               "disabled": undefined,
               "onClick": [MockFunction],
             },
@@ -510,7 +510,7 @@ ReactWrapper {
             "return": [Circular],
             "sibling": null,
             "stateNode": <button
-              class="sc-EHOje bYXEnq"
+              class="sc-bdVaJa amAoi"
             >
               Hello
             </button>,
@@ -531,38 +531,90 @@ ReactWrapper {
             "disabled": undefined,
             "onClick": [MockFunction],
             "theme": Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
               "color": Object {
                 "background": "#ffffff",
                 "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
                 "default": "#2fa4e7",
                 "disabled": "#acacac",
+                "error": "#c71c22",
                 "focus": "#54b4eb",
+                "font": "#333333",
                 "hover": "#178acc",
+                "info": "#04519b",
                 "primary": "#2fa4e7",
                 "secondary": "#e9ecef",
+                "success": "#73a839",
                 "tertiary": "#343a40",
+                "warning": "#dd5600",
               },
               "font": Object {
-                "size": "1.8rem",
+                "size": Object {
+                  "default": "1.8rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
               },
             },
           },
           "memoizedState": Object {
-            "generatedClassName": "bYXEnq",
+            "generatedClassName": "amAoi",
             "theme": Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
               "color": Object {
                 "background": "#ffffff",
                 "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
                 "default": "#2fa4e7",
                 "disabled": "#acacac",
+                "error": "#c71c22",
                 "focus": "#54b4eb",
+                "font": "#333333",
                 "hover": "#178acc",
+                "info": "#04519b",
                 "primary": "#2fa4e7",
                 "secondary": "#e9ecef",
+                "success": "#73a839",
                 "tertiary": "#343a40",
+                "warning": "#dd5600",
               },
               "font": Object {
-                "size": "1.8rem",
+                "size": Object {
+                  "default": "1.8rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
               },
             },
           },
@@ -634,7 +686,7 @@ ReactWrapper {
                   "stateNode": Object {
                     "containerInfo": <div>
                       <button
-                        class="sc-EHOje bYXEnq"
+                        class="sc-bdVaJa amAoi"
                       >
                         Hello
                       </button>
@@ -729,7 +781,7 @@ ReactWrapper {
                 "stateNode": Object {
                   "containerInfo": <div>
                     <button
-                      class="sc-EHOje bYXEnq"
+                      class="sc-bdVaJa amAoi"
                     >
                       Hello
                     </button>
@@ -861,7 +913,7 @@ ReactWrapper {
                   "stateNode": Object {
                     "containerInfo": <div>
                       <button
-                        class="sc-EHOje bYXEnq"
+                        class="sc-bdVaJa amAoi"
                       >
                         Hello
                       </button>
@@ -956,7 +1008,7 @@ ReactWrapper {
                 "stateNode": Object {
                   "containerInfo": <div>
                     <button
-                      class="sc-EHOje bYXEnq"
+                      class="sc-bdVaJa amAoi"
                     >
                       Hello
                     </button>
@@ -1033,39 +1085,91 @@ ReactWrapper {
           "disabled": undefined,
           "onClick": [MockFunction],
           "theme": Object {
+            "border": Object {
+              "radius": Object {
+                "edge": "2px",
+                "round": "100px",
+              },
+              "size": "2px",
+            },
+            "breakpoint": Object {
+              "lg": "992px",
+              "md": "768px",
+              "sm": "576px",
+              "xl": "1200px",
+              "xs": "0px",
+            },
             "color": Object {
               "background": "#ffffff",
               "border": "#2fa4e7",
+              "checked": "#2fa4e7",
+              "danger": "#c71c22",
               "default": "#2fa4e7",
               "disabled": "#acacac",
+              "error": "#c71c22",
               "focus": "#54b4eb",
+              "font": "#333333",
               "hover": "#178acc",
+              "info": "#04519b",
               "primary": "#2fa4e7",
               "secondary": "#e9ecef",
+              "success": "#73a839",
               "tertiary": "#343a40",
+              "warning": "#dd5600",
             },
             "font": Object {
-              "size": "1.8rem",
+              "size": Object {
+                "default": "1.8rem",
+              },
+              "weight": Object {
+                "default": 100,
+              },
             },
           },
         },
         "refs": Object {},
         "state": Object {
-          "generatedClassName": "bYXEnq",
+          "generatedClassName": "amAoi",
           "theme": Object {
+            "border": Object {
+              "radius": Object {
+                "edge": "2px",
+                "round": "100px",
+              },
+              "size": "2px",
+            },
+            "breakpoint": Object {
+              "lg": "992px",
+              "md": "768px",
+              "sm": "576px",
+              "xl": "1200px",
+              "xs": "0px",
+            },
             "color": Object {
               "background": "#ffffff",
               "border": "#2fa4e7",
+              "checked": "#2fa4e7",
+              "danger": "#c71c22",
               "default": "#2fa4e7",
               "disabled": "#acacac",
+              "error": "#c71c22",
               "focus": "#54b4eb",
+              "font": "#333333",
               "hover": "#178acc",
+              "info": "#04519b",
               "primary": "#2fa4e7",
               "secondary": "#e9ecef",
+              "success": "#73a839",
               "tertiary": "#343a40",
+              "warning": "#dd5600",
             },
             "font": Object {
-              "size": "1.8rem",
+              "size": Object {
+                "default": "1.8rem",
+              },
+              "weight": Object {
+                "default": 100,
+              },
             },
           },
         },
@@ -1085,26 +1189,52 @@ ReactWrapper {
         "disabled": undefined,
         "onClick": [MockFunction],
         "theme": Object {
+          "border": Object {
+            "radius": Object {
+              "edge": "2px",
+              "round": "100px",
+            },
+            "size": "2px",
+          },
+          "breakpoint": Object {
+            "lg": "992px",
+            "md": "768px",
+            "sm": "576px",
+            "xl": "1200px",
+            "xs": "0px",
+          },
           "color": Object {
             "background": "#ffffff",
             "border": "#2fa4e7",
+            "checked": "#2fa4e7",
+            "danger": "#c71c22",
             "default": "#2fa4e7",
             "disabled": "#acacac",
+            "error": "#c71c22",
             "focus": "#54b4eb",
+            "font": "#333333",
             "hover": "#178acc",
+            "info": "#04519b",
             "primary": "#2fa4e7",
             "secondary": "#e9ecef",
+            "success": "#73a839",
             "tertiary": "#343a40",
+            "warning": "#dd5600",
           },
           "font": Object {
-            "size": "1.8rem",
+            "size": Object {
+              "default": "1.8rem",
+            },
+            "weight": Object {
+              "default": 100,
+            },
           },
         },
       },
       "ref": null,
       "rendered": Object {
         "instance": <button
-          class="sc-EHOje bYXEnq"
+          class="sc-bdVaJa amAoi"
         >
           Hello
         </button>,
@@ -1112,7 +1242,7 @@ ReactWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Hello",
-          "className": "sc-EHOje bYXEnq",
+          "className": "sc-bdVaJa amAoi",
           "disabled": undefined,
           "onClick": [MockFunction],
         },
@@ -1212,7 +1342,7 @@ ReactWrapper {
                     "stateNode": Object {
                       "containerInfo": <div>
                         <button
-                          class="sc-EHOje bYXEnq"
+                          class="sc-bdVaJa amAoi"
                         >
                           Hello
                         </button>
@@ -1307,7 +1437,7 @@ ReactWrapper {
                   "stateNode": Object {
                     "containerInfo": <div>
                       <button
-                        class="sc-EHOje bYXEnq"
+                        class="sc-bdVaJa amAoi"
                       >
                         Hello
                       </button>
@@ -1439,7 +1569,7 @@ ReactWrapper {
                     "stateNode": Object {
                       "containerInfo": <div>
                         <button
-                          class="sc-EHOje bYXEnq"
+                          class="sc-bdVaJa amAoi"
                         >
                           Hello
                         </button>
@@ -1534,7 +1664,7 @@ ReactWrapper {
                   "stateNode": Object {
                     "containerInfo": <div>
                       <button
-                        class="sc-EHOje bYXEnq"
+                        class="sc-bdVaJa amAoi"
                       >
                         Hello
                       </button>
@@ -1610,7 +1740,7 @@ ReactWrapper {
               "lastEffect": null,
               "memoizedProps": Object {
                 "children": "Hello",
-                "className": "sc-EHOje bYXEnq",
+                "className": "sc-bdVaJa amAoi",
                 "disabled": undefined,
                 "onClick": [MockFunction],
               },
@@ -1621,7 +1751,7 @@ ReactWrapper {
               "return": [Circular],
               "sibling": null,
               "stateNode": <button
-                class="sc-EHOje bYXEnq"
+                class="sc-bdVaJa amAoi"
               >
                 Hello
               </button>,
@@ -1642,38 +1772,90 @@ ReactWrapper {
               "disabled": undefined,
               "onClick": [MockFunction],
               "theme": Object {
+                "border": Object {
+                  "radius": Object {
+                    "edge": "2px",
+                    "round": "100px",
+                  },
+                  "size": "2px",
+                },
+                "breakpoint": Object {
+                  "lg": "992px",
+                  "md": "768px",
+                  "sm": "576px",
+                  "xl": "1200px",
+                  "xs": "0px",
+                },
                 "color": Object {
                   "background": "#ffffff",
                   "border": "#2fa4e7",
+                  "checked": "#2fa4e7",
+                  "danger": "#c71c22",
                   "default": "#2fa4e7",
                   "disabled": "#acacac",
+                  "error": "#c71c22",
                   "focus": "#54b4eb",
+                  "font": "#333333",
                   "hover": "#178acc",
+                  "info": "#04519b",
                   "primary": "#2fa4e7",
                   "secondary": "#e9ecef",
+                  "success": "#73a839",
                   "tertiary": "#343a40",
+                  "warning": "#dd5600",
                 },
                 "font": Object {
-                  "size": "1.8rem",
+                  "size": Object {
+                    "default": "1.8rem",
+                  },
+                  "weight": Object {
+                    "default": 100,
+                  },
                 },
               },
             },
             "memoizedState": Object {
-              "generatedClassName": "bYXEnq",
+              "generatedClassName": "amAoi",
               "theme": Object {
+                "border": Object {
+                  "radius": Object {
+                    "edge": "2px",
+                    "round": "100px",
+                  },
+                  "size": "2px",
+                },
+                "breakpoint": Object {
+                  "lg": "992px",
+                  "md": "768px",
+                  "sm": "576px",
+                  "xl": "1200px",
+                  "xs": "0px",
+                },
                 "color": Object {
                   "background": "#ffffff",
                   "border": "#2fa4e7",
+                  "checked": "#2fa4e7",
+                  "danger": "#c71c22",
                   "default": "#2fa4e7",
                   "disabled": "#acacac",
+                  "error": "#c71c22",
                   "focus": "#54b4eb",
+                  "font": "#333333",
                   "hover": "#178acc",
+                  "info": "#04519b",
                   "primary": "#2fa4e7",
                   "secondary": "#e9ecef",
+                  "success": "#73a839",
                   "tertiary": "#343a40",
+                  "warning": "#dd5600",
                 },
                 "font": Object {
-                  "size": "1.8rem",
+                  "size": Object {
+                    "default": "1.8rem",
+                  },
+                  "weight": Object {
+                    "default": 100,
+                  },
                 },
               },
             },
@@ -1745,7 +1927,7 @@ ReactWrapper {
                     "stateNode": Object {
                       "containerInfo": <div>
                         <button
-                          class="sc-EHOje bYXEnq"
+                          class="sc-bdVaJa amAoi"
                         >
                           Hello
                         </button>
@@ -1840,7 +2022,7 @@ ReactWrapper {
                   "stateNode": Object {
                     "containerInfo": <div>
                       <button
-                        class="sc-EHOje bYXEnq"
+                        class="sc-bdVaJa amAoi"
                       >
                         Hello
                       </button>
@@ -1972,7 +2154,7 @@ ReactWrapper {
                     "stateNode": Object {
                       "containerInfo": <div>
                         <button
-                          class="sc-EHOje bYXEnq"
+                          class="sc-bdVaJa amAoi"
                         >
                           Hello
                         </button>
@@ -2067,7 +2249,7 @@ ReactWrapper {
                   "stateNode": Object {
                     "containerInfo": <div>
                       <button
-                        class="sc-EHOje bYXEnq"
+                        class="sc-bdVaJa amAoi"
                       >
                         Hello
                       </button>
@@ -2144,39 +2326,91 @@ ReactWrapper {
             "disabled": undefined,
             "onClick": [MockFunction],
             "theme": Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
               "color": Object {
                 "background": "#ffffff",
                 "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
                 "default": "#2fa4e7",
                 "disabled": "#acacac",
+                "error": "#c71c22",
                 "focus": "#54b4eb",
+                "font": "#333333",
                 "hover": "#178acc",
+                "info": "#04519b",
                 "primary": "#2fa4e7",
                 "secondary": "#e9ecef",
+                "success": "#73a839",
                 "tertiary": "#343a40",
+                "warning": "#dd5600",
               },
               "font": Object {
-                "size": "1.8rem",
+                "size": Object {
+                  "default": "1.8rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
               },
             },
           },
           "refs": Object {},
           "state": Object {
-            "generatedClassName": "bYXEnq",
+            "generatedClassName": "amAoi",
             "theme": Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
               "color": Object {
                 "background": "#ffffff",
                 "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
                 "default": "#2fa4e7",
                 "disabled": "#acacac",
+                "error": "#c71c22",
                 "focus": "#54b4eb",
+                "font": "#333333",
                 "hover": "#178acc",
+                "info": "#04519b",
                 "primary": "#2fa4e7",
                 "secondary": "#e9ecef",
+                "success": "#73a839",
                 "tertiary": "#343a40",
+                "warning": "#dd5600",
               },
               "font": Object {
-                "size": "1.8rem",
+                "size": Object {
+                  "default": "1.8rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
               },
             },
           },
@@ -2196,26 +2430,52 @@ ReactWrapper {
           "disabled": undefined,
           "onClick": [MockFunction],
           "theme": Object {
+            "border": Object {
+              "radius": Object {
+                "edge": "2px",
+                "round": "100px",
+              },
+              "size": "2px",
+            },
+            "breakpoint": Object {
+              "lg": "992px",
+              "md": "768px",
+              "sm": "576px",
+              "xl": "1200px",
+              "xs": "0px",
+            },
             "color": Object {
               "background": "#ffffff",
               "border": "#2fa4e7",
+              "checked": "#2fa4e7",
+              "danger": "#c71c22",
               "default": "#2fa4e7",
               "disabled": "#acacac",
+              "error": "#c71c22",
               "focus": "#54b4eb",
+              "font": "#333333",
               "hover": "#178acc",
+              "info": "#04519b",
               "primary": "#2fa4e7",
               "secondary": "#e9ecef",
+              "success": "#73a839",
               "tertiary": "#343a40",
+              "warning": "#dd5600",
             },
             "font": Object {
-              "size": "1.8rem",
+              "size": Object {
+                "default": "1.8rem",
+              },
+              "weight": Object {
+                "default": 100,
+              },
             },
           },
         },
         "ref": null,
         "rendered": Object {
           "instance": <button
-            class="sc-EHOje bYXEnq"
+            class="sc-bdVaJa amAoi"
           >
             Hello
           </button>,
@@ -2223,7 +2483,7 @@ ReactWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Hello",
-            "className": "sc-EHOje bYXEnq",
+            "className": "sc-bdVaJa amAoi",
             "disabled": undefined,
             "onClick": [MockFunction],
           },
