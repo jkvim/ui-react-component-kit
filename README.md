@@ -52,7 +52,7 @@ $ yarn add ui-react-component-kit --dev | npm install ui-react-component-kit --s
 
 ```javascript
 import { ThemeProvider } from 'styled-components';
-// default theme provided with library
+// custom theme provided with library
 import { customTheme } from './your/custom/theme/path'; 
 ```
 
