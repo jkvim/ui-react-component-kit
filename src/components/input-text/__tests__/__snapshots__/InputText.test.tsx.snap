@@ -124,7 +124,7 @@ exports[`InputText should match snapshot 1`] = `
         <input
           aria-describedby="1234567890-error"
           aria-invalid={false}
-          className="sc-dnqmqq fdxnFJ"
+          className="sc-dnqmqq ceLtZr"
           id="1234567890"
           onBlur={[Function]}
           onChange={[Function]}

@@ -9,14 +9,3 @@ export const breakpoint = (value, styles) => {
     `;
   };
 };
-
-// TODO: WIP
-/*export const boxshadow = (value, styles) => {
-  return ({ theme }) => {
-    return css`
-      @media (min-width: ${theme.breakpoints[value]}px) {
-        ${styles};
-      }
-    `;
-  };
-};*/

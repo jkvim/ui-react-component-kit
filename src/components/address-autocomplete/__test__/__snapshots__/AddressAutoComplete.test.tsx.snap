@@ -166,7 +166,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
                 <input
                   aria-describedby="address-id-autocomplete-error"
                   aria-invalid={false}
-                  className="sc-dnqmqq fdxnFJ"
+                  className="sc-dnqmqq ceLtZr"
                   id="address-id-autocomplete"
                   onBlur={[Function]}
                   onChange={[Function]}

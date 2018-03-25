@@ -1,7 +1,6 @@
 const path = require('path');
 const componentsPath = path.join(__dirname, 'src', 'components');
 
-
 module.exports = {
   showUsage: true,
   components: 'src/components/**/[A-Z]*.{ts,tsx}',

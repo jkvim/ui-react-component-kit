@@ -1,13 +1,15 @@
 import * as React from 'react';
 import { ReactNode } from 'react';
 import { StyledAlertDiv } from './styledAlertDiv';
+import { AlertType } from '../../constants/constants';
 
 export interface AlertProps {
   children?: ReactNode;
-  alertType?: string;
+  alertType?: AlertType;
   className?: string;
 }
 
+// tslint:disable-next-line:no-shadowed-variable
 const Alert: React.SFC<AlertProps> = ({ children, alertType, className }) => {
     return (
       <StyledAlertDiv

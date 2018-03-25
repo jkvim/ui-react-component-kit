@@ -113,7 +113,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                       <input
                         aria-invalid={false}
                         checked={false}
-                        className="sc-bwzfXH jKmQog"
+                        className="sc-bwzfXH crbTWX"
                         id="testId-0"
                         name="testName"
                         onChange={[Function]}
@@ -242,7 +242,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                       <input
                         aria-invalid={false}
                         checked={true}
-                        className="sc-bwzfXH jKmQog"
+                        className="sc-bwzfXH crbTWX"
                         id="testId-1"
                         name="testName"
                         onChange={[Function]}
@@ -371,7 +371,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                       <input
                         aria-invalid={false}
                         checked={true}
-                        className="sc-bwzfXH jKmQog"
+                        className="sc-bwzfXH crbTWX"
                         id="testId-2"
                         name="testName"
                         onChange={[Function]}

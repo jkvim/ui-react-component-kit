@@ -104,7 +104,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                       <input
                         aria-invalid={false}
                         checked={false}
-                        className="sc-bwzfXH eNZkkQ"
+                        className="sc-bwzfXH fKPDmQ"
                         id="testId-0"
                         name="testName"
                         onChange={[Function]}
@@ -233,7 +233,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                       <input
                         aria-invalid={false}
                         checked={true}
-                        className="sc-bwzfXH eNZkkQ"
+                        className="sc-bwzfXH fKPDmQ"
                         id="testId-1"
                         name="testName"
                         onChange={[Function]}

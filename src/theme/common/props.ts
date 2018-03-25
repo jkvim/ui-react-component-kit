@@ -1,3 +1,5 @@
+import { AlertType, AlignmentType, ButtonType } from '../../constants/constants';
+
 export interface AllProps {
   // excess property bags mainly used for capturing ARIA tags to be passed down.
   // tslint:disable-next-line no-any
@@ -5,7 +7,7 @@ export interface AllProps {
 }
 
 export interface AlignmentProps extends AllProps {
-  alignment: string;
+  alignment: AlignmentType;
 }
 
 export interface HasErrorProps extends AllProps {
@@ -13,9 +15,9 @@ export interface HasErrorProps extends AllProps {
 }
 
 export interface ButtonTypeProps extends AllProps {
-  buttonType: string;
+  buttonType: ButtonType;
 }
 
 export interface AlertTypeProps extends AllProps {
-  alertType: string;
+  alertType: AlertType;
 }

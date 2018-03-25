@@ -100,7 +100,7 @@ Blank
         id={'blank-multiple-v-radio'}
         name={'blank-v-multiple'}
         value={state.value}
-        align={'vertical'}
+        alignment={'vertical'}
         options={[{label: 'One', value: '1'}, {label: 'Two', value: '2'}, {label: 'Three', value: '3'}]}
         onChange={(value) => {
             setState({value});
@@ -135,7 +135,7 @@ Pre-populated
         id={'pre-populated-v-multiple-radio'}
         name={'pre-populated-v-multiple'}
         value={state.value}
-        align={'vertical'}
+        alignment={'vertical'}
         options={[{label: 'One', value: '1'}, {label: 'Two', value: '2'}, {label: 'Three', value: '3'}]}
         onChange={(value) => {
             setState({value});
@@ -171,7 +171,7 @@ Disabled
         id={'disabled-multiple-v-radio'}
         name={'disabled-v-multiple'}
         value={state.value}
-        align={'vertical'}
+        alignment={'vertical'}
         options={[{label: 'One', value: '1'}, {label: 'Two', value: '2'}, {label: 'Three', value: '3'}]}
         onChange={(value) => {
             setState({value});
@@ -211,7 +211,7 @@ Error
         value={state.value}
         options={[{label: 'One', value: '1'}, {label: 'Two', value: '2'}, {label: 'Three', value: '3'}]}
         hint={'Select the checkbox'}
-        align={'vertical'}
+        alignment={'vertical'}
         errorMessage={state.errorMessage}
         onChange={(value) => {
             setState({value, errorMessage: value ? '' : 'Field Required'});

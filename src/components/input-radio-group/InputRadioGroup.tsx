@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { omit, noop } from 'lodash';
-import { alignment } from '../../constants/constants';
+import { AlignmentType } from '../../constants/constants';
 import { Fieldset } from '../fieldset';
 import { StyledInputRadioDiv, StyledInputRadio } from './styledInputRadio';
 import { AllProps } from '../../theme/common/props';
@@ -23,7 +23,7 @@ export interface InputRadioGroupProps extends AllProps {
   options: InputRadio[];
   hint?: string;
   value?: string|number|boolean;
-  align?: string;
+  alignment?: AlignmentType;
   errorMessage?: string;
   className?: string;
   disabled?: boolean;
@@ -33,7 +33,7 @@ export interface InputRadioGroupProps extends AllProps {
 
 const InputRadioGroup: React.SFC<InputRadioGroupProps> =
   ({ id, name, hint, className, options, value, errorMessage = '',
-     align = alignment.horizontal, onChange = noop, setInputRef = noop, disabled }) => {
+     alignment = 'horizontal', onChange = noop, setInputRef = noop, disabled }) => {
 
   return (
     <StyledFormGroupDiv className={className}>
@@ -42,7 +42,7 @@ const InputRadioGroup: React.SFC<InputRadioGroupProps> =
 
       <Fieldset id={`${id}-fieldset`} aria-describedby={`${id}-error`}>
 
-        <StyledInputGroupDiv alignment={align}>
+        <StyledInputGroupDiv alignment={alignment}>
 
         {options.map((item, index) =>
 

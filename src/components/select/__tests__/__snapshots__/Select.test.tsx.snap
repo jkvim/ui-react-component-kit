@@ -126,7 +126,7 @@ exports[`SelectField props should match snapshot 1`] = `
         value=""
       >
         <select
-          className="sc-dnqmqq jrLlYC"
+          className="sc-dnqmqq eTZVkA"
           id="some-id"
           onBlur={[Function]}
           onChange={[Function]}

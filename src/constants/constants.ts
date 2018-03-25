@@ -1,17 +1,5 @@
-export const alignment = {
-  horizontal: 'horizontal',
-  vertical: 'vertical'
-};
+export type AlignmentType = 'horizontal' | 'vertical';
 
-export const buttonType = {
-  primary: 'primary',
-  secondary: 'secondary',
-  tertiary: 'tertiary'
-};
+export type ButtonType = 'primary' | 'secondary' | 'tertiary';
 
-export const alertType = {
-  success: 'success',
-  info: 'info',
-  warning: 'warning',
-  danger: 'danger'
-};
+export type AlertType = 'success' | 'info' | 'warning' | 'danger';

@@ -100,7 +100,7 @@ Blank
         id={'blank-multiple-v-checkbox'}
         name={'blank-v-multiple'}
         values={state.values}
-        align={'vertical'}
+        alignment={'vertical'}
         options={[{label: 'One', value: '1'}, {label: 'Two', value: '2'}, {label: 'Three', value: '3'}]}
         onChange={values => {
             setState({values});
@@ -135,7 +135,7 @@ Pre-populated
         id={'pre-populated-v-multiple-checkbox'}
         name={'pre-populated-v-multiple'}
         values={state.values}
-        align={'vertical'}
+        alignment={'vertical'}
         options={[{label: 'One', value: '1'}, {label: 'Two', value: '2'}, {label: 'Three', value: '3'}]}
         onChange={values => {
             setState({values});
@@ -171,7 +171,7 @@ Disabled
         id={'disabled-v-multiple-checkbox'}
         name={'disabled-v-multiple'}
         values={state.values}
-        align={'vertical'}
+        alignment={'vertical'}
         options={[{label: 'One', value: '1'}, {label: 'Two', value: '2'}, {label: 'Three', value: '3'}]}
         onChange={values => {
             setState({values});
@@ -209,7 +209,7 @@ Error
         id={'error-v-multiple-checkbox'}
         name={'error-v-multiple'}
         values={state.values}
-        align={'vertical'}
+        alignment={'vertical'}
         options={[{label: 'One', value: '1'}, {label: 'Two', value: '2'}, {label: 'Three', value: '3'}]}
         hint={'Select the checkbox'}
         errorMessage={state.errorMessage}

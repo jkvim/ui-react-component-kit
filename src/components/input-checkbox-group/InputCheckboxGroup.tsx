@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { omit, noop } from 'lodash';
 import { Fieldset } from '../fieldset';
+import { AlignmentType } from '../../constants/constants';
 import { StyledInputCheckboxDiv, StyledInputCheckbox } from './styledInputCheckbox';
 import { AllProps } from '../../theme/common/props';
 import {
@@ -22,7 +23,7 @@ export interface CheckBoxFieldProps extends AllProps {
   options: CheckBox[];
   hint?: string;
   values?: string[];
-  align?: string; /* 'horizontal' | 'vertical' */
+  alignment?: AlignmentType;
   errorMessage?: string;
   className?: string;
   disabled?: boolean;
@@ -32,7 +33,7 @@ export interface CheckBoxFieldProps extends AllProps {
 
 const InputCheckbox: React.SFC<CheckBoxFieldProps> =
   ({ id, name, hint, options, values = [], className, errorMessage = '',
-     align = 'horizontal', onChange = noop, setInputRef = noop, disabled }) => {
+     alignment = 'horizontal', onChange = noop, setInputRef = noop, disabled }) => {
 
     return (
       <StyledFormGroupDiv className={className}>
@@ -41,7 +42,7 @@ const InputCheckbox: React.SFC<CheckBoxFieldProps> =
 
         <Fieldset id={`${id}-fieldset`} aria-describedby={`${id}-error`}>
 
-          <StyledInputGroupDiv alignment={align}>
+          <StyledInputGroupDiv alignment={alignment}>
 
           {options.map((item, index) =>
 

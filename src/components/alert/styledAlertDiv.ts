@@ -1,7 +1,6 @@
 import * as React from 'react';
 import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
 import { darken } from 'polished';
-import { alertType } from '../../constants/constants';
 import { AlertTypeProps } from '../../theme/common/props';
 import { theme } from '../../theme/defaultTheme';
 
@@ -21,9 +20,9 @@ StyledAlertDiv.defaultProps = {
 };
 
 const backgroundColor = (props) => {
-  return (props.alertType === alertType.success ? props.theme.color.success :
-    props.alertType === alertType.info ? props.theme.color.info :
-      props.alertType === alertType.warning ? props.theme.color.warning :
-        props.alertType === alertType.danger ? props.theme.color.danger :
+  return (props.alertType === 'success' ? props.theme.color.success :
+    props.alertType === 'info' ? props.theme.color.info :
+      props.alertType === 'warning' ? props.theme.color.warning :
+        props.alertType === 'danger' ? props.theme.color.danger :
           props.theme.color.default);
 };
