@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ReactNode } from 'react';
+import { ButtonType } from '../../';
 import { StyledButton } from './styledButton';
-import { ButtonType } from '../../constants/constants';
 
 export interface ButtonProps {
   children: ReactNode;

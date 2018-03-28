@@ -1,3 +1,5 @@
+export type BreakpointType = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
+
 export type AlignmentType = 'horizontal' | 'vertical';
 
 export type ButtonType = 'primary' | 'secondary' | 'tertiary';

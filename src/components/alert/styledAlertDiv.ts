@@ -1,10 +1,10 @@
 import * as React from 'react';
 import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
 import { darken } from 'polished';
-import { AlertTypeProps } from '../../theme/common/props';
+import { AlertTypeProps, AllProps } from '../../theme/common/props';
 import { theme } from '../../theme/defaultTheme';
 
-const alertDiv: StyledFunction<AlertTypeProps> = styled.div;
+const alertDiv: StyledFunction<AlertTypeProps & AllProps> = styled.div;
 
 /** @component */
 export const StyledAlertDiv = alertDiv`

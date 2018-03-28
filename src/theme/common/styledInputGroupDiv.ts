@@ -1,12 +1,22 @@
 import * as React from 'react';
 import styled, { StyledComponentClass, StyledFunction } from 'styled-components';
-import { AlignmentProps } from './props';
+import { AlignmentProps, BreakpointProps } from './props';
+import { breakpoint } from '../utils/util';
+import { StyledErrorDiv } from './styledErrorDiv';
+import { theme } from '../defaultTheme';
 
-const inputGroup: StyledFunction<AlignmentProps> = styled.div;
+const inputGroup: StyledFunction<AlignmentProps & BreakpointProps> = styled.div;
 
 /** @component */
 export const StyledInputGroupDiv = inputGroup`
   display: flex;
-  flex-direction: ${props =>
-    props.alignment === 'horizontal' ? 'row' : 'column'};
+  flex-direction: ${props => props.breakpoint ? 'column' : props.alignment === 'horizontal' ? 'row' : 'column'};
+    
+  ${props => breakpoint(props.breakpoint, `
+    flex-direction: ${props.alignment === 'horizontal' ? 'row' : 'column'};
+  `)}
 `;
+
+StyledInputGroupDiv.defaultProps = {
+  theme
+};

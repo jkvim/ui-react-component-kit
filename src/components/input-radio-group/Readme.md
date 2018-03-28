@@ -108,6 +108,43 @@ Blank
 	/>
 ```
 
+Breakpoint
+
+```jsx
+    initialState = {
+        value: '2'
+    };
+  
+    <InputRadioGroup
+        id={'breakpoint-multiple-radio'}
+        name={'breakpoint-multiple'}
+        value={state.value}
+        options={[{label: 'One', value: '1'}, {label: 'Two', value: '2'}, {label: 'Three', value: '3'}]}
+        breakpoint={'md'}
+        onChange={(value) => {
+            setState({value});
+        }}
+	/>
+```
+
+```jsx
+    initialState = {
+        value: '2'
+    };
+  
+    <InputRadioGroup
+        id={'breakpoint-v-multiple-radio'}
+        name={'breakpoint-v-multiple'}
+        value={state.value}
+        alignment={'vertical'}
+        options={[{label: 'One', value: '1'}, {label: 'Two', value: '2'}, {label: 'Three', value: '3'}]}
+        breakpoint={'md'}
+        onChange={(value) => {
+            setState({value});
+        }}
+	/>
+```
+
 Pre-populated
 
 ```jsx

@@ -1,9 +1,9 @@
 import * as React from 'react';
 import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
-import { HasErrorProps } from './props';
+import { AllProps, HasErrorProps } from './props';
 import { theme } from '../defaultTheme';
 
-const errorDiv: StyledFunction<HasErrorProps> = styled.div;
+const errorDiv: StyledFunction<HasErrorProps & AllProps> = styled.div;
 
 /** @component */
 export const StyledErrorDiv = errorDiv`

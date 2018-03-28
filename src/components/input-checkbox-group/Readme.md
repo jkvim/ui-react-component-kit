@@ -108,6 +108,43 @@ Blank
 	/>
 ```
 
+Breakpoint
+
+```jsx
+    initialState = {
+        values: ['2', '3']
+    };
+  
+    <InputCheckboxGroup
+        id={'breakpoint-multiple-checkbox'}
+        name={'breakpoint-multiple'}
+        values={state.values}
+        options={[{label: 'One', value: '1'}, {label: 'Two', value: '2'}, {label: 'Three', value: '3'}]}
+        breakpoint={'md'}
+        onChange={values => {
+            setState({values});
+        }}
+	/>
+```
+
+```jsx
+    initialState = {
+        values: ['2', '3']
+    };
+  
+    <InputCheckboxGroup
+        id={'breakpoint-v-multiple-checkbox'}
+        name={'breakpoint-v-multiple'}
+        values={state.values}
+        alignment={'vertical'}
+        options={[{label: 'One', value: '1'}, {label: 'Two', value: '2'}, {label: 'Three', value: '3'}]}
+        breakpoint={'md'}
+        onChange={values => {
+            setState({values});
+        }}
+	/>
+```
+
 Pre-populated
 
 ```jsx

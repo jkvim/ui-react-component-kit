@@ -1,4 +1,4 @@
-import { AlertType, AlignmentType, ButtonType } from '../../constants/constants';
+import { AlertType, AlignmentType, BreakpointType, ButtonType } from '../../';
 
 export interface AllProps {
   // excess property bags mainly used for capturing ARIA tags to be passed down.
@@ -6,18 +6,22 @@ export interface AllProps {
   [propKeys: string]: any;
 }
 
-export interface AlignmentProps extends AllProps {
-  alignment: AlignmentType;
-}
-
-export interface HasErrorProps extends AllProps {
+export interface HasErrorProps {
   hasError: boolean;
 }
 
-export interface ButtonTypeProps extends AllProps {
+export interface BreakpointProps {
+  breakpoint: BreakpointType;
+}
+
+export interface AlignmentProps {
+  alignment: AlignmentType;
+}
+
+export interface ButtonTypeProps {
   buttonType: ButtonType;
 }
 
-export interface AlertTypeProps extends AllProps {
+export interface AlertTypeProps {
   alertType: AlertType;
 }
