@@ -2,8 +2,9 @@ import * as React from 'react';
 import { bindAll, debounce, escapeRegExp } from 'lodash';
 import { DataProvider, FooterComponent, ParsedSelectedItem, SelectableItem } from './types';
 import * as keys from '../../constants/keyboardKeys';
-import InputText from '../input-text/InputText';
-import { StyledAccessibleHiddenDiv, StyledErrorDiv } from '../../theme/common';
+import { InputText } from '../input-text';
+import { Error } from '../error';
+import { StyledAccessibleHiddenDiv } from '../../theme/common';
 import {
   StyledAutoCompleteContainer,
   StyledAutoCompleteResults,
@@ -379,9 +380,7 @@ class AutoComplete extends React.Component<AutoCompleteProps, AutoCompleteState>
           {showSuggestions && listBoxNavigationText}
         </StyledAccessibleHiddenDiv>
 
-        <StyledErrorDiv id={`${id}-autocomplete-error`} hasError={!!errorMessage}>
-          {errorMessage}
-        </StyledErrorDiv>
+        <Error id={`${id}-autocomplete-error`} errorMessage={errorMessage} />
 
       </StyledAutoCompleteContainer>
     );

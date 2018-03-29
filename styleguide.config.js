@@ -19,19 +19,21 @@ module.exports = {
   ],
   sections: [
     {
-      name: 'Buttons',
+      name: 'Text',
       components: () => appendPath(componentsPath, [
-        'button/Button.tsx'
+        'hint/Hint.tsx',
+        'error/Error.tsx'
       ])
     },
     {
-      name: 'Links',
+      name: 'Actions',
       components: () => appendPath(componentsPath, [
+        'button/Button.tsx',
         'link/Link.tsx'
       ])
     },
     {
-      name: 'Selections',
+      name: 'Dropdowns',
       components: () => appendPath(componentsPath, [
         'select/Select.tsx'
       ])
@@ -55,6 +57,13 @@ module.exports = {
       name: 'Notifications',
       components: () => appendPath(componentsPath, [
         'alert/Alert.tsx'
+      ])
+    },
+    {
+      name: 'Events',
+      components: () => appendPath(componentsPath, [
+        'before-unload/BeforeUnload.tsx',
+        'idle-time/IdleTime.tsx'
       ])
     }
   ]

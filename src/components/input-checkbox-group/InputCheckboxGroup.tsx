@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { omit, noop } from 'lodash';
 import { Fieldset } from '../fieldset';
-import { AlignmentType, BreakpointType } from '../../';
+import { AlignmentType, BreakpointType } from '../../constants/types';
+import { Hint } from '../hint';
+import { Error } from '../error';
 import { StyledInputCheckboxDiv, StyledInputCheckbox } from './styledInputCheckbox';
 import { AllProps } from '../../theme/common/props';
 import {
-  StyledHintDiv,
-  StyledErrorDiv,
   StyledFormGroupDiv,
   StyledInputGroupDiv,
   StyledLabelCheckbox,
@@ -39,7 +39,7 @@ const InputCheckbox: React.SFC<CheckBoxFieldProps> =
     return (
       <StyledFormGroupDiv className={className}>
 
-        {hint && <StyledHintDiv hasError={!!errorMessage}>{hint}</StyledHintDiv>}
+        {hint && <Hint hasError={!!errorMessage} hint={hint} />}
 
         <Fieldset id={`${id}-fieldset`} aria-describedby={`${id}-error`}>
 
@@ -86,9 +86,7 @@ const InputCheckbox: React.SFC<CheckBoxFieldProps> =
 
         </Fieldset>
 
-        <StyledErrorDiv id={`${id}-error`} hasError={!!errorMessage}>
-          {errorMessage}
-        </StyledErrorDiv>
+        <Error id={`${id}-error`} errorMessage={errorMessage} />
 
       </StyledFormGroupDiv>
     );

@@ -1,8 +1,10 @@
 import * as React from 'react';
 import { kebabCase } from 'lodash';
 import { noop } from 'lodash';
-import { StyledLabel, StyledFormGroupDiv, StyledHintDiv, StyledErrorDiv } from '../../theme/common';
+import { StyledLabel, StyledFormGroupDiv } from '../../theme/common';
 import { AllProps } from '../../theme/common/props';
+import { Hint } from '../hint';
+import { Error } from '../error';
 import { StyledInputText } from './styledInputText';
 
 export interface InputTextProps extends AllProps {
@@ -32,7 +34,7 @@ const InputText: React.SFC<InputTextProps> =
           {label}
         </StyledLabel>
 
-        {hint && <StyledHintDiv hasError={!!errorMessage}>{hint}</StyledHintDiv>}
+        {hint && <Hint hasError={!!errorMessage} hint={hint} />}
 
         <StyledInputText
           {...this.props}
@@ -54,7 +56,7 @@ const InputText: React.SFC<InputTextProps> =
           aria-describedby={`${id}-error`}
         />
 
-        {showError && <StyledErrorDiv id={`${id}-error`} hasError={!!errorMessage}>{errorMessage}</StyledErrorDiv>}
+        {showError && <Error id={`${id}-error`} errorMessage={errorMessage} />}
 
       </StyledFormGroupDiv>
     );

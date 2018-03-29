@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ReactNode } from 'react';
-import { AlertType } from '../../';
+import { AlertType } from '../../constants/types';
 import { StyledAlertDiv } from './styledAlertDiv';
 
 export interface AlertProps {

@@ -11,7 +11,6 @@ A react component library that is not prescribing a state management and has the
 2. [Usage](#usage)
     1. [How To](#how-to)
     2. [Theming](#theming)
-    3. [Components](#components)
 3. [Dev Process](#dev-process)
 4. [Metrics](#metrics)
 5. [Third-Party Dependencies](#third-party-dependencies)
@@ -70,73 +69,6 @@ function App() {
     </ThemeProvider>
   );
 }
-```
-
-### Components <a name="components"/>
-
-#### InputText
-```javascript
-import { InputText } from 'ui-react-component-kit';
-```
-
-#### InputRadioGroup
-```javascript
-import { InputRadioGroup } from 'ui-react-component-kit';
-```
-
-#### InputCheckboxGroup
-```javascript
-import { InputCheckboxGroup } from 'ui-react-component-kit';
-```
-
-#### Fieldset
-```javascript
-import { Fieldset } from 'ui-react-component-kit';
-```
-
-#### Select
-```javascript
-import { Select } from 'ui-react-component-kit';
-```
-
-#### Button
-```javascript
-import { Button } from 'ui-react-component-kit';
-```
-
-#### Link
-```javascript
-import { Link } from 'ui-react-component-kit';
-```
-
-#### Alert
-```javascript
-import { Alert } from 'ui-react-component-kit';
-```
-
-#### AutoComplete
-```javascript
-import { AutoComplete } from 'ui-react-component-kit';
-```
-
-#### StaticAutoComplete
-```javascript
-import { StaticAutoComplete } from 'ui-react-component-kit';
-```
-
-#### AddressAutoComplete
-```javascript
-import { AddressAutoComplete } from 'ui-react-component-kit';
-```
-
-#### BeforeUnload
-```javascript
-import { BeforeUnload } from 'ui-react-component-kit';
-```
-
-#### IdleTime
-```javascript
-import { IdleTime } from 'ui-react-component-kit';
 ```
 
 ## Dev Process <a name="dev-process"/>

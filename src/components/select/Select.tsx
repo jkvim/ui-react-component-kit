@@ -1,9 +1,10 @@
 import * as React from 'react';
-import { kebabCase } from 'lodash';
-import { noop } from 'lodash';
-import { StyledErrorDiv, StyledLabel, StyledHintDiv, StyledFormGroupDiv } from '../../theme/common';
+import { kebabCase, noop } from 'lodash';
 import { SelectItem } from './types';
+import { Hint } from '../hint';
+import { Error } from '../error';
 import { AllProps } from '../../theme/common/props';
+import { StyledLabel, StyledFormGroupDiv } from '../../theme/common';
 import { StyledSelect, StyledSelectWrapperDiv } from './styledSelect';
 
 export interface SelectProps extends AllProps {
@@ -32,7 +33,7 @@ const Select: React.SFC<SelectProps> =
         {label}
       </StyledLabel>
 
-      {hint && <StyledHintDiv hasError={!!errorMessage}>{hint}</StyledHintDiv>}
+      {hint && <Hint hasError={!!errorMessage} hint={hint} />}
 
       <StyledSelectWrapperDiv>
 
@@ -47,6 +48,8 @@ const Select: React.SFC<SelectProps> =
           value={value}
           disabled={disabled}
           hasError={!!errorMessage}
+          aria-invalid={!!errorMessage}
+          aria-describedby={`${id}-error`}
         >
           <option value="">{placeholder}</option>
           {options.map((item, index) => <option key={index} value={item.value}>{item.display}</option>)}
@@ -54,9 +57,7 @@ const Select: React.SFC<SelectProps> =
 
       </StyledSelectWrapperDiv>
 
-      <StyledErrorDiv hasError={!!errorMessage}>
-        {errorMessage}
-      </StyledErrorDiv>
+      <Error id={`${id}-error`} errorMessage={errorMessage} />
 
     </StyledFormGroupDiv>
   );

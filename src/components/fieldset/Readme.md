@@ -1,4 +1,10 @@
-Blank 
+** Usage **
+
+```javascript static
+    import { Fieldset } from 'ui-react-component-kit'
+```
+
+** Blank ** 
 
 ```jsx
     <Fieldset 
@@ -8,7 +14,7 @@ Blank
     </Fieldset>
 ```
 
-Legend
+** Legend **
 
 ```jsx
     <Fieldset 

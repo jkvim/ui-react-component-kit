@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled, { StyledComponentClass, StyledFunction } from 'styled-components';
 import { AlignmentProps, BreakpointProps } from './props';
 import { breakpoint } from '../utils/util';
-import { StyledErrorDiv } from './styledErrorDiv';
+import { StyledErrorDiv } from '../../components/error/styledErrorDiv';
 import { theme } from '../defaultTheme';
 
 const inputGroup: StyledFunction<AlignmentProps & BreakpointProps> = styled.div;

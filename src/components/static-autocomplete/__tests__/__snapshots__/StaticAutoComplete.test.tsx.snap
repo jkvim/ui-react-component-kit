@@ -193,59 +193,63 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
             className="sc-bZQynM jbtBHc"
           />
         </styled.div>
-        <styled.div
-          hasError={false}
+        <Error
           id="static-id-autocomplete-error"
-          theme={
-            Object {
-              "border": Object {
-                "radius": Object {
-                  "edge": "2px",
-                  "round": "100px",
-                },
-                "size": "2px",
-              },
-              "breakpoint": Object {
-                "lg": "992px",
-                "md": "768px",
-                "sm": "576px",
-                "xl": "1200px",
-                "xs": "0px",
-              },
-              "color": Object {
-                "background": "#ffffff",
-                "border": "#2fa4e7",
-                "checked": "#2fa4e7",
-                "danger": "#c71c22",
-                "default": "#2fa4e7",
-                "disabled": "#acacac",
-                "error": "#c71c22",
-                "focus": "#54b4eb",
-                "font": "#333333",
-                "hover": "#178acc",
-                "info": "#04519b",
-                "primary": "#2fa4e7",
-                "secondary": "#e9ecef",
-                "success": "#73a839",
-                "tertiary": "#343a40",
-                "warning": "#dd5600",
-              },
-              "font": Object {
-                "size": Object {
-                  "default": "1.8rem",
-                },
-                "weight": Object {
-                  "default": 100,
-                },
-              },
-            }
-          }
         >
-          <div
-            className="sc-htoDjs keLCLG"
-            id="static-id-autocomplete-error"
-          />
-        </styled.div>
+          <styled.div
+            hasError={false}
+            id="static-id-autocomplete-error-error"
+            theme={
+              Object {
+                "border": Object {
+                  "radius": Object {
+                    "edge": "2px",
+                    "round": "100px",
+                  },
+                  "size": "2px",
+                },
+                "breakpoint": Object {
+                  "lg": "992px",
+                  "md": "768px",
+                  "sm": "576px",
+                  "xl": "1200px",
+                  "xs": "0px",
+                },
+                "color": Object {
+                  "background": "#ffffff",
+                  "border": "#2fa4e7",
+                  "checked": "#2fa4e7",
+                  "danger": "#c71c22",
+                  "default": "#2fa4e7",
+                  "disabled": "#acacac",
+                  "error": "#c71c22",
+                  "focus": "#54b4eb",
+                  "font": "#333333",
+                  "hover": "#178acc",
+                  "info": "#04519b",
+                  "primary": "#2fa4e7",
+                  "secondary": "#e9ecef",
+                  "success": "#73a839",
+                  "tertiary": "#343a40",
+                  "warning": "#dd5600",
+                },
+                "font": Object {
+                  "size": Object {
+                    "default": "1.8rem",
+                  },
+                  "weight": Object {
+                    "default": 100,
+                  },
+                },
+              }
+            }
+          >
+            <div
+              className="sc-htoDjs keLCLG"
+              id="static-id-autocomplete-error-error"
+            />
+          </styled.div>
+        </Error>
       </div>
     </styled.div>
   </AutoComplete>

@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { omit, noop } from 'lodash';
-import { AlignmentType, BreakpointType } from '../../';
+import { AlignmentType, BreakpointType } from '../../constants/types';
 import { Fieldset } from '../fieldset';
+import { Hint } from '../hint';
+import { Error } from '../error';
 import { StyledInputRadioDiv, StyledInputRadio } from './styledInputRadio';
 import { AllProps } from '../../theme/common/props';
 import {
-  StyledHintDiv,
-  StyledErrorDiv,
   StyledFormGroupDiv,
   StyledInputGroupDiv,
   StyledLabelRadio
@@ -39,7 +39,7 @@ const InputRadioGroup: React.SFC<InputRadioGroupProps> =
   return (
     <StyledFormGroupDiv className={className}>
 
-      {hint && <StyledHintDiv hasError={!!errorMessage}>{hint}</StyledHintDiv>}
+      {hint && <Hint hasError={!!errorMessage} hint={hint} />}
 
       <Fieldset id={`${id}-fieldset`} aria-describedby={`${id}-error`}>
 
@@ -76,9 +76,7 @@ const InputRadioGroup: React.SFC<InputRadioGroupProps> =
 
       </Fieldset>
 
-      <StyledErrorDiv id={`${id}-error`} hasError={!!errorMessage}>
-        {errorMessage}
-      </StyledErrorDiv>
+      <Error id={`${id}-error`} errorMessage={errorMessage} />
 
     </StyledFormGroupDiv>
   );

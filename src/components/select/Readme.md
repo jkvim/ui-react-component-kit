@@ -1,4 +1,10 @@
-Blank
+** Usage **
+
+```javascript static
+    import { Select } from 'ui-react-component-kit'
+```
+
+** Blank **
 
 ```jsx
     initialState = {};
@@ -19,7 +25,7 @@ Blank
 	/>
 ```
 
-Pre-populated
+** Pre-populated **
 
 ```jsx
     initialState = {
@@ -42,7 +48,7 @@ Pre-populated
     />
 ```
 
-Disabled
+** Disabled **
 
 ```jsx
     initialState = {
@@ -67,7 +73,7 @@ Disabled
     />
 ```
 
-Error
+** Error **
 
 ```jsx
     initialState = {

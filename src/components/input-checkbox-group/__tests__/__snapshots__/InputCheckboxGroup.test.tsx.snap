@@ -30,7 +30,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
 >
   <styled.div>
     <div
-      className="sc-gzVnrw kDUAmj"
+      className="sc-dnqmqq hspOjD"
     >
       <Fieldset
         aria-describedby="testId-error"
@@ -91,13 +91,13 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
               }
             >
               <div
-                className="sc-htoDjs jPBaOC"
+                className="sc-iwsKbI cYZtWR"
               >
                 <styled.div
                   key="0"
                 >
                   <div
-                    className="sc-htpNat cIieYe"
+                    className="sc-ifAKCX fRcPTF"
                   >
                     <styled.input
                       aria-invalid={false}
@@ -157,7 +157,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                       <input
                         aria-invalid={false}
                         checked={false}
-                        className="sc-bwzfXH crbTWX"
+                        className="sc-bxivhb eWIMsO"
                         id="testId-0"
                         name="testName"
                         onChange={[Function]}
@@ -214,7 +214,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                       }
                     >
                       <label
-                        className="sc-ifAKCX kFTGps"
+                        className="sc-bZQynM cZKDGJ"
                         htmlFor="testId-0"
                       >
                         One
@@ -226,7 +226,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                   key="1"
                 >
                   <div
-                    className="sc-htpNat cIieYe"
+                    className="sc-ifAKCX fRcPTF"
                   >
                     <styled.input
                       aria-invalid={false}
@@ -286,7 +286,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                       <input
                         aria-invalid={false}
                         checked={true}
-                        className="sc-bwzfXH crbTWX"
+                        className="sc-bxivhb eWIMsO"
                         id="testId-1"
                         name="testName"
                         onChange={[Function]}
@@ -343,7 +343,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                       }
                     >
                       <label
-                        className="sc-ifAKCX kFTGps"
+                        className="sc-bZQynM cZKDGJ"
                         htmlFor="testId-1"
                       >
                         Two
@@ -355,7 +355,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                   key="2"
                 >
                   <div
-                    className="sc-htpNat cIieYe"
+                    className="sc-ifAKCX fRcPTF"
                   >
                     <styled.input
                       aria-invalid={false}
@@ -415,7 +415,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                       <input
                         aria-invalid={false}
                         checked={true}
-                        className="sc-bwzfXH crbTWX"
+                        className="sc-bxivhb eWIMsO"
                         id="testId-2"
                         name="testName"
                         onChange={[Function]}
@@ -472,7 +472,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                       }
                     >
                       <label
-                        className="sc-ifAKCX kFTGps"
+                        className="sc-bZQynM cZKDGJ"
                         htmlFor="testId-2"
                       >
                         Three
@@ -485,59 +485,64 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
           </fieldset>
         </styled.fieldset>
       </Fieldset>
-      <styled.div
-        hasError={false}
+      <Error
+        errorMessage=""
         id="testId-error"
-        theme={
-          Object {
-            "border": Object {
-              "radius": Object {
-                "edge": "2px",
-                "round": "100px",
-              },
-              "size": "2px",
-            },
-            "breakpoint": Object {
-              "lg": "992px",
-              "md": "768px",
-              "sm": "576px",
-              "xl": "1200px",
-              "xs": "0px",
-            },
-            "color": Object {
-              "background": "#ffffff",
-              "border": "#2fa4e7",
-              "checked": "#2fa4e7",
-              "danger": "#c71c22",
-              "default": "#2fa4e7",
-              "disabled": "#acacac",
-              "error": "#c71c22",
-              "focus": "#54b4eb",
-              "font": "#333333",
-              "hover": "#178acc",
-              "info": "#04519b",
-              "primary": "#2fa4e7",
-              "secondary": "#e9ecef",
-              "success": "#73a839",
-              "tertiary": "#343a40",
-              "warning": "#dd5600",
-            },
-            "font": Object {
-              "size": Object {
-                "default": "1.8rem",
-              },
-              "weight": Object {
-                "default": 100,
-              },
-            },
-          }
-        }
       >
-        <div
-          className="sc-gZMcBi gttcWC"
-          id="testId-error"
-        />
-      </styled.div>
+        <styled.div
+          hasError={false}
+          id="testId-error-error"
+          theme={
+            Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
+              "color": Object {
+                "background": "#ffffff",
+                "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
+                "default": "#2fa4e7",
+                "disabled": "#acacac",
+                "error": "#c71c22",
+                "focus": "#54b4eb",
+                "font": "#333333",
+                "hover": "#178acc",
+                "info": "#04519b",
+                "primary": "#2fa4e7",
+                "secondary": "#e9ecef",
+                "success": "#73a839",
+                "tertiary": "#343a40",
+                "warning": "#dd5600",
+              },
+              "font": Object {
+                "size": Object {
+                  "default": "1.8rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
+              },
+            }
+          }
+        >
+          <div
+            className="sc-htpNat gMxGZR"
+            id="testId-error-error"
+          />
+        </styled.div>
+      </Error>
     </div>
   </styled.div>
 </InputCheckbox>

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
-import { AllProps, HasErrorProps } from './props';
-import { theme } from '../defaultTheme';
+import { AllProps, HasErrorProps } from '../../theme/common/props';
+import { theme } from '../../theme/defaultTheme';
 
 const errorDiv: StyledFunction<HasErrorProps & AllProps> = styled.div;
 

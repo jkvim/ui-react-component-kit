@@ -15,8 +15,3 @@ export { IdleTime } from './components/idle-time';
 export { AutoComplete, DataProvider } from './components/autocomplete';
 export { AddressAutoComplete, AddressDataProvider } from './components/address-autocomplete';
 export { StaticAutoComplete, StaticDataProvider } from './components/static-autocomplete';
-
-/**
- * Types
- */
-export { AlignmentType, AlertType, BreakpointType, ButtonType } from './constants/types';

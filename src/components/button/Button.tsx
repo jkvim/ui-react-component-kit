@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ReactNode } from 'react';
-import { ButtonType } from '../../';
+import { ButtonType } from '../../constants/types';
 import { StyledButton } from './styledButton';
 
 export interface ButtonProps {
@@ -19,7 +19,8 @@ const Button: React.SFC<ButtonProps> = ({ children, onClick, buttonType, disable
       disabled={disabled}
     >
       {children}
-    </StyledButton>);
+    </StyledButton>
+  );
 };
 
 export default Button;

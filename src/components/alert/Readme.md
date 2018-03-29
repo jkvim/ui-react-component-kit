@@ -1,4 +1,10 @@
-Blank
+** Usage **
+
+```javascript static
+    import { Alert } from 'ui-react-component-kit'
+```
+
+** Blank **
 
 ```jsx
     <Alert>
@@ -6,7 +12,7 @@ Blank
     </Alert>
 ```
 
-Success
+** Success **
 
 ```jsx
     <Alert alertType={'success'}>
@@ -14,7 +20,7 @@ Success
     </Alert>
 ```
 
-Info
+** Info **
 
 ```jsx
     <Alert alertType={'info'}>
@@ -22,7 +28,7 @@ Info
     </Alert>
 ```
 
-Warning
+** Warning **
 
 ```jsx
     <Alert alertType={'warning'}>
@@ -30,7 +36,7 @@ Warning
     </Alert>
 ```
 
-Danger
+** Danger **
 
 ```jsx
     <Alert alertType={'danger'}>

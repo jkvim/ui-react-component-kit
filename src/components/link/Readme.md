@@ -1,3 +1,9 @@
+** Usage **
+
+```javascript static
+    import { Link } from 'ui-react-component-kit'
+```
+
 ```jsx
     <Link
         id={'internal-link'}

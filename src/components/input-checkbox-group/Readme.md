@@ -1,7 +1,13 @@
+** Usage **
+
+```javascript static
+    import { InputCheckboxGroup } from 'ui-react-component-kit'
+```
+
 Single
 ----
 
-Blank 
+** Blank **
 
 ```jsx
     initialState = {};
@@ -17,7 +23,7 @@ Blank
 	/>
 ```
 
-Pre-populated
+** Pre-populated **
 
 ```jsx
     initialState = {
@@ -35,7 +41,7 @@ Pre-populated
 	/>
 ```
 
-Disabled
+** Disabled **
 
 ```jsx
     initialState = {
@@ -54,7 +60,7 @@ Disabled
 	/>
 ```
 
-Error
+** Error **
 
 ```jsx
     initialState = {
@@ -77,7 +83,7 @@ Error
 Multiple
 -----
 
-Blank 
+** Blank **
 
 ```jsx
     initialState = {};
@@ -108,7 +114,7 @@ Blank
 	/>
 ```
 
-Breakpoint
+** Breakpoint **
 
 ```jsx
     initialState = {
@@ -145,7 +151,7 @@ Breakpoint
 	/>
 ```
 
-Pre-populated
+** Pre-populated **
 
 ```jsx
     initialState = {
@@ -180,7 +186,7 @@ Pre-populated
 	/>
 ```
 
-Disabled
+** Disabled **
 
 ```jsx
     initialState = {
@@ -217,7 +223,7 @@ Disabled
 	/>
 ```
 
-Error
+** Error **
 
 ```jsx
     initialState = {

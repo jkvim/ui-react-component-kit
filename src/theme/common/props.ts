@@ -1,4 +1,4 @@
-import { AlertType, AlignmentType, BreakpointType, ButtonType } from '../../';
+import { AlertType, AlignmentType, BreakpointType, ButtonType } from '../../constants/types';
 
 export interface AllProps {
   // excess property bags mainly used for capturing ARIA tags to be passed down.

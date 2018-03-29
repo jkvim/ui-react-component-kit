@@ -1,4 +1,10 @@
-Blank
+** Usage **
+
+```javascript static
+    import { Button } from 'ui-react-component-kit'
+```
+
+** Blank **
 
 ```jsx
     <Button onClick={() => {
@@ -8,7 +14,7 @@ Blank
     </Button>
 ```
 
-Primary
+** Primary **
 
 ```jsx
     <Button 
@@ -20,7 +26,7 @@ Primary
     </Button>
 ```
 
-Secondary
+** Secondary **
 
 ```jsx
     <Button 
@@ -32,7 +38,7 @@ Secondary
     </Button>
 ```
 
-Tertiary
+** Tertiary **
 
 ```jsx
     <Button 
@@ -44,7 +50,7 @@ Tertiary
     </Button>
 ```
 
-Disabled
+** Disabled **
 
 ```jsx
     <Button disabled={true}>
