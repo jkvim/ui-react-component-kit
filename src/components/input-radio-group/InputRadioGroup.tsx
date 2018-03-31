@@ -4,12 +4,12 @@ import { AlignmentType, BreakpointType } from '../../constants/types';
 import { Fieldset } from '../fieldset';
 import { Hint } from '../hint';
 import { Error } from '../error';
+import { Label } from '../label';
 import { StyledInputRadioDiv, StyledInputRadio } from './styledInputRadio';
 import { AllProps } from '../../theme/common/props';
 import {
   StyledFormGroupDiv,
-  StyledInputGroupDiv,
-  StyledLabelRadio
+  StyledInputGroupDiv
 } from '../../theme/common';
 
 export interface InputRadio {
@@ -65,9 +65,7 @@ const InputRadioGroup: React.SFC<InputRadioGroupProps> =
               aria-invalid={!!errorMessage}
             />
 
-            <StyledLabelRadio htmlFor={`${id}-${index}`} hasError={!!errorMessage}>
-              {item.label}
-            </StyledLabelRadio>
+            <Label type={'radio'} htmlFor={`${id}-${index}`} hasError={!!errorMessage} value={item.label}  />
 
           </StyledInputRadioDiv>
         )}

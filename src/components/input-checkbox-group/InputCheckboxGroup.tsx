@@ -1,15 +1,15 @@
 import * as React from 'react';
 import { omit, noop } from 'lodash';
-import { Fieldset } from '../fieldset';
 import { AlignmentType, BreakpointType } from '../../constants/types';
+import { Fieldset } from '../fieldset';
 import { Hint } from '../hint';
 import { Error } from '../error';
+import { Label } from '../label';
 import { StyledInputCheckboxDiv, StyledInputCheckbox } from './styledInputCheckbox';
 import { AllProps } from '../../theme/common/props';
 import {
   StyledFormGroupDiv,
-  StyledInputGroupDiv,
-  StyledLabelCheckbox,
+  StyledInputGroupDiv
 } from '../../theme/common';
 
 export interface CheckBox {
@@ -75,9 +75,7 @@ const InputCheckbox: React.SFC<CheckBoxFieldProps> =
                 aria-invalid={!!errorMessage}
               />
 
-              <StyledLabelCheckbox htmlFor={`${id}-${index}`} hasError={!!errorMessage}>
-                {item.label}
-              </StyledLabelCheckbox>
+              <Label type={'checkbox'} htmlFor={`${id}-${index}`} hasError={!!errorMessage} value={item.label} />
 
             </StyledInputCheckboxDiv>
           )}

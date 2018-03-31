@@ -22,7 +22,8 @@ module.exports = {
       name: 'Text',
       components: () => appendPath(componentsPath, [
         'hint/Hint.tsx',
-        'error/Error.tsx'
+        'error/Error.tsx',
+        'label/Label.tsx',
       ])
     },
     {

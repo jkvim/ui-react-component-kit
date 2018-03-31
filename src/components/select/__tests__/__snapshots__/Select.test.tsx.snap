@@ -16,63 +16,69 @@ exports[`SelectField props should match snapshot 1`] = `
 >
   <styled.div>
     <div
-      className="sc-bZQynM bpzdHV"
+      className="sc-EHOje chSsAf"
     >
-      <styled.label
+      <Label
         hasError={false}
         htmlFor="some-id"
-        theme={
-          Object {
-            "border": Object {
-              "radius": Object {
-                "edge": "2px",
-                "round": "100px",
-              },
-              "size": "2px",
-            },
-            "breakpoint": Object {
-              "lg": "992px",
-              "md": "768px",
-              "sm": "576px",
-              "xl": "1200px",
-              "xs": "0px",
-            },
-            "color": Object {
-              "background": "#ffffff",
-              "border": "#2fa4e7",
-              "checked": "#2fa4e7",
-              "danger": "#c71c22",
-              "default": "#2fa4e7",
-              "disabled": "#acacac",
-              "error": "#c71c22",
-              "focus": "#54b4eb",
-              "font": "#333333",
-              "hover": "#178acc",
-              "info": "#04519b",
-              "primary": "#2fa4e7",
-              "secondary": "#e9ecef",
-              "success": "#73a839",
-              "tertiary": "#343a40",
-              "warning": "#dd5600",
-            },
-            "font": Object {
-              "size": Object {
-                "default": "1.8rem",
-              },
-              "weight": Object {
-                "default": 100,
-              },
-            },
-          }
-        }
+        value="Some error message."
       >
-        <label
-          className="sc-htpNat cDzKuL"
+        <styled.label
+          hasError={false}
           htmlFor="some-id"
+          theme={
+            Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
+              "color": Object {
+                "background": "#ffffff",
+                "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
+                "default": "#2fa4e7",
+                "disabled": "#acacac",
+                "error": "#c71c22",
+                "focus": "#54b4eb",
+                "font": "#333333",
+                "hover": "#178acc",
+                "info": "#04519b",
+                "primary": "#2fa4e7",
+                "secondary": "#e9ecef",
+                "success": "#73a839",
+                "tertiary": "#343a40",
+                "warning": "#dd5600",
+              },
+              "font": Object {
+                "size": Object {
+                  "default": "1.8rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
+              },
+            }
+          }
         >
-          Some error message.
-        </label>
-      </styled.label>
+          <label
+            className="sc-htpNat cDzKuL"
+            htmlFor="some-id"
+          >
+            Some error message.
+          </label>
+        </styled.label>
+      </Label>
       <styled.div
         theme={
           Object {
@@ -120,7 +126,7 @@ exports[`SelectField props should match snapshot 1`] = `
         }
       >
         <div
-          className="sc-iwsKbI eitoSJ"
+          className="sc-dnqmqq eYgisk"
         >
           <styled.select
             aria-describedby="some-id-error"
@@ -179,7 +185,7 @@ exports[`SelectField props should match snapshot 1`] = `
             <select
               aria-describedby="some-id-error"
               aria-invalid={false}
-              className="sc-dnqmqq jZPkwK"
+              className="sc-htoDjs eohKzs"
               id="some-id"
               onBlur={[Function]}
               onChange={[Function]}

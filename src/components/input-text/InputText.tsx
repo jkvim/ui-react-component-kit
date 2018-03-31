@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { kebabCase } from 'lodash';
 import { noop } from 'lodash';
-import { StyledLabel, StyledFormGroupDiv } from '../../theme/common';
+import { StyledFormGroupDiv } from '../../theme/common';
 import { AllProps } from '../../theme/common/props';
 import { Hint } from '../hint';
 import { Error } from '../error';
+import { Label } from '../label';
 import { StyledInputText } from './styledInputText';
 
 export interface InputTextProps extends AllProps {
@@ -30,9 +31,7 @@ const InputText: React.SFC<InputTextProps> =
     return (
       <StyledFormGroupDiv className={className}>
 
-        <StyledLabel htmlFor={id} hasError={!!errorMessage}>
-          {label}
-        </StyledLabel>
+        <Label htmlFor={id} hasError={!!errorMessage} value={label} />
 
         {hint && <Hint hasError={!!errorMessage} hint={hint} />}
 

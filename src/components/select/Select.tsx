@@ -3,8 +3,9 @@ import { kebabCase, noop } from 'lodash';
 import { SelectItem } from './types';
 import { Hint } from '../hint';
 import { Error } from '../error';
+import { Label } from '../label';
 import { AllProps } from '../../theme/common/props';
-import { StyledLabel, StyledFormGroupDiv } from '../../theme/common';
+import { StyledFormGroupDiv } from '../../theme/common';
 import { StyledSelect, StyledSelectWrapperDiv } from './styledSelect';
 
 export interface SelectProps extends AllProps {
@@ -29,9 +30,7 @@ const Select: React.SFC<SelectProps> =
   return (
     <StyledFormGroupDiv className={className}>
 
-      <StyledLabel htmlFor={id} hasError={!!errorMessage}>
-        {label}
-      </StyledLabel>
+      <Label htmlFor={id} hasError={!!errorMessage} value={label} />
 
       {hint && <Hint hasError={!!errorMessage} hint={hint} />}
 

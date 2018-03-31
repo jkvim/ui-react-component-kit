@@ -1,7 +1,7 @@
 import * as React from 'react';
-import IdleTimer from 'react-idle-timer';
 import { ReactElement } from 'react';
 import { bindAll } from 'lodash';
+import IdleTimer from 'react-idle-timer';
 
 export interface IdleTimeProps {
   unmountBeforeUnloadListener?: () => void;

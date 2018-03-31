@@ -5,7 +5,7 @@
 
     function App() {
       return (
-        <IdleTime>
+        <IdleTime sessionTimeout={sessionTimeout}>
           {/* rest of your app */}
         </IdleTime>
       );

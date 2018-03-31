@@ -15,7 +15,7 @@
 ** Success **
 
 ```jsx
-    <Alert alertType={'success'}>
+    <Alert type={'success'}>
         Success Alert
     </Alert>
 ```
@@ -23,7 +23,7 @@
 ** Info **
 
 ```jsx
-    <Alert alertType={'info'}>
+    <Alert type={'info'}>
         Info Alert
     </Alert>
 ```
@@ -31,7 +31,7 @@
 ** Warning **
 
 ```jsx
-    <Alert alertType={'warning'}>
+    <Alert type={'warning'}>
         Warning Alert
     </Alert>
 ```
@@ -39,7 +39,7 @@
 ** Danger **
 
 ```jsx
-    <Alert alertType={'danger'}>
+    <Alert type={'danger'}>
         Danger Alert
     </Alert>
 ```

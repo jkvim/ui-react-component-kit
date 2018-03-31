@@ -1,7 +1,9 @@
 import * as React from 'react';
 import styled, { StyledFunction, StyledComponentClass } from 'styled-components';
-import { HasErrorProps } from './props';
-import { theme } from '../defaultTheme';
+import { HasErrorProps, LabelProps } from '../../theme/common/props';
+import { theme } from '../../theme/defaultTheme';
+
+// tslint:disable
 
 const label: StyledFunction<HasErrorProps &
   React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>> = styled.label;
@@ -18,45 +20,11 @@ StyledLabel.defaultProps = {
   theme
 };
 
-const labelCheckbox: StyledFunction<HasErrorProps &
+const labelnline: StyledFunction<LabelProps & HasErrorProps &
   React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>> = styled.label;
 
 /** @component */
-export const StyledLabelCheckbox = labelCheckbox`
-  color: ${props => props.hasError ? props.theme.color.error : props.theme.color.font};
-  font-size: ${props => props.theme.font.size.default};
-  position: relative;
-  padding-left: 35px;
-  padding-right: 15px;
-  display: inline-block;
-  cursor: pointer;
-  line-height: 1;
-  
-  &:before {
-    content: "";
-    font-size: ${props => props.theme.font.size.default};
-    height: calc(${props => props.theme.font.size.default} + 4px);
-    width: calc(${props => props.theme.font.size.default} + 4px);
-    border: 1px solid ${props => props.hasError ? props.theme.color.error : props.theme.color.border};
-    box-sizing: border-box;
-    box-shadow: 0 0 0 1px ${props => props.hasError ? props.theme.color.error : props.theme.color.border};
-    display: inline-block;
-    position: absolute;
-    top: calc((0% - (100% - ${props => props.theme.font.size.default})) - 10%);
-    left: 0;
-    background-color: transparent;
-  }
-`;
-
-StyledLabelCheckbox.defaultProps = {
-  theme
-};
-
-const labelRadio: StyledFunction<HasErrorProps &
-  React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>> = styled.label;
-
-/** @component */
-export const StyledLabelRadio = labelRadio`
+export const StyledLabelInline = labelnline`
   color: ${props => props.hasError ? props.theme.color.error : props.theme.color.font};
   font-size: ${props => props.theme.font.size.default};
   position: relative;
@@ -71,8 +39,8 @@ export const StyledLabelRadio = labelRadio`
     font-size: ${props => props.theme.font.size.default};
     height: calc(${props => props.theme.font.size.default} + 4px);
     width: calc(${props => props.theme.font.size.default} + 4px);
-    border-radius: 100%;
-    border: 4px solid #ffffff;
+    border-radius: ${props => props.type === 'radio' ? '100%' : '0%'};
+    border: ${props => (props.type === 'radio' ? '4px solid #ffffff' : '1px solid' + props.hasError ? props.theme.color.error : props.theme.color.border)};
     box-shadow: 0 0 0 1px ${props => props.hasError ? props.theme.color.error : props.theme.color.border};
     box-sizing: border-box;
     display: inline-block;
@@ -83,6 +51,8 @@ export const StyledLabelRadio = labelRadio`
   }
 `;
 
-StyledLabelRadio.defaultProps = {
+StyledLabelInline.defaultProps = {
   theme
 };
+
+// tslint:enable

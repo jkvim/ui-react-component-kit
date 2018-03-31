@@ -6,15 +6,15 @@ import { StyledButton } from './styledButton';
 export interface ButtonProps {
   children: ReactNode;
   onClick: () => void;
-  buttonType?: ButtonType;
+  type?: ButtonType;
   disabled?: boolean;
 }
 
 // tslint:disable-next-line:no-shadowed-variable
-const Button: React.SFC<ButtonProps> = ({ children, onClick, buttonType, disabled }) => {
+const Button: React.SFC<ButtonProps> = ({ children, onClick, type, disabled }) => {
   return (
     <StyledButton
-      buttonType={buttonType}
+      type={type}
       onClick={onClick}
       disabled={disabled}
     >

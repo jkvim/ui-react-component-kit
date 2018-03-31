@@ -7,63 +7,69 @@ exports[`InputText should match snapshot 1`] = `
 >
   <styled.div>
     <div
-      className="sc-ifAKCX cnyXj"
+      className="sc-bwzfXH liZiEV"
     >
-      <styled.label
+      <Label
         hasError={false}
         htmlFor="1234567890"
-        theme={
-          Object {
-            "border": Object {
-              "radius": Object {
-                "edge": "2px",
-                "round": "100px",
-              },
-              "size": "2px",
-            },
-            "breakpoint": Object {
-              "lg": "992px",
-              "md": "768px",
-              "sm": "576px",
-              "xl": "1200px",
-              "xs": "0px",
-            },
-            "color": Object {
-              "background": "#ffffff",
-              "border": "#2fa4e7",
-              "checked": "#2fa4e7",
-              "danger": "#c71c22",
-              "default": "#2fa4e7",
-              "disabled": "#acacac",
-              "error": "#c71c22",
-              "focus": "#54b4eb",
-              "font": "#333333",
-              "hover": "#178acc",
-              "info": "#04519b",
-              "primary": "#2fa4e7",
-              "secondary": "#e9ecef",
-              "success": "#73a839",
-              "tertiary": "#343a40",
-              "warning": "#dd5600",
-            },
-            "font": Object {
-              "size": Object {
-                "default": "1.8rem",
-              },
-              "weight": Object {
-                "default": 100,
-              },
-            },
-          }
-        }
+        value="The label"
       >
-        <label
-          className="sc-bdVaJa mlfRZ"
+        <styled.label
+          hasError={false}
           htmlFor="1234567890"
+          theme={
+            Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
+              "color": Object {
+                "background": "#ffffff",
+                "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
+                "default": "#2fa4e7",
+                "disabled": "#acacac",
+                "error": "#c71c22",
+                "focus": "#54b4eb",
+                "font": "#333333",
+                "hover": "#178acc",
+                "info": "#04519b",
+                "primary": "#2fa4e7",
+                "secondary": "#e9ecef",
+                "success": "#73a839",
+                "tertiary": "#343a40",
+                "warning": "#dd5600",
+              },
+              "font": Object {
+                "size": Object {
+                  "default": "1.8rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
+              },
+            }
+          }
         >
-          The label
-        </label>
-      </styled.label>
+          <label
+            className="sc-bZQynM kbfpun"
+            htmlFor="1234567890"
+          >
+            The label
+          </label>
+        </styled.label>
+      </Label>
       <styled.input
         aria-describedby="1234567890-error"
         aria-invalid={false}
@@ -124,7 +130,7 @@ exports[`InputText should match snapshot 1`] = `
         <input
           aria-describedby="1234567890-error"
           aria-invalid={false}
-          className="sc-dnqmqq ceLtZr"
+          className="sc-htoDjs iwAsPx"
           id="1234567890"
           onBlur={[Function]}
           onChange={[Function]}
@@ -187,7 +193,7 @@ exports[`InputText should match snapshot 1`] = `
           }
         >
           <div
-            className="sc-htoDjs keLCLG"
+            className="sc-EHOje efehxH"
             id="1234567890-error-error"
           />
         </styled.div>

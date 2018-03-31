@@ -5,17 +5,17 @@ import { StyledAlertDiv } from './styledAlertDiv';
 
 export interface AlertProps {
   children?: ReactNode;
-  alertType?: AlertType;
+  type?: AlertType;
   className?: string;
 }
 
 // tslint:disable-next-line:no-shadowed-variable
-const Alert: React.SFC<AlertProps> = ({ children, alertType, className }) => {
+const Alert: React.SFC<AlertProps> = ({ children, type, className }) => {
     return (
       <StyledAlertDiv
         tabindex="-1"
         role="alert"
-        alertType={alertType}
+        type={type}
         className={className}
       >
         {children}

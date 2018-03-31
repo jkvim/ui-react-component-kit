@@ -21,7 +21,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
 >
   <styled.div>
     <div
-      className="sc-dnqmqq hspOjD"
+      className="sc-htoDjs gQgvQJ"
     >
       <Fieldset
         aria-describedby="testId-error"
@@ -82,13 +82,13 @@ exports[`InputRadioGroup should match snapshot 1`] = `
               }
             >
               <div
-                className="sc-iwsKbI cYZtWR"
+                className="sc-dnqmqq kdnsFs"
               >
                 <styled.div
                   key="0"
                 >
                   <div
-                    className="sc-ifAKCX fRcPTF"
+                    className="sc-bZQynM gKxcfp"
                   >
                     <styled.input
                       aria-invalid={false}
@@ -148,7 +148,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                       <input
                         aria-invalid={false}
                         checked={false}
-                        className="sc-bxivhb fcGnMR"
+                        className="sc-EHOje WAkUz"
                         id="testId-0"
                         name="testName"
                         onChange={[Function]}
@@ -156,68 +156,77 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                         value="1"
                       />
                     </styled.input>
-                    <styled.label
+                    <Label
                       hasError={false}
                       htmlFor="testId-0"
-                      theme={
-                        Object {
-                          "border": Object {
-                            "radius": Object {
-                              "edge": "2px",
-                              "round": "100px",
-                            },
-                            "size": "2px",
-                          },
-                          "breakpoint": Object {
-                            "lg": "992px",
-                            "md": "768px",
-                            "sm": "576px",
-                            "xl": "1200px",
-                            "xs": "0px",
-                          },
-                          "color": Object {
-                            "background": "#ffffff",
-                            "border": "#2fa4e7",
-                            "checked": "#2fa4e7",
-                            "danger": "#c71c22",
-                            "default": "#2fa4e7",
-                            "disabled": "#acacac",
-                            "error": "#c71c22",
-                            "focus": "#54b4eb",
-                            "font": "#333333",
-                            "hover": "#178acc",
-                            "info": "#04519b",
-                            "primary": "#2fa4e7",
-                            "secondary": "#e9ecef",
-                            "success": "#73a839",
-                            "tertiary": "#343a40",
-                            "warning": "#dd5600",
-                          },
-                          "font": Object {
-                            "size": Object {
-                              "default": "1.8rem",
-                            },
-                            "weight": Object {
-                              "default": 100,
-                            },
-                          },
-                        }
-                      }
+                      type="radio"
+                      value="one"
                     >
-                      <label
-                        className="sc-gzVnrw hSWgDz"
+                      <styled.label
+                        hasError={false}
                         htmlFor="testId-0"
+                        theme={
+                          Object {
+                            "border": Object {
+                              "radius": Object {
+                                "edge": "2px",
+                                "round": "100px",
+                              },
+                              "size": "2px",
+                            },
+                            "breakpoint": Object {
+                              "lg": "992px",
+                              "md": "768px",
+                              "sm": "576px",
+                              "xl": "1200px",
+                              "xs": "0px",
+                            },
+                            "color": Object {
+                              "background": "#ffffff",
+                              "border": "#2fa4e7",
+                              "checked": "#2fa4e7",
+                              "danger": "#c71c22",
+                              "default": "#2fa4e7",
+                              "disabled": "#acacac",
+                              "error": "#c71c22",
+                              "focus": "#54b4eb",
+                              "font": "#333333",
+                              "hover": "#178acc",
+                              "info": "#04519b",
+                              "primary": "#2fa4e7",
+                              "secondary": "#e9ecef",
+                              "success": "#73a839",
+                              "tertiary": "#343a40",
+                              "warning": "#dd5600",
+                            },
+                            "font": Object {
+                              "size": Object {
+                                "default": "1.8rem",
+                              },
+                              "weight": Object {
+                                "default": 100,
+                              },
+                            },
+                          }
+                        }
+                        type="radio"
                       >
-                        one
-                      </label>
-                    </styled.label>
+                        <label
+                          className="sc-ifAKCX eXPwKS"
+                          htmlFor="testId-0"
+                          type="radio"
+                        >
+                          one
+                        </label>
+                      </styled.label>
+                    </Label>
                   </div>
                 </styled.div>
                 <styled.div
                   key="1"
                 >
                   <div
-                    className="sc-ifAKCX fRcPTF"
+                    className="sc-bZQynM gKxcfp"
                   >
                     <styled.input
                       aria-invalid={false}
@@ -277,7 +286,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                       <input
                         aria-invalid={false}
                         checked={true}
-                        className="sc-bxivhb fcGnMR"
+                        className="sc-EHOje WAkUz"
                         id="testId-1"
                         name="testName"
                         onChange={[Function]}
@@ -285,61 +294,70 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                         value="2"
                       />
                     </styled.input>
-                    <styled.label
+                    <Label
                       hasError={false}
                       htmlFor="testId-1"
-                      theme={
-                        Object {
-                          "border": Object {
-                            "radius": Object {
-                              "edge": "2px",
-                              "round": "100px",
-                            },
-                            "size": "2px",
-                          },
-                          "breakpoint": Object {
-                            "lg": "992px",
-                            "md": "768px",
-                            "sm": "576px",
-                            "xl": "1200px",
-                            "xs": "0px",
-                          },
-                          "color": Object {
-                            "background": "#ffffff",
-                            "border": "#2fa4e7",
-                            "checked": "#2fa4e7",
-                            "danger": "#c71c22",
-                            "default": "#2fa4e7",
-                            "disabled": "#acacac",
-                            "error": "#c71c22",
-                            "focus": "#54b4eb",
-                            "font": "#333333",
-                            "hover": "#178acc",
-                            "info": "#04519b",
-                            "primary": "#2fa4e7",
-                            "secondary": "#e9ecef",
-                            "success": "#73a839",
-                            "tertiary": "#343a40",
-                            "warning": "#dd5600",
-                          },
-                          "font": Object {
-                            "size": Object {
-                              "default": "1.8rem",
-                            },
-                            "weight": Object {
-                              "default": 100,
-                            },
-                          },
-                        }
-                      }
+                      type="radio"
+                      value="two"
                     >
-                      <label
-                        className="sc-gzVnrw hSWgDz"
+                      <styled.label
+                        hasError={false}
                         htmlFor="testId-1"
+                        theme={
+                          Object {
+                            "border": Object {
+                              "radius": Object {
+                                "edge": "2px",
+                                "round": "100px",
+                              },
+                              "size": "2px",
+                            },
+                            "breakpoint": Object {
+                              "lg": "992px",
+                              "md": "768px",
+                              "sm": "576px",
+                              "xl": "1200px",
+                              "xs": "0px",
+                            },
+                            "color": Object {
+                              "background": "#ffffff",
+                              "border": "#2fa4e7",
+                              "checked": "#2fa4e7",
+                              "danger": "#c71c22",
+                              "default": "#2fa4e7",
+                              "disabled": "#acacac",
+                              "error": "#c71c22",
+                              "focus": "#54b4eb",
+                              "font": "#333333",
+                              "hover": "#178acc",
+                              "info": "#04519b",
+                              "primary": "#2fa4e7",
+                              "secondary": "#e9ecef",
+                              "success": "#73a839",
+                              "tertiary": "#343a40",
+                              "warning": "#dd5600",
+                            },
+                            "font": Object {
+                              "size": Object {
+                                "default": "1.8rem",
+                              },
+                              "weight": Object {
+                                "default": 100,
+                              },
+                            },
+                          }
+                        }
+                        type="radio"
                       >
-                        two
-                      </label>
-                    </styled.label>
+                        <label
+                          className="sc-ifAKCX eXPwKS"
+                          htmlFor="testId-1"
+                          type="radio"
+                        >
+                          two
+                        </label>
+                      </styled.label>
+                    </Label>
                   </div>
                 </styled.div>
               </div>
