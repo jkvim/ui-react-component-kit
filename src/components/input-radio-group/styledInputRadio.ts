@@ -55,6 +55,7 @@ const inputRadioDiv = styled.div;
 
 /** @component */
 export const StyledInputRadioDiv = inputRadioDiv`
+  display: flex;
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;

@@ -88,7 +88,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                   key="0"
                 >
                   <div
-                    className="sc-bZQynM gKxcfp"
+                    className="sc-bZQynM daLRsN"
                   >
                     <styled.input
                       aria-invalid={false}
@@ -212,7 +212,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                         type="radio"
                       >
                         <label
-                          className="sc-ifAKCX eXPwKS"
+                          className="sc-ifAKCX guCBEF"
                           htmlFor="testId-0"
                           type="radio"
                         >
@@ -226,7 +226,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                   key="1"
                 >
                   <div
-                    className="sc-bZQynM gKxcfp"
+                    className="sc-bZQynM daLRsN"
                   >
                     <styled.input
                       aria-invalid={false}
@@ -350,7 +350,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                         type="radio"
                       >
                         <label
-                          className="sc-ifAKCX eXPwKS"
+                          className="sc-ifAKCX guCBEF"
                           htmlFor="testId-1"
                           type="radio"
                         >

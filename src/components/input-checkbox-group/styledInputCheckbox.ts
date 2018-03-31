@@ -27,7 +27,6 @@ export const StyledInputCheckbox = inputCheckbox`
     color: ${props => props.hasError ? props.theme.color.error : props.theme.color.default};
     border-color: ${props => props.theme.color.border};
     box-shadow: 0 0 0 ${props => props.theme.border.radius.edge} ${props => props.hasError ? props.theme.color.error : props.theme.color.checked};
-    padding-left: 1px;
   }
   
   &:focus + label:before {
@@ -53,6 +52,7 @@ const inputCheckboxDiv = styled.div;
 
 /** @component */
 export const StyledInputCheckboxDiv = inputCheckboxDiv`
+  display: flex;
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;

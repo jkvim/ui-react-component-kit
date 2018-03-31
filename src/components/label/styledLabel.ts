@@ -28,26 +28,25 @@ export const StyledLabelInline = labelnline`
   color: ${props => props.hasError ? props.theme.color.error : props.theme.color.font};
   font-size: ${props => props.theme.font.size.default};
   position: relative;
-  line-height: 1;
   padding-left: 35px;
   padding-right: 15px;
-  display: inline-block;
   cursor: pointer;
   
   &:before {
+    display: flex;
+    justify-content: space-around;
     content: "";
     font-size: ${props => props.theme.font.size.default};
-    height: calc(${props => props.theme.font.size.default} + 4px);
-    width: calc(${props => props.theme.font.size.default} + 4px);
+    height: calc(${props => props.theme.font.size.default} + 5px);
+    width: calc(${props => props.theme.font.size.default} + 5px);
     border-radius: ${props => props.type === 'radio' ? '100%' : '0%'};
     border: ${props => (props.type === 'radio' ? '4px solid #ffffff' : '1px solid' + props.hasError ? props.theme.color.error : props.theme.color.border)};
     box-shadow: 0 0 0 1px ${props => props.hasError ? props.theme.color.error : props.theme.color.border};
     box-sizing: border-box;
-    display: inline-block;
+    background-color: transparent;
     position: absolute;
     left: 0;
-    top: calc((0% - (100% - ${props => props.theme.font.size.default})) - 10%);
-    background-color: transparent;
+    top: 0;
   }
 `;
 
