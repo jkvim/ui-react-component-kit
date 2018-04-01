@@ -221,7 +221,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                         type="checkbox"
                       >
                         <label
-                          className="sc-ifAKCX kvRMss"
+                          className="sc-ifAKCX gcYEuN"
                           htmlFor="testId-0"
                           type="checkbox"
                         >
@@ -359,7 +359,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                         type="checkbox"
                       >
                         <label
-                          className="sc-ifAKCX kvRMss"
+                          className="sc-ifAKCX gcYEuN"
                           htmlFor="testId-1"
                           type="checkbox"
                         >
@@ -497,7 +497,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                         type="checkbox"
                       >
                         <label
-                          className="sc-ifAKCX kvRMss"
+                          className="sc-ifAKCX gcYEuN"
                           htmlFor="testId-2"
                           type="checkbox"
                         >

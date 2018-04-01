@@ -212,7 +212,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                         type="radio"
                       >
                         <label
-                          className="sc-ifAKCX guCBEF"
+                          className="sc-ifAKCX dfQieX"
                           htmlFor="testId-0"
                           type="radio"
                         >
@@ -350,7 +350,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                         type="radio"
                       >
                         <label
-                          className="sc-ifAKCX guCBEF"
+                          className="sc-ifAKCX dfQieX"
                           htmlFor="testId-1"
                           type="radio"
                         >

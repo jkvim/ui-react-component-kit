@@ -25,16 +25,18 @@ const labelnline: StyledFunction<LabelProps & HasErrorProps &
 
 /** @component */
 export const StyledLabelInline = labelnline`
+  display: flex;
   color: ${props => props.hasError ? props.theme.color.error : props.theme.color.font};
   font-size: ${props => props.theme.font.size.default};
   position: relative;
-  padding-left: 35px;
-  padding-right: 15px;
+  padding-right: 25px;
   cursor: pointer;
   
   &:before {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    line-height: 1;
+    margin-right: 10px;
     content: "";
     font-size: ${props => props.theme.font.size.default};
     height: calc(${props => props.theme.font.size.default} + 5px);
@@ -44,7 +46,6 @@ export const StyledLabelInline = labelnline`
     box-shadow: 0 0 0 1px ${props => props.hasError ? props.theme.color.error : props.theme.color.border};
     box-sizing: border-box;
     background-color: transparent;
-    position: absolute;
     left: 0;
     top: 0;
   }
