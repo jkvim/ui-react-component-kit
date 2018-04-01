@@ -1,6 +1,7 @@
 ui-react-component-kit
 ========================
 [![Build Status](https://travis-ci.org/Rob-Leggett/ui-react-component-kit.svg?branch=master)](https://travis-ci.org/Rob-Leggett/ui-react-component-kit)
+[![npm](https://img.shields.io/npm/v/ui-react-component-kit.svg)](https://www.npmjs.com/package/ui-react-component-kit)
 
 A react component library that is not prescribing a state management and has theming capabilities.
 
