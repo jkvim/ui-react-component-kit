@@ -36,7 +36,6 @@ const InputText: React.SFC<InputTextProps> =
         {hint && <Hint hasError={!!errorMessage} hint={hint} />}
 
         <StyledInputText
-          {...this.props}
           innerRef={ref => setInputRef(ref)}
           type="text"
           id={id}

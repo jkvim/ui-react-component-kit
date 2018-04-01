@@ -6,7 +6,6 @@ import { Hint } from '../hint';
 import { Error } from '../error';
 import { Label } from '../label';
 import { StyledInputRadioDiv, StyledInputRadio } from './styledInputRadio';
-import { AllProps } from '../../theme/common/props';
 import {
   StyledFormGroupDiv,
   StyledInputGroupDiv
@@ -14,15 +13,15 @@ import {
 
 export interface InputRadio {
   label: string;
-  value: string|number|boolean;
+  value: string|number|string[];
 }
 
-export interface InputRadioGroupProps extends AllProps {
+export interface InputRadioGroupProps {
   id: string;
   name: string;
   options: InputRadio[];
   hint?: string;
-  value?: string|number|boolean;
+  value?: string|number|string[];
   alignment?: AlignmentType;
   breakpoint?: BreakpointType;
   errorMessage?: string;
@@ -50,7 +49,6 @@ const InputRadioGroup: React.SFC<InputRadioGroupProps> =
           <StyledInputRadioDiv key={index}>
 
             <StyledInputRadio
-              {...this.props}
               innerRef={ref => setInputRef(ref)}
               id={`${id}-${index}`}
               name={name}

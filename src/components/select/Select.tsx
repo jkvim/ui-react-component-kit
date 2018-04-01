@@ -4,11 +4,10 @@ import { SelectItem } from './types';
 import { Hint } from '../hint';
 import { Error } from '../error';
 import { Label } from '../label';
-import { AllProps } from '../../theme/common/props';
 import { StyledFormGroupDiv } from '../../theme/common';
 import { StyledSelect, StyledSelectWrapperDiv } from './styledSelect';
 
-export interface SelectProps extends AllProps {
+export interface SelectProps {
   label: string;
   id: string;
   placeholder?: string;
@@ -37,7 +36,6 @@ const Select: React.SFC<SelectProps> =
       <StyledSelectWrapperDiv>
 
         <StyledSelect
-          {...this.props}
           innerRef={ref => setSelectRef(ref)}
           id={id}
           onChange={

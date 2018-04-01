@@ -6,7 +6,6 @@ import { Hint } from '../hint';
 import { Error } from '../error';
 import { Label } from '../label';
 import { StyledInputCheckboxDiv, StyledInputCheckbox } from './styledInputCheckbox';
-import { AllProps } from '../../theme/common/props';
 import {
   StyledFormGroupDiv,
   StyledInputGroupDiv
@@ -17,7 +16,7 @@ export interface CheckBox {
   value: string;
 }
 
-export interface CheckBoxFieldProps extends AllProps {
+export interface CheckBoxFieldProps {
   id: string;
   name: string;
   options: CheckBox[];
@@ -50,7 +49,6 @@ const InputCheckbox: React.SFC<CheckBoxFieldProps> =
             <StyledInputCheckboxDiv key={index}>
 
               <StyledInputCheckbox
-                {...this.props}
                 innerRef={ref => setInputRef(ref)}
                 id={`${id}-${index}`}
                 name={name}
