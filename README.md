@@ -16,6 +16,7 @@ A react component library that is not prescribing a state management and has the
 4. [Metrics](#metrics)
 5. [Third-Party Dependencies](#third-party-dependencies)
     1. [Microservice](#microservice)
+6. [Demonstration](#demonstration)
 
 ## Installation <a name="installation"/>
 
@@ -150,6 +151,10 @@ When running the tests you will get the following metrics:
 For use with address-autocomplete component:
 
 TBD
+
+## Demonstration <a name="demonstration"/>
+
+View an demonstration via: https://rob-leggett.github.io/ui-react-component-kit/
 
 Donations
 ====================
