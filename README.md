@@ -58,11 +58,11 @@ import { ThemeProvider } from 'styled-components';
 import { customTheme } from './your/custom/theme/path'; 
 ```
 
-The defaultTheme has been written with mobile first, therefore breakpoints are triggered on min-width rather then max-width. 
+The defaultTheme is used if you don't provide your own theme, it has been written with mobile first, therefore breakpoints are triggered on min-width rather then max-width. 
 
 Wrap your application in the ThemeProvider and pass in your own theme.
 
-NOTE: If you don't wrap you application in the ThemeProvider the components will still be theme to the defaults, but you won't be able to override them unless you wrap your application in the ThemeProvider to pass your own theme.
+Example: [defaultTheme](https://github.com/Rob-Leggett/ui-react-component-kit/blob/master/src/theme/defaultTheme.ts)
 
 ```javascript
 function App() {

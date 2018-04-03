@@ -4,6 +4,12 @@
     import { AddressAutoComplete } from 'ui-react-component-kit'
 ```
 
+NOTE: To be fully functional this component requires a server to handle requests and responses, to see this working example, please run the styleguide locally via:
+```bash static
+    yarn styleguide | npm run styleguide
+``` 
+This will run a local server that the component can communicate with for demonstration.
+
 ** Blank **
 
 ```jsx
