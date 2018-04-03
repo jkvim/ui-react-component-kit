@@ -33,7 +33,7 @@ const InputText: React.SFC<InputTextProps> =
 
         <Label htmlFor={id} hasError={!!errorMessage} value={label} />
 
-        {hint && <Hint hasError={!!errorMessage} hint={hint} />}
+        {hint && <Hint hasError={!!errorMessage} value={hint} />}
 
         <StyledInputText
           innerRef={ref => setInputRef(ref)}
@@ -54,7 +54,7 @@ const InputText: React.SFC<InputTextProps> =
           aria-describedby={`${id}-error`}
         />
 
-        {showError && <Error id={`${id}-error`} errorMessage={errorMessage} />}
+        {showError && <Error id={`${id}-error`} message={errorMessage} />}
 
       </StyledFormGroupDiv>
     );

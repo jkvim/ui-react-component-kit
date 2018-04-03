@@ -3,13 +3,13 @@ import { StyledErrorDiv } from './styledErrorDiv';
 
 export interface ErrorProps {
   id: string;
-  errorMessage: string;
+  message: string;
 }
 
-const Error: React.SFC<ErrorProps> = ({ id, errorMessage }) => {
+const Error: React.SFC<ErrorProps> = ({ id, message }) => {
   return (
-    <StyledErrorDiv id={`${id}-error`} hasError={!!errorMessage}>
-      {errorMessage}
+    <StyledErrorDiv id={`${id}-error`} hasError={!!message}>
+      {message}
     </StyledErrorDiv>
   );
 };

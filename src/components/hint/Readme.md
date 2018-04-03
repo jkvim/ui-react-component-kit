@@ -7,11 +7,11 @@
 ** Blank **
 
 ```jsx
-    <Hint hint={'Demo hint'} />
+    <Hint value={'Demo hint'} />
 ```
 
 ** Error **
 
 ```jsx
-    <Hint hint={'Demo hint'} hasError={true} />
+    <Hint value={'Demo hint'} hasError={true} />
 ```

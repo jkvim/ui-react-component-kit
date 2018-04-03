@@ -33,9 +33,21 @@ describe('Button', () => {
     });
   });
 
-  it('snapshot basic', () => {
+  it('snapshot primary', () => {
     const mockCallback = jest.fn();
     const wrapper = mount(<Button type="primary" onClick={mockCallback}>Hello</Button>);
+    expect(toJSON(wrapper)).toMatchSnapshot();
+  });
+
+  it('snapshot secondary', () => {
+    const mockCallback = jest.fn();
+    const wrapper = mount(<Button type="secondary" onClick={mockCallback}>Hello</Button>);
+    expect(toJSON(wrapper)).toMatchSnapshot();
+  });
+
+  it('snapshot tertiary', () => {
+    const mockCallback = jest.fn();
+    const wrapper = mount(<Button type="tertiary" onClick={mockCallback}>Hello</Button>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 

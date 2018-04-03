@@ -1,0 +1,183 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hint props should match snapshot 1`] = `
+<Hint
+  hasError={true}
+  value="hint"
+>
+  <styled.div
+    hasError={true}
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+  >
+    <div
+      className="sc-bdVaJa lfAdzx"
+    >
+      hint
+    </div>
+  </styled.div>
+</Hint>
+`;
+
+exports[`Hint snapshot basic 1`] = `
+<Hint
+  value="hint"
+>
+  <styled.div
+    hasError={false}
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+  >
+    <div
+      className="sc-bdVaJa bApmXV"
+    >
+      hint
+    </div>
+  </styled.div>
+</Hint>
+`;
+
+exports[`Hint snapshot error 1`] = `
+<Hint
+  hasError={true}
+  value="hint"
+>
+  <styled.div
+    hasError={true}
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+  >
+    <div
+      className="sc-bdVaJa lfAdzx"
+    >
+      hint
+    </div>
+  </styled.div>
+</Hint>
+`;

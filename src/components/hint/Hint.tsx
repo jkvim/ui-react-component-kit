@@ -2,13 +2,13 @@ import * as React from 'react';
 import { StyledHintDiv } from './styledHintDiv';
 
 export interface HintProps {
-  hint: string;
+  value: string;
   hasError?: boolean;
 }
 
-const Hint: React.SFC<HintProps> = ({ hint, hasError = false }) => {
+const Hint: React.SFC<HintProps> = ({ value, hasError = false }) => {
   return (
-    <StyledHintDiv hasError={hasError}>{hint}</StyledHintDiv>
+    <StyledHintDiv hasError={hasError}>{value}</StyledHintDiv>
   );
 };
 

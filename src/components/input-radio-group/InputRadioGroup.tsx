@@ -38,7 +38,7 @@ const InputRadioGroup: React.SFC<InputRadioGroupProps> =
   return (
     <StyledFormGroupDiv className={className}>
 
-      {hint && <Hint hasError={!!errorMessage} hint={hint} />}
+      {hint && <Hint hasError={!!errorMessage} value={hint} />}
 
       <Fieldset id={`${id}-fieldset`} aria-describedby={`${id}-error`}>
 
@@ -72,7 +72,7 @@ const InputRadioGroup: React.SFC<InputRadioGroupProps> =
 
       </Fieldset>
 
-      <Error id={`${id}-error`} errorMessage={errorMessage} />
+      <Error id={`${id}-error`} message={errorMessage} />
 
     </StyledFormGroupDiv>
   );

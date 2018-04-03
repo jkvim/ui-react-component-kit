@@ -366,8 +366,8 @@ exports[`InputRadioGroup should match snapshot 1`] = `
         </styled.fieldset>
       </Fieldset>
       <Error
-        errorMessage=""
         id="testId-error"
+        message=""
       >
         <styled.div
           hasError={false}

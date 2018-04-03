@@ -36,6 +36,21 @@ describe('Label', () => {
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
+  it('snapshot standard', () => {
+    const wrapper = mount(<Label htmlFor="id" value="label" type="standard" />);
+    expect(toJSON(wrapper)).toMatchSnapshot();
+  });
+
+  it('snapshot radio', () => {
+    const wrapper = mount(<Label htmlFor="id" value="label" type="radio" />);
+    expect(toJSON(wrapper)).toMatchSnapshot();
+  });
+
+  it('snapshot checkbox', () => {
+    const wrapper = mount(<Label htmlFor="id" value="label" type="checkbox" />);
+    expect(toJSON(wrapper)).toMatchSnapshot();
+  });
+
   it('snapshot error', () => {
     const wrapper = mount(<Label htmlFor="id" value="label" hasError={true} />);
     expect(toJSON(wrapper)).toMatchSnapshot();

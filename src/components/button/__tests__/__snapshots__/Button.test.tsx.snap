@@ -67,7 +67,74 @@ exports[`Button props should match snapshot 1`] = `
 </Button>
 `;
 
-exports[`Button snapshot basic 1`] = `
+exports[`Button snapshot disabled 1`] = `
+<Button
+  disabled={true}
+  onClick={[MockFunction]}
+  type="primary"
+>
+  <styled.button
+    disabled={true}
+    onClick={[Function]}
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+    type="primary"
+  >
+    <button
+      className="sc-bdVaJa hAcUsb"
+      disabled={true}
+      onClick={[Function]}
+      type="primary"
+    >
+      Hello
+    </button>
+  </styled.button>
+</Button>
+`;
+
+exports[`Button snapshot primary 1`] = `
 <Button
   onClick={[MockFunction]}
   type="primary"
@@ -131,14 +198,12 @@ exports[`Button snapshot basic 1`] = `
 </Button>
 `;
 
-exports[`Button snapshot disabled 1`] = `
+exports[`Button snapshot secondary 1`] = `
 <Button
-  disabled={true}
   onClick={[MockFunction]}
-  type="primary"
+  type="secondary"
 >
   <styled.button
-    disabled={true}
     onClick={[Function]}
     theme={
       Object {
@@ -184,13 +249,76 @@ exports[`Button snapshot disabled 1`] = `
         },
       }
     }
-    type="primary"
+    type="secondary"
   >
     <button
-      className="sc-bdVaJa hAcUsb"
-      disabled={true}
+      className="sc-bdVaJa hFxAHV"
       onClick={[Function]}
-      type="primary"
+      type="secondary"
+    >
+      Hello
+    </button>
+  </styled.button>
+</Button>
+`;
+
+exports[`Button snapshot tertiary 1`] = `
+<Button
+  onClick={[MockFunction]}
+  type="tertiary"
+>
+  <styled.button
+    onClick={[Function]}
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+    type="tertiary"
+  >
+    <button
+      className="sc-bdVaJa cfUbqE"
+      onClick={[Function]}
+      type="tertiary"
     >
       Hello
     </button>

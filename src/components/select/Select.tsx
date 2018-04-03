@@ -31,7 +31,7 @@ const Select: React.SFC<SelectProps> =
 
       <Label htmlFor={id} hasError={!!errorMessage} value={label} />
 
-      {hint && <Hint hasError={!!errorMessage} hint={hint} />}
+      {hint && <Hint hasError={!!errorMessage} value={hint} />}
 
       <StyledSelectWrapperDiv>
 
@@ -54,7 +54,7 @@ const Select: React.SFC<SelectProps> =
 
       </StyledSelectWrapperDiv>
 
-      <Error id={`${id}-error`} errorMessage={errorMessage} />
+      <Error id={`${id}-error`} message={errorMessage} />
 
     </StyledFormGroupDiv>
   );

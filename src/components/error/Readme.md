@@ -7,5 +7,5 @@
 Error
 
 ```jsx
-    <Error id={'demo-error'} errorMessage={'Required'} />
+    <Error id={'demo-error'} message={'Required'} />
 ```

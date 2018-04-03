@@ -84,7 +84,7 @@ exports[`InputText props should match snapshot 1`] = `
       </Label>
       <Hint
         hasError={true}
-        hint="hint"
+        value="hint"
       >
         <styled.div
           hasError={true}
@@ -213,8 +213,8 @@ exports[`InputText props should match snapshot 1`] = `
         />
       </styled.input>
       <Error
-        errorMessage="error"
         id="id-error"
+        message="error"
       >
         <styled.div
           hasError={true}
@@ -418,8 +418,8 @@ exports[`InputText snapshot basic 1`] = `
         />
       </styled.input>
       <Error
-        errorMessage=""
         id="id-error"
+        message=""
       >
         <styled.div
           hasError={false}
@@ -624,8 +624,8 @@ exports[`InputText snapshot disabled 1`] = `
         />
       </styled.input>
       <Error
-        errorMessage=""
         id="id-error"
+        message=""
       >
         <styled.div
           hasError={false}
@@ -828,8 +828,8 @@ exports[`InputText snapshot error 1`] = `
         />
       </styled.input>
       <Error
-        errorMessage="Error"
         id="id-error"
+        message="Error"
       >
         <styled.div
           hasError={true}

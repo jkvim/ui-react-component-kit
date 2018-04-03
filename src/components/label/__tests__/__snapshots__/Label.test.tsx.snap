@@ -128,6 +128,72 @@ exports[`Label snapshot basic 1`] = `
 </Label>
 `;
 
+exports[`Label snapshot checkbox 1`] = `
+<Label
+  htmlFor="id"
+  type="checkbox"
+  value="label"
+>
+  <styled.label
+    hasError={false}
+    htmlFor="id"
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+    type="checkbox"
+  >
+    <label
+      className="sc-bwzfXH guwhKP"
+      htmlFor="id"
+      type="checkbox"
+    >
+      label
+    </label>
+  </styled.label>
+</Label>
+`;
+
 exports[`Label snapshot error 1`] = `
 <Label
   hasError={true}
@@ -184,6 +250,136 @@ exports[`Label snapshot error 1`] = `
   >
     <label
       className="sc-bdVaJa esUHjj"
+      htmlFor="id"
+    >
+      label
+    </label>
+  </styled.label>
+</Label>
+`;
+
+exports[`Label snapshot radio 1`] = `
+<Label
+  htmlFor="id"
+  type="radio"
+  value="label"
+>
+  <styled.label
+    hasError={false}
+    htmlFor="id"
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+    type="radio"
+  >
+    <label
+      className="sc-bwzfXH cuKRqK"
+      htmlFor="id"
+      type="radio"
+    >
+      label
+    </label>
+  </styled.label>
+</Label>
+`;
+
+exports[`Label snapshot standard 1`] = `
+<Label
+  htmlFor="id"
+  type="standard"
+  value="label"
+>
+  <styled.label
+    hasError={false}
+    htmlFor="id"
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+  >
+    <label
+      className="sc-bdVaJa mlfRZ"
       htmlFor="id"
     >
       label
