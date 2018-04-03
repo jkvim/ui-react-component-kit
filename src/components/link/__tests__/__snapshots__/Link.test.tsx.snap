@@ -1,14 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button props should match snapshot 1`] = `
-<Button
-  disabled={true}
+exports[`Link props should match snapshot 1`] = `
+<Link
+  className="class"
+  id="id"
+  isExternal={true}
   onClick={[MockFunction]}
-  type="primary"
+  title="title"
+  url="http://google.com.au"
 >
-  <styled.button
-    disabled={true}
-    onClick={[Function]}
+  <styled.a
+    className="class"
+    href="http://google.com.au"
+    id="id"
+    onClick={[MockFunction]}
+    target="_blank"
     theme={
       Object {
         "border": Object {
@@ -53,27 +59,42 @@ exports[`Button props should match snapshot 1`] = `
         },
       }
     }
-    type="primary"
   >
-    <button
-      className="sc-bdVaJa hAcUsb"
-      disabled={true}
-      onClick={[Function]}
-      type="primary"
+    <a
+      className="class sc-ifAKCX beoLJX"
+      href="http://google.com.au"
+      id="id"
+      onClick={[MockFunction]}
+      target="_blank"
     >
-      Hello
-    </button>
-  </styled.button>
-</Button>
+      title
+      <styled.span>
+        <span
+          className="sc-EHOje jGgJXl"
+        >
+          <styled.span>
+            <span
+              className="sc-bdVaJa hjmIub"
+            >
+              Link opens in new window
+            </span>
+          </styled.span>
+        </span>
+      </styled.span>
+    </a>
+  </styled.a>
+</Link>
 `;
 
-exports[`Button snapshot basic 1`] = `
-<Button
-  onClick={[MockFunction]}
-  type="primary"
+exports[`Link snapshot basic 1`] = `
+<Link
+  id="id"
+  title="title"
+  url="http://google.com"
 >
-  <styled.button
-    onClick={[Function]}
+  <styled.a
+    href="http://google.com"
+    id="id"
     theme={
       Object {
         "border": Object {
@@ -118,28 +139,29 @@ exports[`Button snapshot basic 1`] = `
         },
       }
     }
-    type="primary"
   >
-    <button
-      className="sc-bdVaJa hAcUsb"
-      onClick={[Function]}
-      type="primary"
+    <a
+      className="sc-ifAKCX beoLJX"
+      href="http://google.com"
+      id="id"
     >
-      Hello
-    </button>
-  </styled.button>
-</Button>
+      title
+    </a>
+  </styled.a>
+</Link>
 `;
 
-exports[`Button snapshot disabled 1`] = `
-<Button
-  disabled={true}
-  onClick={[MockFunction]}
-  type="primary"
+exports[`Link snapshot external 1`] = `
+<Link
+  id="id"
+  isExternal={true}
+  title="title"
+  url="http://google.com"
 >
-  <styled.button
-    disabled={true}
-    onClick={[Function]}
+  <styled.a
+    href="http://google.com"
+    id="id"
+    target="_blank"
     theme={
       Object {
         "border": Object {
@@ -184,16 +206,93 @@ exports[`Button snapshot disabled 1`] = `
         },
       }
     }
-    type="primary"
   >
-    <button
-      className="sc-bdVaJa hAcUsb"
-      disabled={true}
-      onClick={[Function]}
-      type="primary"
+    <a
+      className="sc-ifAKCX beoLJX"
+      href="http://google.com"
+      id="id"
+      target="_blank"
     >
-      Hello
-    </button>
-  </styled.button>
-</Button>
+      title
+      <styled.span>
+        <span
+          className="sc-EHOje jGgJXl"
+        >
+          <styled.span>
+            <span
+              className="sc-bdVaJa hjmIub"
+            >
+              Link opens in new window
+            </span>
+          </styled.span>
+        </span>
+      </styled.span>
+    </a>
+  </styled.a>
+</Link>
+`;
+
+exports[`Link snapshot internal 1`] = `
+<Link
+  id="id"
+  title="title"
+  url="inner"
+>
+  <styled.a
+    href="inner"
+    id="id"
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+  >
+    <a
+      className="sc-ifAKCX beoLJX"
+      href="inner"
+      id="id"
+    >
+      title
+    </a>
+  </styled.a>
+</Link>
 `;

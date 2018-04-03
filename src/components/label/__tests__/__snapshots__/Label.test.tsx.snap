@@ -1,14 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button props should match snapshot 1`] = `
-<Button
-  disabled={true}
-  onClick={[MockFunction]}
-  type="primary"
+exports[`Label props should match snapshot 1`] = `
+<Label
+  hasError={true}
+  htmlFor="id"
+  type="standard"
+  value="label"
 >
-  <styled.button
-    disabled={true}
-    onClick={[Function]}
+  <styled.label
+    hasError={true}
+    htmlFor="id"
     theme={
       Object {
         "border": Object {
@@ -53,27 +54,25 @@ exports[`Button props should match snapshot 1`] = `
         },
       }
     }
-    type="primary"
   >
-    <button
-      className="sc-bdVaJa hAcUsb"
-      disabled={true}
-      onClick={[Function]}
-      type="primary"
+    <label
+      className="sc-bdVaJa esUHjj"
+      htmlFor="id"
     >
-      Hello
-    </button>
-  </styled.button>
-</Button>
+      label
+    </label>
+  </styled.label>
+</Label>
 `;
 
-exports[`Button snapshot basic 1`] = `
-<Button
-  onClick={[MockFunction]}
-  type="primary"
+exports[`Label snapshot basic 1`] = `
+<Label
+  htmlFor="id"
+  value="label"
 >
-  <styled.button
-    onClick={[Function]}
+  <styled.label
+    hasError={false}
+    htmlFor="id"
     theme={
       Object {
         "border": Object {
@@ -118,28 +117,26 @@ exports[`Button snapshot basic 1`] = `
         },
       }
     }
-    type="primary"
   >
-    <button
-      className="sc-bdVaJa hAcUsb"
-      onClick={[Function]}
-      type="primary"
+    <label
+      className="sc-bdVaJa mlfRZ"
+      htmlFor="id"
     >
-      Hello
-    </button>
-  </styled.button>
-</Button>
+      label
+    </label>
+  </styled.label>
+</Label>
 `;
 
-exports[`Button snapshot disabled 1`] = `
-<Button
-  disabled={true}
-  onClick={[MockFunction]}
-  type="primary"
+exports[`Label snapshot error 1`] = `
+<Label
+  hasError={true}
+  htmlFor="id"
+  value="label"
 >
-  <styled.button
-    disabled={true}
-    onClick={[Function]}
+  <styled.label
+    hasError={true}
+    htmlFor="id"
     theme={
       Object {
         "border": Object {
@@ -184,16 +181,13 @@ exports[`Button snapshot disabled 1`] = `
         },
       }
     }
-    type="primary"
   >
-    <button
-      className="sc-bdVaJa hAcUsb"
-      disabled={true}
-      onClick={[Function]}
-      type="primary"
+    <label
+      className="sc-bdVaJa esUHjj"
+      htmlFor="id"
     >
-      Hello
-    </button>
-  </styled.button>
-</Button>
+      label
+    </label>
+  </styled.label>
+</Label>
 `;

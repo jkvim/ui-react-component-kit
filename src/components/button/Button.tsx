@@ -15,7 +15,7 @@ const Button: React.SFC<ButtonProps> = ({ children, onClick, type, disabled }) =
   return (
     <StyledButton
       type={type}
-      onClick={onClick}
+      onClick={() => onClick()}
       disabled={disabled}
     >
       {children}
