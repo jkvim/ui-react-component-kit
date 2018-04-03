@@ -2,6 +2,7 @@ ui-react-component-kit
 ========================
 [![Build Status](https://travis-ci.org/Rob-Leggett/ui-react-component-kit.svg?branch=master)](https://travis-ci.org/Rob-Leggett/ui-react-component-kit)
 [![npm](https://img.shields.io/npm/v/ui-react-component-kit.svg)](https://www.npmjs.com/package/ui-react-component-kit)
+[![codecov](https://codecov.io/gh/Rob-Leggett/ui-react-component-kit/branch/master/graph/badge.svg)](https://codecov.io/gh/Rob-Leggett/ui-react-component-kit)
 
 A react component library that is not prescribing a state management and has theming capabilities.
 
@@ -13,10 +14,10 @@ A react component library that is not prescribing a state management and has the
     1. [How To](#how-to)
     2. [Theming](#theming)
 3. [Dev Process](#dev-process)
-4. [Metrics](#metrics)
-5. [Third-Party Dependencies](#third-party-dependencies)
+4. [Styleguide](#styleguide)
+5. [Metrics](#metrics)
+6. [Third-Party Dependencies](#third-party-dependencies)
     1. [Microservice](#microservice)
-6. [Demonstration](#demonstration)
 
 ## Installation <a name="installation"/>
 
@@ -152,9 +153,9 @@ For use with address-autocomplete component:
 
 TBD
 
-## Demonstration <a name="demonstration"/>
+## Styleguide <a name="styleguide"/>
 
-View an demonstration via: https://rob-leggett.github.io/ui-react-component-kit/
+Styleguide via: https://rob-leggett.github.io/ui-react-component-kit/
 
 Donations
 ====================
