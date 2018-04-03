@@ -1,0 +1,394 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert props should match snapshot 1`] = `
+<Alert
+  className="class"
+  type="success"
+>
+  <styled.div
+    className="class"
+    role="alert"
+    tabindex="-1"
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+    type="success"
+  >
+    <div
+      className="class sc-bdVaJa OSvWk"
+      role="alert"
+      type="success"
+    >
+      Hello
+    </div>
+  </styled.div>
+</Alert>
+`;
+
+exports[`Alert snapshot basic 1`] = `
+<Alert
+  className="class"
+>
+  <styled.div
+    className="class"
+    role="alert"
+    tabindex="-1"
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+  >
+    <div
+      className="class sc-bdVaJa jVmMKh"
+      role="alert"
+    >
+      Hello
+    </div>
+  </styled.div>
+</Alert>
+`;
+
+exports[`Alert snapshot danger 1`] = `
+<Alert
+  className="class"
+  type="danger"
+>
+  <styled.div
+    className="class"
+    role="alert"
+    tabindex="-1"
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+    type="danger"
+  >
+    <div
+      className="class sc-bdVaJa iooWOT"
+      role="alert"
+      type="danger"
+    >
+      Hello
+    </div>
+  </styled.div>
+</Alert>
+`;
+
+exports[`Alert snapshot info 1`] = `
+<Alert
+  className="class"
+  type="info"
+>
+  <styled.div
+    className="class"
+    role="alert"
+    tabindex="-1"
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+    type="info"
+  >
+    <div
+      className="class sc-bdVaJa eZexUJ"
+      role="alert"
+      type="info"
+    >
+      Hello
+    </div>
+  </styled.div>
+</Alert>
+`;
+
+exports[`Alert snapshot success 1`] = `
+<Alert
+  className="class"
+  type="success"
+>
+  <styled.div
+    className="class"
+    role="alert"
+    tabindex="-1"
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+    type="success"
+  >
+    <div
+      className="class sc-bdVaJa OSvWk"
+      role="alert"
+      type="success"
+    >
+      Hello
+    </div>
+  </styled.div>
+</Alert>
+`;
+
+exports[`Alert snapshot warning 1`] = `
+<Alert
+  className="class"
+  type="warning"
+>
+  <styled.div
+    className="class"
+    role="alert"
+    tabindex="-1"
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+    type="warning"
+  >
+    <div
+      className="class sc-bdVaJa djmiuG"
+      role="alert"
+      type="warning"
+    >
+      Hello
+    </div>
+  </styled.div>
+</Alert>
+`;

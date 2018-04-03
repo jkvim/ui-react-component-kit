@@ -1,37 +1,57 @@
 import * as React from 'react';
 import { mount } from 'enzyme';
-import { Alert } from '../../alert';
+import toJSON from 'enzyme-to-json';
+import { Alert } from '../';
 
+/*children?: ReactNode;
+type?: AlertType;
+className?: string;*/
 describe('Alert', () => {
 
   describe('props', () => {
-    let wrapper;
 
-    beforeEach(() => {
-      const mockOnCloseFn = jest.fn();
-      
-      wrapper = mount(
-        <Alert 
-          alertType={'info'}
-        />
-      );
+    const wrapper = mount(
+      <Alert type="success" className="class">Hello</Alert>);
+
+    it('should match snapshot', () => {
+      expect(toJSON(wrapper)).toMatchSnapshot();
     });
 
-    it('should pass `alertType` in props', () => {
-      expect(wrapper.props().alertType).toBeDefined();
+    it('should pass `type` in props', () => {
+      expect(wrapper.props().type).toBe('success');
+    });
+
+    it('should pass `className` in props', () => {
+      expect(wrapper.props().className).toBe('class');
+    });
+
+    it('should pass `children` in props', () => {
+      expect(wrapper.props().children).toBe('Hello');
     });
   });
 
-  it('should render child props when provided', () => {
-    const wrapper = mount(
-      <Alert 
-        alertType={'info'}
-      >
-        <p>Some Child Text</p>
-      </Alert>
-    );
+  it('snapshot basic', () => {
+    const wrapper = mount(<Alert className="class">Hello</Alert>);
+    expect(toJSON(wrapper)).toMatchSnapshot();
+  });
 
-    const el = wrapper.find('p');
-    expect(el.text()).toBe('Some Child Text');
+  it('snapshot success', () => {
+    const wrapper = mount(<Alert type="success" className="class">Hello</Alert>);
+    expect(toJSON(wrapper)).toMatchSnapshot();
+  });
+
+  it('snapshot info', () => {
+    const wrapper = mount(<Alert type="info" className="class">Hello</Alert>);
+    expect(toJSON(wrapper)).toMatchSnapshot();
+  });
+
+  it('snapshot warning', () => {
+    const wrapper = mount(<Alert type="warning" className="class">Hello</Alert>);
+    expect(toJSON(wrapper)).toMatchSnapshot();
+  });
+
+  it('snapshot danger', () => {
+    const wrapper = mount(<Alert type="danger" className="class">Hello</Alert>);
+    expect(toJSON(wrapper)).toMatchSnapshot();
   });
 });
