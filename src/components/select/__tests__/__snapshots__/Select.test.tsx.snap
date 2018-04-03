@@ -207,8 +207,8 @@ exports[`SelectField props should match snapshot 1`] = `
         </div>
       </styled.div>
       <Error
-        errorMessage=""
         id="some-id-error"
+        message=""
       >
         <styled.div
           hasError={false}
