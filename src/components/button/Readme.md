@@ -18,7 +18,7 @@
 
 ```jsx
     <Button 
-        button={'primary'}
+        type={'primary'}
         onClick={() => {
           alert('hello');
     }}>
@@ -30,7 +30,7 @@
 
 ```jsx
     <Button 
-        button={'secondary'}
+        type={'secondary'}
         onClick={() => {
           alert('hello');
     }}>
@@ -42,7 +42,7 @@
 
 ```jsx
     <Button 
-        button={'tertiary'}
+        type={'tertiary'}
         onClick={() => {
           alert('hello');
     }}>
