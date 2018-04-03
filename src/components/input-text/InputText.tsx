@@ -46,7 +46,7 @@ const InputText: React.SFC<InputTextProps> =
           onKeyDown={
             event => onKeyDown(event.keyCode, event)
           }
-          onBlur={event => onBlur(value)}
+          onBlur={() => onBlur(value)}
           value={value}
           disabled={disabled}
           hasError={!!errorMessage}
