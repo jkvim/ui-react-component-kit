@@ -41,7 +41,7 @@ const Select: React.SFC<SelectProps> =
           onChange={
             event => onChange(event.target.value, event)
           }
-          onBlur={event => onBlur(value)}
+          onBlur={() => onBlur(value)}
           value={value}
           disabled={disabled}
           hasError={!!errorMessage}
