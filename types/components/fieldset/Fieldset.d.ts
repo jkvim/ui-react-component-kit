@@ -1,7 +1,6 @@
 /// <reference types="react" />
 import * as React from 'react';
-import { AllProps } from '../../theme/common/props';
-export interface FieldsetProps extends AllProps {
+export interface FieldsetProps {
     id: string;
     legend?: string;
     className?: string;
