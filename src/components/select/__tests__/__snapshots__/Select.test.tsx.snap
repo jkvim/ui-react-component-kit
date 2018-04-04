@@ -1,9 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SelectField props should match snapshot 1`] = `
+exports[`Select props should match snapshot 1`] = `
 <Select
-  id="some-id"
-  label="Some error message."
+  className="class"
+  disabled={true}
+  errorMessage="message"
+  hint="hint"
+  id="id"
+  label="label"
+  onBlur={[MockFunction]}
+  onChange={[MockFunction]}
   options={
     Array [
       Object {
@@ -12,7 +18,340 @@ exports[`SelectField props should match snapshot 1`] = `
       },
     ]
   }
-  placeholder="Please select"
+  placeholder="placeholder"
+  value="Test Value"
+>
+  <styled.div
+    className="class"
+  >
+    <div
+      className="class sc-EHOje chSsAf"
+    >
+      <Label
+        hasError={true}
+        htmlFor="id"
+        value="label"
+      >
+        <styled.label
+          hasError={true}
+          htmlFor="id"
+          theme={
+            Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
+              "color": Object {
+                "background": "#ffffff",
+                "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
+                "default": "#2fa4e7",
+                "disabled": "#acacac",
+                "error": "#c71c22",
+                "focus": "#54b4eb",
+                "font": "#333333",
+                "hover": "#178acc",
+                "info": "#04519b",
+                "primary": "#2fa4e7",
+                "secondary": "#e9ecef",
+                "success": "#73a839",
+                "tertiary": "#343a40",
+                "warning": "#dd5600",
+              },
+              "font": Object {
+                "size": Object {
+                  "default": "1.8rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
+              },
+            }
+          }
+        >
+          <label
+            className="sc-htpNat eOCcFi"
+            htmlFor="id"
+          >
+            label
+          </label>
+        </styled.label>
+      </Label>
+      <Hint
+        hasError={true}
+        value="hint"
+      >
+        <styled.div
+          hasError={true}
+          theme={
+            Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
+              "color": Object {
+                "background": "#ffffff",
+                "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
+                "default": "#2fa4e7",
+                "disabled": "#acacac",
+                "error": "#c71c22",
+                "focus": "#54b4eb",
+                "font": "#333333",
+                "hover": "#178acc",
+                "info": "#04519b",
+                "primary": "#2fa4e7",
+                "secondary": "#e9ecef",
+                "success": "#73a839",
+                "tertiary": "#343a40",
+                "warning": "#dd5600",
+              },
+              "font": Object {
+                "size": Object {
+                  "default": "1.8rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
+              },
+            }
+          }
+        >
+          <div
+            className="sc-bdVaJa lfAdzx"
+          >
+            hint
+          </div>
+        </styled.div>
+      </Hint>
+      <styled.div
+        theme={
+          Object {
+            "border": Object {
+              "radius": Object {
+                "edge": "2px",
+                "round": "100px",
+              },
+              "size": "2px",
+            },
+            "breakpoint": Object {
+              "lg": "992px",
+              "md": "768px",
+              "sm": "576px",
+              "xl": "1200px",
+              "xs": "0px",
+            },
+            "color": Object {
+              "background": "#ffffff",
+              "border": "#2fa4e7",
+              "checked": "#2fa4e7",
+              "danger": "#c71c22",
+              "default": "#2fa4e7",
+              "disabled": "#acacac",
+              "error": "#c71c22",
+              "focus": "#54b4eb",
+              "font": "#333333",
+              "hover": "#178acc",
+              "info": "#04519b",
+              "primary": "#2fa4e7",
+              "secondary": "#e9ecef",
+              "success": "#73a839",
+              "tertiary": "#343a40",
+              "warning": "#dd5600",
+            },
+            "font": Object {
+              "size": Object {
+                "default": "1.8rem",
+              },
+              "weight": Object {
+                "default": 100,
+              },
+            },
+          }
+        }
+      >
+        <div
+          className="sc-dnqmqq eYgisk"
+        >
+          <styled.select
+            aria-describedby="id-error"
+            aria-invalid={true}
+            disabled={true}
+            hasError={true}
+            id="id"
+            innerRef={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            theme={
+              Object {
+                "border": Object {
+                  "radius": Object {
+                    "edge": "2px",
+                    "round": "100px",
+                  },
+                  "size": "2px",
+                },
+                "breakpoint": Object {
+                  "lg": "992px",
+                  "md": "768px",
+                  "sm": "576px",
+                  "xl": "1200px",
+                  "xs": "0px",
+                },
+                "color": Object {
+                  "background": "#ffffff",
+                  "border": "#2fa4e7",
+                  "checked": "#2fa4e7",
+                  "danger": "#c71c22",
+                  "default": "#2fa4e7",
+                  "disabled": "#acacac",
+                  "error": "#c71c22",
+                  "focus": "#54b4eb",
+                  "font": "#333333",
+                  "hover": "#178acc",
+                  "info": "#04519b",
+                  "primary": "#2fa4e7",
+                  "secondary": "#e9ecef",
+                  "success": "#73a839",
+                  "tertiary": "#343a40",
+                  "warning": "#dd5600",
+                },
+                "font": Object {
+                  "size": Object {
+                    "default": "1.8rem",
+                  },
+                  "weight": Object {
+                    "default": 100,
+                  },
+                },
+              }
+            }
+            value="Test Value"
+          >
+            <select
+              aria-describedby="id-error"
+              aria-invalid={true}
+              className="sc-htoDjs kEQYxX"
+              disabled={true}
+              id="id"
+              onBlur={[Function]}
+              onChange={[Function]}
+              value="Test Value"
+            >
+              <option
+                value=""
+              >
+                placeholder
+              </option>
+              <option
+                key="0"
+                value="Test Value"
+              >
+                Test Display
+              </option>
+            </select>
+          </styled.select>
+        </div>
+      </styled.div>
+      <Error
+        id="id-error"
+        message="message"
+      >
+        <styled.div
+          hasError={true}
+          id="id-error-error"
+          theme={
+            Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
+              "color": Object {
+                "background": "#ffffff",
+                "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
+                "default": "#2fa4e7",
+                "disabled": "#acacac",
+                "error": "#c71c22",
+                "focus": "#54b4eb",
+                "font": "#333333",
+                "hover": "#178acc",
+                "info": "#04519b",
+                "primary": "#2fa4e7",
+                "secondary": "#e9ecef",
+                "success": "#73a839",
+                "tertiary": "#343a40",
+                "warning": "#dd5600",
+              },
+              "font": Object {
+                "size": Object {
+                  "default": "1.8rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
+              },
+            }
+          }
+        >
+          <div
+            className="sc-bwzfXH brbnPU"
+            id="id-error-error"
+          >
+            message
+          </div>
+        </styled.div>
+      </Error>
+    </div>
+  </styled.div>
+</Select>
+`;
+
+exports[`Select snapshot basic 1`] = `
+<Select
+  id="id"
+  label="label"
+  options={
+    Array [
+      Object {
+        "display": "Test Display",
+        "value": "Test Value",
+      },
+    ]
+  }
 >
   <styled.div>
     <div
@@ -20,12 +359,12 @@ exports[`SelectField props should match snapshot 1`] = `
     >
       <Label
         hasError={false}
-        htmlFor="some-id"
-        value="Some error message."
+        htmlFor="id"
+        value="label"
       >
         <styled.label
           hasError={false}
-          htmlFor="some-id"
+          htmlFor="id"
           theme={
             Object {
               "border": Object {
@@ -73,9 +412,9 @@ exports[`SelectField props should match snapshot 1`] = `
         >
           <label
             className="sc-htpNat cDzKuL"
-            htmlFor="some-id"
+            htmlFor="id"
           >
-            Some error message.
+            label
           </label>
         </styled.label>
       </Label>
@@ -129,10 +468,10 @@ exports[`SelectField props should match snapshot 1`] = `
           className="sc-dnqmqq eYgisk"
         >
           <styled.select
-            aria-describedby="some-id-error"
+            aria-describedby="id-error"
             aria-invalid={false}
             hasError={false}
-            id="some-id"
+            id="id"
             innerRef={[Function]}
             onBlur={[Function]}
             onChange={[Function]}
@@ -183,19 +522,17 @@ exports[`SelectField props should match snapshot 1`] = `
             value=""
           >
             <select
-              aria-describedby="some-id-error"
+              aria-describedby="id-error"
               aria-invalid={false}
               className="sc-htoDjs eohKzs"
-              id="some-id"
+              id="id"
               onBlur={[Function]}
               onChange={[Function]}
               value=""
             >
               <option
                 value=""
-              >
-                Please select
-              </option>
+              />
               <option
                 key="0"
                 value="Test Value"
@@ -207,12 +544,12 @@ exports[`SelectField props should match snapshot 1`] = `
         </div>
       </styled.div>
       <Error
-        id="some-id-error"
+        id="id-error"
         message=""
       >
         <styled.div
           hasError={false}
-          id="some-id-error-error"
+          id="id-error-error"
           theme={
             Object {
               "border": Object {
@@ -260,8 +597,546 @@ exports[`SelectField props should match snapshot 1`] = `
         >
           <div
             className="sc-bwzfXH iyMhLi"
-            id="some-id-error-error"
+            id="id-error-error"
           />
+        </styled.div>
+      </Error>
+    </div>
+  </styled.div>
+</Select>
+`;
+
+exports[`Select snapshot disabled 1`] = `
+<Select
+  disabled={true}
+  id="id"
+  label="label"
+  options={
+    Array [
+      Object {
+        "display": "Test Display",
+        "value": "Test Value",
+      },
+    ]
+  }
+>
+  <styled.div>
+    <div
+      className="sc-EHOje chSsAf"
+    >
+      <Label
+        hasError={false}
+        htmlFor="id"
+        value="label"
+      >
+        <styled.label
+          hasError={false}
+          htmlFor="id"
+          theme={
+            Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
+              "color": Object {
+                "background": "#ffffff",
+                "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
+                "default": "#2fa4e7",
+                "disabled": "#acacac",
+                "error": "#c71c22",
+                "focus": "#54b4eb",
+                "font": "#333333",
+                "hover": "#178acc",
+                "info": "#04519b",
+                "primary": "#2fa4e7",
+                "secondary": "#e9ecef",
+                "success": "#73a839",
+                "tertiary": "#343a40",
+                "warning": "#dd5600",
+              },
+              "font": Object {
+                "size": Object {
+                  "default": "1.8rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
+              },
+            }
+          }
+        >
+          <label
+            className="sc-htpNat cDzKuL"
+            htmlFor="id"
+          >
+            label
+          </label>
+        </styled.label>
+      </Label>
+      <styled.div
+        theme={
+          Object {
+            "border": Object {
+              "radius": Object {
+                "edge": "2px",
+                "round": "100px",
+              },
+              "size": "2px",
+            },
+            "breakpoint": Object {
+              "lg": "992px",
+              "md": "768px",
+              "sm": "576px",
+              "xl": "1200px",
+              "xs": "0px",
+            },
+            "color": Object {
+              "background": "#ffffff",
+              "border": "#2fa4e7",
+              "checked": "#2fa4e7",
+              "danger": "#c71c22",
+              "default": "#2fa4e7",
+              "disabled": "#acacac",
+              "error": "#c71c22",
+              "focus": "#54b4eb",
+              "font": "#333333",
+              "hover": "#178acc",
+              "info": "#04519b",
+              "primary": "#2fa4e7",
+              "secondary": "#e9ecef",
+              "success": "#73a839",
+              "tertiary": "#343a40",
+              "warning": "#dd5600",
+            },
+            "font": Object {
+              "size": Object {
+                "default": "1.8rem",
+              },
+              "weight": Object {
+                "default": 100,
+              },
+            },
+          }
+        }
+      >
+        <div
+          className="sc-dnqmqq eYgisk"
+        >
+          <styled.select
+            aria-describedby="id-error"
+            aria-invalid={false}
+            disabled={true}
+            hasError={false}
+            id="id"
+            innerRef={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            theme={
+              Object {
+                "border": Object {
+                  "radius": Object {
+                    "edge": "2px",
+                    "round": "100px",
+                  },
+                  "size": "2px",
+                },
+                "breakpoint": Object {
+                  "lg": "992px",
+                  "md": "768px",
+                  "sm": "576px",
+                  "xl": "1200px",
+                  "xs": "0px",
+                },
+                "color": Object {
+                  "background": "#ffffff",
+                  "border": "#2fa4e7",
+                  "checked": "#2fa4e7",
+                  "danger": "#c71c22",
+                  "default": "#2fa4e7",
+                  "disabled": "#acacac",
+                  "error": "#c71c22",
+                  "focus": "#54b4eb",
+                  "font": "#333333",
+                  "hover": "#178acc",
+                  "info": "#04519b",
+                  "primary": "#2fa4e7",
+                  "secondary": "#e9ecef",
+                  "success": "#73a839",
+                  "tertiary": "#343a40",
+                  "warning": "#dd5600",
+                },
+                "font": Object {
+                  "size": Object {
+                    "default": "1.8rem",
+                  },
+                  "weight": Object {
+                    "default": 100,
+                  },
+                },
+              }
+            }
+            value=""
+          >
+            <select
+              aria-describedby="id-error"
+              aria-invalid={false}
+              className="sc-htoDjs eohKzs"
+              disabled={true}
+              id="id"
+              onBlur={[Function]}
+              onChange={[Function]}
+              value=""
+            >
+              <option
+                value=""
+              />
+              <option
+                key="0"
+                value="Test Value"
+              >
+                Test Display
+              </option>
+            </select>
+          </styled.select>
+        </div>
+      </styled.div>
+      <Error
+        id="id-error"
+        message=""
+      >
+        <styled.div
+          hasError={false}
+          id="id-error-error"
+          theme={
+            Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
+              "color": Object {
+                "background": "#ffffff",
+                "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
+                "default": "#2fa4e7",
+                "disabled": "#acacac",
+                "error": "#c71c22",
+                "focus": "#54b4eb",
+                "font": "#333333",
+                "hover": "#178acc",
+                "info": "#04519b",
+                "primary": "#2fa4e7",
+                "secondary": "#e9ecef",
+                "success": "#73a839",
+                "tertiary": "#343a40",
+                "warning": "#dd5600",
+              },
+              "font": Object {
+                "size": Object {
+                  "default": "1.8rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
+              },
+            }
+          }
+        >
+          <div
+            className="sc-bwzfXH iyMhLi"
+            id="id-error-error"
+          />
+        </styled.div>
+      </Error>
+    </div>
+  </styled.div>
+</Select>
+`;
+
+exports[`Select snapshot error 1`] = `
+<Select
+  errorMessage="message"
+  id="id"
+  label="label"
+  options={
+    Array [
+      Object {
+        "display": "Test Display",
+        "value": "Test Value",
+      },
+    ]
+  }
+>
+  <styled.div>
+    <div
+      className="sc-EHOje chSsAf"
+    >
+      <Label
+        hasError={true}
+        htmlFor="id"
+        value="label"
+      >
+        <styled.label
+          hasError={true}
+          htmlFor="id"
+          theme={
+            Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
+              "color": Object {
+                "background": "#ffffff",
+                "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
+                "default": "#2fa4e7",
+                "disabled": "#acacac",
+                "error": "#c71c22",
+                "focus": "#54b4eb",
+                "font": "#333333",
+                "hover": "#178acc",
+                "info": "#04519b",
+                "primary": "#2fa4e7",
+                "secondary": "#e9ecef",
+                "success": "#73a839",
+                "tertiary": "#343a40",
+                "warning": "#dd5600",
+              },
+              "font": Object {
+                "size": Object {
+                  "default": "1.8rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
+              },
+            }
+          }
+        >
+          <label
+            className="sc-htpNat eOCcFi"
+            htmlFor="id"
+          >
+            label
+          </label>
+        </styled.label>
+      </Label>
+      <styled.div
+        theme={
+          Object {
+            "border": Object {
+              "radius": Object {
+                "edge": "2px",
+                "round": "100px",
+              },
+              "size": "2px",
+            },
+            "breakpoint": Object {
+              "lg": "992px",
+              "md": "768px",
+              "sm": "576px",
+              "xl": "1200px",
+              "xs": "0px",
+            },
+            "color": Object {
+              "background": "#ffffff",
+              "border": "#2fa4e7",
+              "checked": "#2fa4e7",
+              "danger": "#c71c22",
+              "default": "#2fa4e7",
+              "disabled": "#acacac",
+              "error": "#c71c22",
+              "focus": "#54b4eb",
+              "font": "#333333",
+              "hover": "#178acc",
+              "info": "#04519b",
+              "primary": "#2fa4e7",
+              "secondary": "#e9ecef",
+              "success": "#73a839",
+              "tertiary": "#343a40",
+              "warning": "#dd5600",
+            },
+            "font": Object {
+              "size": Object {
+                "default": "1.8rem",
+              },
+              "weight": Object {
+                "default": 100,
+              },
+            },
+          }
+        }
+      >
+        <div
+          className="sc-dnqmqq eYgisk"
+        >
+          <styled.select
+            aria-describedby="id-error"
+            aria-invalid={true}
+            hasError={true}
+            id="id"
+            innerRef={[Function]}
+            onBlur={[Function]}
+            onChange={[Function]}
+            theme={
+              Object {
+                "border": Object {
+                  "radius": Object {
+                    "edge": "2px",
+                    "round": "100px",
+                  },
+                  "size": "2px",
+                },
+                "breakpoint": Object {
+                  "lg": "992px",
+                  "md": "768px",
+                  "sm": "576px",
+                  "xl": "1200px",
+                  "xs": "0px",
+                },
+                "color": Object {
+                  "background": "#ffffff",
+                  "border": "#2fa4e7",
+                  "checked": "#2fa4e7",
+                  "danger": "#c71c22",
+                  "default": "#2fa4e7",
+                  "disabled": "#acacac",
+                  "error": "#c71c22",
+                  "focus": "#54b4eb",
+                  "font": "#333333",
+                  "hover": "#178acc",
+                  "info": "#04519b",
+                  "primary": "#2fa4e7",
+                  "secondary": "#e9ecef",
+                  "success": "#73a839",
+                  "tertiary": "#343a40",
+                  "warning": "#dd5600",
+                },
+                "font": Object {
+                  "size": Object {
+                    "default": "1.8rem",
+                  },
+                  "weight": Object {
+                    "default": 100,
+                  },
+                },
+              }
+            }
+            value=""
+          >
+            <select
+              aria-describedby="id-error"
+              aria-invalid={true}
+              className="sc-htoDjs kEQYxX"
+              id="id"
+              onBlur={[Function]}
+              onChange={[Function]}
+              value=""
+            >
+              <option
+                value=""
+              />
+              <option
+                key="0"
+                value="Test Value"
+              >
+                Test Display
+              </option>
+            </select>
+          </styled.select>
+        </div>
+      </styled.div>
+      <Error
+        id="id-error"
+        message="message"
+      >
+        <styled.div
+          hasError={true}
+          id="id-error-error"
+          theme={
+            Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
+              "color": Object {
+                "background": "#ffffff",
+                "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
+                "default": "#2fa4e7",
+                "disabled": "#acacac",
+                "error": "#c71c22",
+                "focus": "#54b4eb",
+                "font": "#333333",
+                "hover": "#178acc",
+                "info": "#04519b",
+                "primary": "#2fa4e7",
+                "secondary": "#e9ecef",
+                "success": "#73a839",
+                "tertiary": "#343a40",
+                "warning": "#dd5600",
+              },
+              "font": Object {
+                "size": Object {
+                  "default": "1.8rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
+              },
+            }
+          }
+        >
+          <div
+            className="sc-bwzfXH brbnPU"
+            id="id-error-error"
+          >
+            message
+          </div>
         </styled.div>
       </Error>
     </div>

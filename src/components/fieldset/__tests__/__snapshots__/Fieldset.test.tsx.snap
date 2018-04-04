@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error props should match snapshot 1`] = `
+<Fieldset
+  className="class"
+  id="id"
+  legend="legend"
+>
+  <styled.fieldset
+    className="class"
+    id="id"
+  >
+    <fieldset
+      className="class sc-bdVaJa bDWFJH"
+      id="id"
+    >
+      <legend>
+        legend
+      </legend>
+    </fieldset>
+  </styled.fieldset>
+</Fieldset>
+`;

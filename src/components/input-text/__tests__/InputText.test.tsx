@@ -96,7 +96,7 @@ describe('InputText', () => {
   it('expect value to change when keys are pressed', () => {
     const mockCallback = jest.fn();
     const wrapper = mount(<InputText id="id" label="label" onChange={mockCallback} />);
-    wrapper.find('input').at(0).simulate('change', { target: { value:  'a'}});
+    wrapper.find('input').simulate('change', { target: { value:  'a'}});
     // The mock function is called once
     expect(mockCallback).toBeCalled();
     // The new value was sent
@@ -105,6 +105,34 @@ describe('InputText', () => {
 
   it('expect everything to work when no onChange is provided', () => {
     const wrapper = mount(<InputText id="id" label="label" />);
-    wrapper.find('input').at(0).simulate('change', { target: { value: 'a' } });
+    wrapper.find('input').simulate('change', { target: { value: 'a' } });
+  });
+
+  it('expect value to input when keys are pressed', () => {
+    const mockCallback = jest.fn();
+    const wrapper = mount(<InputText id="id" label="label" onKeyDown={mockCallback} />);
+    wrapper.find('input').simulate('keyDown', { keyCode: 69, key: 'e' });
+    // The mock function is called once
+    expect(mockCallback).toBeCalled();
+    // The new value was sent
+    expect(mockCallback.mock.calls[0][0]).toBe(69);
+  });
+
+  it('expect everything to work when no onKeyDown is provided', () => {
+    const wrapper = mount(<InputText id="id" label="label" />);
+    wrapper.find('input').simulate('keyDown', { keyCode: 69, key: 'e' });
+  });
+
+  it('expect blur to occur when focused away', () => {
+    const mockCallback = jest.fn();
+    const wrapper = mount(<InputText id="id" label="label" onBlur={mockCallback} />);
+    wrapper.find('input').simulate('blur');
+    // The mock function is called once
+    expect(mockCallback).toBeCalled();
+  });
+
+  it('expect everything to work when no onBlur is provided', () => {
+    const wrapper = mount(<InputText id="id" label="label" />);
+    wrapper.find('input').simulate('blur');
   });
 });

@@ -8,7 +8,7 @@ describe('Error', () => {
   describe('props', () => {
 
     const wrapper = mount(
-      <Error id="id" errorMessage="error" />);
+      <Error id="id" message="error" />);
 
     it('should match snapshot', () => {
       expect(toJSON(wrapper)).toMatchSnapshot();
@@ -18,13 +18,8 @@ describe('Error', () => {
       expect(wrapper.props().id).toBe('id');
     });
 
-    it('should pass `errorMessage` in props', () => {
-      expect(wrapper.props().errorMessage).toBe('error');
+    it('should pass `message` in props', () => {
+      expect(wrapper.props().message).toBe('error');
     });
-  });
-
-  it('snapshot basic', () => {
-    const wrapper = mount(<Error id="id" errorMessage="error" />);
-    expect(toJSON(wrapper)).toMatchSnapshot();
   });
 });
