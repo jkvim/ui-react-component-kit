@@ -22,7 +22,7 @@ class StaticDataProvider implements DataProvider {
       }
       if ((matchValue as string).toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1) {
         filteredResult.push({
-          value: suggestion,
+          value: matchValue,
           object: suggestion
         });
       }

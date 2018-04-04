@@ -20,13 +20,28 @@
 	/>
 ```
 
+```jsx
+    initialState = {};
+  
+    <StaticAutoComplete
+        id={'blank-static-object-autocomplete'}
+        label={'Blank Static Object Autocomplete'}
+        suggestions={[{display: 'apple', value: 'a'}, {display: 'banana', value: 'b'}, {display: 'mango', value: 'm'}]}
+        valuePath={'display'}
+        selectedItem={state.selectedItem}
+        onChange={(selectedItem) => {
+            setState({selectedItem});
+        }}
+	/>
+```
+
 ** Pre-populated **
 
 ```jsx
     initialState = {
         selectedItem: {
             value: 'mango',
-            object: {name: 'reference object'}
+            object: 'mango'
         }
     };
   
@@ -39,6 +54,26 @@
             setState({selectedItem});
         }}
     />
+```
+
+```jsx
+    initialState = {
+       selectedItem: {
+           value: 'banana',
+           object: {display: 'banana', value: 'b'}
+       }
+    };
+  
+    <StaticAutoComplete
+        id={'pre-populated-static-object-autocomplete'}
+        label={'Pre-populated Static Object Autocomplete'}
+        suggestions={[{display: 'apple', value: 'a'}, {display: 'banana', value: 'b'}, {display: 'mango', value: 'm'}]}
+        valuePath={'display'}
+        selectedItem={state.selectedItem}
+        onChange={(selectedItem) => {
+            setState({selectedItem});
+        }}
+	/>
 ```
 
 ** Disabled **

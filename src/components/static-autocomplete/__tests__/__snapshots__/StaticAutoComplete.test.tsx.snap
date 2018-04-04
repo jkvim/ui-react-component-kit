@@ -1,14 +1,378 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StaticAutoComplete should match snapshot 1`] = `
+exports[`StaticAutoComplete props should match snapshot 1`] = `
 <StaticAutoComplete
-  id="static-id"
-  label="Label"
+  className="class"
+  disabled={true}
+  errorMessage="message"
+  hint="hint"
+  id="id"
+  label="label"
+  onBlur={[MockFunction]}
+  onChange={[MockFunction]}
+  placeholder="placeholder"
+  selectedItem={
+    Object {
+      "item": Object {
+        "display": "Test Display",
+        "value": "Test Value",
+      },
+      "value": "Test Value",
+    }
+  }
   suggestions={
     Array [
-      "one",
-      "two",
-      "three",
+      Object {
+        "display": "Test Display",
+        "value": "Test Value",
+      },
+    ]
+  }
+  valuePath="value"
+>
+  <AutoComplete
+    className="class"
+    dataProvider={
+      StaticDataProvider {
+        "suggestions": Array [
+          Object {
+            "display": "Test Display",
+            "value": "Test Value",
+          },
+        ],
+        "valuePath": "value",
+      }
+    }
+    disabled={true}
+    errorMessage="message"
+    hint="hint"
+    id="id"
+    label="label"
+    onBlur={[MockFunction]}
+    onChange={[MockFunction]}
+    placeholder="placeholder"
+    selectedItem={
+      Object {
+        "item": Object {
+          "display": "Test Display",
+          "value": "Test Value",
+        },
+        "value": "Test Value",
+      }
+    }
+  >
+    <styled.div
+      className="class"
+      onBlur={[Function]}
+      role="application"
+    >
+      <div
+        className="class sc-dnqmqq duhtGh"
+        onBlur={[Function]}
+        role="application"
+      >
+        <InputText
+          aria-activedescendant=""
+          aria-autocomplete="list"
+          aria-describedby="id-autocomplete-error"
+          aria-expanded={false}
+          aria-invalid={true}
+          aria-owns="id-suggestions"
+          disabled={true}
+          errorMessage="message"
+          hint="hint"
+          id="id-autocomplete"
+          label="label"
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          placeholder="placeholder"
+          role="combobox"
+          setInputRef={[Function]}
+          showError={false}
+          value="Test Value"
+        >
+          <styled.div>
+            <div
+              className="sc-bwzfXH liZiEV"
+            >
+              <Label
+                hasError={true}
+                htmlFor="id-autocomplete"
+                value="label"
+              >
+                <styled.label
+                  hasError={true}
+                  htmlFor="id-autocomplete"
+                  theme={
+                    Object {
+                      "border": Object {
+                        "radius": Object {
+                          "edge": "2px",
+                          "round": "100px",
+                        },
+                        "size": "2px",
+                      },
+                      "breakpoint": Object {
+                        "lg": "992px",
+                        "md": "768px",
+                        "sm": "576px",
+                        "xl": "1200px",
+                        "xs": "0px",
+                      },
+                      "color": Object {
+                        "background": "#ffffff",
+                        "border": "#2fa4e7",
+                        "checked": "#2fa4e7",
+                        "danger": "#c71c22",
+                        "default": "#2fa4e7",
+                        "disabled": "#acacac",
+                        "error": "#c71c22",
+                        "focus": "#54b4eb",
+                        "font": "#333333",
+                        "hover": "#178acc",
+                        "info": "#04519b",
+                        "primary": "#2fa4e7",
+                        "secondary": "#e9ecef",
+                        "success": "#73a839",
+                        "tertiary": "#343a40",
+                        "warning": "#dd5600",
+                      },
+                      "font": Object {
+                        "size": Object {
+                          "default": "1.8rem",
+                        },
+                        "weight": Object {
+                          "default": 100,
+                        },
+                      },
+                    }
+                  }
+                >
+                  <label
+                    className="sc-bZQynM bYDZPR"
+                    htmlFor="id-autocomplete"
+                  >
+                    label
+                  </label>
+                </styled.label>
+              </Label>
+              <Hint
+                hasError={true}
+                value="hint"
+              >
+                <styled.div
+                  hasError={true}
+                  theme={
+                    Object {
+                      "border": Object {
+                        "radius": Object {
+                          "edge": "2px",
+                          "round": "100px",
+                        },
+                        "size": "2px",
+                      },
+                      "breakpoint": Object {
+                        "lg": "992px",
+                        "md": "768px",
+                        "sm": "576px",
+                        "xl": "1200px",
+                        "xs": "0px",
+                      },
+                      "color": Object {
+                        "background": "#ffffff",
+                        "border": "#2fa4e7",
+                        "checked": "#2fa4e7",
+                        "danger": "#c71c22",
+                        "default": "#2fa4e7",
+                        "disabled": "#acacac",
+                        "error": "#c71c22",
+                        "focus": "#54b4eb",
+                        "font": "#333333",
+                        "hover": "#178acc",
+                        "info": "#04519b",
+                        "primary": "#2fa4e7",
+                        "secondary": "#e9ecef",
+                        "success": "#73a839",
+                        "tertiary": "#343a40",
+                        "warning": "#dd5600",
+                      },
+                      "font": Object {
+                        "size": Object {
+                          "default": "1.8rem",
+                        },
+                        "weight": Object {
+                          "default": 100,
+                        },
+                      },
+                    }
+                  }
+                >
+                  <div
+                    className="sc-ifAKCX hxBMBB"
+                  >
+                    hint
+                  </div>
+                </styled.div>
+              </Hint>
+              <styled.input
+                aria-describedby="id-autocomplete-error"
+                aria-invalid={true}
+                disabled={true}
+                hasError={true}
+                id="id-autocomplete"
+                innerRef={[Function]}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                placeholder="placeholder"
+                theme={
+                  Object {
+                    "border": Object {
+                      "radius": Object {
+                        "edge": "2px",
+                        "round": "100px",
+                      },
+                      "size": "2px",
+                    },
+                    "breakpoint": Object {
+                      "lg": "992px",
+                      "md": "768px",
+                      "sm": "576px",
+                      "xl": "1200px",
+                      "xs": "0px",
+                    },
+                    "color": Object {
+                      "background": "#ffffff",
+                      "border": "#2fa4e7",
+                      "checked": "#2fa4e7",
+                      "danger": "#c71c22",
+                      "default": "#2fa4e7",
+                      "disabled": "#acacac",
+                      "error": "#c71c22",
+                      "focus": "#54b4eb",
+                      "font": "#333333",
+                      "hover": "#178acc",
+                      "info": "#04519b",
+                      "primary": "#2fa4e7",
+                      "secondary": "#e9ecef",
+                      "success": "#73a839",
+                      "tertiary": "#343a40",
+                      "warning": "#dd5600",
+                    },
+                    "font": Object {
+                      "size": Object {
+                        "default": "1.8rem",
+                      },
+                      "weight": Object {
+                        "default": 100,
+                      },
+                    },
+                  }
+                }
+                type="text"
+                value="Test Value"
+              >
+                <input
+                  aria-describedby="id-autocomplete-error"
+                  aria-invalid={true}
+                  className="sc-htoDjs QQAiw"
+                  disabled={true}
+                  id="id-autocomplete"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder="placeholder"
+                  type="text"
+                  value="Test Value"
+                />
+              </styled.input>
+            </div>
+          </styled.div>
+        </InputText>
+        <styled.div
+          aria-live="polite"
+        >
+          <div
+            aria-live="polite"
+            className="sc-bxivhb iekoAy"
+          />
+        </styled.div>
+        <Error
+          id="id-autocomplete-error"
+          message="message"
+        >
+          <styled.div
+            hasError={true}
+            id="id-autocomplete-error-error"
+            theme={
+              Object {
+                "border": Object {
+                  "radius": Object {
+                    "edge": "2px",
+                    "round": "100px",
+                  },
+                  "size": "2px",
+                },
+                "breakpoint": Object {
+                  "lg": "992px",
+                  "md": "768px",
+                  "sm": "576px",
+                  "xl": "1200px",
+                  "xs": "0px",
+                },
+                "color": Object {
+                  "background": "#ffffff",
+                  "border": "#2fa4e7",
+                  "checked": "#2fa4e7",
+                  "danger": "#c71c22",
+                  "default": "#2fa4e7",
+                  "disabled": "#acacac",
+                  "error": "#c71c22",
+                  "focus": "#54b4eb",
+                  "font": "#333333",
+                  "hover": "#178acc",
+                  "info": "#04519b",
+                  "primary": "#2fa4e7",
+                  "secondary": "#e9ecef",
+                  "success": "#73a839",
+                  "tertiary": "#343a40",
+                  "warning": "#dd5600",
+                },
+                "font": Object {
+                  "size": Object {
+                    "default": "1.8rem",
+                  },
+                  "weight": Object {
+                    "default": 100,
+                  },
+                },
+              }
+            }
+          >
+            <div
+              className="sc-EHOje hKQpQr"
+              id="id-autocomplete-error-error"
+            >
+              message
+            </div>
+          </styled.div>
+        </Error>
+      </div>
+    </styled.div>
+  </AutoComplete>
+</StaticAutoComplete>
+`;
+
+exports[`StaticAutoComplete snapshot basic 1`] = `
+<StaticAutoComplete
+  id="id"
+  label="label"
+  suggestions={
+    Array [
+      Object {
+        "display": "Test Display",
+        "value": "Test Value",
+      },
     ]
   }
 >
@@ -16,15 +380,16 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
     dataProvider={
       StaticDataProvider {
         "suggestions": Array [
-          "one",
-          "two",
-          "three",
+          Object {
+            "display": "Test Display",
+            "value": "Test Value",
+          },
         ],
         "valuePath": undefined,
       }
     }
-    id="static-id"
-    label="Label"
+    id="id"
+    label="label"
     onBlur={[Function]}
     onChange={[Function]}
   >
@@ -40,12 +405,12 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
         <InputText
           aria-activedescendant=""
           aria-autocomplete="list"
-          aria-describedby="static-id-autocomplete-error"
+          aria-describedby="id-autocomplete-error"
           aria-expanded={false}
           aria-invalid={false}
-          aria-owns="static-id-suggestions"
-          id="static-id-autocomplete"
-          label="Label"
+          aria-owns="id-suggestions"
+          id="id-autocomplete"
+          label="label"
           onChange={[Function]}
           onKeyDown={[Function]}
           role="combobox"
@@ -59,12 +424,12 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
             >
               <Label
                 hasError={false}
-                htmlFor="static-id-autocomplete"
-                value="Label"
+                htmlFor="id-autocomplete"
+                value="label"
               >
                 <styled.label
                   hasError={false}
-                  htmlFor="static-id-autocomplete"
+                  htmlFor="id-autocomplete"
                   theme={
                     Object {
                       "border": Object {
@@ -112,17 +477,17 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 >
                   <label
                     className="sc-bZQynM kbfpun"
-                    htmlFor="static-id-autocomplete"
+                    htmlFor="id-autocomplete"
                   >
-                    Label
+                    label
                   </label>
                 </styled.label>
               </Label>
               <styled.input
-                aria-describedby="static-id-autocomplete-error"
+                aria-describedby="id-autocomplete-error"
                 aria-invalid={false}
                 hasError={false}
-                id="static-id-autocomplete"
+                id="id-autocomplete"
                 innerRef={[Function]}
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -176,10 +541,10 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
                 value=""
               >
                 <input
-                  aria-describedby="static-id-autocomplete-error"
+                  aria-describedby="id-autocomplete-error"
                   aria-invalid={false}
                   className="sc-htoDjs iwAsPx"
-                  id="static-id-autocomplete"
+                  id="id-autocomplete"
                   onBlur={[Function]}
                   onChange={[Function]}
                   onKeyDown={[Function]}
@@ -200,11 +565,11 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
           />
         </styled.div>
         <Error
-          id="static-id-autocomplete-error"
+          id="id-autocomplete-error"
         >
           <styled.div
             hasError={false}
-            id="static-id-autocomplete-error-error"
+            id="id-autocomplete-error-error"
             theme={
               Object {
                 "border": Object {
@@ -252,8 +617,547 @@ exports[`StaticAutoComplete should match snapshot 1`] = `
           >
             <div
               className="sc-EHOje efehxH"
-              id="static-id-autocomplete-error-error"
+              id="id-autocomplete-error-error"
             />
+          </styled.div>
+        </Error>
+      </div>
+    </styled.div>
+  </AutoComplete>
+</StaticAutoComplete>
+`;
+
+exports[`StaticAutoComplete snapshot disabled 1`] = `
+<StaticAutoComplete
+  disabled={true}
+  id="id"
+  label="label"
+  suggestions={
+    Array [
+      Object {
+        "display": "Test Display",
+        "value": "Test Value",
+      },
+    ]
+  }
+>
+  <AutoComplete
+    dataProvider={
+      StaticDataProvider {
+        "suggestions": Array [
+          Object {
+            "display": "Test Display",
+            "value": "Test Value",
+          },
+        ],
+        "valuePath": undefined,
+      }
+    }
+    disabled={true}
+    id="id"
+    label="label"
+    onBlur={[Function]}
+    onChange={[Function]}
+  >
+    <styled.div
+      onBlur={[Function]}
+      role="application"
+    >
+      <div
+        className="sc-dnqmqq duhtGh"
+        onBlur={[Function]}
+        role="application"
+      >
+        <InputText
+          aria-activedescendant=""
+          aria-autocomplete="list"
+          aria-describedby="id-autocomplete-error"
+          aria-expanded={false}
+          aria-invalid={false}
+          aria-owns="id-suggestions"
+          disabled={true}
+          id="id-autocomplete"
+          label="label"
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          role="combobox"
+          setInputRef={[Function]}
+          showError={false}
+          value=""
+        >
+          <styled.div>
+            <div
+              className="sc-bwzfXH liZiEV"
+            >
+              <Label
+                hasError={false}
+                htmlFor="id-autocomplete"
+                value="label"
+              >
+                <styled.label
+                  hasError={false}
+                  htmlFor="id-autocomplete"
+                  theme={
+                    Object {
+                      "border": Object {
+                        "radius": Object {
+                          "edge": "2px",
+                          "round": "100px",
+                        },
+                        "size": "2px",
+                      },
+                      "breakpoint": Object {
+                        "lg": "992px",
+                        "md": "768px",
+                        "sm": "576px",
+                        "xl": "1200px",
+                        "xs": "0px",
+                      },
+                      "color": Object {
+                        "background": "#ffffff",
+                        "border": "#2fa4e7",
+                        "checked": "#2fa4e7",
+                        "danger": "#c71c22",
+                        "default": "#2fa4e7",
+                        "disabled": "#acacac",
+                        "error": "#c71c22",
+                        "focus": "#54b4eb",
+                        "font": "#333333",
+                        "hover": "#178acc",
+                        "info": "#04519b",
+                        "primary": "#2fa4e7",
+                        "secondary": "#e9ecef",
+                        "success": "#73a839",
+                        "tertiary": "#343a40",
+                        "warning": "#dd5600",
+                      },
+                      "font": Object {
+                        "size": Object {
+                          "default": "1.8rem",
+                        },
+                        "weight": Object {
+                          "default": 100,
+                        },
+                      },
+                    }
+                  }
+                >
+                  <label
+                    className="sc-bZQynM kbfpun"
+                    htmlFor="id-autocomplete"
+                  >
+                    label
+                  </label>
+                </styled.label>
+              </Label>
+              <styled.input
+                aria-describedby="id-autocomplete-error"
+                aria-invalid={false}
+                disabled={true}
+                hasError={false}
+                id="id-autocomplete"
+                innerRef={[Function]}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                placeholder=""
+                theme={
+                  Object {
+                    "border": Object {
+                      "radius": Object {
+                        "edge": "2px",
+                        "round": "100px",
+                      },
+                      "size": "2px",
+                    },
+                    "breakpoint": Object {
+                      "lg": "992px",
+                      "md": "768px",
+                      "sm": "576px",
+                      "xl": "1200px",
+                      "xs": "0px",
+                    },
+                    "color": Object {
+                      "background": "#ffffff",
+                      "border": "#2fa4e7",
+                      "checked": "#2fa4e7",
+                      "danger": "#c71c22",
+                      "default": "#2fa4e7",
+                      "disabled": "#acacac",
+                      "error": "#c71c22",
+                      "focus": "#54b4eb",
+                      "font": "#333333",
+                      "hover": "#178acc",
+                      "info": "#04519b",
+                      "primary": "#2fa4e7",
+                      "secondary": "#e9ecef",
+                      "success": "#73a839",
+                      "tertiary": "#343a40",
+                      "warning": "#dd5600",
+                    },
+                    "font": Object {
+                      "size": Object {
+                        "default": "1.8rem",
+                      },
+                      "weight": Object {
+                        "default": 100,
+                      },
+                    },
+                  }
+                }
+                type="text"
+                value=""
+              >
+                <input
+                  aria-describedby="id-autocomplete-error"
+                  aria-invalid={false}
+                  className="sc-htoDjs iwAsPx"
+                  disabled={true}
+                  id="id-autocomplete"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder=""
+                  type="text"
+                  value=""
+                />
+              </styled.input>
+            </div>
+          </styled.div>
+        </InputText>
+        <styled.div
+          aria-live="polite"
+        >
+          <div
+            aria-live="polite"
+            className="sc-bxivhb iekoAy"
+          />
+        </styled.div>
+        <Error
+          id="id-autocomplete-error"
+        >
+          <styled.div
+            hasError={false}
+            id="id-autocomplete-error-error"
+            theme={
+              Object {
+                "border": Object {
+                  "radius": Object {
+                    "edge": "2px",
+                    "round": "100px",
+                  },
+                  "size": "2px",
+                },
+                "breakpoint": Object {
+                  "lg": "992px",
+                  "md": "768px",
+                  "sm": "576px",
+                  "xl": "1200px",
+                  "xs": "0px",
+                },
+                "color": Object {
+                  "background": "#ffffff",
+                  "border": "#2fa4e7",
+                  "checked": "#2fa4e7",
+                  "danger": "#c71c22",
+                  "default": "#2fa4e7",
+                  "disabled": "#acacac",
+                  "error": "#c71c22",
+                  "focus": "#54b4eb",
+                  "font": "#333333",
+                  "hover": "#178acc",
+                  "info": "#04519b",
+                  "primary": "#2fa4e7",
+                  "secondary": "#e9ecef",
+                  "success": "#73a839",
+                  "tertiary": "#343a40",
+                  "warning": "#dd5600",
+                },
+                "font": Object {
+                  "size": Object {
+                    "default": "1.8rem",
+                  },
+                  "weight": Object {
+                    "default": 100,
+                  },
+                },
+              }
+            }
+          >
+            <div
+              className="sc-EHOje efehxH"
+              id="id-autocomplete-error-error"
+            />
+          </styled.div>
+        </Error>
+      </div>
+    </styled.div>
+  </AutoComplete>
+</StaticAutoComplete>
+`;
+
+exports[`StaticAutoComplete snapshot error 1`] = `
+<StaticAutoComplete
+  errorMessage="message"
+  id="id"
+  label="label"
+  suggestions={
+    Array [
+      Object {
+        "display": "Test Display",
+        "value": "Test Value",
+      },
+    ]
+  }
+>
+  <AutoComplete
+    dataProvider={
+      StaticDataProvider {
+        "suggestions": Array [
+          Object {
+            "display": "Test Display",
+            "value": "Test Value",
+          },
+        ],
+        "valuePath": undefined,
+      }
+    }
+    errorMessage="message"
+    id="id"
+    label="label"
+    onBlur={[Function]}
+    onChange={[Function]}
+  >
+    <styled.div
+      onBlur={[Function]}
+      role="application"
+    >
+      <div
+        className="sc-dnqmqq duhtGh"
+        onBlur={[Function]}
+        role="application"
+      >
+        <InputText
+          aria-activedescendant=""
+          aria-autocomplete="list"
+          aria-describedby="id-autocomplete-error"
+          aria-expanded={false}
+          aria-invalid={true}
+          aria-owns="id-suggestions"
+          errorMessage="message"
+          id="id-autocomplete"
+          label="label"
+          onChange={[Function]}
+          onKeyDown={[Function]}
+          role="combobox"
+          setInputRef={[Function]}
+          showError={false}
+          value=""
+        >
+          <styled.div>
+            <div
+              className="sc-bwzfXH liZiEV"
+            >
+              <Label
+                hasError={true}
+                htmlFor="id-autocomplete"
+                value="label"
+              >
+                <styled.label
+                  hasError={true}
+                  htmlFor="id-autocomplete"
+                  theme={
+                    Object {
+                      "border": Object {
+                        "radius": Object {
+                          "edge": "2px",
+                          "round": "100px",
+                        },
+                        "size": "2px",
+                      },
+                      "breakpoint": Object {
+                        "lg": "992px",
+                        "md": "768px",
+                        "sm": "576px",
+                        "xl": "1200px",
+                        "xs": "0px",
+                      },
+                      "color": Object {
+                        "background": "#ffffff",
+                        "border": "#2fa4e7",
+                        "checked": "#2fa4e7",
+                        "danger": "#c71c22",
+                        "default": "#2fa4e7",
+                        "disabled": "#acacac",
+                        "error": "#c71c22",
+                        "focus": "#54b4eb",
+                        "font": "#333333",
+                        "hover": "#178acc",
+                        "info": "#04519b",
+                        "primary": "#2fa4e7",
+                        "secondary": "#e9ecef",
+                        "success": "#73a839",
+                        "tertiary": "#343a40",
+                        "warning": "#dd5600",
+                      },
+                      "font": Object {
+                        "size": Object {
+                          "default": "1.8rem",
+                        },
+                        "weight": Object {
+                          "default": 100,
+                        },
+                      },
+                    }
+                  }
+                >
+                  <label
+                    className="sc-bZQynM bYDZPR"
+                    htmlFor="id-autocomplete"
+                  >
+                    label
+                  </label>
+                </styled.label>
+              </Label>
+              <styled.input
+                aria-describedby="id-autocomplete-error"
+                aria-invalid={true}
+                hasError={true}
+                id="id-autocomplete"
+                innerRef={[Function]}
+                onBlur={[Function]}
+                onChange={[Function]}
+                onKeyDown={[Function]}
+                placeholder=""
+                theme={
+                  Object {
+                    "border": Object {
+                      "radius": Object {
+                        "edge": "2px",
+                        "round": "100px",
+                      },
+                      "size": "2px",
+                    },
+                    "breakpoint": Object {
+                      "lg": "992px",
+                      "md": "768px",
+                      "sm": "576px",
+                      "xl": "1200px",
+                      "xs": "0px",
+                    },
+                    "color": Object {
+                      "background": "#ffffff",
+                      "border": "#2fa4e7",
+                      "checked": "#2fa4e7",
+                      "danger": "#c71c22",
+                      "default": "#2fa4e7",
+                      "disabled": "#acacac",
+                      "error": "#c71c22",
+                      "focus": "#54b4eb",
+                      "font": "#333333",
+                      "hover": "#178acc",
+                      "info": "#04519b",
+                      "primary": "#2fa4e7",
+                      "secondary": "#e9ecef",
+                      "success": "#73a839",
+                      "tertiary": "#343a40",
+                      "warning": "#dd5600",
+                    },
+                    "font": Object {
+                      "size": Object {
+                        "default": "1.8rem",
+                      },
+                      "weight": Object {
+                        "default": 100,
+                      },
+                    },
+                  }
+                }
+                type="text"
+                value=""
+              >
+                <input
+                  aria-describedby="id-autocomplete-error"
+                  aria-invalid={true}
+                  className="sc-htoDjs QQAiw"
+                  id="id-autocomplete"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onKeyDown={[Function]}
+                  placeholder=""
+                  type="text"
+                  value=""
+                />
+              </styled.input>
+            </div>
+          </styled.div>
+        </InputText>
+        <styled.div
+          aria-live="polite"
+        >
+          <div
+            aria-live="polite"
+            className="sc-bxivhb iekoAy"
+          />
+        </styled.div>
+        <Error
+          id="id-autocomplete-error"
+          message="message"
+        >
+          <styled.div
+            hasError={true}
+            id="id-autocomplete-error-error"
+            theme={
+              Object {
+                "border": Object {
+                  "radius": Object {
+                    "edge": "2px",
+                    "round": "100px",
+                  },
+                  "size": "2px",
+                },
+                "breakpoint": Object {
+                  "lg": "992px",
+                  "md": "768px",
+                  "sm": "576px",
+                  "xl": "1200px",
+                  "xs": "0px",
+                },
+                "color": Object {
+                  "background": "#ffffff",
+                  "border": "#2fa4e7",
+                  "checked": "#2fa4e7",
+                  "danger": "#c71c22",
+                  "default": "#2fa4e7",
+                  "disabled": "#acacac",
+                  "error": "#c71c22",
+                  "focus": "#54b4eb",
+                  "font": "#333333",
+                  "hover": "#178acc",
+                  "info": "#04519b",
+                  "primary": "#2fa4e7",
+                  "secondary": "#e9ecef",
+                  "success": "#73a839",
+                  "tertiary": "#343a40",
+                  "warning": "#dd5600",
+                },
+                "font": Object {
+                  "size": Object {
+                    "default": "1.8rem",
+                  },
+                  "weight": Object {
+                    "default": 100,
+                  },
+                },
+              }
+            }
+          >
+            <div
+              className="sc-EHOje hKQpQr"
+              id="id-autocomplete-error-error"
+            >
+              message
+            </div>
           </styled.div>
         </Error>
       </div>
