@@ -1,0 +1,414 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading props should match snapshot 1`] = `
+<Heading
+  level={1}
+>
+  <styled.h1
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+  >
+    <h1
+      className="sc-bdVaJa bSTzsa"
+    >
+      heading
+    </h1>
+  </styled.h1>
+</Heading>
+`;
+
+exports[`Heading snapshot h1 1`] = `
+<Heading
+  level={1}
+>
+  <styled.h1
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+  >
+    <h1
+      className="sc-bdVaJa bSTzsa"
+    >
+      heading
+    </h1>
+  </styled.h1>
+</Heading>
+`;
+
+exports[`Heading snapshot h2 1`] = `
+<Heading
+  level={2}
+>
+  <styled.h2
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+  >
+    <h2
+      className="sc-bwzfXH fCLLGB"
+    >
+      heading
+    </h2>
+  </styled.h2>
+</Heading>
+`;
+
+exports[`Heading snapshot h3 1`] = `
+<Heading
+  level={3}
+>
+  <styled.h3
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+  >
+    <h3
+      className="sc-htpNat BbwKb"
+    >
+      heading
+    </h3>
+  </styled.h3>
+</Heading>
+`;
+
+exports[`Heading snapshot h4 1`] = `
+<Heading
+  level={4}
+>
+  <styled.h4
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+  >
+    <h4
+      className="sc-bxivhb UWGzl"
+    >
+      heading
+    </h4>
+  </styled.h4>
+</Heading>
+`;
+
+exports[`Heading snapshot h5 1`] = `
+<Heading
+  level={5}
+>
+  <styled.h5
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+  >
+    <h5
+      className="sc-ifAKCX dBEikb"
+    >
+      heading
+    </h5>
+  </styled.h5>
+</Heading>
+`;
+
+exports[`Heading snapshot h6 1`] = `
+<Heading
+  level={6}
+>
+  <styled.h6
+    theme={
+      Object {
+        "border": Object {
+          "radius": Object {
+            "edge": "2px",
+            "round": "100px",
+          },
+          "size": "2px",
+        },
+        "breakpoint": Object {
+          "lg": "992px",
+          "md": "768px",
+          "sm": "576px",
+          "xl": "1200px",
+          "xs": "0px",
+        },
+        "color": Object {
+          "background": "#ffffff",
+          "border": "#2fa4e7",
+          "checked": "#2fa4e7",
+          "danger": "#c71c22",
+          "default": "#2fa4e7",
+          "disabled": "#acacac",
+          "error": "#c71c22",
+          "focus": "#54b4eb",
+          "font": "#333333",
+          "hover": "#178acc",
+          "info": "#04519b",
+          "primary": "#2fa4e7",
+          "secondary": "#e9ecef",
+          "success": "#73a839",
+          "tertiary": "#343a40",
+          "warning": "#dd5600",
+        },
+        "font": Object {
+          "size": Object {
+            "default": "1.8rem",
+          },
+          "weight": Object {
+            "default": 100,
+          },
+        },
+      }
+    }
+  >
+    <h6
+      className="sc-EHOje hpwIWC"
+    >
+      heading
+    </h6>
+  </styled.h6>
+</Heading>
+`;
