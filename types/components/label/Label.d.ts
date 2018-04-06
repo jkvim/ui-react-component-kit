@@ -1,9 +1,10 @@
 /// <reference types="react" />
 import * as React from 'react';
+import { ReactNode } from 'react';
 import { LabelType } from '../../constants/types';
 export interface LabelProps {
     htmlFor: string;
-    value: string;
+    children: ReactNode;
     type?: LabelType;
     hasError?: boolean;
 }
