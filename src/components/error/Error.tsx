@@ -1,15 +1,16 @@
 import * as React from 'react';
+import { ReactNode } from 'react';
 import { StyledErrorDiv } from './styledErrorDiv';
 
 export interface ErrorProps {
   id: string;
-  message: string;
+  children: ReactNode;
 }
 
-const Error: React.SFC<ErrorProps> = ({ id, message }) => {
+const Error: React.SFC<ErrorProps> = ({ id, children }) => {
   return (
-    <StyledErrorDiv id={`${id}-error`} hasError={!!message}>
-      {message}
+    <StyledErrorDiv id={`${id}-error`}>
+      {children}
     </StyledErrorDiv>
   );
 };

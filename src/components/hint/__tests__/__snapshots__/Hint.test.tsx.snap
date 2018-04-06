@@ -3,7 +3,6 @@
 exports[`Hint props should match snapshot 1`] = `
 <Hint
   hasError={true}
-  value="hint"
 >
   <styled.div
     hasError={true}
@@ -62,9 +61,7 @@ exports[`Hint props should match snapshot 1`] = `
 `;
 
 exports[`Hint snapshot basic 1`] = `
-<Hint
-  value="hint"
->
+<Hint>
   <styled.div
     hasError={false}
     theme={
@@ -124,7 +121,6 @@ exports[`Hint snapshot basic 1`] = `
 exports[`Hint snapshot error 1`] = `
 <Hint
   hasError={true}
-  value="hint"
 >
   <styled.div
     hasError={true}

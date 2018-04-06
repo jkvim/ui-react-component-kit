@@ -160,7 +160,6 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                       hasError={false}
                       htmlFor="testId-0"
                       type="radio"
-                      value="one"
                     >
                       <styled.label
                         hasError={false}
@@ -298,7 +297,6 @@ exports[`InputRadioGroup should match snapshot 1`] = `
                       hasError={false}
                       htmlFor="testId-1"
                       type="radio"
-                      value="two"
                     >
                       <styled.label
                         hasError={false}
@@ -367,10 +365,8 @@ exports[`InputRadioGroup should match snapshot 1`] = `
       </Fieldset>
       <Error
         id="testId-error"
-        message=""
       >
         <styled.div
-          hasError={false}
           id="testId-error-error"
           theme={
             Object {
@@ -418,7 +414,7 @@ exports[`InputRadioGroup should match snapshot 1`] = `
           }
         >
           <div
-            className="sc-htpNat gMxGZR"
+            className="sc-htpNat hYJuoM"
             id="testId-error-error"
           />
         </styled.div>

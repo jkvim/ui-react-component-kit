@@ -38,7 +38,7 @@ const InputCheckbox: React.SFC<CheckBoxFieldProps> =
     return (
       <StyledFormGroupDiv className={className}>
 
-        {hint && <Hint hasError={!!errorMessage} value={hint} />}
+        {hint && <Hint hasError={!!errorMessage}>{hint}</Hint>}
 
         <Fieldset id={`${id}-fieldset`} aria-describedby={`${id}-error`}>
 
@@ -73,7 +73,9 @@ const InputCheckbox: React.SFC<CheckBoxFieldProps> =
                 aria-invalid={!!errorMessage}
               />
 
-              <Label type={'checkbox'} htmlFor={`${id}-${index}`} hasError={!!errorMessage} value={item.label} />
+              <Label type={'checkbox'} htmlFor={`${id}-${index}`} hasError={!!errorMessage}>
+                {item.label}
+              </Label>
 
             </StyledInputCheckboxDiv>
           )}
@@ -82,7 +84,9 @@ const InputCheckbox: React.SFC<CheckBoxFieldProps> =
 
         </Fieldset>
 
-        <Error id={`${id}-error`} message={errorMessage} />
+        <Error id={`${id}-error`}>
+          {errorMessage}
+        </Error>
 
       </StyledFormGroupDiv>
     );

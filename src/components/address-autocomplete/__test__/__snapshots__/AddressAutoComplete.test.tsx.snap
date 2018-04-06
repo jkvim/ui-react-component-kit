@@ -54,7 +54,6 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
               <Label
                 hasError={false}
                 htmlFor="address-id-autocomplete"
-                value="Label"
               >
                 <styled.label
                   hasError={false}
@@ -197,7 +196,6 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
           id="address-id-autocomplete-error"
         >
           <styled.div
-            hasError={false}
             id="address-id-autocomplete-error-error"
             theme={
               Object {
@@ -245,7 +243,7 @@ exports[`AddressAutoComplete should match snapshot 1`] = `
             }
           >
             <div
-              className="sc-EHOje efehxH"
+              className="sc-EHOje kOxNq"
               id="address-id-autocomplete-error-error"
             />
           </styled.div>

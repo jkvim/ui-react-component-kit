@@ -8,7 +8,7 @@ describe('Label', () => {
   describe('props', () => {
 
     const wrapper = mount(
-      <Label htmlFor="id" value="label" type="standard" hasError={true} />);
+      <Label htmlFor="id" type="standard" hasError={true}>label</Label>);
 
     it('should match snapshot', () => {
       expect(toJSON(wrapper)).toMatchSnapshot();
@@ -16,10 +16,6 @@ describe('Label', () => {
 
     it('should pass `htmlFor` in props', () => {
       expect(wrapper.props().htmlFor).toBe('id');
-    });
-
-    it('should pass `value` in props', () => {
-      expect(wrapper.props().value).toBe('label');
     });
 
     it('should pass `type` in props', () => {
@@ -32,27 +28,27 @@ describe('Label', () => {
   });
 
   it('snapshot basic', () => {
-    const wrapper = mount(<Label htmlFor="id" value="label" />);
+    const wrapper = mount(<Label htmlFor="id">label</Label>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('snapshot standard', () => {
-    const wrapper = mount(<Label htmlFor="id" value="label" type="standard" />);
+    const wrapper = mount(<Label htmlFor="id" type="standard">label</Label>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('snapshot radio', () => {
-    const wrapper = mount(<Label htmlFor="id" value="label" type="radio" />);
+    const wrapper = mount(<Label htmlFor="id" type="radio">label</Label>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('snapshot checkbox', () => {
-    const wrapper = mount(<Label htmlFor="id" value="label" type="checkbox" />);
+    const wrapper = mount(<Label htmlFor="id" type="checkbox">label</Label>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('snapshot error', () => {
-    const wrapper = mount(<Label htmlFor="id" value="label" hasError={true} />);
+    const wrapper = mount(<Label htmlFor="id" hasError={true}>label</Label>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 });

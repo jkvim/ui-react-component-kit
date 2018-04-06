@@ -169,7 +169,6 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                       hasError={false}
                       htmlFor="testId-0"
                       type="checkbox"
-                      value="One"
                     >
                       <styled.label
                         hasError={false}
@@ -307,7 +306,6 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                       hasError={false}
                       htmlFor="testId-1"
                       type="checkbox"
-                      value="Two"
                     >
                       <styled.label
                         hasError={false}
@@ -445,7 +443,6 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                       hasError={false}
                       htmlFor="testId-2"
                       type="checkbox"
-                      value="Three"
                     >
                       <styled.label
                         hasError={false}
@@ -514,10 +511,8 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
       </Fieldset>
       <Error
         id="testId-error"
-        message=""
       >
         <styled.div
-          hasError={false}
           id="testId-error-error"
           theme={
             Object {
@@ -565,7 +560,7 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
           }
         >
           <div
-            className="sc-htpNat gMxGZR"
+            className="sc-htpNat hYJuoM"
             id="testId-error-error"
           />
         </styled.div>

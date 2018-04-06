@@ -38,7 +38,7 @@ const InputRadioGroup: React.SFC<InputRadioGroupProps> =
   return (
     <StyledFormGroupDiv className={className}>
 
-      {hint && <Hint hasError={!!errorMessage} value={hint} />}
+      {hint && <Hint hasError={!!errorMessage}>{hint}</Hint>}
 
       <Fieldset id={`${id}-fieldset`} aria-describedby={`${id}-error`}>
 
@@ -63,7 +63,9 @@ const InputRadioGroup: React.SFC<InputRadioGroupProps> =
               aria-invalid={!!errorMessage}
             />
 
-            <Label type={'radio'} htmlFor={`${id}-${index}`} hasError={!!errorMessage} value={item.label}  />
+            <Label type={'radio'} htmlFor={`${id}-${index}`} hasError={!!errorMessage}>
+              {item.label}
+            </Label>
 
           </StyledInputRadioDiv>
         )}
@@ -72,7 +74,9 @@ const InputRadioGroup: React.SFC<InputRadioGroupProps> =
 
       </Fieldset>
 
-      <Error id={`${id}-error`} message={errorMessage} />
+      <Error id={`${id}-error`}>
+        {errorMessage}
+      </Error>
 
     </StyledFormGroupDiv>
   );

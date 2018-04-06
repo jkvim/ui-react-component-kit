@@ -8,14 +8,10 @@ describe('Hint', () => {
   describe('props', () => {
 
     const wrapper = mount(
-      <Hint value="hint" hasError={true} />);
+      <Hint hasError={true}>hint</Hint>);
 
     it('should match snapshot', () => {
       expect(toJSON(wrapper)).toMatchSnapshot();
-    });
-
-    it('should pass `value` in props', () => {
-      expect(wrapper.props().value).toBe('hint');
     });
 
     it('should pass `hasError` in props', () => {
@@ -24,12 +20,12 @@ describe('Hint', () => {
   });
 
   it('snapshot basic', () => {
-    const wrapper = mount(<Hint value="hint" />);
+    const wrapper = mount(<Hint>hint</Hint>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('snapshot error', () => {
-    const wrapper = mount(<Hint value="hint" hasError={true} />);
+    const wrapper = mount(<Hint hasError={true}>hint</Hint>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 });

@@ -30,7 +30,6 @@ exports[`Select props should match snapshot 1`] = `
       <Label
         hasError={true}
         htmlFor="id"
-        value="label"
       >
         <styled.label
           hasError={true}
@@ -90,7 +89,6 @@ exports[`Select props should match snapshot 1`] = `
       </Label>
       <Hint
         hasError={true}
-        value="hint"
       >
         <styled.div
           hasError={true}
@@ -277,10 +275,8 @@ exports[`Select props should match snapshot 1`] = `
       </styled.div>
       <Error
         id="id-error"
-        message="message"
       >
         <styled.div
-          hasError={true}
           id="id-error-error"
           theme={
             Object {
@@ -328,7 +324,7 @@ exports[`Select props should match snapshot 1`] = `
           }
         >
           <div
-            className="sc-bwzfXH brbnPU"
+            className="sc-bwzfXH gGcLdJ"
             id="id-error-error"
           >
             message
@@ -360,7 +356,6 @@ exports[`Select snapshot basic 1`] = `
       <Label
         hasError={false}
         htmlFor="id"
-        value="label"
       >
         <styled.label
           hasError={false}
@@ -545,10 +540,8 @@ exports[`Select snapshot basic 1`] = `
       </styled.div>
       <Error
         id="id-error"
-        message=""
       >
         <styled.div
-          hasError={false}
           id="id-error-error"
           theme={
             Object {
@@ -596,7 +589,7 @@ exports[`Select snapshot basic 1`] = `
           }
         >
           <div
-            className="sc-bwzfXH iyMhLi"
+            className="sc-bwzfXH gGcLdJ"
             id="id-error-error"
           />
         </styled.div>
@@ -627,7 +620,6 @@ exports[`Select snapshot disabled 1`] = `
       <Label
         hasError={false}
         htmlFor="id"
-        value="label"
       >
         <styled.label
           hasError={false}
@@ -814,10 +806,8 @@ exports[`Select snapshot disabled 1`] = `
       </styled.div>
       <Error
         id="id-error"
-        message=""
       >
         <styled.div
-          hasError={false}
           id="id-error-error"
           theme={
             Object {
@@ -865,7 +855,7 @@ exports[`Select snapshot disabled 1`] = `
           }
         >
           <div
-            className="sc-bwzfXH iyMhLi"
+            className="sc-bwzfXH gGcLdJ"
             id="id-error-error"
           />
         </styled.div>
@@ -896,7 +886,6 @@ exports[`Select snapshot error 1`] = `
       <Label
         hasError={true}
         htmlFor="id"
-        value="label"
       >
         <styled.label
           hasError={true}
@@ -1081,10 +1070,8 @@ exports[`Select snapshot error 1`] = `
       </styled.div>
       <Error
         id="id-error"
-        message="message"
       >
         <styled.div
-          hasError={true}
           id="id-error-error"
           theme={
             Object {
@@ -1132,7 +1119,7 @@ exports[`Select snapshot error 1`] = `
           }
         >
           <div
-            className="sc-bwzfXH brbnPU"
+            className="sc-bwzfXH gGcLdJ"
             id="id-error-error"
           >
             message

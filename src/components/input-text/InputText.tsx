@@ -31,9 +31,11 @@ const InputText: React.SFC<InputTextProps> =
     return (
       <StyledFormGroupDiv className={className}>
 
-        <Label htmlFor={id} hasError={!!errorMessage} value={label} />
+        <Label htmlFor={id} hasError={!!errorMessage}>
+          {label}
+        </Label>
 
-        {hint && <Hint hasError={!!errorMessage} value={hint} />}
+        {hint && <Hint hasError={!!errorMessage}>{hint}</Hint>}
 
         <StyledInputText
           innerRef={ref => setInputRef(ref)}
@@ -54,7 +56,7 @@ const InputText: React.SFC<InputTextProps> =
           aria-describedby={`${id}-error`}
         />
 
-        {showError && <Error id={`${id}-error`} message={errorMessage} />}
+        {showError && <Error id={`${id}-error`}>{errorMessage}</Error>}
 
       </StyledFormGroupDiv>
     );

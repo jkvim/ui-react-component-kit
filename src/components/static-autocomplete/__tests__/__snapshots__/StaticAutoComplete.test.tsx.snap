@@ -98,7 +98,6 @@ exports[`StaticAutoComplete props should match snapshot 1`] = `
               <Label
                 hasError={true}
                 htmlFor="id-autocomplete"
-                value="label"
               >
                 <styled.label
                   hasError={true}
@@ -158,7 +157,6 @@ exports[`StaticAutoComplete props should match snapshot 1`] = `
               </Label>
               <Hint
                 hasError={true}
-                value="hint"
               >
                 <styled.div
                   hasError={true}
@@ -299,10 +297,8 @@ exports[`StaticAutoComplete props should match snapshot 1`] = `
         </styled.div>
         <Error
           id="id-autocomplete-error"
-          message="message"
         >
           <styled.div
-            hasError={true}
             id="id-autocomplete-error-error"
             theme={
               Object {
@@ -350,7 +346,7 @@ exports[`StaticAutoComplete props should match snapshot 1`] = `
             }
           >
             <div
-              className="sc-EHOje hKQpQr"
+              className="sc-EHOje kOxNq"
               id="id-autocomplete-error-error"
             >
               message
@@ -425,7 +421,6 @@ exports[`StaticAutoComplete snapshot basic 1`] = `
               <Label
                 hasError={false}
                 htmlFor="id-autocomplete"
-                value="label"
               >
                 <styled.label
                   hasError={false}
@@ -568,7 +563,6 @@ exports[`StaticAutoComplete snapshot basic 1`] = `
           id="id-autocomplete-error"
         >
           <styled.div
-            hasError={false}
             id="id-autocomplete-error-error"
             theme={
               Object {
@@ -616,7 +610,7 @@ exports[`StaticAutoComplete snapshot basic 1`] = `
             }
           >
             <div
-              className="sc-EHOje efehxH"
+              className="sc-EHOje kOxNq"
               id="id-autocomplete-error-error"
             />
           </styled.div>
@@ -692,7 +686,6 @@ exports[`StaticAutoComplete snapshot disabled 1`] = `
               <Label
                 hasError={false}
                 htmlFor="id-autocomplete"
-                value="label"
               >
                 <styled.label
                   hasError={false}
@@ -837,7 +830,6 @@ exports[`StaticAutoComplete snapshot disabled 1`] = `
           id="id-autocomplete-error"
         >
           <styled.div
-            hasError={false}
             id="id-autocomplete-error-error"
             theme={
               Object {
@@ -885,7 +877,7 @@ exports[`StaticAutoComplete snapshot disabled 1`] = `
             }
           >
             <div
-              className="sc-EHOje efehxH"
+              className="sc-EHOje kOxNq"
               id="id-autocomplete-error-error"
             />
           </styled.div>
@@ -961,7 +953,6 @@ exports[`StaticAutoComplete snapshot error 1`] = `
               <Label
                 hasError={true}
                 htmlFor="id-autocomplete"
-                value="label"
               >
                 <styled.label
                   hasError={true}
@@ -1102,10 +1093,8 @@ exports[`StaticAutoComplete snapshot error 1`] = `
         </styled.div>
         <Error
           id="id-autocomplete-error"
-          message="message"
         >
           <styled.div
-            hasError={true}
             id="id-autocomplete-error-error"
             theme={
               Object {
@@ -1153,7 +1142,7 @@ exports[`StaticAutoComplete snapshot error 1`] = `
             }
           >
             <div
-              className="sc-EHOje hKQpQr"
+              className="sc-EHOje kOxNq"
               id="id-autocomplete-error-error"
             >
               message

@@ -1,16 +1,17 @@
 import * as React from 'react';
+import { ReactNode } from 'react';
 import { StyledLabel, StyledLabelInline } from './styledLabel';
 import { LabelType } from '../../constants/types';
 
 export interface LabelProps {
   htmlFor: string;
-  value: string;
+  children: ReactNode;
   type?: LabelType;
   hasError?: boolean;
 }
 
 // tslint:disable-next-line:no-shadowed-variable
-const Label: React.SFC<LabelProps> = ({ htmlFor, value, hasError = false, type = 'standard' }) => {
+const Label: React.SFC<LabelProps> = ({ htmlFor, children, hasError = false, type = 'standard' }) => {
   if (type === 'radio' || type === 'checkbox') {
     return (
       <StyledLabelInline
@@ -18,7 +19,7 @@ const Label: React.SFC<LabelProps> = ({ htmlFor, value, hasError = false, type =
         hasError={hasError}
         type={type}
       >
-        {value}
+        {children}
       </StyledLabelInline>
     );
   }
@@ -28,7 +29,7 @@ const Label: React.SFC<LabelProps> = ({ htmlFor, value, hasError = false, type =
       htmlFor={htmlFor}
       hasError={hasError}
     >
-      {value}
+      {children}
     </StyledLabel>
   );
 };

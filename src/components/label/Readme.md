@@ -7,23 +7,23 @@
 ** Standard **
 
 ```jsx
-    <Label htmlFor={'id-1'} value={'Sample Label'} />
+    <Label htmlFor={'id-1'}>Sample Label</Label>
 ```
 
 ** Radio **
 
 ```jsx
-    <Label htmlFor={'id-2'} value={'Sample Label Radio'} type={'radio'} />
+    <Label htmlFor={'id-2'} type={'radio'}>Sample Label Radio</Label>
 ```
 
 ** Checkbox **
 
 ```jsx
-    <Label htmlFor={'id-3'} value={'Sample Label Checkbox'} type={'checkbox'} />
+    <Label htmlFor={'id-3'} type={'checkbox'}>Sample Label Checkbox</Label>
 ```
 
 ** Error **
 
 ```jsx
-    <Label htmlFor={'id-4'} value={'Sample Label'} hasError={true} />
+    <Label htmlFor={'id-4'} hasError={true}>Sample Label</Label>
 ```

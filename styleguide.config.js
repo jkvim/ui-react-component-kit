@@ -19,11 +19,12 @@ module.exports = {
   ],
   sections: [
     {
-      name: 'Text',
+      name: 'Typography',
       components: () => appendPath(componentsPath, [
-        'hint/Hint.tsx',
-        'error/Error.tsx',
+        'heading/Heading.tsx',
         'label/Label.tsx',
+        'hint/Hint.tsx',
+        'error/Error.tsx'
       ])
     },
     {

@@ -5,7 +5,6 @@ exports[`Label props should match snapshot 1`] = `
   hasError={true}
   htmlFor="id"
   type="standard"
-  value="label"
 >
   <styled.label
     hasError={true}
@@ -68,7 +67,6 @@ exports[`Label props should match snapshot 1`] = `
 exports[`Label snapshot basic 1`] = `
 <Label
   htmlFor="id"
-  value="label"
 >
   <styled.label
     hasError={false}
@@ -132,7 +130,6 @@ exports[`Label snapshot checkbox 1`] = `
 <Label
   htmlFor="id"
   type="checkbox"
-  value="label"
 >
   <styled.label
     hasError={false}
@@ -198,7 +195,6 @@ exports[`Label snapshot error 1`] = `
 <Label
   hasError={true}
   htmlFor="id"
-  value="label"
 >
   <styled.label
     hasError={true}
@@ -262,7 +258,6 @@ exports[`Label snapshot radio 1`] = `
 <Label
   htmlFor="id"
   type="radio"
-  value="label"
 >
   <styled.label
     hasError={false}
@@ -328,7 +323,6 @@ exports[`Label snapshot standard 1`] = `
 <Label
   htmlFor="id"
   type="standard"
-  value="label"
 >
   <styled.label
     hasError={false}

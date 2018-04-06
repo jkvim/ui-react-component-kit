@@ -3,10 +3,8 @@
 exports[`Error props should match snapshot 1`] = `
 <Error
   id="id"
-  message="error"
 >
   <styled.div
-    hasError={true}
     id="id-error"
     theme={
       Object {
@@ -54,7 +52,7 @@ exports[`Error props should match snapshot 1`] = `
     }
   >
     <div
-      className="sc-bdVaJa geELOr"
+      className="sc-bdVaJa lhSjwC"
       id="id-error"
     >
       error
