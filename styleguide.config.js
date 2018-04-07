@@ -22,6 +22,7 @@ module.exports = {
       name: 'Typography',
       components: () => appendPath(componentsPath, [
         'heading/Heading.tsx',
+        'paragraph/Paragraph.tsx',
         'label/Label.tsx',
         'hint/Hint.tsx',
         'error/Error.tsx'

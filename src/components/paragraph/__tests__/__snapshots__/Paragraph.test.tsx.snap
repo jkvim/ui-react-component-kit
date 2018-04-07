@@ -1,11 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Error props should match snapshot 1`] = `
-<Error
-  id="id"
->
-  <styled.div
-    id="id-error"
+exports[`Paragraph props should match snapshot 1`] = `
+<Paragraph>
+  <styled.p
     theme={
       Object {
         "border": Object {
@@ -57,12 +54,11 @@ exports[`Error props should match snapshot 1`] = `
       }
     }
   >
-    <div
-      className="sc-bdVaJa lhSjwC"
-      id="id-error"
+    <p
+      className="sc-bdVaJa lgFPCS"
     >
-      error
-    </div>
-  </styled.div>
-</Error>
+      paragraph
+    </p>
+  </styled.p>
+</Paragraph>
 `;

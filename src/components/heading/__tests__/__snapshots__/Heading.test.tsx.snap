@@ -42,12 +42,12 @@ exports[`Heading props should match snapshot 1`] = `
         "font": Object {
           "size": Object {
             "default": "1.8rem",
-            "h1": "2.8rem",
-            "h2": "2.1rem",
-            "h3": "1.6rem",
-            "h4": "1.3rem",
-            "h5": "1.2rem",
-            "h6": "1.1rem",
+            "h1": "3.8rem",
+            "h2": "3.1rem",
+            "h3": "2.6rem",
+            "h4": "2.3rem",
+            "h5": "2.2rem",
+            "h6": "2.1rem",
           },
           "weight": Object {
             "default": 100,
@@ -57,7 +57,7 @@ exports[`Heading props should match snapshot 1`] = `
     }
   >
     <h1
-      className="sc-bdVaJa bSTzsa"
+      className="sc-bdVaJa jduoXy"
     >
       heading
     </h1>
@@ -107,12 +107,12 @@ exports[`Heading snapshot h1 1`] = `
         "font": Object {
           "size": Object {
             "default": "1.8rem",
-            "h1": "2.8rem",
-            "h2": "2.1rem",
-            "h3": "1.6rem",
-            "h4": "1.3rem",
-            "h5": "1.2rem",
-            "h6": "1.1rem",
+            "h1": "3.8rem",
+            "h2": "3.1rem",
+            "h3": "2.6rem",
+            "h4": "2.3rem",
+            "h5": "2.2rem",
+            "h6": "2.1rem",
           },
           "weight": Object {
             "default": 100,
@@ -122,7 +122,7 @@ exports[`Heading snapshot h1 1`] = `
     }
   >
     <h1
-      className="sc-bdVaJa bSTzsa"
+      className="sc-bdVaJa jduoXy"
     >
       heading
     </h1>
@@ -172,12 +172,12 @@ exports[`Heading snapshot h2 1`] = `
         "font": Object {
           "size": Object {
             "default": "1.8rem",
-            "h1": "2.8rem",
-            "h2": "2.1rem",
-            "h3": "1.6rem",
-            "h4": "1.3rem",
-            "h5": "1.2rem",
-            "h6": "1.1rem",
+            "h1": "3.8rem",
+            "h2": "3.1rem",
+            "h3": "2.6rem",
+            "h4": "2.3rem",
+            "h5": "2.2rem",
+            "h6": "2.1rem",
           },
           "weight": Object {
             "default": 100,
@@ -187,7 +187,7 @@ exports[`Heading snapshot h2 1`] = `
     }
   >
     <h2
-      className="sc-bwzfXH fCLLGB"
+      className="sc-bwzfXH eghYSK"
     >
       heading
     </h2>
@@ -237,12 +237,12 @@ exports[`Heading snapshot h3 1`] = `
         "font": Object {
           "size": Object {
             "default": "1.8rem",
-            "h1": "2.8rem",
-            "h2": "2.1rem",
-            "h3": "1.6rem",
-            "h4": "1.3rem",
-            "h5": "1.2rem",
-            "h6": "1.1rem",
+            "h1": "3.8rem",
+            "h2": "3.1rem",
+            "h3": "2.6rem",
+            "h4": "2.3rem",
+            "h5": "2.2rem",
+            "h6": "2.1rem",
           },
           "weight": Object {
             "default": 100,
@@ -252,7 +252,7 @@ exports[`Heading snapshot h3 1`] = `
     }
   >
     <h3
-      className="sc-htpNat BbwKb"
+      className="sc-htpNat hWTvjE"
     >
       heading
     </h3>
@@ -302,12 +302,12 @@ exports[`Heading snapshot h4 1`] = `
         "font": Object {
           "size": Object {
             "default": "1.8rem",
-            "h1": "2.8rem",
-            "h2": "2.1rem",
-            "h3": "1.6rem",
-            "h4": "1.3rem",
-            "h5": "1.2rem",
-            "h6": "1.1rem",
+            "h1": "3.8rem",
+            "h2": "3.1rem",
+            "h3": "2.6rem",
+            "h4": "2.3rem",
+            "h5": "2.2rem",
+            "h6": "2.1rem",
           },
           "weight": Object {
             "default": 100,
@@ -317,7 +317,7 @@ exports[`Heading snapshot h4 1`] = `
     }
   >
     <h4
-      className="sc-bxivhb UWGzl"
+      className="sc-bxivhb jnfOxb"
     >
       heading
     </h4>
@@ -367,12 +367,12 @@ exports[`Heading snapshot h5 1`] = `
         "font": Object {
           "size": Object {
             "default": "1.8rem",
-            "h1": "2.8rem",
-            "h2": "2.1rem",
-            "h3": "1.6rem",
-            "h4": "1.3rem",
-            "h5": "1.2rem",
-            "h6": "1.1rem",
+            "h1": "3.8rem",
+            "h2": "3.1rem",
+            "h3": "2.6rem",
+            "h4": "2.3rem",
+            "h5": "2.2rem",
+            "h6": "2.1rem",
           },
           "weight": Object {
             "default": 100,
@@ -382,7 +382,7 @@ exports[`Heading snapshot h5 1`] = `
     }
   >
     <h5
-      className="sc-ifAKCX dBEikb"
+      className="sc-ifAKCX qOChb"
     >
       heading
     </h5>
@@ -432,12 +432,12 @@ exports[`Heading snapshot h6 1`] = `
         "font": Object {
           "size": Object {
             "default": "1.8rem",
-            "h1": "2.8rem",
-            "h2": "2.1rem",
-            "h3": "1.6rem",
-            "h4": "1.3rem",
-            "h5": "1.2rem",
-            "h6": "1.1rem",
+            "h1": "3.8rem",
+            "h2": "3.1rem",
+            "h3": "2.6rem",
+            "h4": "2.3rem",
+            "h5": "2.2rem",
+            "h6": "2.1rem",
           },
           "weight": Object {
             "default": 100,
@@ -447,7 +447,7 @@ exports[`Heading snapshot h6 1`] = `
     }
   >
     <h6
-      className="sc-EHOje hpwIWC"
+      className="sc-EHOje ibQLUA"
     >
       heading
     </h6>

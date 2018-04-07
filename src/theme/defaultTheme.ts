@@ -12,12 +12,12 @@ export const theme = {
     },
     size: {
       default: '1.8rem',
-      h1: '2.8rem',
-      h2: '2.1rem',
-      h3: '1.6rem',
-      h4: '1.3rem',
-      h5: '1.2rem',
-      h6: '1.1rem'
+      h1: '3.8rem',
+      h2: '3.1rem',
+      h3: '2.6rem',
+      h4: '2.3rem',
+      h5: '2.2rem',
+      h6: '2.1rem'
     }
   },
   border: {

@@ -65,12 +65,12 @@ exports[`InputText props should match snapshot 1`] = `
               "font": Object {
                 "size": Object {
                   "default": "1.8rem",
-                  "h1": "2.8rem",
-                  "h2": "2.1rem",
-                  "h3": "1.6rem",
-                  "h4": "1.3rem",
-                  "h5": "1.2rem",
-                  "h6": "1.1rem",
+                  "h1": "3.8rem",
+                  "h2": "3.1rem",
+                  "h3": "2.6rem",
+                  "h4": "2.3rem",
+                  "h5": "2.2rem",
+                  "h6": "2.1rem",
                 },
                 "weight": Object {
                   "default": 100,
@@ -129,12 +129,12 @@ exports[`InputText props should match snapshot 1`] = `
               "font": Object {
                 "size": Object {
                   "default": "1.8rem",
-                  "h1": "2.8rem",
-                  "h2": "2.1rem",
-                  "h3": "1.6rem",
-                  "h4": "1.3rem",
-                  "h5": "1.2rem",
-                  "h6": "1.1rem",
+                  "h1": "3.8rem",
+                  "h2": "3.1rem",
+                  "h3": "2.6rem",
+                  "h4": "2.3rem",
+                  "h5": "2.2rem",
+                  "h6": "2.1rem",
                 },
                 "weight": Object {
                   "default": 100,
@@ -198,12 +198,12 @@ exports[`InputText props should match snapshot 1`] = `
             "font": Object {
               "size": Object {
                 "default": "1.8rem",
-                "h1": "2.8rem",
-                "h2": "2.1rem",
-                "h3": "1.6rem",
-                "h4": "1.3rem",
-                "h5": "1.2rem",
-                "h6": "1.1rem",
+                "h1": "3.8rem",
+                "h2": "3.1rem",
+                "h3": "2.6rem",
+                "h4": "2.3rem",
+                "h5": "2.2rem",
+                "h6": "2.1rem",
               },
               "weight": Object {
                 "default": 100,
@@ -270,12 +270,12 @@ exports[`InputText props should match snapshot 1`] = `
               "font": Object {
                 "size": Object {
                   "default": "1.8rem",
-                  "h1": "2.8rem",
-                  "h2": "2.1rem",
-                  "h3": "1.6rem",
-                  "h4": "1.3rem",
-                  "h5": "1.2rem",
-                  "h6": "1.1rem",
+                  "h1": "3.8rem",
+                  "h2": "3.1rem",
+                  "h3": "2.6rem",
+                  "h4": "2.3rem",
+                  "h5": "2.2rem",
+                  "h6": "2.1rem",
                 },
                 "weight": Object {
                   "default": 100,
@@ -350,12 +350,12 @@ exports[`InputText snapshot basic 1`] = `
               "font": Object {
                 "size": Object {
                   "default": "1.8rem",
-                  "h1": "2.8rem",
-                  "h2": "2.1rem",
-                  "h3": "1.6rem",
-                  "h4": "1.3rem",
-                  "h5": "1.2rem",
-                  "h6": "1.1rem",
+                  "h1": "3.8rem",
+                  "h2": "3.1rem",
+                  "h3": "2.6rem",
+                  "h4": "2.3rem",
+                  "h5": "2.2rem",
+                  "h6": "2.1rem",
                 },
                 "weight": Object {
                   "default": 100,
@@ -419,12 +419,12 @@ exports[`InputText snapshot basic 1`] = `
             "font": Object {
               "size": Object {
                 "default": "1.8rem",
-                "h1": "2.8rem",
-                "h2": "2.1rem",
-                "h3": "1.6rem",
-                "h4": "1.3rem",
-                "h5": "1.2rem",
-                "h6": "1.1rem",
+                "h1": "3.8rem",
+                "h2": "3.1rem",
+                "h3": "2.6rem",
+                "h4": "2.3rem",
+                "h5": "2.2rem",
+                "h6": "2.1rem",
               },
               "weight": Object {
                 "default": 100,
@@ -490,12 +490,12 @@ exports[`InputText snapshot basic 1`] = `
               "font": Object {
                 "size": Object {
                   "default": "1.8rem",
-                  "h1": "2.8rem",
-                  "h2": "2.1rem",
-                  "h3": "1.6rem",
-                  "h4": "1.3rem",
-                  "h5": "1.2rem",
-                  "h6": "1.1rem",
+                  "h1": "3.8rem",
+                  "h2": "3.1rem",
+                  "h3": "2.6rem",
+                  "h4": "2.3rem",
+                  "h5": "2.2rem",
+                  "h6": "2.1rem",
                 },
                 "weight": Object {
                   "default": 100,
@@ -569,12 +569,12 @@ exports[`InputText snapshot disabled 1`] = `
               "font": Object {
                 "size": Object {
                   "default": "1.8rem",
-                  "h1": "2.8rem",
-                  "h2": "2.1rem",
-                  "h3": "1.6rem",
-                  "h4": "1.3rem",
-                  "h5": "1.2rem",
-                  "h6": "1.1rem",
+                  "h1": "3.8rem",
+                  "h2": "3.1rem",
+                  "h3": "2.6rem",
+                  "h4": "2.3rem",
+                  "h5": "2.2rem",
+                  "h6": "2.1rem",
                 },
                 "weight": Object {
                   "default": 100,
@@ -639,12 +639,12 @@ exports[`InputText snapshot disabled 1`] = `
             "font": Object {
               "size": Object {
                 "default": "1.8rem",
-                "h1": "2.8rem",
-                "h2": "2.1rem",
-                "h3": "1.6rem",
-                "h4": "1.3rem",
-                "h5": "1.2rem",
-                "h6": "1.1rem",
+                "h1": "3.8rem",
+                "h2": "3.1rem",
+                "h3": "2.6rem",
+                "h4": "2.3rem",
+                "h5": "2.2rem",
+                "h6": "2.1rem",
               },
               "weight": Object {
                 "default": 100,
@@ -711,12 +711,12 @@ exports[`InputText snapshot disabled 1`] = `
               "font": Object {
                 "size": Object {
                   "default": "1.8rem",
-                  "h1": "2.8rem",
-                  "h2": "2.1rem",
-                  "h3": "1.6rem",
-                  "h4": "1.3rem",
-                  "h5": "1.2rem",
-                  "h6": "1.1rem",
+                  "h1": "3.8rem",
+                  "h2": "3.1rem",
+                  "h3": "2.6rem",
+                  "h4": "2.3rem",
+                  "h5": "2.2rem",
+                  "h6": "2.1rem",
                 },
                 "weight": Object {
                   "default": 100,
@@ -790,12 +790,12 @@ exports[`InputText snapshot error 1`] = `
               "font": Object {
                 "size": Object {
                   "default": "1.8rem",
-                  "h1": "2.8rem",
-                  "h2": "2.1rem",
-                  "h3": "1.6rem",
-                  "h4": "1.3rem",
-                  "h5": "1.2rem",
-                  "h6": "1.1rem",
+                  "h1": "3.8rem",
+                  "h2": "3.1rem",
+                  "h3": "2.6rem",
+                  "h4": "2.3rem",
+                  "h5": "2.2rem",
+                  "h6": "2.1rem",
                 },
                 "weight": Object {
                   "default": 100,
@@ -859,12 +859,12 @@ exports[`InputText snapshot error 1`] = `
             "font": Object {
               "size": Object {
                 "default": "1.8rem",
-                "h1": "2.8rem",
-                "h2": "2.1rem",
-                "h3": "1.6rem",
-                "h4": "1.3rem",
-                "h5": "1.2rem",
-                "h6": "1.1rem",
+                "h1": "3.8rem",
+                "h2": "3.1rem",
+                "h3": "2.6rem",
+                "h4": "2.3rem",
+                "h5": "2.2rem",
+                "h6": "2.1rem",
               },
               "weight": Object {
                 "default": 100,
@@ -930,12 +930,12 @@ exports[`InputText snapshot error 1`] = `
               "font": Object {
                 "size": Object {
                   "default": "1.8rem",
-                  "h1": "2.8rem",
-                  "h2": "2.1rem",
-                  "h3": "1.6rem",
-                  "h4": "1.3rem",
-                  "h5": "1.2rem",
-                  "h6": "1.1rem",
+                  "h1": "3.8rem",
+                  "h2": "3.1rem",
+                  "h3": "2.6rem",
+                  "h4": "2.3rem",
+                  "h5": "2.2rem",
+                  "h6": "2.1rem",
                 },
                 "weight": Object {
                   "default": 100,

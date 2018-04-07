@@ -1,30 +1,561 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`InputCheckboxGroup should match snapshot 1`] = `
+exports[`InputCheckboxGroup props should match snapshot 1`] = `
 <InputCheckbox
-  id="testId"
-  name="testName"
+  alignment="horizontal"
+  breakpoint="md"
+  className="class"
+  disabled={true}
+  errorMessage="error"
+  hint="hint"
+  id="id"
+  name="name"
   onChange={[MockFunction]}
   options={
     Array [
       Object {
-        "label": "One",
+        "label": "label",
+        "value": "value",
+      },
+      Object {
+        "label": "one",
         "value": "1",
-      },
-      Object {
-        "label": "Two",
-        "value": "2",
-      },
-      Object {
-        "label": "Three",
-        "value": "3",
       },
     ]
   }
   values={
     Array [
-      "2",
-      "3",
+      "value",
+    ]
+  }
+>
+  <styled.div
+    className="class"
+  >
+    <div
+      className="class sc-htoDjs gQgvQJ"
+    >
+      <Hint
+        hasError={true}
+      >
+        <styled.div
+          hasError={true}
+          theme={
+            Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
+              "color": Object {
+                "background": "#ffffff",
+                "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
+                "default": "#2fa4e7",
+                "disabled": "#acacac",
+                "error": "#c71c22",
+                "focus": "#54b4eb",
+                "font": "#333333",
+                "hover": "#178acc",
+                "info": "#04519b",
+                "primary": "#2fa4e7",
+                "secondary": "#e9ecef",
+                "success": "#73a839",
+                "tertiary": "#343a40",
+                "warning": "#dd5600",
+              },
+              "font": Object {
+                "size": Object {
+                  "default": "1.8rem",
+                  "h1": "3.8rem",
+                  "h2": "3.1rem",
+                  "h3": "2.6rem",
+                  "h4": "2.3rem",
+                  "h5": "2.2rem",
+                  "h6": "2.1rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
+              },
+            }
+          }
+        >
+          <div
+            className="sc-bwzfXH gjbaDJ"
+          >
+            hint
+          </div>
+        </styled.div>
+      </Hint>
+      <Fieldset
+        aria-describedby="id-error"
+        id="id-fieldset"
+      >
+        <styled.fieldset
+          id="id-fieldset"
+        >
+          <fieldset
+            className="sc-bdVaJa bDWFJH"
+            id="id-fieldset"
+          >
+            <styled.div
+              alignment="horizontal"
+              breakpoint="md"
+              theme={
+                Object {
+                  "border": Object {
+                    "radius": Object {
+                      "edge": "2px",
+                      "round": "100px",
+                    },
+                    "size": "2px",
+                  },
+                  "breakpoint": Object {
+                    "lg": "992px",
+                    "md": "768px",
+                    "sm": "576px",
+                    "xl": "1200px",
+                    "xs": "0px",
+                  },
+                  "color": Object {
+                    "background": "#ffffff",
+                    "border": "#2fa4e7",
+                    "checked": "#2fa4e7",
+                    "danger": "#c71c22",
+                    "default": "#2fa4e7",
+                    "disabled": "#acacac",
+                    "error": "#c71c22",
+                    "focus": "#54b4eb",
+                    "font": "#333333",
+                    "hover": "#178acc",
+                    "info": "#04519b",
+                    "primary": "#2fa4e7",
+                    "secondary": "#e9ecef",
+                    "success": "#73a839",
+                    "tertiary": "#343a40",
+                    "warning": "#dd5600",
+                  },
+                  "font": Object {
+                    "size": Object {
+                      "default": "1.8rem",
+                      "h1": "3.8rem",
+                      "h2": "3.1rem",
+                      "h3": "2.6rem",
+                      "h4": "2.3rem",
+                      "h5": "2.2rem",
+                      "h6": "2.1rem",
+                    },
+                    "weight": Object {
+                      "default": 100,
+                    },
+                  },
+                }
+              }
+            >
+              <div
+                className="sc-dnqmqq ROuBp"
+              >
+                <styled.div
+                  key="0"
+                >
+                  <div
+                    className="sc-bZQynM daLRsN"
+                  >
+                    <styled.input
+                      aria-invalid={true}
+                      checked={true}
+                      disabled={true}
+                      hasError={true}
+                      id="id-0"
+                      innerRef={[Function]}
+                      name="name"
+                      onChange={[Function]}
+                      theme={
+                        Object {
+                          "border": Object {
+                            "radius": Object {
+                              "edge": "2px",
+                              "round": "100px",
+                            },
+                            "size": "2px",
+                          },
+                          "breakpoint": Object {
+                            "lg": "992px",
+                            "md": "768px",
+                            "sm": "576px",
+                            "xl": "1200px",
+                            "xs": "0px",
+                          },
+                          "color": Object {
+                            "background": "#ffffff",
+                            "border": "#2fa4e7",
+                            "checked": "#2fa4e7",
+                            "danger": "#c71c22",
+                            "default": "#2fa4e7",
+                            "disabled": "#acacac",
+                            "error": "#c71c22",
+                            "focus": "#54b4eb",
+                            "font": "#333333",
+                            "hover": "#178acc",
+                            "info": "#04519b",
+                            "primary": "#2fa4e7",
+                            "secondary": "#e9ecef",
+                            "success": "#73a839",
+                            "tertiary": "#343a40",
+                            "warning": "#dd5600",
+                          },
+                          "font": Object {
+                            "size": Object {
+                              "default": "1.8rem",
+                              "h1": "3.8rem",
+                              "h2": "3.1rem",
+                              "h3": "2.6rem",
+                              "h4": "2.3rem",
+                              "h5": "2.2rem",
+                              "h6": "2.1rem",
+                            },
+                            "weight": Object {
+                              "default": 100,
+                            },
+                          },
+                        }
+                      }
+                      type="checkbox"
+                      value="value"
+                    >
+                      <input
+                        aria-invalid={true}
+                        checked={true}
+                        className="sc-EHOje occqe"
+                        disabled={true}
+                        id="id-0"
+                        name="name"
+                        onChange={[Function]}
+                        type="checkbox"
+                        value="value"
+                      />
+                    </styled.input>
+                    <Label
+                      hasError={true}
+                      htmlFor="id-0"
+                      type="checkbox"
+                    >
+                      <styled.label
+                        hasError={true}
+                        htmlFor="id-0"
+                        theme={
+                          Object {
+                            "border": Object {
+                              "radius": Object {
+                                "edge": "2px",
+                                "round": "100px",
+                              },
+                              "size": "2px",
+                            },
+                            "breakpoint": Object {
+                              "lg": "992px",
+                              "md": "768px",
+                              "sm": "576px",
+                              "xl": "1200px",
+                              "xs": "0px",
+                            },
+                            "color": Object {
+                              "background": "#ffffff",
+                              "border": "#2fa4e7",
+                              "checked": "#2fa4e7",
+                              "danger": "#c71c22",
+                              "default": "#2fa4e7",
+                              "disabled": "#acacac",
+                              "error": "#c71c22",
+                              "focus": "#54b4eb",
+                              "font": "#333333",
+                              "hover": "#178acc",
+                              "info": "#04519b",
+                              "primary": "#2fa4e7",
+                              "secondary": "#e9ecef",
+                              "success": "#73a839",
+                              "tertiary": "#343a40",
+                              "warning": "#dd5600",
+                            },
+                            "font": Object {
+                              "size": Object {
+                                "default": "1.8rem",
+                                "h1": "3.8rem",
+                                "h2": "3.1rem",
+                                "h3": "2.6rem",
+                                "h4": "2.3rem",
+                                "h5": "2.2rem",
+                                "h6": "2.1rem",
+                              },
+                              "weight": Object {
+                                "default": 100,
+                              },
+                            },
+                          }
+                        }
+                        type="checkbox"
+                      >
+                        <label
+                          className="sc-ifAKCX gpCCOx"
+                          htmlFor="id-0"
+                          type="checkbox"
+                        >
+                          label
+                        </label>
+                      </styled.label>
+                    </Label>
+                  </div>
+                </styled.div>
+                <styled.div
+                  key="1"
+                >
+                  <div
+                    className="sc-bZQynM daLRsN"
+                  >
+                    <styled.input
+                      aria-invalid={true}
+                      checked={false}
+                      disabled={true}
+                      hasError={true}
+                      id="id-1"
+                      innerRef={[Function]}
+                      name="name"
+                      onChange={[Function]}
+                      theme={
+                        Object {
+                          "border": Object {
+                            "radius": Object {
+                              "edge": "2px",
+                              "round": "100px",
+                            },
+                            "size": "2px",
+                          },
+                          "breakpoint": Object {
+                            "lg": "992px",
+                            "md": "768px",
+                            "sm": "576px",
+                            "xl": "1200px",
+                            "xs": "0px",
+                          },
+                          "color": Object {
+                            "background": "#ffffff",
+                            "border": "#2fa4e7",
+                            "checked": "#2fa4e7",
+                            "danger": "#c71c22",
+                            "default": "#2fa4e7",
+                            "disabled": "#acacac",
+                            "error": "#c71c22",
+                            "focus": "#54b4eb",
+                            "font": "#333333",
+                            "hover": "#178acc",
+                            "info": "#04519b",
+                            "primary": "#2fa4e7",
+                            "secondary": "#e9ecef",
+                            "success": "#73a839",
+                            "tertiary": "#343a40",
+                            "warning": "#dd5600",
+                          },
+                          "font": Object {
+                            "size": Object {
+                              "default": "1.8rem",
+                              "h1": "3.8rem",
+                              "h2": "3.1rem",
+                              "h3": "2.6rem",
+                              "h4": "2.3rem",
+                              "h5": "2.2rem",
+                              "h6": "2.1rem",
+                            },
+                            "weight": Object {
+                              "default": 100,
+                            },
+                          },
+                        }
+                      }
+                      type="checkbox"
+                      value="1"
+                    >
+                      <input
+                        aria-invalid={true}
+                        checked={false}
+                        className="sc-EHOje occqe"
+                        disabled={true}
+                        id="id-1"
+                        name="name"
+                        onChange={[Function]}
+                        type="checkbox"
+                        value="1"
+                      />
+                    </styled.input>
+                    <Label
+                      hasError={true}
+                      htmlFor="id-1"
+                      type="checkbox"
+                    >
+                      <styled.label
+                        hasError={true}
+                        htmlFor="id-1"
+                        theme={
+                          Object {
+                            "border": Object {
+                              "radius": Object {
+                                "edge": "2px",
+                                "round": "100px",
+                              },
+                              "size": "2px",
+                            },
+                            "breakpoint": Object {
+                              "lg": "992px",
+                              "md": "768px",
+                              "sm": "576px",
+                              "xl": "1200px",
+                              "xs": "0px",
+                            },
+                            "color": Object {
+                              "background": "#ffffff",
+                              "border": "#2fa4e7",
+                              "checked": "#2fa4e7",
+                              "danger": "#c71c22",
+                              "default": "#2fa4e7",
+                              "disabled": "#acacac",
+                              "error": "#c71c22",
+                              "focus": "#54b4eb",
+                              "font": "#333333",
+                              "hover": "#178acc",
+                              "info": "#04519b",
+                              "primary": "#2fa4e7",
+                              "secondary": "#e9ecef",
+                              "success": "#73a839",
+                              "tertiary": "#343a40",
+                              "warning": "#dd5600",
+                            },
+                            "font": Object {
+                              "size": Object {
+                                "default": "1.8rem",
+                                "h1": "3.8rem",
+                                "h2": "3.1rem",
+                                "h3": "2.6rem",
+                                "h4": "2.3rem",
+                                "h5": "2.2rem",
+                                "h6": "2.1rem",
+                              },
+                              "weight": Object {
+                                "default": 100,
+                              },
+                            },
+                          }
+                        }
+                        type="checkbox"
+                      >
+                        <label
+                          className="sc-ifAKCX gpCCOx"
+                          htmlFor="id-1"
+                          type="checkbox"
+                        >
+                          one
+                        </label>
+                      </styled.label>
+                    </Label>
+                  </div>
+                </styled.div>
+              </div>
+            </styled.div>
+          </fieldset>
+        </styled.fieldset>
+      </Fieldset>
+      <Error
+        id="id-error"
+      >
+        <styled.div
+          id="id-error-error"
+          theme={
+            Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
+              "color": Object {
+                "background": "#ffffff",
+                "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
+                "default": "#2fa4e7",
+                "disabled": "#acacac",
+                "error": "#c71c22",
+                "focus": "#54b4eb",
+                "font": "#333333",
+                "hover": "#178acc",
+                "info": "#04519b",
+                "primary": "#2fa4e7",
+                "secondary": "#e9ecef",
+                "success": "#73a839",
+                "tertiary": "#343a40",
+                "warning": "#dd5600",
+              },
+              "font": Object {
+                "size": Object {
+                  "default": "1.8rem",
+                  "h1": "3.8rem",
+                  "h2": "3.1rem",
+                  "h3": "2.6rem",
+                  "h4": "2.3rem",
+                  "h5": "2.2rem",
+                  "h6": "2.1rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
+              },
+            }
+          }
+        >
+          <div
+            className="sc-htpNat hYJuoM"
+            id="id-error-error"
+          >
+            error
+          </div>
+        </styled.div>
+      </Error>
+    </div>
+  </styled.div>
+</InputCheckbox>
+`;
+
+exports[`InputCheckboxGroup snapshot basic 1`] = `
+<InputCheckbox
+  id="id"
+  name="name"
+  options={
+    Array [
+      Object {
+        "label": "label",
+        "value": "value",
+      },
+      Object {
+        "label": "one",
+        "value": "1",
+      },
     ]
   }
 >
@@ -33,15 +564,15 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
       className="sc-htoDjs gQgvQJ"
     >
       <Fieldset
-        aria-describedby="testId-error"
-        id="testId-fieldset"
+        aria-describedby="id-error"
+        id="id-fieldset"
       >
         <styled.fieldset
-          id="testId-fieldset"
+          id="id-fieldset"
         >
           <fieldset
             className="sc-bdVaJa bDWFJH"
-            id="testId-fieldset"
+            id="id-fieldset"
           >
             <styled.div
               alignment="horizontal"
@@ -82,12 +613,12 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                   "font": Object {
                     "size": Object {
                       "default": "1.8rem",
-                      "h1": "2.8rem",
-                      "h2": "2.1rem",
-                      "h3": "1.6rem",
-                      "h4": "1.3rem",
-                      "h5": "1.2rem",
-                      "h6": "1.1rem",
+                      "h1": "3.8rem",
+                      "h2": "3.1rem",
+                      "h3": "2.6rem",
+                      "h4": "2.3rem",
+                      "h5": "2.2rem",
+                      "h6": "2.1rem",
                     },
                     "weight": Object {
                       "default": 100,
@@ -109,9 +640,9 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                       aria-invalid={false}
                       checked={false}
                       hasError={false}
-                      id="testId-0"
+                      id="id-0"
                       innerRef={[Function]}
-                      name="testName"
+                      name="name"
                       onChange={[Function]}
                       theme={
                         Object {
@@ -150,12 +681,161 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                           "font": Object {
                             "size": Object {
                               "default": "1.8rem",
-                              "h1": "2.8rem",
-                              "h2": "2.1rem",
-                              "h3": "1.6rem",
-                              "h4": "1.3rem",
-                              "h5": "1.2rem",
-                              "h6": "1.1rem",
+                              "h1": "3.8rem",
+                              "h2": "3.1rem",
+                              "h3": "2.6rem",
+                              "h4": "2.3rem",
+                              "h5": "2.2rem",
+                              "h6": "2.1rem",
+                            },
+                            "weight": Object {
+                              "default": 100,
+                            },
+                          },
+                        }
+                      }
+                      type="checkbox"
+                      value="value"
+                    >
+                      <input
+                        aria-invalid={false}
+                        checked={false}
+                        className="sc-EHOje bShKlD"
+                        id="id-0"
+                        name="name"
+                        onChange={[Function]}
+                        type="checkbox"
+                        value="value"
+                      />
+                    </styled.input>
+                    <Label
+                      hasError={false}
+                      htmlFor="id-0"
+                      type="checkbox"
+                    >
+                      <styled.label
+                        hasError={false}
+                        htmlFor="id-0"
+                        theme={
+                          Object {
+                            "border": Object {
+                              "radius": Object {
+                                "edge": "2px",
+                                "round": "100px",
+                              },
+                              "size": "2px",
+                            },
+                            "breakpoint": Object {
+                              "lg": "992px",
+                              "md": "768px",
+                              "sm": "576px",
+                              "xl": "1200px",
+                              "xs": "0px",
+                            },
+                            "color": Object {
+                              "background": "#ffffff",
+                              "border": "#2fa4e7",
+                              "checked": "#2fa4e7",
+                              "danger": "#c71c22",
+                              "default": "#2fa4e7",
+                              "disabled": "#acacac",
+                              "error": "#c71c22",
+                              "focus": "#54b4eb",
+                              "font": "#333333",
+                              "hover": "#178acc",
+                              "info": "#04519b",
+                              "primary": "#2fa4e7",
+                              "secondary": "#e9ecef",
+                              "success": "#73a839",
+                              "tertiary": "#343a40",
+                              "warning": "#dd5600",
+                            },
+                            "font": Object {
+                              "size": Object {
+                                "default": "1.8rem",
+                                "h1": "3.8rem",
+                                "h2": "3.1rem",
+                                "h3": "2.6rem",
+                                "h4": "2.3rem",
+                                "h5": "2.2rem",
+                                "h6": "2.1rem",
+                              },
+                              "weight": Object {
+                                "default": 100,
+                              },
+                            },
+                          }
+                        }
+                        type="checkbox"
+                      >
+                        <label
+                          className="sc-ifAKCX gcYEuN"
+                          htmlFor="id-0"
+                          type="checkbox"
+                        >
+                          label
+                        </label>
+                      </styled.label>
+                    </Label>
+                  </div>
+                </styled.div>
+                <styled.div
+                  key="1"
+                >
+                  <div
+                    className="sc-bZQynM daLRsN"
+                  >
+                    <styled.input
+                      aria-invalid={false}
+                      checked={false}
+                      hasError={false}
+                      id="id-1"
+                      innerRef={[Function]}
+                      name="name"
+                      onChange={[Function]}
+                      theme={
+                        Object {
+                          "border": Object {
+                            "radius": Object {
+                              "edge": "2px",
+                              "round": "100px",
+                            },
+                            "size": "2px",
+                          },
+                          "breakpoint": Object {
+                            "lg": "992px",
+                            "md": "768px",
+                            "sm": "576px",
+                            "xl": "1200px",
+                            "xs": "0px",
+                          },
+                          "color": Object {
+                            "background": "#ffffff",
+                            "border": "#2fa4e7",
+                            "checked": "#2fa4e7",
+                            "danger": "#c71c22",
+                            "default": "#2fa4e7",
+                            "disabled": "#acacac",
+                            "error": "#c71c22",
+                            "focus": "#54b4eb",
+                            "font": "#333333",
+                            "hover": "#178acc",
+                            "info": "#04519b",
+                            "primary": "#2fa4e7",
+                            "secondary": "#e9ecef",
+                            "success": "#73a839",
+                            "tertiary": "#343a40",
+                            "warning": "#dd5600",
+                          },
+                          "font": Object {
+                            "size": Object {
+                              "default": "1.8rem",
+                              "h1": "3.8rem",
+                              "h2": "3.1rem",
+                              "h3": "2.6rem",
+                              "h4": "2.3rem",
+                              "h5": "2.2rem",
+                              "h6": "2.1rem",
                             },
                             "weight": Object {
                               "default": 100,
@@ -170,8 +850,8 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                         aria-invalid={false}
                         checked={false}
                         className="sc-EHOje bShKlD"
-                        id="testId-0"
-                        name="testName"
+                        id="id-1"
+                        name="name"
                         onChange={[Function]}
                         type="checkbox"
                         value="1"
@@ -179,12 +859,12 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                     </styled.input>
                     <Label
                       hasError={false}
-                      htmlFor="testId-0"
+                      htmlFor="id-1"
                       type="checkbox"
                     >
                       <styled.label
                         hasError={false}
-                        htmlFor="testId-0"
+                        htmlFor="id-1"
                         theme={
                           Object {
                             "border": Object {
@@ -222,12 +902,12 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                             "font": Object {
                               "size": Object {
                                 "default": "1.8rem",
-                                "h1": "2.8rem",
-                                "h2": "2.1rem",
-                                "h3": "1.6rem",
-                                "h4": "1.3rem",
-                                "h5": "1.2rem",
-                                "h6": "1.1rem",
+                                "h1": "3.8rem",
+                                "h2": "3.1rem",
+                                "h3": "2.6rem",
+                                "h4": "2.3rem",
+                                "h5": "2.2rem",
+                                "h6": "2.1rem",
                               },
                               "weight": Object {
                                 "default": 100,
@@ -239,308 +919,10 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
                       >
                         <label
                           className="sc-ifAKCX gcYEuN"
-                          htmlFor="testId-0"
+                          htmlFor="id-1"
                           type="checkbox"
                         >
-                          One
-                        </label>
-                      </styled.label>
-                    </Label>
-                  </div>
-                </styled.div>
-                <styled.div
-                  key="1"
-                >
-                  <div
-                    className="sc-bZQynM daLRsN"
-                  >
-                    <styled.input
-                      aria-invalid={false}
-                      checked={true}
-                      hasError={false}
-                      id="testId-1"
-                      innerRef={[Function]}
-                      name="testName"
-                      onChange={[Function]}
-                      theme={
-                        Object {
-                          "border": Object {
-                            "radius": Object {
-                              "edge": "2px",
-                              "round": "100px",
-                            },
-                            "size": "2px",
-                          },
-                          "breakpoint": Object {
-                            "lg": "992px",
-                            "md": "768px",
-                            "sm": "576px",
-                            "xl": "1200px",
-                            "xs": "0px",
-                          },
-                          "color": Object {
-                            "background": "#ffffff",
-                            "border": "#2fa4e7",
-                            "checked": "#2fa4e7",
-                            "danger": "#c71c22",
-                            "default": "#2fa4e7",
-                            "disabled": "#acacac",
-                            "error": "#c71c22",
-                            "focus": "#54b4eb",
-                            "font": "#333333",
-                            "hover": "#178acc",
-                            "info": "#04519b",
-                            "primary": "#2fa4e7",
-                            "secondary": "#e9ecef",
-                            "success": "#73a839",
-                            "tertiary": "#343a40",
-                            "warning": "#dd5600",
-                          },
-                          "font": Object {
-                            "size": Object {
-                              "default": "1.8rem",
-                              "h1": "2.8rem",
-                              "h2": "2.1rem",
-                              "h3": "1.6rem",
-                              "h4": "1.3rem",
-                              "h5": "1.2rem",
-                              "h6": "1.1rem",
-                            },
-                            "weight": Object {
-                              "default": 100,
-                            },
-                          },
-                        }
-                      }
-                      type="checkbox"
-                      value="2"
-                    >
-                      <input
-                        aria-invalid={false}
-                        checked={true}
-                        className="sc-EHOje bShKlD"
-                        id="testId-1"
-                        name="testName"
-                        onChange={[Function]}
-                        type="checkbox"
-                        value="2"
-                      />
-                    </styled.input>
-                    <Label
-                      hasError={false}
-                      htmlFor="testId-1"
-                      type="checkbox"
-                    >
-                      <styled.label
-                        hasError={false}
-                        htmlFor="testId-1"
-                        theme={
-                          Object {
-                            "border": Object {
-                              "radius": Object {
-                                "edge": "2px",
-                                "round": "100px",
-                              },
-                              "size": "2px",
-                            },
-                            "breakpoint": Object {
-                              "lg": "992px",
-                              "md": "768px",
-                              "sm": "576px",
-                              "xl": "1200px",
-                              "xs": "0px",
-                            },
-                            "color": Object {
-                              "background": "#ffffff",
-                              "border": "#2fa4e7",
-                              "checked": "#2fa4e7",
-                              "danger": "#c71c22",
-                              "default": "#2fa4e7",
-                              "disabled": "#acacac",
-                              "error": "#c71c22",
-                              "focus": "#54b4eb",
-                              "font": "#333333",
-                              "hover": "#178acc",
-                              "info": "#04519b",
-                              "primary": "#2fa4e7",
-                              "secondary": "#e9ecef",
-                              "success": "#73a839",
-                              "tertiary": "#343a40",
-                              "warning": "#dd5600",
-                            },
-                            "font": Object {
-                              "size": Object {
-                                "default": "1.8rem",
-                                "h1": "2.8rem",
-                                "h2": "2.1rem",
-                                "h3": "1.6rem",
-                                "h4": "1.3rem",
-                                "h5": "1.2rem",
-                                "h6": "1.1rem",
-                              },
-                              "weight": Object {
-                                "default": 100,
-                              },
-                            },
-                          }
-                        }
-                        type="checkbox"
-                      >
-                        <label
-                          className="sc-ifAKCX gcYEuN"
-                          htmlFor="testId-1"
-                          type="checkbox"
-                        >
-                          Two
-                        </label>
-                      </styled.label>
-                    </Label>
-                  </div>
-                </styled.div>
-                <styled.div
-                  key="2"
-                >
-                  <div
-                    className="sc-bZQynM daLRsN"
-                  >
-                    <styled.input
-                      aria-invalid={false}
-                      checked={true}
-                      hasError={false}
-                      id="testId-2"
-                      innerRef={[Function]}
-                      name="testName"
-                      onChange={[Function]}
-                      theme={
-                        Object {
-                          "border": Object {
-                            "radius": Object {
-                              "edge": "2px",
-                              "round": "100px",
-                            },
-                            "size": "2px",
-                          },
-                          "breakpoint": Object {
-                            "lg": "992px",
-                            "md": "768px",
-                            "sm": "576px",
-                            "xl": "1200px",
-                            "xs": "0px",
-                          },
-                          "color": Object {
-                            "background": "#ffffff",
-                            "border": "#2fa4e7",
-                            "checked": "#2fa4e7",
-                            "danger": "#c71c22",
-                            "default": "#2fa4e7",
-                            "disabled": "#acacac",
-                            "error": "#c71c22",
-                            "focus": "#54b4eb",
-                            "font": "#333333",
-                            "hover": "#178acc",
-                            "info": "#04519b",
-                            "primary": "#2fa4e7",
-                            "secondary": "#e9ecef",
-                            "success": "#73a839",
-                            "tertiary": "#343a40",
-                            "warning": "#dd5600",
-                          },
-                          "font": Object {
-                            "size": Object {
-                              "default": "1.8rem",
-                              "h1": "2.8rem",
-                              "h2": "2.1rem",
-                              "h3": "1.6rem",
-                              "h4": "1.3rem",
-                              "h5": "1.2rem",
-                              "h6": "1.1rem",
-                            },
-                            "weight": Object {
-                              "default": 100,
-                            },
-                          },
-                        }
-                      }
-                      type="checkbox"
-                      value="3"
-                    >
-                      <input
-                        aria-invalid={false}
-                        checked={true}
-                        className="sc-EHOje bShKlD"
-                        id="testId-2"
-                        name="testName"
-                        onChange={[Function]}
-                        type="checkbox"
-                        value="3"
-                      />
-                    </styled.input>
-                    <Label
-                      hasError={false}
-                      htmlFor="testId-2"
-                      type="checkbox"
-                    >
-                      <styled.label
-                        hasError={false}
-                        htmlFor="testId-2"
-                        theme={
-                          Object {
-                            "border": Object {
-                              "radius": Object {
-                                "edge": "2px",
-                                "round": "100px",
-                              },
-                              "size": "2px",
-                            },
-                            "breakpoint": Object {
-                              "lg": "992px",
-                              "md": "768px",
-                              "sm": "576px",
-                              "xl": "1200px",
-                              "xs": "0px",
-                            },
-                            "color": Object {
-                              "background": "#ffffff",
-                              "border": "#2fa4e7",
-                              "checked": "#2fa4e7",
-                              "danger": "#c71c22",
-                              "default": "#2fa4e7",
-                              "disabled": "#acacac",
-                              "error": "#c71c22",
-                              "focus": "#54b4eb",
-                              "font": "#333333",
-                              "hover": "#178acc",
-                              "info": "#04519b",
-                              "primary": "#2fa4e7",
-                              "secondary": "#e9ecef",
-                              "success": "#73a839",
-                              "tertiary": "#343a40",
-                              "warning": "#dd5600",
-                            },
-                            "font": Object {
-                              "size": Object {
-                                "default": "1.8rem",
-                                "h1": "2.8rem",
-                                "h2": "2.1rem",
-                                "h3": "1.6rem",
-                                "h4": "1.3rem",
-                                "h5": "1.2rem",
-                                "h6": "1.1rem",
-                              },
-                              "weight": Object {
-                                "default": 100,
-                              },
-                            },
-                          }
-                        }
-                        type="checkbox"
-                      >
-                        <label
-                          className="sc-ifAKCX gcYEuN"
-                          htmlFor="testId-2"
-                          type="checkbox"
-                        >
-                          Three
+                          one
                         </label>
                       </styled.label>
                     </Label>
@@ -552,10 +934,10 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
         </styled.fieldset>
       </Fieldset>
       <Error
-        id="testId-error"
+        id="id-error"
       >
         <styled.div
-          id="testId-error-error"
+          id="id-error-error"
           theme={
             Object {
               "border": Object {
@@ -593,12 +975,12 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
               "font": Object {
                 "size": Object {
                   "default": "1.8rem",
-                  "h1": "2.8rem",
-                  "h2": "2.1rem",
-                  "h3": "1.6rem",
-                  "h4": "1.3rem",
-                  "h5": "1.2rem",
-                  "h6": "1.1rem",
+                  "h1": "3.8rem",
+                  "h2": "3.1rem",
+                  "h3": "2.6rem",
+                  "h4": "2.3rem",
+                  "h5": "2.2rem",
+                  "h6": "2.1rem",
                 },
                 "weight": Object {
                   "default": 100,
@@ -609,8 +991,932 @@ exports[`InputCheckboxGroup should match snapshot 1`] = `
         >
           <div
             className="sc-htpNat hYJuoM"
-            id="testId-error-error"
+            id="id-error-error"
           />
+        </styled.div>
+      </Error>
+    </div>
+  </styled.div>
+</InputCheckbox>
+`;
+
+exports[`InputCheckboxGroup snapshot disabled 1`] = `
+<InputCheckbox
+  disabled={true}
+  id="id"
+  name="name"
+  options={
+    Array [
+      Object {
+        "label": "label",
+        "value": "value",
+      },
+      Object {
+        "label": "one",
+        "value": "1",
+      },
+    ]
+  }
+>
+  <styled.div>
+    <div
+      className="sc-htoDjs gQgvQJ"
+    >
+      <Fieldset
+        aria-describedby="id-error"
+        id="id-fieldset"
+      >
+        <styled.fieldset
+          id="id-fieldset"
+        >
+          <fieldset
+            className="sc-bdVaJa bDWFJH"
+            id="id-fieldset"
+          >
+            <styled.div
+              alignment="horizontal"
+              theme={
+                Object {
+                  "border": Object {
+                    "radius": Object {
+                      "edge": "2px",
+                      "round": "100px",
+                    },
+                    "size": "2px",
+                  },
+                  "breakpoint": Object {
+                    "lg": "992px",
+                    "md": "768px",
+                    "sm": "576px",
+                    "xl": "1200px",
+                    "xs": "0px",
+                  },
+                  "color": Object {
+                    "background": "#ffffff",
+                    "border": "#2fa4e7",
+                    "checked": "#2fa4e7",
+                    "danger": "#c71c22",
+                    "default": "#2fa4e7",
+                    "disabled": "#acacac",
+                    "error": "#c71c22",
+                    "focus": "#54b4eb",
+                    "font": "#333333",
+                    "hover": "#178acc",
+                    "info": "#04519b",
+                    "primary": "#2fa4e7",
+                    "secondary": "#e9ecef",
+                    "success": "#73a839",
+                    "tertiary": "#343a40",
+                    "warning": "#dd5600",
+                  },
+                  "font": Object {
+                    "size": Object {
+                      "default": "1.8rem",
+                      "h1": "3.8rem",
+                      "h2": "3.1rem",
+                      "h3": "2.6rem",
+                      "h4": "2.3rem",
+                      "h5": "2.2rem",
+                      "h6": "2.1rem",
+                    },
+                    "weight": Object {
+                      "default": 100,
+                    },
+                  },
+                }
+              }
+            >
+              <div
+                className="sc-dnqmqq kdnsFs"
+              >
+                <styled.div
+                  key="0"
+                >
+                  <div
+                    className="sc-bZQynM daLRsN"
+                  >
+                    <styled.input
+                      aria-invalid={false}
+                      checked={false}
+                      disabled={true}
+                      hasError={false}
+                      id="id-0"
+                      innerRef={[Function]}
+                      name="name"
+                      onChange={[Function]}
+                      theme={
+                        Object {
+                          "border": Object {
+                            "radius": Object {
+                              "edge": "2px",
+                              "round": "100px",
+                            },
+                            "size": "2px",
+                          },
+                          "breakpoint": Object {
+                            "lg": "992px",
+                            "md": "768px",
+                            "sm": "576px",
+                            "xl": "1200px",
+                            "xs": "0px",
+                          },
+                          "color": Object {
+                            "background": "#ffffff",
+                            "border": "#2fa4e7",
+                            "checked": "#2fa4e7",
+                            "danger": "#c71c22",
+                            "default": "#2fa4e7",
+                            "disabled": "#acacac",
+                            "error": "#c71c22",
+                            "focus": "#54b4eb",
+                            "font": "#333333",
+                            "hover": "#178acc",
+                            "info": "#04519b",
+                            "primary": "#2fa4e7",
+                            "secondary": "#e9ecef",
+                            "success": "#73a839",
+                            "tertiary": "#343a40",
+                            "warning": "#dd5600",
+                          },
+                          "font": Object {
+                            "size": Object {
+                              "default": "1.8rem",
+                              "h1": "3.8rem",
+                              "h2": "3.1rem",
+                              "h3": "2.6rem",
+                              "h4": "2.3rem",
+                              "h5": "2.2rem",
+                              "h6": "2.1rem",
+                            },
+                            "weight": Object {
+                              "default": 100,
+                            },
+                          },
+                        }
+                      }
+                      type="checkbox"
+                      value="value"
+                    >
+                      <input
+                        aria-invalid={false}
+                        checked={false}
+                        className="sc-EHOje bShKlD"
+                        disabled={true}
+                        id="id-0"
+                        name="name"
+                        onChange={[Function]}
+                        type="checkbox"
+                        value="value"
+                      />
+                    </styled.input>
+                    <Label
+                      hasError={false}
+                      htmlFor="id-0"
+                      type="checkbox"
+                    >
+                      <styled.label
+                        hasError={false}
+                        htmlFor="id-0"
+                        theme={
+                          Object {
+                            "border": Object {
+                              "radius": Object {
+                                "edge": "2px",
+                                "round": "100px",
+                              },
+                              "size": "2px",
+                            },
+                            "breakpoint": Object {
+                              "lg": "992px",
+                              "md": "768px",
+                              "sm": "576px",
+                              "xl": "1200px",
+                              "xs": "0px",
+                            },
+                            "color": Object {
+                              "background": "#ffffff",
+                              "border": "#2fa4e7",
+                              "checked": "#2fa4e7",
+                              "danger": "#c71c22",
+                              "default": "#2fa4e7",
+                              "disabled": "#acacac",
+                              "error": "#c71c22",
+                              "focus": "#54b4eb",
+                              "font": "#333333",
+                              "hover": "#178acc",
+                              "info": "#04519b",
+                              "primary": "#2fa4e7",
+                              "secondary": "#e9ecef",
+                              "success": "#73a839",
+                              "tertiary": "#343a40",
+                              "warning": "#dd5600",
+                            },
+                            "font": Object {
+                              "size": Object {
+                                "default": "1.8rem",
+                                "h1": "3.8rem",
+                                "h2": "3.1rem",
+                                "h3": "2.6rem",
+                                "h4": "2.3rem",
+                                "h5": "2.2rem",
+                                "h6": "2.1rem",
+                              },
+                              "weight": Object {
+                                "default": 100,
+                              },
+                            },
+                          }
+                        }
+                        type="checkbox"
+                      >
+                        <label
+                          className="sc-ifAKCX gcYEuN"
+                          htmlFor="id-0"
+                          type="checkbox"
+                        >
+                          label
+                        </label>
+                      </styled.label>
+                    </Label>
+                  </div>
+                </styled.div>
+                <styled.div
+                  key="1"
+                >
+                  <div
+                    className="sc-bZQynM daLRsN"
+                  >
+                    <styled.input
+                      aria-invalid={false}
+                      checked={false}
+                      disabled={true}
+                      hasError={false}
+                      id="id-1"
+                      innerRef={[Function]}
+                      name="name"
+                      onChange={[Function]}
+                      theme={
+                        Object {
+                          "border": Object {
+                            "radius": Object {
+                              "edge": "2px",
+                              "round": "100px",
+                            },
+                            "size": "2px",
+                          },
+                          "breakpoint": Object {
+                            "lg": "992px",
+                            "md": "768px",
+                            "sm": "576px",
+                            "xl": "1200px",
+                            "xs": "0px",
+                          },
+                          "color": Object {
+                            "background": "#ffffff",
+                            "border": "#2fa4e7",
+                            "checked": "#2fa4e7",
+                            "danger": "#c71c22",
+                            "default": "#2fa4e7",
+                            "disabled": "#acacac",
+                            "error": "#c71c22",
+                            "focus": "#54b4eb",
+                            "font": "#333333",
+                            "hover": "#178acc",
+                            "info": "#04519b",
+                            "primary": "#2fa4e7",
+                            "secondary": "#e9ecef",
+                            "success": "#73a839",
+                            "tertiary": "#343a40",
+                            "warning": "#dd5600",
+                          },
+                          "font": Object {
+                            "size": Object {
+                              "default": "1.8rem",
+                              "h1": "3.8rem",
+                              "h2": "3.1rem",
+                              "h3": "2.6rem",
+                              "h4": "2.3rem",
+                              "h5": "2.2rem",
+                              "h6": "2.1rem",
+                            },
+                            "weight": Object {
+                              "default": 100,
+                            },
+                          },
+                        }
+                      }
+                      type="checkbox"
+                      value="1"
+                    >
+                      <input
+                        aria-invalid={false}
+                        checked={false}
+                        className="sc-EHOje bShKlD"
+                        disabled={true}
+                        id="id-1"
+                        name="name"
+                        onChange={[Function]}
+                        type="checkbox"
+                        value="1"
+                      />
+                    </styled.input>
+                    <Label
+                      hasError={false}
+                      htmlFor="id-1"
+                      type="checkbox"
+                    >
+                      <styled.label
+                        hasError={false}
+                        htmlFor="id-1"
+                        theme={
+                          Object {
+                            "border": Object {
+                              "radius": Object {
+                                "edge": "2px",
+                                "round": "100px",
+                              },
+                              "size": "2px",
+                            },
+                            "breakpoint": Object {
+                              "lg": "992px",
+                              "md": "768px",
+                              "sm": "576px",
+                              "xl": "1200px",
+                              "xs": "0px",
+                            },
+                            "color": Object {
+                              "background": "#ffffff",
+                              "border": "#2fa4e7",
+                              "checked": "#2fa4e7",
+                              "danger": "#c71c22",
+                              "default": "#2fa4e7",
+                              "disabled": "#acacac",
+                              "error": "#c71c22",
+                              "focus": "#54b4eb",
+                              "font": "#333333",
+                              "hover": "#178acc",
+                              "info": "#04519b",
+                              "primary": "#2fa4e7",
+                              "secondary": "#e9ecef",
+                              "success": "#73a839",
+                              "tertiary": "#343a40",
+                              "warning": "#dd5600",
+                            },
+                            "font": Object {
+                              "size": Object {
+                                "default": "1.8rem",
+                                "h1": "3.8rem",
+                                "h2": "3.1rem",
+                                "h3": "2.6rem",
+                                "h4": "2.3rem",
+                                "h5": "2.2rem",
+                                "h6": "2.1rem",
+                              },
+                              "weight": Object {
+                                "default": 100,
+                              },
+                            },
+                          }
+                        }
+                        type="checkbox"
+                      >
+                        <label
+                          className="sc-ifAKCX gcYEuN"
+                          htmlFor="id-1"
+                          type="checkbox"
+                        >
+                          one
+                        </label>
+                      </styled.label>
+                    </Label>
+                  </div>
+                </styled.div>
+              </div>
+            </styled.div>
+          </fieldset>
+        </styled.fieldset>
+      </Fieldset>
+      <Error
+        id="id-error"
+      >
+        <styled.div
+          id="id-error-error"
+          theme={
+            Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
+              "color": Object {
+                "background": "#ffffff",
+                "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
+                "default": "#2fa4e7",
+                "disabled": "#acacac",
+                "error": "#c71c22",
+                "focus": "#54b4eb",
+                "font": "#333333",
+                "hover": "#178acc",
+                "info": "#04519b",
+                "primary": "#2fa4e7",
+                "secondary": "#e9ecef",
+                "success": "#73a839",
+                "tertiary": "#343a40",
+                "warning": "#dd5600",
+              },
+              "font": Object {
+                "size": Object {
+                  "default": "1.8rem",
+                  "h1": "3.8rem",
+                  "h2": "3.1rem",
+                  "h3": "2.6rem",
+                  "h4": "2.3rem",
+                  "h5": "2.2rem",
+                  "h6": "2.1rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
+              },
+            }
+          }
+        >
+          <div
+            className="sc-htpNat hYJuoM"
+            id="id-error-error"
+          />
+        </styled.div>
+      </Error>
+    </div>
+  </styled.div>
+</InputCheckbox>
+`;
+
+exports[`InputCheckboxGroup snapshot error 1`] = `
+<InputCheckbox
+  errorMessage="Error"
+  id="id"
+  name="name"
+  options={
+    Array [
+      Object {
+        "label": "label",
+        "value": "value",
+      },
+      Object {
+        "label": "one",
+        "value": "1",
+      },
+    ]
+  }
+>
+  <styled.div>
+    <div
+      className="sc-htoDjs gQgvQJ"
+    >
+      <Fieldset
+        aria-describedby="id-error"
+        id="id-fieldset"
+      >
+        <styled.fieldset
+          id="id-fieldset"
+        >
+          <fieldset
+            className="sc-bdVaJa bDWFJH"
+            id="id-fieldset"
+          >
+            <styled.div
+              alignment="horizontal"
+              theme={
+                Object {
+                  "border": Object {
+                    "radius": Object {
+                      "edge": "2px",
+                      "round": "100px",
+                    },
+                    "size": "2px",
+                  },
+                  "breakpoint": Object {
+                    "lg": "992px",
+                    "md": "768px",
+                    "sm": "576px",
+                    "xl": "1200px",
+                    "xs": "0px",
+                  },
+                  "color": Object {
+                    "background": "#ffffff",
+                    "border": "#2fa4e7",
+                    "checked": "#2fa4e7",
+                    "danger": "#c71c22",
+                    "default": "#2fa4e7",
+                    "disabled": "#acacac",
+                    "error": "#c71c22",
+                    "focus": "#54b4eb",
+                    "font": "#333333",
+                    "hover": "#178acc",
+                    "info": "#04519b",
+                    "primary": "#2fa4e7",
+                    "secondary": "#e9ecef",
+                    "success": "#73a839",
+                    "tertiary": "#343a40",
+                    "warning": "#dd5600",
+                  },
+                  "font": Object {
+                    "size": Object {
+                      "default": "1.8rem",
+                      "h1": "3.8rem",
+                      "h2": "3.1rem",
+                      "h3": "2.6rem",
+                      "h4": "2.3rem",
+                      "h5": "2.2rem",
+                      "h6": "2.1rem",
+                    },
+                    "weight": Object {
+                      "default": 100,
+                    },
+                  },
+                }
+              }
+            >
+              <div
+                className="sc-dnqmqq kdnsFs"
+              >
+                <styled.div
+                  key="0"
+                >
+                  <div
+                    className="sc-bZQynM daLRsN"
+                  >
+                    <styled.input
+                      aria-invalid={true}
+                      checked={false}
+                      hasError={true}
+                      id="id-0"
+                      innerRef={[Function]}
+                      name="name"
+                      onChange={[Function]}
+                      theme={
+                        Object {
+                          "border": Object {
+                            "radius": Object {
+                              "edge": "2px",
+                              "round": "100px",
+                            },
+                            "size": "2px",
+                          },
+                          "breakpoint": Object {
+                            "lg": "992px",
+                            "md": "768px",
+                            "sm": "576px",
+                            "xl": "1200px",
+                            "xs": "0px",
+                          },
+                          "color": Object {
+                            "background": "#ffffff",
+                            "border": "#2fa4e7",
+                            "checked": "#2fa4e7",
+                            "danger": "#c71c22",
+                            "default": "#2fa4e7",
+                            "disabled": "#acacac",
+                            "error": "#c71c22",
+                            "focus": "#54b4eb",
+                            "font": "#333333",
+                            "hover": "#178acc",
+                            "info": "#04519b",
+                            "primary": "#2fa4e7",
+                            "secondary": "#e9ecef",
+                            "success": "#73a839",
+                            "tertiary": "#343a40",
+                            "warning": "#dd5600",
+                          },
+                          "font": Object {
+                            "size": Object {
+                              "default": "1.8rem",
+                              "h1": "3.8rem",
+                              "h2": "3.1rem",
+                              "h3": "2.6rem",
+                              "h4": "2.3rem",
+                              "h5": "2.2rem",
+                              "h6": "2.1rem",
+                            },
+                            "weight": Object {
+                              "default": 100,
+                            },
+                          },
+                        }
+                      }
+                      type="checkbox"
+                      value="value"
+                    >
+                      <input
+                        aria-invalid={true}
+                        checked={false}
+                        className="sc-EHOje occqe"
+                        id="id-0"
+                        name="name"
+                        onChange={[Function]}
+                        type="checkbox"
+                        value="value"
+                      />
+                    </styled.input>
+                    <Label
+                      hasError={true}
+                      htmlFor="id-0"
+                      type="checkbox"
+                    >
+                      <styled.label
+                        hasError={true}
+                        htmlFor="id-0"
+                        theme={
+                          Object {
+                            "border": Object {
+                              "radius": Object {
+                                "edge": "2px",
+                                "round": "100px",
+                              },
+                              "size": "2px",
+                            },
+                            "breakpoint": Object {
+                              "lg": "992px",
+                              "md": "768px",
+                              "sm": "576px",
+                              "xl": "1200px",
+                              "xs": "0px",
+                            },
+                            "color": Object {
+                              "background": "#ffffff",
+                              "border": "#2fa4e7",
+                              "checked": "#2fa4e7",
+                              "danger": "#c71c22",
+                              "default": "#2fa4e7",
+                              "disabled": "#acacac",
+                              "error": "#c71c22",
+                              "focus": "#54b4eb",
+                              "font": "#333333",
+                              "hover": "#178acc",
+                              "info": "#04519b",
+                              "primary": "#2fa4e7",
+                              "secondary": "#e9ecef",
+                              "success": "#73a839",
+                              "tertiary": "#343a40",
+                              "warning": "#dd5600",
+                            },
+                            "font": Object {
+                              "size": Object {
+                                "default": "1.8rem",
+                                "h1": "3.8rem",
+                                "h2": "3.1rem",
+                                "h3": "2.6rem",
+                                "h4": "2.3rem",
+                                "h5": "2.2rem",
+                                "h6": "2.1rem",
+                              },
+                              "weight": Object {
+                                "default": 100,
+                              },
+                            },
+                          }
+                        }
+                        type="checkbox"
+                      >
+                        <label
+                          className="sc-ifAKCX gpCCOx"
+                          htmlFor="id-0"
+                          type="checkbox"
+                        >
+                          label
+                        </label>
+                      </styled.label>
+                    </Label>
+                  </div>
+                </styled.div>
+                <styled.div
+                  key="1"
+                >
+                  <div
+                    className="sc-bZQynM daLRsN"
+                  >
+                    <styled.input
+                      aria-invalid={true}
+                      checked={false}
+                      hasError={true}
+                      id="id-1"
+                      innerRef={[Function]}
+                      name="name"
+                      onChange={[Function]}
+                      theme={
+                        Object {
+                          "border": Object {
+                            "radius": Object {
+                              "edge": "2px",
+                              "round": "100px",
+                            },
+                            "size": "2px",
+                          },
+                          "breakpoint": Object {
+                            "lg": "992px",
+                            "md": "768px",
+                            "sm": "576px",
+                            "xl": "1200px",
+                            "xs": "0px",
+                          },
+                          "color": Object {
+                            "background": "#ffffff",
+                            "border": "#2fa4e7",
+                            "checked": "#2fa4e7",
+                            "danger": "#c71c22",
+                            "default": "#2fa4e7",
+                            "disabled": "#acacac",
+                            "error": "#c71c22",
+                            "focus": "#54b4eb",
+                            "font": "#333333",
+                            "hover": "#178acc",
+                            "info": "#04519b",
+                            "primary": "#2fa4e7",
+                            "secondary": "#e9ecef",
+                            "success": "#73a839",
+                            "tertiary": "#343a40",
+                            "warning": "#dd5600",
+                          },
+                          "font": Object {
+                            "size": Object {
+                              "default": "1.8rem",
+                              "h1": "3.8rem",
+                              "h2": "3.1rem",
+                              "h3": "2.6rem",
+                              "h4": "2.3rem",
+                              "h5": "2.2rem",
+                              "h6": "2.1rem",
+                            },
+                            "weight": Object {
+                              "default": 100,
+                            },
+                          },
+                        }
+                      }
+                      type="checkbox"
+                      value="1"
+                    >
+                      <input
+                        aria-invalid={true}
+                        checked={false}
+                        className="sc-EHOje occqe"
+                        id="id-1"
+                        name="name"
+                        onChange={[Function]}
+                        type="checkbox"
+                        value="1"
+                      />
+                    </styled.input>
+                    <Label
+                      hasError={true}
+                      htmlFor="id-1"
+                      type="checkbox"
+                    >
+                      <styled.label
+                        hasError={true}
+                        htmlFor="id-1"
+                        theme={
+                          Object {
+                            "border": Object {
+                              "radius": Object {
+                                "edge": "2px",
+                                "round": "100px",
+                              },
+                              "size": "2px",
+                            },
+                            "breakpoint": Object {
+                              "lg": "992px",
+                              "md": "768px",
+                              "sm": "576px",
+                              "xl": "1200px",
+                              "xs": "0px",
+                            },
+                            "color": Object {
+                              "background": "#ffffff",
+                              "border": "#2fa4e7",
+                              "checked": "#2fa4e7",
+                              "danger": "#c71c22",
+                              "default": "#2fa4e7",
+                              "disabled": "#acacac",
+                              "error": "#c71c22",
+                              "focus": "#54b4eb",
+                              "font": "#333333",
+                              "hover": "#178acc",
+                              "info": "#04519b",
+                              "primary": "#2fa4e7",
+                              "secondary": "#e9ecef",
+                              "success": "#73a839",
+                              "tertiary": "#343a40",
+                              "warning": "#dd5600",
+                            },
+                            "font": Object {
+                              "size": Object {
+                                "default": "1.8rem",
+                                "h1": "3.8rem",
+                                "h2": "3.1rem",
+                                "h3": "2.6rem",
+                                "h4": "2.3rem",
+                                "h5": "2.2rem",
+                                "h6": "2.1rem",
+                              },
+                              "weight": Object {
+                                "default": 100,
+                              },
+                            },
+                          }
+                        }
+                        type="checkbox"
+                      >
+                        <label
+                          className="sc-ifAKCX gpCCOx"
+                          htmlFor="id-1"
+                          type="checkbox"
+                        >
+                          one
+                        </label>
+                      </styled.label>
+                    </Label>
+                  </div>
+                </styled.div>
+              </div>
+            </styled.div>
+          </fieldset>
+        </styled.fieldset>
+      </Fieldset>
+      <Error
+        id="id-error"
+      >
+        <styled.div
+          id="id-error-error"
+          theme={
+            Object {
+              "border": Object {
+                "radius": Object {
+                  "edge": "2px",
+                  "round": "100px",
+                },
+                "size": "2px",
+              },
+              "breakpoint": Object {
+                "lg": "992px",
+                "md": "768px",
+                "sm": "576px",
+                "xl": "1200px",
+                "xs": "0px",
+              },
+              "color": Object {
+                "background": "#ffffff",
+                "border": "#2fa4e7",
+                "checked": "#2fa4e7",
+                "danger": "#c71c22",
+                "default": "#2fa4e7",
+                "disabled": "#acacac",
+                "error": "#c71c22",
+                "focus": "#54b4eb",
+                "font": "#333333",
+                "hover": "#178acc",
+                "info": "#04519b",
+                "primary": "#2fa4e7",
+                "secondary": "#e9ecef",
+                "success": "#73a839",
+                "tertiary": "#343a40",
+                "warning": "#dd5600",
+              },
+              "font": Object {
+                "size": Object {
+                  "default": "1.8rem",
+                  "h1": "3.8rem",
+                  "h2": "3.1rem",
+                  "h3": "2.6rem",
+                  "h4": "2.3rem",
+                  "h5": "2.2rem",
+                  "h6": "2.1rem",
+                },
+                "weight": Object {
+                  "default": 100,
+                },
+              },
+            }
+          }
+        >
+          <div
+            className="sc-htpNat hYJuoM"
+            id="id-error-error"
+          >
+            Error
+          </div>
         </styled.div>
       </Error>
     </div>
