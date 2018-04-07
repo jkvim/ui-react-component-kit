@@ -7,7 +7,7 @@ const h1 = styled.h1;
 /** @component */
 export const StyledH1 = h1`
   color: ${props => props.theme.color.font};
-  font-size: 2.8rem;
+  font-size: ${props => props.theme.font.size.h1};
   font-weight: 100;
 `;
 
@@ -20,7 +20,7 @@ const h2 = styled.h2;
 /** @component */
 export const StyledH2 = h2`
   color: ${props => props.theme.color.font};
-  font-size: 2.1rem;
+  font-size: ${props => props.theme.font.size.h2};
   font-weight: 100;
 `;
 
@@ -33,7 +33,7 @@ const h3 = styled.h3;
 /** @component */
 export const StyledH3 = h3`
   color: ${props => props.theme.color.font};
-  font-size: 1.6rem;
+  font-size: ${props => props.theme.font.size.h3};
   font-weight: 100;
 `;
 
@@ -46,7 +46,7 @@ const h4 = styled.h4;
 /** @component */
 export const StyledH4 = h4`
   color: ${props => props.theme.color.font};
-  font-size: 1.3rem;
+  font-size: ${props => props.theme.font.size.h4};
   font-weight: bold;
 `;
 
@@ -59,7 +59,7 @@ const h5 = styled.h5;
 /** @component */
 export const StyledH5 = h5`
   color: ${props => props.theme.color.font};
-  font-size: 1.2rem;
+  font-size: ${props => props.theme.font.size.h5};
   font-weight: bold;
 `;
 
@@ -72,7 +72,7 @@ const h6 = styled.h6;
 /** @component */
 export const StyledH6 = h6`
   color: ${props => props.theme.color.font};
-  font-size: 1.1rem;
+  font-size: ${props => props.theme.font.size.h6};
   font-weight: bold;
 `;
 

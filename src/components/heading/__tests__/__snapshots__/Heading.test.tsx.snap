@@ -42,6 +42,12 @@ exports[`Heading props should match snapshot 1`] = `
         "font": Object {
           "size": Object {
             "default": "1.8rem",
+            "h1": "2.8rem",
+            "h2": "2.1rem",
+            "h3": "1.6rem",
+            "h4": "1.3rem",
+            "h5": "1.2rem",
+            "h6": "1.1rem",
           },
           "weight": Object {
             "default": 100,
@@ -101,6 +107,12 @@ exports[`Heading snapshot h1 1`] = `
         "font": Object {
           "size": Object {
             "default": "1.8rem",
+            "h1": "2.8rem",
+            "h2": "2.1rem",
+            "h3": "1.6rem",
+            "h4": "1.3rem",
+            "h5": "1.2rem",
+            "h6": "1.1rem",
           },
           "weight": Object {
             "default": 100,
@@ -160,6 +172,12 @@ exports[`Heading snapshot h2 1`] = `
         "font": Object {
           "size": Object {
             "default": "1.8rem",
+            "h1": "2.8rem",
+            "h2": "2.1rem",
+            "h3": "1.6rem",
+            "h4": "1.3rem",
+            "h5": "1.2rem",
+            "h6": "1.1rem",
           },
           "weight": Object {
             "default": 100,
@@ -219,6 +237,12 @@ exports[`Heading snapshot h3 1`] = `
         "font": Object {
           "size": Object {
             "default": "1.8rem",
+            "h1": "2.8rem",
+            "h2": "2.1rem",
+            "h3": "1.6rem",
+            "h4": "1.3rem",
+            "h5": "1.2rem",
+            "h6": "1.1rem",
           },
           "weight": Object {
             "default": 100,
@@ -278,6 +302,12 @@ exports[`Heading snapshot h4 1`] = `
         "font": Object {
           "size": Object {
             "default": "1.8rem",
+            "h1": "2.8rem",
+            "h2": "2.1rem",
+            "h3": "1.6rem",
+            "h4": "1.3rem",
+            "h5": "1.2rem",
+            "h6": "1.1rem",
           },
           "weight": Object {
             "default": 100,
@@ -337,6 +367,12 @@ exports[`Heading snapshot h5 1`] = `
         "font": Object {
           "size": Object {
             "default": "1.8rem",
+            "h1": "2.8rem",
+            "h2": "2.1rem",
+            "h3": "1.6rem",
+            "h4": "1.3rem",
+            "h5": "1.2rem",
+            "h6": "1.1rem",
           },
           "weight": Object {
             "default": 100,
@@ -396,6 +432,12 @@ exports[`Heading snapshot h6 1`] = `
         "font": Object {
           "size": Object {
             "default": "1.8rem",
+            "h1": "2.8rem",
+            "h2": "2.1rem",
+            "h3": "1.6rem",
+            "h4": "1.3rem",
+            "h5": "1.2rem",
+            "h6": "1.1rem",
           },
           "weight": Object {
             "default": 100,

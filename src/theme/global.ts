@@ -78,7 +78,6 @@ injectGlobal`
   
   body {
     font-family: "swiss721bt", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 15px;
 	  font-size: 1.5rem;
   }
   

@@ -11,7 +11,13 @@ export const theme = {
       default: 100
     },
     size: {
-      default: '1.8rem'
+      default: '1.8rem',
+      h1: '2.8rem',
+      h2: '2.1rem',
+      h3: '1.6rem',
+      h4: '1.3rem',
+      h5: '1.2rem',
+      h6: '1.1rem'
     }
   },
   border: {
