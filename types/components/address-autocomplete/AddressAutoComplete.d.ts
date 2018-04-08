@@ -14,7 +14,7 @@ export interface AddressAutoCompleteProps {
     errorMessage?: string;
     disabled?: boolean;
     selectedItem?: ParsedSelectedItem;
-    onChange?: (obj?: ParsedSelectedItem) => void;
+    onChange?: (isItemSelected?: boolean) => void;
     onBlur?: (obj?: ParsedSelectedItem) => void;
     suggestionFooter?: FooterComponent;
 }
