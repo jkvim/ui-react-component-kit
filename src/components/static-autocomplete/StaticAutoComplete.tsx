@@ -15,7 +15,7 @@ export interface StaticAutoCompleteProps {
   className?: string;
   disabled?: boolean;
   selectedItem?: ParsedSelectedItem;
-  onBlur?: (obj?: ParsedSelectedItem) => void;
+  onBlur?: (isItemSelected?: boolean) => void;
   onChange?: (obj?: ParsedSelectedItem) => void;
 }
 

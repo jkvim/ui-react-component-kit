@@ -16,10 +16,10 @@ import {
 
 export interface AutoCompleteProps {
   id: string;
+  dataProvider: DataProvider;
   label?: string;
   hint?: string;
   placeholder?: string;
-  dataProvider: DataProvider;
   minSearchLength?: number;
   errorMessage?: string;
   className?: string;
