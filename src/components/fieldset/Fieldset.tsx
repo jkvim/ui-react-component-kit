@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { StyledFieldset } from './styledFieldset';
-import { AllProps } from '../../theme/common/props';
 
 export interface FieldsetProps {
   id: string;
