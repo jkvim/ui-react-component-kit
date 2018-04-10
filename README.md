@@ -6,7 +6,7 @@ ui-react-component-kit
 [![Dependency Status](https://img.shields.io/david/Rob-Leggett/ui-react-component-kit.svg?style=flat-square)](https://david-dm.org/Rob-Leggett/ui-react-component-kit)
 [![Known Vulnerabilities](https://snyk.io/test/github/rob-leggett/ui-react-component-kit/badge.svg?targetFile=package.json)](https://snyk.io/test/github/rob-leggett/ui-react-component-kit?targetFile=package.json)
 
-A react component library that is not prescribing a state management and has theming capabilities.
+A react component library that is not prescribing state management and has theming capabilities. 
 
 # Table of contents
 1. [Installation](#installation)
@@ -149,11 +149,86 @@ When running the tests you will get the following metrics:
 
 ### Microservice <a name="microservice"/>
 
+In order to use any components specified below in this section you will be required to have an API with the endpoints the components requires.
+
 ### Interface Spec
 
 For use with address-autocomplete component:
 
-TBD
+#### Get Addresses
+
+```text
+GET - ${endpoint}?query=${term}&limit=${limit}
+```
+
+| Parameter | Description                                             | Example                          | Default |
+|-----------|---------------------------------------------------------|----------------------------------|---------|
+| endpoint  | The addresses endpoint                                  | https://localhost:3000/addresses | N/A     |
+| term      | Query to best match addresses to return in the response | 123 Cha                          | N/A     |
+| limit     | Max number of addresses to return in the response       | 15                               | 10      |
+
+##### Success Response Example (HTTP Status Code 2XX)
+
+```json
+{
+  "data": [
+    {
+      "id": "12345",
+      "address": "123 Champion Road Clayton South VIC 3169"
+    },
+    {
+      "id": "23456",
+      "address": "123 Champion Road Umina Beach NSW 2257"
+    }
+  ]
+}
+```
+
+##### No Match Response Example (HTTP Status Code 2XX)
+```json
+{
+  "data": []
+}
+```
+
+##### Error Response Example (HTTP Status Code 4XX or 5XX)
+```json
+{}
+```
+
+#### Get Address Details
+
+```text
+GET - ${endpoint}/${id}
+```
+
+| Parameter | Description                                              | Example                                | Default |
+|-----------|----------------------------------------------------------|----------------------------------------|---------|
+| endpoint  | The address details endpoint                             | https://localhost:3000/addresses/45678 | N/A     |
+| id        | ID of the address to return the details via the response | 45678                                  | N/A     |
+
+##### Success Response Example (HTTP Status Code 2XX)
+
+The json payload must have property address for the component to be functional, all the other payload properties such as house_number etc are optional and can be anything that represents an address
+
+```json
+{
+  "data": {
+    "id": "45678",
+    "house_number": "123",
+    "street": "Champion Street",
+    "locality": "Dubbo",
+    "state": "NSW",
+    "postcode": "2830",
+    "address": "123 Champion Street Dubbo NSW 2830"
+  }
+}
+```
+
+##### Error Response Example (HTTP Status Code 4XX or 5XX)
+```json
+{}
+```
 
 ## Styleguide <a name="styleguide"/>
 
