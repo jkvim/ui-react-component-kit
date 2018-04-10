@@ -17,7 +17,7 @@ export interface CheckBoxFieldProps {
     className?: string;
     disabled?: boolean;
     setInputRef?: (ref: HTMLInputElement) => void;
-    onChange?: (value: boolean, event?: React.ChangeEvent<HTMLInputElement>) => void;
+    onChange?: (values: string[], event?: React.ChangeEvent<HTMLInputElement>) => void;
 }
 declare const InputCheckbox: React.SFC<CheckBoxFieldProps>;
 export default InputCheckbox;

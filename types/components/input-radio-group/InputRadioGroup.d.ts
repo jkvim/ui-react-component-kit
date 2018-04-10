@@ -17,7 +17,7 @@ export interface InputRadioGroupProps {
     className?: string;
     disabled?: boolean;
     setInputRef?: (ref: HTMLInputElement) => void;
-    onChange?: (value: boolean, event?: React.ChangeEvent<HTMLInputElement>) => void;
+    onChange?: (value: string | number | string[], event?: React.ChangeEvent<HTMLInputElement>) => void;
 }
 declare const InputRadioGroup: React.SFC<InputRadioGroupProps>;
 export default InputRadioGroup;
