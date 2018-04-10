@@ -3,6 +3,8 @@ ui-react-component-kit
 [![Build Status](https://travis-ci.org/Rob-Leggett/ui-react-component-kit.svg?branch=master)](https://travis-ci.org/Rob-Leggett/ui-react-component-kit)
 [![npm](https://img.shields.io/npm/v/ui-react-component-kit.svg)](https://www.npmjs.com/package/ui-react-component-kit)
 [![codecov](https://codecov.io/gh/Rob-Leggett/ui-react-component-kit/branch/master/graph/badge.svg)](https://codecov.io/gh/Rob-Leggett/ui-react-component-kit)
+[![Dependency Status](https://img.shields.io/david/Rob-Leggett/ui-react-component-kit.svg?style=flat-square)](https://david-dm.org/Rob-Leggett/ui-react-component-kit)
+[![Known Vulnerabilities](https://snyk.io/test/github/rob-leggett/ui-react-component-kit/badge.svg?targetFile=package.json)](https://snyk.io/test/github/rob-leggett/ui-react-component-kit?targetFile=package.json)
 
 A react component library that is not prescribing a state management and has theming capabilities.
 
