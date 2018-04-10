@@ -54,26 +54,42 @@ $ yarn add ui-react-component-kit --dev | npm install ui-react-component-kit --s
 
 ### Theming <a name="theming"/>
 
-```javascript
-import { ThemeProvider } from 'styled-components';
-// custom theme provided with library
-import { customTheme } from './your/custom/theme/path'; 
-```
-
 The defaultTheme is used if you don't provide your own theme, it has been written with mobile first, therefore breakpoints are triggered on min-width rather then max-width. 
 
 Wrap your application in the ThemeProvider and pass in your own theme.
 
 Example: [defaultTheme](https://github.com/Rob-Leggett/ui-react-component-kit/blob/master/src/theme/defaultTheme.ts)
 
-```javascript
-function App() {
-  return (
-    <ThemeProvider theme={customTheme}>
-      {/* rest of your app */}
-    </ThemeProvider>
-  );
+App.[js|ts]
+```javascript static
+import * as React from 'react';
+import { ThemeProvider } from 'styled-components';
+// custom theme provided with library
+import { customTheme } from './your/custom/theme/path'; 
+
+class App extends React.Component {
+  render() {
+    return (
+      <ThemeProvider theme={customTheme}>
+        {/* rest of your app */}
+      </IdleTime>
+    );
+  }
 }
+
+export default App
+```
+
+index.[js|ts]
+```javascript static
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import App from './App';
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
 ```
 
 ## Dev Process <a name="dev-process"/>
