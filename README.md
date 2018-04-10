@@ -72,7 +72,7 @@ class App extends React.Component {
     return (
       <ThemeProvider theme={customTheme}>
         {/* rest of your app */}
-      </IdleTime>
+      </ThemeProvider>
     );
   }
 }
