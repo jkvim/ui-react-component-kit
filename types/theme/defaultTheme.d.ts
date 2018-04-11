@@ -7,6 +7,9 @@ export declare const theme: {
         xl: string;
     };
     font: {
+        family: {
+            default: string;
+        };
         weight: {
             default: number;
         };
