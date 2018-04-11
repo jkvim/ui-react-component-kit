@@ -199,7 +199,7 @@ exports[`Label snapshot checkbox 1`] = `
     type="checkbox"
   >
     <label
-      className="sc-bwzfXH guwhKP"
+      className="sc-bwzfXH bWKdMr"
       htmlFor="id"
       type="checkbox"
     >
@@ -339,7 +339,7 @@ exports[`Label snapshot radio 1`] = `
     type="radio"
   >
     <label
-      className="sc-bwzfXH cuKRqK"
+      className="sc-bwzfXH hOkIzw"
       htmlFor="id"
       type="radio"
     >

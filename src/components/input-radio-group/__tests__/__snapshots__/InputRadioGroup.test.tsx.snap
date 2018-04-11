@@ -303,7 +303,7 @@ exports[`InputRadioGroup props should match snapshot 1`] = `
                         type="radio"
                       >
                         <label
-                          className="sc-ifAKCX jEkptv"
+                          className="sc-ifAKCX ijnteq"
                           htmlFor="id-0"
                           type="radio"
                         >
@@ -454,7 +454,7 @@ exports[`InputRadioGroup props should match snapshot 1`] = `
                         type="radio"
                       >
                         <label
-                          className="sc-ifAKCX jEkptv"
+                          className="sc-ifAKCX ijnteq"
                           htmlFor="id-1"
                           type="radio"
                         >
@@ -765,7 +765,7 @@ exports[`InputRadioGroup snapshot basic 1`] = `
                         type="radio"
                       >
                         <label
-                          className="sc-ifAKCX dfQieX"
+                          className="sc-ifAKCX kDcMIX"
                           htmlFor="id-0"
                           type="radio"
                         >
@@ -914,7 +914,7 @@ exports[`InputRadioGroup snapshot basic 1`] = `
                         type="radio"
                       >
                         <label
-                          className="sc-ifAKCX dfQieX"
+                          className="sc-ifAKCX kDcMIX"
                           htmlFor="id-1"
                           type="radio"
                         >
@@ -1226,7 +1226,7 @@ exports[`InputRadioGroup snapshot disabled 1`] = `
                         type="radio"
                       >
                         <label
-                          className="sc-ifAKCX dfQieX"
+                          className="sc-ifAKCX kDcMIX"
                           htmlFor="id-0"
                           type="radio"
                         >
@@ -1377,7 +1377,7 @@ exports[`InputRadioGroup snapshot disabled 1`] = `
                         type="radio"
                       >
                         <label
-                          className="sc-ifAKCX dfQieX"
+                          className="sc-ifAKCX kDcMIX"
                           htmlFor="id-1"
                           type="radio"
                         >
@@ -1687,7 +1687,7 @@ exports[`InputRadioGroup snapshot error 1`] = `
                         type="radio"
                       >
                         <label
-                          className="sc-ifAKCX jEkptv"
+                          className="sc-ifAKCX ijnteq"
                           htmlFor="id-0"
                           type="radio"
                         >
@@ -1836,7 +1836,7 @@ exports[`InputRadioGroup snapshot error 1`] = `
                         type="radio"
                       >
                         <label
-                          className="sc-ifAKCX jEkptv"
+                          className="sc-ifAKCX ijnteq"
                           htmlFor="id-1"
                           type="radio"
                         >

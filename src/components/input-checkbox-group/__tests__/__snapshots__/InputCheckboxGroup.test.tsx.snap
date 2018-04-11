@@ -307,7 +307,7 @@ exports[`InputCheckboxGroup props should match snapshot 1`] = `
                         type="checkbox"
                       >
                         <label
-                          className="sc-ifAKCX gpCCOx"
+                          className="sc-ifAKCX czKfYk"
                           htmlFor="id-0"
                           type="checkbox"
                         >
@@ -458,7 +458,7 @@ exports[`InputCheckboxGroup props should match snapshot 1`] = `
                         type="checkbox"
                       >
                         <label
-                          className="sc-ifAKCX gpCCOx"
+                          className="sc-ifAKCX czKfYk"
                           htmlFor="id-1"
                           type="checkbox"
                         >
@@ -769,7 +769,7 @@ exports[`InputCheckboxGroup snapshot basic 1`] = `
                         type="checkbox"
                       >
                         <label
-                          className="sc-ifAKCX gcYEuN"
+                          className="sc-ifAKCX hREaeJ"
                           htmlFor="id-0"
                           type="checkbox"
                         >
@@ -918,7 +918,7 @@ exports[`InputCheckboxGroup snapshot basic 1`] = `
                         type="checkbox"
                       >
                         <label
-                          className="sc-ifAKCX gcYEuN"
+                          className="sc-ifAKCX hREaeJ"
                           htmlFor="id-1"
                           type="checkbox"
                         >
@@ -1230,7 +1230,7 @@ exports[`InputCheckboxGroup snapshot disabled 1`] = `
                         type="checkbox"
                       >
                         <label
-                          className="sc-ifAKCX gcYEuN"
+                          className="sc-ifAKCX hREaeJ"
                           htmlFor="id-0"
                           type="checkbox"
                         >
@@ -1381,7 +1381,7 @@ exports[`InputCheckboxGroup snapshot disabled 1`] = `
                         type="checkbox"
                       >
                         <label
-                          className="sc-ifAKCX gcYEuN"
+                          className="sc-ifAKCX hREaeJ"
                           htmlFor="id-1"
                           type="checkbox"
                         >
@@ -1691,7 +1691,7 @@ exports[`InputCheckboxGroup snapshot error 1`] = `
                         type="checkbox"
                       >
                         <label
-                          className="sc-ifAKCX gpCCOx"
+                          className="sc-ifAKCX czKfYk"
                           htmlFor="id-0"
                           type="checkbox"
                         >
@@ -1840,7 +1840,7 @@ exports[`InputCheckboxGroup snapshot error 1`] = `
                         type="checkbox"
                       >
                         <label
-                          className="sc-ifAKCX gpCCOx"
+                          className="sc-ifAKCX czKfYk"
                           htmlFor="id-1"
                           type="checkbox"
                         >
