@@ -7,6 +7,9 @@ export const theme = {
     xl: '1200px'
   },
   font: {
+    family: {
+      default: 'Helvetica, Arial, sans-serif'
+    },
     weight: {
       default: 100
     },
