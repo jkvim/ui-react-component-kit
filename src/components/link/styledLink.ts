@@ -29,7 +29,7 @@ const linkExternalSpan = styled.span;
 /** @component */
 export const StyledLinkExternalSpan = linkExternalSpan`
   &:after {
-    font-family: "fontawesome";
+    font-family: "Font Awesome\\ 5 Free";
     font-weight: 900;
     content: '\\f35d';
     margin-left: 5px;

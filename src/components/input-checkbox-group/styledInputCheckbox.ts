@@ -22,8 +22,9 @@ export const StyledInputCheckbox = inputCheckbox`
   cursor: pointer;
   
   &:checked + label:before {
-    font-family: "glyphicons";
-    content: "\\E013";
+    font-family: "Font Awesome\\ 5 Free";
+    content: "\\f00c";
+    font-weight: 900;
     color: ${props => props.hasError ? props.theme.color.error : props.theme.color.default};
     border-color: ${props => props.theme.color.border};
     box-shadow: 0 0 0 ${props => props.theme.border.radius.edge} ${props => props.hasError ? props.theme.color.error : props.theme.color.checked};

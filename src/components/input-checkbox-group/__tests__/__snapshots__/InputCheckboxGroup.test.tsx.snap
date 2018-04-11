@@ -237,7 +237,7 @@ exports[`InputCheckboxGroup props should match snapshot 1`] = `
                       <input
                         aria-invalid={true}
                         checked={true}
-                        className="sc-EHOje occqe"
+                        className="sc-EHOje ktgYJj"
                         disabled={true}
                         id="id-0"
                         name="name"
@@ -388,7 +388,7 @@ exports[`InputCheckboxGroup props should match snapshot 1`] = `
                       <input
                         aria-invalid={true}
                         checked={false}
-                        className="sc-EHOje occqe"
+                        className="sc-EHOje ktgYJj"
                         disabled={true}
                         id="id-1"
                         name="name"
@@ -700,7 +700,7 @@ exports[`InputCheckboxGroup snapshot basic 1`] = `
                       <input
                         aria-invalid={false}
                         checked={false}
-                        className="sc-EHOje bShKlD"
+                        className="sc-EHOje FlFCE"
                         id="id-0"
                         name="name"
                         onChange={[Function]}
@@ -849,7 +849,7 @@ exports[`InputCheckboxGroup snapshot basic 1`] = `
                       <input
                         aria-invalid={false}
                         checked={false}
-                        className="sc-EHOje bShKlD"
+                        className="sc-EHOje FlFCE"
                         id="id-1"
                         name="name"
                         onChange={[Function]}
@@ -1160,7 +1160,7 @@ exports[`InputCheckboxGroup snapshot disabled 1`] = `
                       <input
                         aria-invalid={false}
                         checked={false}
-                        className="sc-EHOje bShKlD"
+                        className="sc-EHOje FlFCE"
                         disabled={true}
                         id="id-0"
                         name="name"
@@ -1311,7 +1311,7 @@ exports[`InputCheckboxGroup snapshot disabled 1`] = `
                       <input
                         aria-invalid={false}
                         checked={false}
-                        className="sc-EHOje bShKlD"
+                        className="sc-EHOje FlFCE"
                         disabled={true}
                         id="id-1"
                         name="name"
@@ -1622,7 +1622,7 @@ exports[`InputCheckboxGroup snapshot error 1`] = `
                       <input
                         aria-invalid={true}
                         checked={false}
-                        className="sc-EHOje occqe"
+                        className="sc-EHOje ktgYJj"
                         id="id-0"
                         name="name"
                         onChange={[Function]}
@@ -1771,7 +1771,7 @@ exports[`InputCheckboxGroup snapshot error 1`] = `
                       <input
                         aria-invalid={true}
                         checked={false}
-                        className="sc-EHOje occqe"
+                        className="sc-EHOje ktgYJj"
                         id="id-1"
                         name="name"
                         onChange={[Function]}

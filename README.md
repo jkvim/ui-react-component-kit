@@ -10,11 +10,12 @@ A react component library that is not prescribing state management and has themi
 
 # Table of contents
 1. [Installation](#installation)
-    1. [Prerequisites](#prerequisites)
+    1. [Prerequisites](#installation-prerequisites)
     2. [Install Dependencies](#install-dependencies)
 2. [Usage](#usage)
     1. [How To](#how-to)
-    2. [Theming](#theming)
+    2. [Prerequisites](#usage-prerequisites)
+    3. [Theming](#theming)
 3. [Dev Process](#dev-process)
 4. [Styleguide](#styleguide)
 5. [Metrics](#metrics)
@@ -23,7 +24,7 @@ A react component library that is not prescribing state management and has themi
 
 ## Installation <a name="installation"/>
 
-### Prerequisites <a name="prerequisites"/>
+### Prerequisites <a name="installation-prerequisites"/>
 - [Node.js](https://nodejs.org/en/) (>9.x).
 - [Yarn](https://yarnpkg.com/en/) (optional).
 
@@ -50,6 +51,13 @@ The following section outlines commonly used commands. For a detailed list of al
 
 ```bash
 $ yarn add ui-react-component-kit --dev | npm install ui-react-component-kit --save-dev
+```
+### Prerequisites <a name="usage-prerequisites"/>
+
+In you index.html of your application please add the following to enable font awesome fonts required for components.
+
+```html
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 ```
 
 ### Theming <a name="theming"/>

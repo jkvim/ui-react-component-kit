@@ -53,7 +53,7 @@ export const StyledSelectWrapperDiv = selectWrapperDiv`
   position: relative;
   
   &:after {
-    font-family: "fontawesome";
+    font-family: "Font Awesome\\ 5 Free";
     font-weight: 900;
     content: "\\f078";
     background: #000000;

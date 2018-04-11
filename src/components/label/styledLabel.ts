@@ -35,7 +35,8 @@ export const StyledLabelInline = labelnline`
   &:before {
     display: flex;
     justify-content: center;
-    line-height: 1;
+    align-content: center;
+    line-height: calc(${props => props.theme.font.size.default} + 0.6rem);
     margin-right: 10px;
     content: "";
     font-size: ${props => props.theme.font.size.default};
@@ -46,8 +47,6 @@ export const StyledLabelInline = labelnline`
     box-shadow: 0 0 0 1px ${props => props.hasError ? props.theme.color.error : props.theme.color.border};
     box-sizing: border-box;
     background-color: transparent;
-    left: 0;
-    top: 0;
   }
 `;
 

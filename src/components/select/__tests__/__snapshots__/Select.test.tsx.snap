@@ -209,7 +209,7 @@ exports[`Select props should match snapshot 1`] = `
         }
       >
         <div
-          className="sc-dnqmqq eYgisk"
+          className="sc-dnqmqq eIiIKG"
         >
           <styled.select
             aria-describedby="id-error"
@@ -502,7 +502,7 @@ exports[`Select snapshot basic 1`] = `
         }
       >
         <div
-          className="sc-dnqmqq eYgisk"
+          className="sc-dnqmqq eIiIKG"
         >
           <styled.select
             aria-describedby="id-error"
@@ -790,7 +790,7 @@ exports[`Select snapshot disabled 1`] = `
         }
       >
         <div
-          className="sc-dnqmqq eYgisk"
+          className="sc-dnqmqq eIiIKG"
         >
           <styled.select
             aria-describedby="id-error"
@@ -1080,7 +1080,7 @@ exports[`Select snapshot error 1`] = `
         }
       >
         <div
-          className="sc-dnqmqq eYgisk"
+          className="sc-dnqmqq eIiIKG"
         >
           <styled.select
             aria-describedby="id-error"

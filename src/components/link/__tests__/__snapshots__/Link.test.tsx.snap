@@ -76,7 +76,7 @@ exports[`Link props should match snapshot 1`] = `
       title
       <styled.span>
         <span
-          className="sc-EHOje jGgJXl"
+          className="sc-EHOje cHXfPo"
         >
           <styled.span>
             <span
@@ -234,7 +234,7 @@ exports[`Link snapshot external 1`] = `
       title
       <styled.span>
         <span
-          className="sc-EHOje jGgJXl"
+          className="sc-EHOje cHXfPo"
         >
           <styled.span>
             <span
