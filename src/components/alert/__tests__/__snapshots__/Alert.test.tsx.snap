@@ -44,6 +44,9 @@ exports[`Alert props should match snapshot 1`] = `
           "warning": "#dd5600",
         },
         "font": Object {
+          "family": Object {
+            "default": "Helvetica, Arial, sans-serif",
+          },
           "size": Object {
             "default": "1.8rem",
             "h1": "3.8rem",
@@ -115,6 +118,9 @@ exports[`Alert snapshot basic 1`] = `
           "warning": "#dd5600",
         },
         "font": Object {
+          "family": Object {
+            "default": "Helvetica, Arial, sans-serif",
+          },
           "size": Object {
             "default": "1.8rem",
             "h1": "3.8rem",
@@ -185,6 +191,9 @@ exports[`Alert snapshot danger 1`] = `
           "warning": "#dd5600",
         },
         "font": Object {
+          "family": Object {
+            "default": "Helvetica, Arial, sans-serif",
+          },
           "size": Object {
             "default": "1.8rem",
             "h1": "3.8rem",
@@ -257,6 +266,9 @@ exports[`Alert snapshot info 1`] = `
           "warning": "#dd5600",
         },
         "font": Object {
+          "family": Object {
+            "default": "Helvetica, Arial, sans-serif",
+          },
           "size": Object {
             "default": "1.8rem",
             "h1": "3.8rem",
@@ -329,6 +341,9 @@ exports[`Alert snapshot success 1`] = `
           "warning": "#dd5600",
         },
         "font": Object {
+          "family": Object {
+            "default": "Helvetica, Arial, sans-serif",
+          },
           "size": Object {
             "default": "1.8rem",
             "h1": "3.8rem",
@@ -401,6 +416,9 @@ exports[`Alert snapshot warning 1`] = `
           "warning": "#dd5600",
         },
         "font": Object {
+          "family": Object {
+            "default": "Helvetica, Arial, sans-serif",
+          },
           "size": Object {
             "default": "1.8rem",
             "h1": "3.8rem",

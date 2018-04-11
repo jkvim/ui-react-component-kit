@@ -44,6 +44,9 @@ exports[`Button props should match snapshot 1`] = `
           "warning": "#dd5600",
         },
         "font": Object {
+          "family": Object {
+            "default": "Helvetica, Arial, sans-serif",
+          },
           "size": Object {
             "default": "1.8rem",
             "h1": "3.8rem",
@@ -117,6 +120,9 @@ exports[`Button snapshot disabled 1`] = `
           "warning": "#dd5600",
         },
         "font": Object {
+          "family": Object {
+            "default": "Helvetica, Arial, sans-serif",
+          },
           "size": Object {
             "default": "1.8rem",
             "h1": "3.8rem",
@@ -188,6 +194,9 @@ exports[`Button snapshot primary 1`] = `
           "warning": "#dd5600",
         },
         "font": Object {
+          "family": Object {
+            "default": "Helvetica, Arial, sans-serif",
+          },
           "size": Object {
             "default": "1.8rem",
             "h1": "3.8rem",
@@ -258,6 +267,9 @@ exports[`Button snapshot secondary 1`] = `
           "warning": "#dd5600",
         },
         "font": Object {
+          "family": Object {
+            "default": "Helvetica, Arial, sans-serif",
+          },
           "size": Object {
             "default": "1.8rem",
             "h1": "3.8rem",
@@ -328,6 +340,9 @@ exports[`Button snapshot tertiary 1`] = `
           "warning": "#dd5600",
         },
         "font": Object {
+          "family": Object {
+            "default": "Helvetica, Arial, sans-serif",
+          },
           "size": Object {
             "default": "1.8rem",
             "h1": "3.8rem",

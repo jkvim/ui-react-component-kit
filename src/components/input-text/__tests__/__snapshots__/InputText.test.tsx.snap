@@ -63,6 +63,9 @@ exports[`InputText props should match snapshot 1`] = `
                 "warning": "#dd5600",
               },
               "font": Object {
+                "family": Object {
+                  "default": "Helvetica, Arial, sans-serif",
+                },
                 "size": Object {
                   "default": "1.8rem",
                   "h1": "3.8rem",
@@ -127,6 +130,9 @@ exports[`InputText props should match snapshot 1`] = `
                 "warning": "#dd5600",
               },
               "font": Object {
+                "family": Object {
+                  "default": "Helvetica, Arial, sans-serif",
+                },
                 "size": Object {
                   "default": "1.8rem",
                   "h1": "3.8rem",
@@ -196,6 +202,9 @@ exports[`InputText props should match snapshot 1`] = `
               "warning": "#dd5600",
             },
             "font": Object {
+              "family": Object {
+                "default": "Helvetica, Arial, sans-serif",
+              },
               "size": Object {
                 "default": "1.8rem",
                 "h1": "3.8rem",
@@ -268,6 +277,9 @@ exports[`InputText props should match snapshot 1`] = `
                 "warning": "#dd5600",
               },
               "font": Object {
+                "family": Object {
+                  "default": "Helvetica, Arial, sans-serif",
+                },
                 "size": Object {
                   "default": "1.8rem",
                   "h1": "3.8rem",
@@ -348,6 +360,9 @@ exports[`InputText snapshot basic 1`] = `
                 "warning": "#dd5600",
               },
               "font": Object {
+                "family": Object {
+                  "default": "Helvetica, Arial, sans-serif",
+                },
                 "size": Object {
                   "default": "1.8rem",
                   "h1": "3.8rem",
@@ -417,6 +432,9 @@ exports[`InputText snapshot basic 1`] = `
               "warning": "#dd5600",
             },
             "font": Object {
+              "family": Object {
+                "default": "Helvetica, Arial, sans-serif",
+              },
               "size": Object {
                 "default": "1.8rem",
                 "h1": "3.8rem",
@@ -488,6 +506,9 @@ exports[`InputText snapshot basic 1`] = `
                 "warning": "#dd5600",
               },
               "font": Object {
+                "family": Object {
+                  "default": "Helvetica, Arial, sans-serif",
+                },
                 "size": Object {
                   "default": "1.8rem",
                   "h1": "3.8rem",
@@ -567,6 +588,9 @@ exports[`InputText snapshot disabled 1`] = `
                 "warning": "#dd5600",
               },
               "font": Object {
+                "family": Object {
+                  "default": "Helvetica, Arial, sans-serif",
+                },
                 "size": Object {
                   "default": "1.8rem",
                   "h1": "3.8rem",
@@ -637,6 +661,9 @@ exports[`InputText snapshot disabled 1`] = `
               "warning": "#dd5600",
             },
             "font": Object {
+              "family": Object {
+                "default": "Helvetica, Arial, sans-serif",
+              },
               "size": Object {
                 "default": "1.8rem",
                 "h1": "3.8rem",
@@ -709,6 +736,9 @@ exports[`InputText snapshot disabled 1`] = `
                 "warning": "#dd5600",
               },
               "font": Object {
+                "family": Object {
+                  "default": "Helvetica, Arial, sans-serif",
+                },
                 "size": Object {
                   "default": "1.8rem",
                   "h1": "3.8rem",
@@ -788,6 +818,9 @@ exports[`InputText snapshot error 1`] = `
                 "warning": "#dd5600",
               },
               "font": Object {
+                "family": Object {
+                  "default": "Helvetica, Arial, sans-serif",
+                },
                 "size": Object {
                   "default": "1.8rem",
                   "h1": "3.8rem",
@@ -857,6 +890,9 @@ exports[`InputText snapshot error 1`] = `
               "warning": "#dd5600",
             },
             "font": Object {
+              "family": Object {
+                "default": "Helvetica, Arial, sans-serif",
+              },
               "size": Object {
                 "default": "1.8rem",
                 "h1": "3.8rem",
@@ -928,6 +964,9 @@ exports[`InputText snapshot error 1`] = `
                 "warning": "#dd5600",
               },
               "font": Object {
+                "family": Object {
+                  "default": "Helvetica, Arial, sans-serif",
+                },
                 "size": Object {
                   "default": "1.8rem",
                   "h1": "3.8rem",

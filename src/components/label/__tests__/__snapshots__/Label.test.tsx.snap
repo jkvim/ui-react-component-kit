@@ -44,6 +44,9 @@ exports[`Label props should match snapshot 1`] = `
           "warning": "#dd5600",
         },
         "font": Object {
+          "family": Object {
+            "default": "Helvetica, Arial, sans-serif",
+          },
           "size": Object {
             "default": "1.8rem",
             "h1": "3.8rem",
@@ -112,6 +115,9 @@ exports[`Label snapshot basic 1`] = `
           "warning": "#dd5600",
         },
         "font": Object {
+          "family": Object {
+            "default": "Helvetica, Arial, sans-serif",
+          },
           "size": Object {
             "default": "1.8rem",
             "h1": "3.8rem",
@@ -181,6 +187,9 @@ exports[`Label snapshot checkbox 1`] = `
           "warning": "#dd5600",
         },
         "font": Object {
+          "family": Object {
+            "default": "Helvetica, Arial, sans-serif",
+          },
           "size": Object {
             "default": "1.8rem",
             "h1": "3.8rem",
@@ -252,6 +261,9 @@ exports[`Label snapshot error 1`] = `
           "warning": "#dd5600",
         },
         "font": Object {
+          "family": Object {
+            "default": "Helvetica, Arial, sans-serif",
+          },
           "size": Object {
             "default": "1.8rem",
             "h1": "3.8rem",
@@ -321,6 +333,9 @@ exports[`Label snapshot radio 1`] = `
           "warning": "#dd5600",
         },
         "font": Object {
+          "family": Object {
+            "default": "Helvetica, Arial, sans-serif",
+          },
           "size": Object {
             "default": "1.8rem",
             "h1": "3.8rem",
@@ -392,6 +407,9 @@ exports[`Label snapshot standard 1`] = `
           "warning": "#dd5600",
         },
         "font": Object {
+          "family": Object {
+            "default": "Helvetica, Arial, sans-serif",
+          },
           "size": Object {
             "default": "1.8rem",
             "h1": "3.8rem",
