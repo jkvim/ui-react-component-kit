@@ -2,9 +2,11 @@
 
 exports[`Heading props should match snapshot 1`] = `
 <Heading
+  id="heading-1"
   level={1}
 >
   <styled.h1
+    id="heading-1"
     theme={
       Object {
         "border": Object {
@@ -61,6 +63,7 @@ exports[`Heading props should match snapshot 1`] = `
   >
     <h1
       className="sc-bdVaJa jduoXy"
+      id="heading-1"
     >
       heading
     </h1>
@@ -70,9 +73,11 @@ exports[`Heading props should match snapshot 1`] = `
 
 exports[`Heading snapshot h1 1`] = `
 <Heading
+  id="heading-1"
   level={1}
 >
   <styled.h1
+    id="heading-1"
     theme={
       Object {
         "border": Object {
@@ -129,6 +134,7 @@ exports[`Heading snapshot h1 1`] = `
   >
     <h1
       className="sc-bdVaJa jduoXy"
+      id="heading-1"
     >
       heading
     </h1>
@@ -138,9 +144,11 @@ exports[`Heading snapshot h1 1`] = `
 
 exports[`Heading snapshot h2 1`] = `
 <Heading
+  id="heading-2"
   level={2}
 >
   <styled.h2
+    id="heading-2"
     theme={
       Object {
         "border": Object {
@@ -197,6 +205,7 @@ exports[`Heading snapshot h2 1`] = `
   >
     <h2
       className="sc-bwzfXH eghYSK"
+      id="heading-2"
     >
       heading
     </h2>
@@ -206,9 +215,11 @@ exports[`Heading snapshot h2 1`] = `
 
 exports[`Heading snapshot h3 1`] = `
 <Heading
+  id="heading-3"
   level={3}
 >
   <styled.h3
+    id="heading-3"
     theme={
       Object {
         "border": Object {
@@ -265,6 +276,7 @@ exports[`Heading snapshot h3 1`] = `
   >
     <h3
       className="sc-htpNat hWTvjE"
+      id="heading-3"
     >
       heading
     </h3>
@@ -274,9 +286,11 @@ exports[`Heading snapshot h3 1`] = `
 
 exports[`Heading snapshot h4 1`] = `
 <Heading
+  id="heading-4"
   level={4}
 >
   <styled.h4
+    id="heading-4"
     theme={
       Object {
         "border": Object {
@@ -333,6 +347,7 @@ exports[`Heading snapshot h4 1`] = `
   >
     <h4
       className="sc-bxivhb jnfOxb"
+      id="heading-4"
     >
       heading
     </h4>
@@ -342,9 +357,11 @@ exports[`Heading snapshot h4 1`] = `
 
 exports[`Heading snapshot h5 1`] = `
 <Heading
+  id="heading-5"
   level={5}
 >
   <styled.h5
+    id="heading-5"
     theme={
       Object {
         "border": Object {
@@ -401,6 +418,7 @@ exports[`Heading snapshot h5 1`] = `
   >
     <h5
       className="sc-ifAKCX qOChb"
+      id="heading-5"
     >
       heading
     </h5>
@@ -410,9 +428,11 @@ exports[`Heading snapshot h5 1`] = `
 
 exports[`Heading snapshot h6 1`] = `
 <Heading
+  id="heading-6"
   level={6}
 >
   <styled.h6
+    id="heading-6"
     theme={
       Object {
         "border": Object {
@@ -469,6 +489,7 @@ exports[`Heading snapshot h6 1`] = `
   >
     <h6
       className="sc-EHOje ibQLUA"
+      id="heading-6"
     >
       heading
     </h6>

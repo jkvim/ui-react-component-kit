@@ -8,7 +8,7 @@ describe('Heading', () => {
   describe('props', () => {
 
     const wrapper = mount(
-      <Heading level={1}>heading</Heading>);
+      <Heading id="heading-1" level={1}>heading</Heading>);
 
     it('should match snapshot', () => {
       expect(toJSON(wrapper)).toMatchSnapshot();
@@ -20,32 +20,32 @@ describe('Heading', () => {
   });
 
   it('snapshot h1', () => {
-    const wrapper = mount(<Heading level={1}>heading</Heading>);
+    const wrapper = mount(<Heading id="heading-1" level={1}>heading</Heading>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('snapshot h2', () => {
-    const wrapper = mount(<Heading level={2}>heading</Heading>);
+    const wrapper = mount(<Heading id="heading-2" level={2}>heading</Heading>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('snapshot h3', () => {
-    const wrapper = mount(<Heading level={3}>heading</Heading>);
+    const wrapper = mount(<Heading id="heading-3" level={3}>heading</Heading>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('snapshot h4', () => {
-    const wrapper = mount(<Heading level={4}>heading</Heading>);
+    const wrapper = mount(<Heading id="heading-4" level={4}>heading</Heading>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('snapshot h5', () => {
-    const wrapper = mount(<Heading level={5}>heading</Heading>);
+    const wrapper = mount(<Heading id="heading-5" level={5}>heading</Heading>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('snapshot h6', () => {
-    const wrapper = mount(<Heading level={6}>heading</Heading>);
+    const wrapper = mount(<Heading id="heading-6" level={6}>heading</Heading>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 });
