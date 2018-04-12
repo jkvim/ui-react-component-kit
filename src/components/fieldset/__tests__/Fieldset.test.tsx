@@ -3,7 +3,7 @@ import { mount } from 'enzyme';
 import toJSON from 'enzyme-to-json';
 import { Fieldset } from '../';
 
-describe('Error', () => {
+describe('Fieldset', () => {
 
   describe('props', () => {
 
