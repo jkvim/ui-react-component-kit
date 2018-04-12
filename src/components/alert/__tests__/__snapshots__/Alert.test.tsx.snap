@@ -3,10 +3,12 @@
 exports[`Alert props should match snapshot 1`] = `
 <Alert
   className="class"
+  id="id"
   type="success"
 >
   <styled.div
     className="class"
+    id="id"
     role="alert"
     tabindex="-1"
     theme={
@@ -65,7 +67,8 @@ exports[`Alert props should match snapshot 1`] = `
     type="success"
   >
     <div
-      className="class sc-bdVaJa ixHSHX"
+      className="class sc-bdVaJa dyOiPf"
+      id="id"
       role="alert"
       type="success"
     >
@@ -78,9 +81,11 @@ exports[`Alert props should match snapshot 1`] = `
 exports[`Alert snapshot basic 1`] = `
 <Alert
   className="class"
+  id="id"
 >
   <styled.div
     className="class"
+    id="id"
     role="alert"
     tabindex="-1"
     theme={
@@ -138,7 +143,8 @@ exports[`Alert snapshot basic 1`] = `
     }
   >
     <div
-      className="class sc-bdVaJa bNEser"
+      className="class sc-bdVaJa jxGPwY"
+      id="id"
       role="alert"
     >
       Hello
@@ -150,10 +156,12 @@ exports[`Alert snapshot basic 1`] = `
 exports[`Alert snapshot danger 1`] = `
 <Alert
   className="class"
+  id="id"
   type="danger"
 >
   <styled.div
     className="class"
+    id="id"
     role="alert"
     tabindex="-1"
     theme={
@@ -212,7 +220,8 @@ exports[`Alert snapshot danger 1`] = `
     type="danger"
   >
     <div
-      className="class sc-bdVaJa eCZaEW"
+      className="class sc-bdVaJa iOBwAP"
+      id="id"
       role="alert"
       type="danger"
     >
@@ -225,10 +234,12 @@ exports[`Alert snapshot danger 1`] = `
 exports[`Alert snapshot info 1`] = `
 <Alert
   className="class"
+  id="id"
   type="info"
 >
   <styled.div
     className="class"
+    id="id"
     role="alert"
     tabindex="-1"
     theme={
@@ -287,7 +298,8 @@ exports[`Alert snapshot info 1`] = `
     type="info"
   >
     <div
-      className="class sc-bdVaJa fAVSWk"
+      className="class sc-bdVaJa zdbjt"
+      id="id"
       role="alert"
       type="info"
     >
@@ -300,10 +312,12 @@ exports[`Alert snapshot info 1`] = `
 exports[`Alert snapshot success 1`] = `
 <Alert
   className="class"
+  id="id"
   type="success"
 >
   <styled.div
     className="class"
+    id="id"
     role="alert"
     tabindex="-1"
     theme={
@@ -362,7 +376,8 @@ exports[`Alert snapshot success 1`] = `
     type="success"
   >
     <div
-      className="class sc-bdVaJa ixHSHX"
+      className="class sc-bdVaJa dyOiPf"
+      id="id"
       role="alert"
       type="success"
     >
@@ -375,10 +390,12 @@ exports[`Alert snapshot success 1`] = `
 exports[`Alert snapshot warning 1`] = `
 <Alert
   className="class"
+  id="id"
   type="warning"
 >
   <styled.div
     className="class"
+    id="id"
     role="alert"
     tabindex="-1"
     theme={
@@ -437,7 +454,8 @@ exports[`Alert snapshot warning 1`] = `
     type="warning"
   >
     <div
-      className="class sc-bdVaJa gWYyLn"
+      className="class sc-bdVaJa epKoqT"
+      id="id"
       role="alert"
       type="warning"
     >

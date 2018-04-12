@@ -8,10 +8,14 @@ describe('Alert', () => {
   describe('props', () => {
 
     const wrapper = mount(
-      <Alert type="success" className="class">Hello</Alert>);
+      <Alert id="id" type="success" className="class">Hello</Alert>);
 
     it('should match snapshot', () => {
       expect(toJSON(wrapper)).toMatchSnapshot();
+    });
+
+    it('should pass `id` in props', () => {
+      expect(wrapper.props().id).toBe('id');
     });
 
     it('should pass `type` in props', () => {
@@ -28,27 +32,27 @@ describe('Alert', () => {
   });
 
   it('snapshot basic', () => {
-    const wrapper = mount(<Alert className="class">Hello</Alert>);
+    const wrapper = mount(<Alert id="id" className="class">Hello</Alert>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('snapshot success', () => {
-    const wrapper = mount(<Alert type="success" className="class">Hello</Alert>);
+    const wrapper = mount(<Alert id="id" type="success" className="class">Hello</Alert>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('snapshot info', () => {
-    const wrapper = mount(<Alert type="info" className="class">Hello</Alert>);
+    const wrapper = mount(<Alert id="id" type="info" className="class">Hello</Alert>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('snapshot warning', () => {
-    const wrapper = mount(<Alert type="warning" className="class">Hello</Alert>);
+    const wrapper = mount(<Alert id="id" type="warning" className="class">Hello</Alert>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 
   it('snapshot danger', () => {
-    const wrapper = mount(<Alert type="danger" className="class">Hello</Alert>);
+    const wrapper = mount(<Alert id="id" type="danger" className="class">Hello</Alert>);
     expect(toJSON(wrapper)).toMatchSnapshot();
   });
 });

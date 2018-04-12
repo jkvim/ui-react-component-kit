@@ -15,6 +15,10 @@ export const StyledAlertDiv = alertDiv`
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+  
+  h1,h2,h3,h4,h5,h6 {
+    color: #ffffff;
+  }
 `;
 
 StyledAlertDiv.defaultProps = {

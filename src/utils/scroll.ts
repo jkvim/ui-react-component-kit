@@ -1,7 +1,7 @@
 import * as SmoothScroll from 'smooth-scroll';
 
 /**
- * Smooth scroll and foxus to element
+ * Smooth scroll and focus to element
  * @param {string} id - DOM element id
  * @param {number} speed - time in milliseconds to animate scroll
  * @param {number} offset - distance in pixels to offset scroll from selector
