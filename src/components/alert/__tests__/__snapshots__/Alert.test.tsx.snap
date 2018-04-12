@@ -65,7 +65,7 @@ exports[`Alert props should match snapshot 1`] = `
     type="success"
   >
     <div
-      className="class sc-bdVaJa OSvWk"
+      className="class sc-bdVaJa ixHSHX"
       role="alert"
       type="success"
     >
@@ -138,7 +138,7 @@ exports[`Alert snapshot basic 1`] = `
     }
   >
     <div
-      className="class sc-bdVaJa jVmMKh"
+      className="class sc-bdVaJa bNEser"
       role="alert"
     >
       Hello
@@ -212,7 +212,7 @@ exports[`Alert snapshot danger 1`] = `
     type="danger"
   >
     <div
-      className="class sc-bdVaJa iooWOT"
+      className="class sc-bdVaJa eCZaEW"
       role="alert"
       type="danger"
     >
@@ -287,7 +287,7 @@ exports[`Alert snapshot info 1`] = `
     type="info"
   >
     <div
-      className="class sc-bdVaJa eZexUJ"
+      className="class sc-bdVaJa fAVSWk"
       role="alert"
       type="info"
     >
@@ -362,7 +362,7 @@ exports[`Alert snapshot success 1`] = `
     type="success"
   >
     <div
-      className="class sc-bdVaJa OSvWk"
+      className="class sc-bdVaJa ixHSHX"
       role="alert"
       type="success"
     >
@@ -437,7 +437,7 @@ exports[`Alert snapshot warning 1`] = `
     type="warning"
   >
     <div
-      className="class sc-bdVaJa djmiuG"
+      className="class sc-bdVaJa gWYyLn"
       role="alert"
       type="warning"
     >
