@@ -33,10 +33,10 @@
   "jest": {
     "coverageThreshold": {
       "global": {
+        "statements": 84,
         "branches": 73,
         "functions": 86,
-        "lines": 83,
-        "statements": 84
+        "lines": 83
       }
     },
     "collectCoverageFrom": [
@@ -98,9 +98,9 @@
   "devDependencies": {
     "@types/enzyme-adapter-react-16": "1.0.2",
     "@types/enzyme-to-json": "1.5.1",
-    "@types/jest": "22.2.2",
+    "@types/jest": "22.2.3",
     "@types/node": "9.6.4",
-    "@types/react": "16.3.8",
+    "@types/react": "16.3.9",
     "@types/react-dom": "16.0.5",
     "app-root-path": "2.0.1",
     "autoprefixer": "8.2.0",
@@ -146,9 +146,9 @@
     "react-dom": "16.3.1",
     "react-styleguidist": "7.0.5",
     "sass-loader": "6.0.7",
-    "serve": "6.5.4",
+    "serve": "6.5.5",
     "shortid": "2.2.8",
-    "smooth-scroll": "^12.1.5",
+    "smooth-scroll": "12.1.5",
     "source-map-loader": "0.2.3",
     "stubby": "4.0.0",
     "style-loader": "0.20.3",
