@@ -1,5 +1,10 @@
 ** Usage **
 
+NOTE: ensure what you are wrapping with the IdleTime can accept the properties that the IdleTime passes to its children
+* resumeIdleTimer
+* pauseIdleTimer
+* resetIdleTimer  
+
 App.[js|ts]
 ```javascript static
 import * as React from 'react';
