@@ -3,6 +3,7 @@ import * as React from 'react';
 import { ReactNode } from 'react';
 import { AlertType } from '../../constants/types';
 export interface AlertProps {
+    id: string;
     children?: ReactNode;
     type?: AlertType;
     className?: string;

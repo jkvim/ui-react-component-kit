@@ -3,6 +3,7 @@ import * as React from 'react';
 import { ReactNode } from 'react';
 import { HeadingType } from '../../constants/types';
 export interface HeadingProps {
+    id: string;
     children: ReactNode;
     level: HeadingType;
 }
