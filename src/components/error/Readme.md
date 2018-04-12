@@ -4,7 +4,7 @@
     import { Error } from 'ui-react-component-kit'
 ```
 
-Error
+** Types **
 
 ```jsx
     <Error id={'demo-error'}>Required</Error>

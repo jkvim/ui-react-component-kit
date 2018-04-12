@@ -4,14 +4,8 @@
     import { Hint } from 'ui-react-component-kit'
 ```
 
-** Blank **
+** Types **
 
 ```jsx
     <Hint>Demo hint</Hint>
-```
-
-** Error **
-
-```jsx
-    <Hint hasError={true}>Demo hint</Hint>
 ```

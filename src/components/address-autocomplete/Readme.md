@@ -10,44 +10,29 @@ NOTE: To be fully functional this component requires a server to handle requests
 ``` 
 This will run a local server that the component can communicate with for demonstration.
 
-** Blank **
-
-```jsx
-    initialState = {};
-  
-    <AddressAutoComplete
-        id={'blank-address-autocomplete'}
-        label={'Blank Address Autocomplete'}
-        endpoint={'http://localhost:8882/addresses'}
-        selectedItem={state.selectedItem}
-        onChange={(selectedItem) => {
-            setState({selectedItem});
-        }}
-	/>
-```
-
-** Pre-populated **
+** States **
 
 ```jsx
     initialState = {
-        selectedItem: {
-            value: '123 Champion Street Dubbo NSW 2830',
-            object: {name: 'reference object'}
-        }
+        errorMessage: 'Field Required'
     };
-  
+      
     <AddressAutoComplete
-        id={'pre-populated-address-autocomplete'}
-        label={'Pre-populated Address Autocomplete'}
+        id={'unselected-address-autocomplete'}
+        label={'Sample Address Autocomplete'}
+        hint={'Sample hint'}
+        placeholder={'Enter an address'}
+        errorMessage={state.errorMessage}
         endpoint={'http://localhost:8882/addresses'}
         selectedItem={state.selectedItem}
+        onBlur={(isItemSelected) => {
+            setState({errorMessage: isItemSelected ? '' : 'Field Required'});
+        }}
         onChange={(selectedItem) => {
-            setState({selectedItem});
+            setState({selectedItem, errorMessage: ''});
         }}
     />
 ```
-
-** Disabled **
 
 ```jsx
     initialState = {
@@ -67,29 +52,5 @@ This will run a local server that the component can communicate with for demonst
             setState({selectedItem});
         }}
         disabled={true}
-    />
-```
-
-** Error **
-
-```jsx
-    initialState = {
-        errorMessage: 'Field Required'
-    };
-      
-    <AddressAutoComplete
-        id={'error-address-autocomplete'}
-        label={'Error Address Autocomplete'}
-        hint={'Sample hint'}
-        placeholder={'Enter an address'}
-        errorMessage={state.errorMessage}
-        endpoint={'http://localhost:8882/addresses'}
-        selectedItem={state.selectedItem}
-        onBlur={(isItemSelected) => {
-            setState({errorMessage: isItemSelected ? '' : 'Field Required'});
-        }}
-        onChange={(selectedItem) => {
-            setState({selectedItem, errorMessage: ''});
-        }}
     />
 ```

@@ -1,4 +1,4 @@
-** Paragraphs **
+** Types **
 
 ```jsx
     <Paragraph>

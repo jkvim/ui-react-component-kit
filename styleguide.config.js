@@ -31,52 +31,22 @@ module.exports = {
   },
   sections: [
     {
-      name: 'Typography',
+      name: 'Components',
       components: () => appendPath(componentsPath, [
         'heading/Heading.tsx',
         'paragraph/Paragraph.tsx',
         'label/Label.tsx',
         'hint/Hint.tsx',
-        'error/Error.tsx'
-      ])
-    },
-    {
-      name: 'Actions',
-      components: () => appendPath(componentsPath, [
+        'error/Error.tsx',
         'button/Button.tsx',
-        'link/Link.tsx'
-      ])
-    },
-    {
-      name: 'Dropdowns',
-      components: () => appendPath(componentsPath, [
-        'select/Select.tsx'
-      ])
-    },
-    {
-      name: 'Inputs',
-      components: () => appendPath(componentsPath, [
+        'link/Link.tsx',
+        'select/Select.tsx',
         'input-text/InputText.tsx',
         'input-radio-group/InputRadioGroup.tsx',
-        'input-checkbox-group/InputCheckboxGroup.tsx'
-      ])
-    },
-    {
-      name: 'Autocomplete',
-      components: () => appendPath(componentsPath, [
+        'input-checkbox-group/InputCheckboxGroup.tsx',
         'static-autocomplete/StaticAutoComplete.tsx',
-        'address-autocomplete/AddressAutoComplete.tsx'
-      ])
-    },
-    {
-      name: 'Notifications',
-      components: () => appendPath(componentsPath, [
-        'alert/Alert.tsx'
-      ])
-    },
-    {
-      name: 'Events',
-      components: () => appendPath(componentsPath, [
+        'address-autocomplete/AddressAutoComplete.tsx',
+        'alert/Alert.tsx',
         'before-unload/BeforeUnload.tsx',
         'idle-time/IdleTime.tsx'
       ])

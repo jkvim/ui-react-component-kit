@@ -4,15 +4,13 @@
     import { Alert } from 'ui-react-component-kit'
 ```
 
-** Blank **
+** Types **
 
 ```jsx
     <Alert>
         Blank Alert
-    </Alert>
+    </Alert>  
 ```
-
-** Success **
 
 ```jsx
     <Alert type={'success'}>
@@ -20,23 +18,17 @@
     </Alert>
 ```
 
-** Info **
-
 ```jsx
-    <Alert type={'info'}>
-        Info Alert
-    </Alert>
+   <Alert type={'info'}>
+       Info Alert
+   </Alert>
 ```
-
-** Warning **
 
 ```jsx
     <Alert type={'warning'}>
         Warning Alert
     </Alert>
 ```
-
-** Danger **
 
 ```jsx
     <Alert type={'danger'}>

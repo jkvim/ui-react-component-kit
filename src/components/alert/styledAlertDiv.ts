@@ -13,6 +13,8 @@ export const StyledAlertDiv = alertDiv`
   border-left: 4px solid ${props => darken(0.1, backgroundColor(props))};
   color: #ffffff;
   padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 `;
 
 StyledAlertDiv.defaultProps = {

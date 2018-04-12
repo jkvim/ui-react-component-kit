@@ -4,7 +4,7 @@
     import { Button } from 'ui-react-component-kit'
 ```
 
-** Blank **
+** Types **
 
 ```jsx
     <Button onClick={() => {
@@ -13,8 +13,6 @@
         Sample Button
     </Button>
 ```
-
-** Primary **
 
 ```jsx
     <Button 
@@ -26,8 +24,6 @@
     </Button>
 ```
 
-** Secondary **
-
 ```jsx
     <Button 
         type={'secondary'}
@@ -38,8 +34,6 @@
     </Button>
 ```
 
-** Tertiary **
-
 ```jsx
     <Button 
         type={'tertiary'}
@@ -49,8 +43,6 @@
         Tertiary Button
     </Button>
 ```
-
-** Disabled **
 
 ```jsx
     <Button disabled={true}>

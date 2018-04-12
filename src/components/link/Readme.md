@@ -4,6 +4,8 @@
     import { Link } from 'ui-react-component-kit'
 ```
 
+** Types **
+
 ```jsx
     <Link
         id={'internal-link'}

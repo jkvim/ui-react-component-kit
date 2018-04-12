@@ -4,41 +4,28 @@
     import { InputText } from 'ui-react-component-kit'
 ```
 
-** Blank **
-
-```jsx
-    initialState = {};
-  
-    <InputText
-        id={'blank-input-text'}
-        label={'Blank Input Text'}
-        placeholder={'Enter Text'}
-        value={state.value}
-        onChange={(value) => {
-            setState({value});
-        }}
-	/>
-```
-
-** Pre-populated **
+** States **
 
 ```jsx
     initialState = {
-        value: 'Sample Input'
+        errorMessage: 'Field Required'
     };
   
     <InputText
-        id={'pre-populated-input-text'}
-        label={'Pre-populated Input Text'}
+        id={'working-input-text'}
+        label={'Sample Input Text'}
         placeholder={'Enter Text'}
+        hint={'Sample hint'}
         value={state.value}
+        errorMessage={state.errorMessage}
+        onBlur={(value) => {
+            setState({errorMessage: value ? '' : 'Field Required'});
+        }}
         onChange={(value) => {
-            setState({value});
+            setState({value, errorMessage: ''})
         }}
     />
 ```
-
-** Disabled **
 
 ```jsx
     initialState = {
@@ -57,25 +44,3 @@
     />
 ```
 
-** Error **
-
-```jsx
-    initialState = {
-        errorMessage: 'Field Required'
-    };
-  
-    <InputText
-        id={'error-input-text'}
-        label={'Error Input Text'}
-        placeholder={'Enter Text'}
-        hint={'Sample hint'}
-        value={state.value}
-        errorMessage={state.errorMessage}
-        onBlur={(value) => {
-            setState({errorMessage: value ? '' : 'Field Required'});
-        }}
-        onChange={(value) => {
-            setState({value, errorMessage: ''})
-        }}
-    />
-```
