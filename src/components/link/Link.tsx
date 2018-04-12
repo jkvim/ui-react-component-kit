@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { MouseEvent } from 'react';
+import { MouseEvent, ReactNode } from 'react';
 import { StyledScreenReaderSpan } from '../../theme/common';
 import { StyledLink, StyledLinkExternalSpan } from './styledLink';
 
 export interface LinkProps {
   id: string;
-  title: string;
+  title: ReactNode;
   url: string;
   isExternal?: boolean;
   onClick?: (event: MouseEvent<HTMLAnchorElement>) => void;

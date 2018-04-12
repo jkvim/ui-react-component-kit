@@ -33,10 +33,10 @@
   "jest": {
     "coverageThreshold": {
       "global": {
-        "branches": 75,
+        "branches": 73,
         "functions": 86,
         "lines": 83,
-        "statements": 85
+        "statements": 84
       }
     },
     "collectCoverageFrom": [
@@ -148,7 +148,7 @@
     "sass-loader": "6.0.7",
     "serve": "6.5.4",
     "shortid": "2.2.8",
-    "smooth-scroll": "12.1.5",
+    "smooth-scroll": "^12.1.5",
     "source-map-loader": "0.2.3",
     "stubby": "4.0.0",
     "style-loader": "0.20.3",

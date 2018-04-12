@@ -46,6 +46,7 @@ module.exports = {
         'input-checkbox-group/InputCheckboxGroup.tsx',
         'static-autocomplete/StaticAutoComplete.tsx',
         'address-autocomplete/AddressAutoComplete.tsx',
+        'form-alert/FormAlert.tsx',
         'alert/Alert.tsx',
         'before-unload/BeforeUnload.tsx',
         'idle-time/IdleTime.tsx'
